@@ -1,0 +1,38 @@
+{
+  "name": "tent-css",
+  "version": "1.0.0",
+  "description": "A small encompassing CSS framrwork.",
+  "main": "package.json",
+  "scripts": {
+    "banner:expanded": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.css > temp && mv temp dist/tent.css",
+		"banner:compressed": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
+		"sass:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
+		"sass:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
+		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
+		"watch": "onchange src -- npm run build",
+		"build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "flexbox",
+    "html",
+    "html5",
+    "scss",
+    "sass",
+    "mobile",
+    "viewports"
+  ],
+  "author": "Aaron Mazade <ulinaaron@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "node-sass": "^3.8.0",
+    "npm-run-all": "^2.3.0",
+    "onchange": "^2.5.0",
+    "postcss-cli": "^2.5.2"
+  },
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  }
+}
