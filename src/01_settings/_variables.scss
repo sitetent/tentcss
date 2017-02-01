@@ -1,0 +1,75 @@
+// Colors
+// --------------------------------------------------
+
+$color-primary:    #F87060 !default;
+$color-secondary:  #B3A394 !default;
+$color-tertiary:   #CDD7D6 !default;
+
+$color-lightest:   	    #FFFFFF !default;
+$color-lighter:    		darken($color-lightest, 10%) !default;
+$color-light:      		darken($color-lightest, 25%) !default;
+$color-medium:     		darken($color-lightest, 35%) !default;
+$color-dark:       		darken($color-lightest, 60%) !default;
+$color-darker:     		darken($color-lightest, 75%) !default;
+$color-darkest:    		darken($color-lightest, 87%) !default;
+
+// Base Colors
+$base-color: $color-darker !default;
+$base-color-bg: $color-lightest !default;
+
+// Link Colors
+$link-color: $color-primary !default;
+
+// Button Colors
+$button-color: $base-color-bg !default;
+$button-color-bg: $base-color !default;
+$button--outlined-color: $base-color !default;
+
+// Heading Colors
+$heading-color: $base-color !default;
+
+// Common
+// --------------------------------------------------
+
+$border-radius: 6px !default;
+$size-baseline: 16px !default;
+$base-line-height: 1.6 !default;
+
+// Sizes
+// --------------------------------------------------
+
+$size-tiny: 10px !default;
+$size-xt: 11px !default;
+$size-small: 12px !default;
+$size-xs: 14px !default;
+$size-medium: 16px !default;
+$size-xm: 18px !default;
+$size-large: 20px !default;
+$size-xl: 24px !default;
+$size-xxl: 32px !default;
+$size-xxxl: 48px !default;
+
+// Grid
+// --------------------------------------------------
+
+$grid-columns: 12 !default;
+
+// Scaling
+// --------------------------------------------------
+
+$scale-ratio: 1.250 !default; // Major Third Ratio
+$scale-unit: 10px !default;
+
+// Buttons
+// --------------------------------------------------
+
+$button-outlined-border-width: 2px !default;
+
+// Breakpoints
+// --------------------------------------------------
+
+$breakpoints: (
+    small: rem(768px), 
+    medium: rem(981px), 
+    large: rem(1081px)
+);

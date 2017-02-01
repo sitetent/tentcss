@@ -1,0 +1,40 @@
+// Base
+// --------------------------------------------------
+
+// The base font-size is set at 62.5% for having the convenience
+// of sizing rems in a way that is similar to using px. 1.6rem=16px
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
+	font-weight: 400;
+	letter-spacing: .01em;
+	line-height: $base-line-height;
+	margin: 0;
+	padding: 0;
+	color: $base-color;
+	background-color: $base-color-bg;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+a {
+	color: $link-color;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken($link-color, 15%);
+	}
+}

@@ -1,0 +1,23 @@
+// Panels
+// --------------------------------------------------
+
+%panel--base {
+	max-width: 100%;
+	@include rem(padding, 20px);
+}
+
+.panel {
+	@extend %panel--base;
+}
+
+@include breakpoint(small) {
+	.panel {
+		max-width: 50%;
+	}
+}
+
+@include breakpoint-max(large) {
+	.panel {
+		min-width: 350px;
+	}
+}

@@ -1,0 +1,135 @@
+// Structure
+// --------------------------------------------------
+
+.container {
+	margin: 0 auto;
+	max-width: 112.0rem;
+	padding: 0 2.0rem;
+	position: relative;
+	width: 100%;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	width: 100%;
+
+	&--wrap {
+		flex-wrap: wrap;
+	}
+
+	&--no-padding {
+		padding: 0;
+
+		& > .grid__column {
+			padding: 0;
+		}
+	}
+
+	// & + .row
+	// 	margin-top: -.5rem;
+	// 	padding-top: 0;
+
+	// Vertically Align Columns
+	// .row-* vertically aligns every .col in the .row
+	&--top {
+		align-items: flex-start;
+	}
+
+	&--bottom {
+		align-items: flex-end;
+	}
+
+	&--center {
+		align-items: center;
+	}
+
+	&--stretch {
+		align-items: stretch;
+	}
+
+	&--baseline {
+		align-items: baseline;
+	}
+}
+
+.grid__column {
+	display: block;
+	flex: 1;
+	margin-left: 0;
+	max-width: 100%;
+	width: 100%;
+
+	// .column-* vertically aligns an individual .column
+	&--top {
+		align-self: flex-start;
+	}
+
+	&--bottom {
+		align-self: flex-end;
+	}
+
+	&--center {
+		align-self: center;
+	}
+
+	// Column Offsets
+	&--offset-10 {
+		margin-left: 10%;
+	}
+
+	&--offset-20 {
+		margin-left: 20%;
+	}
+
+	&--offset-25 {
+		margin-left: 25%;
+	}
+
+	&--offset-33 {
+		margin-left: 33.3333%;
+	}
+
+	&--offset-50 {
+		margin-left: 50%;
+	}
+
+	&--offset-66 {
+		margin-left: 66.6666%;
+	}
+
+	&--offset-75 {
+		margin-left: 75%;
+	}
+
+	&--offset-80 {
+		margin-left: 80%;
+	}
+
+	&--offset-90 {
+		margin-left: 90%;
+	}
+
+	// Explicit Column Percent Sizes
+	@for $i from 1 through $grid-columns {
+		$factor: 100% * ($i / $grid-columns);
+		&-#{$i} {
+			flex: 0 0 #{$factor};
+			max-width: #{$factor};
+		}
+	}
+}
+
+// Larger than mobile screen
+@include breakpoint(medium) {
+	.grid {
+		flex-direction: row;
+		margin-left: -1.0rem;
+		width: calc(100% + 2.0rem);
+	}
+	.grid__column {
+		margin-bottom: inherit;
+		padding: 0 1.0rem;
+	}
+}

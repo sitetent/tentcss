@@ -1,0 +1,27 @@
+.color {
+    &--primary      { color:   $color-primary }
+    &--secondary    { color: $color-secondary }
+    &--tertiary     { color:  $color-tertiary }
+
+    &--light    { color:     $color-light }
+    &--lighter  { color:   $color-lighter }
+    &--lightest { color:  $color-lightest }
+    &--medium   { color:    $color-medium }
+    &--dark     { color:      $color-dark }
+    &--darker   { color:    $color-darker }
+    &--darkest  { color:   $color-darkest }
+}
+
+.bg-color {
+    &--primary      { background-color:   $color-primary }
+    &--secondary    { background-color: $color-secondary }
+    &--tertiary     { background-color:  $color-tertiary }
+
+    &--light    { background-color:     $color-light }
+    &--lighter  { background-color:   $color-lighter }
+    &--lightest { background-color:  $color-lightest }
+    &--medium   { background-color:    $color-medium }
+    &--dark     { background-color:      $color-dark }
+    &--darker   { background-color:    $color-darker }
+    &--darkest  { background-color:   $color-darkest }
+}

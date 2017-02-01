@@ -1,0 +1,419 @@
+/*!
+ * Tent CSS v1.0.0
+ * http://tentcss.github.io
+ *
+ * Copyright (c) 2016 Aaron Mazade
+ * Licensed under the MIT license
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: .01em;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #404040;
+  background-color: #FFFFFF;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+a {
+  color: #F87060;
+}
+
+a:hover, a:focus, a:active {
+  color: #f52e17;
+}
+
+p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 12px 0 14px;
+  margin: 1.2rem 0 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #404040;
+  font-weight: inherit;
+  display: block;
+  margin: 20px 0 0;
+  margin: 2rem 0 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 60px;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 40px;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22.5px;
+  line-height: 2.25rem;
+}
+
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+
+code {
+  font-family: "Lucida Console",Courier,monospace;
+  font-size: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 112.0rem;
+  padding: 0 2.0rem;
+  position: relative;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+}
+
+.grid--wrap {
+  flex-wrap: wrap;
+}
+
+.grid--no-padding {
+  padding: 0;
+}
+
+.grid--no-padding > .grid__column {
+  padding: 0;
+}
+
+.grid--top {
+  -ms-grid-row-align: flex-start;
+      align-items: flex-start;
+}
+
+.grid--bottom {
+  -ms-grid-row-align: flex-end;
+      align-items: flex-end;
+}
+
+.grid--center {
+  -ms-grid-row-align: center;
+      align-items: center;
+}
+
+.grid--stretch {
+  -ms-grid-row-align: stretch;
+      align-items: stretch;
+}
+
+.grid--baseline {
+  -ms-grid-row-align: baseline;
+      align-items: baseline;
+}
+
+.grid__column {
+  display: block;
+  flex: 1;
+  margin-left: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.grid__column--top {
+  align-self: flex-start;
+}
+
+.grid__column--bottom {
+  align-self: flex-end;
+}
+
+.grid__column--center {
+  align-self: center;
+}
+
+.grid__column--offset-10 {
+  margin-left: 10%;
+}
+
+.grid__column--offset-20 {
+  margin-left: 20%;
+}
+
+.grid__column--offset-25 {
+  margin-left: 25%;
+}
+
+.grid__column--offset-33 {
+  margin-left: 33.3333%;
+}
+
+.grid__column--offset-50 {
+  margin-left: 50%;
+}
+
+.grid__column--offset-66 {
+  margin-left: 66.6666%;
+}
+
+.grid__column--offset-75 {
+  margin-left: 75%;
+}
+
+.grid__column--offset-80 {
+  margin-left: 80%;
+}
+
+.grid__column--offset-90 {
+  margin-left: 90%;
+}
+
+.grid__column-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.grid__column-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.grid__column-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.grid__column-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.grid__column-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.grid__column-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.grid__column-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.grid__column-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.grid__column-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.grid__column-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.grid__column-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.grid__column-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 98.1rem) {
+  .grid {
+    flex-direction: row;
+    margin-left: -1.0rem;
+    width: calc(100% + 2.0rem);
+  }
+  .grid__column {
+    margin-bottom: inherit;
+    padding: 0 1.0rem;
+  }
+}
+
+.panel {
+  max-width: 100%;
+  padding: 20px;
+  padding: 2rem;
+}
+
+@media (min-width: 76.8rem) {
+  .panel {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: number(108.1rem)-0.1rem) {
+  .panel {
+    min-width: 350px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 36px;
+  padding: 0.6rem 3.6rem;
+  color: #FFFFFF;
+  background-color: #404040;
+  border: 2px solid #404040;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover, .button:focus, .button:active {
+  color: #FFFFFF;
+  background-color: #262626;
+}
+
+.button--outlined {
+  background-color: transparent;
+  border-color: #404040;
+  color: #404040;
+}
+
+.color--primary {
+  color: #F87060;
+}
+
+.color--secondary {
+  color: #B3A394;
+}
+
+.color--tertiary {
+  color: #CDD7D6;
+}
+
+.color--light {
+  color: #bfbfbf;
+}
+
+.color--lighter {
+  color: #e6e6e6;
+}
+
+.color--lightest {
+  color: #FFFFFF;
+}
+
+.color--medium {
+  color: #a6a6a6;
+}
+
+.color--dark {
+  color: #666666;
+}
+
+.color--darker {
+  color: #404040;
+}
+
+.color--darkest {
+  color: #212121;
+}
+
+.bg-color--primary {
+  background-color: #F87060;
+}
+
+.bg-color--secondary {
+  background-color: #B3A394;
+}
+
+.bg-color--tertiary {
+  background-color: #CDD7D6;
+}
+
+.bg-color--light {
+  background-color: #bfbfbf;
+}
+
+.bg-color--lighter {
+  background-color: #e6e6e6;
+}
+
+.bg-color--lightest {
+  background-color: #FFFFFF;
+}
+
+.bg-color--medium {
+  background-color: #a6a6a6;
+}
+
+.bg-color--dark {
+  background-color: #666666;
+}
+
+.bg-color--darker {
+  background-color: #404040;
+}
+
+.bg-color--darkest {
+  background-color: #212121;
+}
+
+.demo .panel {
+  background-color: #FFFFFF;
+}
+
+/*# sourceMappingURL=tent.css.map */

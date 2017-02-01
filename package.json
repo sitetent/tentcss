@@ -4,13 +4,16 @@
   "description": "A small encompassing CSS framrwork.",
   "main": "package.json",
   "scripts": {
+    "css:gzipped": "",
     "banner:expanded": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.css > temp && mv temp dist/tent.css",
-		"banner:compressed": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
-		"sass:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
-		"sass:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
-		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
-		"watch": "onchange src -- npm run build",
-		"build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
+    "banner:compressed": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
+    "sass:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
+    "sass:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
+    "watch": "onchange src -- npm run build",
+    "serve": "browser-sync start --serveStatic 'docs' --files 'dist/*.css, docs/*.html' --server",
+    "dev": "parallelshell 'npm run serve' 'npm run watch'",
+    "build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
   },
   "keywords": [
     "css",
@@ -27,9 +30,12 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.14.0",
+    "clean-css": "^3.4.19",
     "node-sass": "^3.8.0",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
+    "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2"
   },
   "dependencies": {

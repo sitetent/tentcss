@@ -1,0 +1,25 @@
+// Buttons
+// --------------------------------------------------
+
+.button {
+    display: inline-block;
+    @include rem(padding, 6px 36px);
+    color: $button-color;
+    background-color: $button-color-bg;
+    border: $button-outlined-border-width solid $button-color-bg;
+    border-radius: $border-radius;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $button-color;
+        background-color: darken($button-color-bg, 10%);
+    }
+
+    &--outlined {
+        background-color: transparent;
+        border-color: $button--outlined-color;
+        color: $button--outlined-color;
+    }
+}

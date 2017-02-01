@@ -1,0 +1,49 @@
+// Typography
+// --------------------------------------------------
+
+p {
+	@include rem(font-size, $size-baseline);
+	@include rem(margin, $size-small 0 $size-xs);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	font-weight: inherit;
+	display: block;
+	@include rem(margin, 20px 0 0);
+}
+
+h1 {
+	@include rem(font-size, $size-xxxl);
+	@include rem(line-height, line-scale($size-xxxl));
+}
+
+h2 {
+	@include rem(font-size, $size-xxl);
+	@include rem(line-height, line-scale($size-xxl));
+}
+
+h3 {
+	@include rem(font-size, $size-xl);
+	@include rem(line-height, line-scale($size-xl));
+}
+
+h4 {
+	@include rem(font-size, $size-large);
+	@include rem(line-height, line-scale($size-large));
+}
+
+h5 {
+	@include rem(font-size, $size-xm);
+	@include rem(line-height, line-scale($size-xm));
+}
+
+h6 {
+	@include rem(font-size, $size-medium);
+	@include rem(line-height, line-scale($size-medium));
+}
