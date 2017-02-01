@@ -7,8 +7,11 @@
     color: $button-color;
     background-color: $button-color-bg;
     border: $button-outlined-border-width solid $button-color-bg;
-    border-radius: $border-radius;
+    border-radius: $button-border-radius;
     text-decoration: none;
+    transition: all 1s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 
     &:hover,
     &:focus,
@@ -22,4 +25,11 @@
         border-color: $button--outlined-color;
         color: $button--outlined-color;
     }
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    @extend .button;
 }

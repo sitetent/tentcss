@@ -1,0 +1,13 @@
+// Link
+// --------------------------------------------------
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken($link-color, 15%);
+	}
+}

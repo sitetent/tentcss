@@ -6,20 +6,85 @@
  * Licensed under the MIT license
 */
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.6em;
-  font-weight: 400;
-  letter-spacing: .01em;
-  line-height: 1.6;
+/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
-  color: #404040;
-  background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+embed,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
 }
 
 *,
@@ -28,28 +93,46 @@ body {
   box-sizing: border-box;
 }
 
-.clearfix:before, .clearfix:after {
-  content: '';
-  display: table;
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-.clearfix:after {
-  clear: both;
+body {
+  background-color: #FFFFFF;
+  color: #404040;
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: .05em;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
   color: #F87060;
+  text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
   color: #f52e17;
 }
 
+code {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: inherit;
+}
+
 p {
-  font-size: 16px;
-  font-size: 1.6rem;
-  margin: 12px 0 14px;
-  margin: 1.2rem 0 1.4rem;
+  margin: 0 0 32px;
+  margin: 0 0 3.2rem;
 }
 
 h1,
@@ -61,55 +144,39 @@ h6 {
   color: #404040;
   font-weight: inherit;
   display: block;
-  margin: 20px 0 0;
-  margin: 2rem 0 0;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  margin: 0 0 2.4rem;
 }
 
 h1 {
   font-size: 48px;
   font-size: 4.8rem;
-  line-height: 60px;
-  line-height: 6rem;
 }
 
 h2 {
-  font-size: 32px;
-  font-size: 3.2rem;
-  line-height: 40px;
-  line-height: 4rem;
+  font-size: 40px;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 30px;
-  line-height: 3rem;
+  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 h4 {
   font-size: 20px;
   font-size: 2rem;
-  line-height: 25px;
-  line-height: 2.5rem;
 }
 
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 22.5px;
-  line-height: 2.25rem;
 }
 
 h6 {
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 20px;
-  line-height: 2rem;
-}
-
-code {
-  font-family: "Lucida Console",Courier,monospace;
-  font-size: 1rem;
 }
 
 .container {
@@ -280,7 +347,7 @@ code {
   max-width: 100%;
 }
 
-@media (min-width: 98.1rem) {
+@media (min-width: 76.8rem) {
   .grid {
     flex-direction: row;
     margin-left: -1.0rem;
@@ -298,38 +365,99 @@ code {
   padding: 2rem;
 }
 
-@media (min-width: 76.8rem) {
-  .panel {
-    max-width: 50%;
-  }
+.title--1,
+.subtitle--1 {
+  font-size: 64px;
+  font-size: 6.4rem;
 }
 
-@media (max-width: number(108.1rem)-0.1rem) {
-  .panel {
-    min-width: 350px;
-  }
+.title--2,
+.subtitle--2 {
+  font-size: 48px;
+  font-size: 4.8rem;
 }
 
-.button {
+.title--3,
+.subtitle--3 {
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+.title--4,
+.subtitle--4 {
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
+.title--5,
+.subtitle--5 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.title--6,
+.subtitle--6 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 100;
+}
+
+.title,
+.subtitle {
+  word-break: break-word;
+}
+
+.title:not(:last-child),
+.subtitle:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.title + .subtitle {
+  margin-top: 2.4rem;
+}
+
+.button, button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   display: inline-block;
   padding: 6px 36px;
   padding: 0.6rem 3.6rem;
   color: #FFFFFF;
-  background-color: #404040;
-  border: 2px solid #404040;
-  border-radius: 6px;
+  background-color: #F87060;
+  border: 2px solid #F87060;
+  border-radius: 0;
   text-decoration: none;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
-.button:hover, .button:focus, .button:active {
+.button:hover, button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover, .button:focus, button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus, .button:active, button:active,
+input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active {
   color: #FFFFFF;
-  background-color: #262626;
+  background-color: #f6442f;
 }
 
 .button--outlined {
   background-color: transparent;
-  border-color: #404040;
-  color: #404040;
+  border-color: #F87060;
+  color: #F87060;
 }
 
 .color--primary {
@@ -410,10 +538,6 @@ code {
 
 .bg-color--darkest {
   background-color: #212121;
-}
-
-.demo .panel {
-  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=tent.css.map */

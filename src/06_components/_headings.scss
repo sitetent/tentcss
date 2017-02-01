@@ -1,0 +1,37 @@
+// Titles & Subtitles
+// --------------------------------------------------
+
+.title,
+.subtitle {
+    &--1 { @include rem(font-size, $size-xxxl); }
+    &--2 { @include rem(font-size, $size-xxl); }
+    &--3 { @include rem(font-size, $size-xl); }
+    &--4 { @include rem(font-size, $size-lg); }
+    &--5 { @include rem(font-size, $size-xm); }
+    &--6 { @include rem(font-size, $size-md); }
+}
+
+.title {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 100;
+}
+
+// Misc
+// --------------------------------------------------
+
+.title,
+.subtitle {
+    word-break: break-word;
+}
+
+.title:not(:last-child),
+.subtitle:not(:last-child) {
+  margin-bottom: rem($space-xs);
+}
+
+.title + .subtitle {
+  margin-top: rem($space-sm);
+}

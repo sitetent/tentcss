@@ -122,7 +122,7 @@
 }
 
 // Larger than mobile screen
-@include breakpoint(medium) {
+@include breakpoint(sm) {
 	.grid {
 		flex-direction: row;
 		margin-left: -1.0rem;

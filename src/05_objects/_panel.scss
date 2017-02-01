@@ -10,14 +10,4 @@
 	@extend %panel--base;
 }
 
-@include breakpoint(small) {
-	.panel {
-		max-width: 50%;
-	}
-}
 
-@include breakpoint-max(large) {
-	.panel {
-		min-width: 350px;
-	}
-}

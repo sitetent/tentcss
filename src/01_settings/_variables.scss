@@ -20,39 +20,55 @@ $base-color-bg: $color-lightest !default;
 // Link Colors
 $link-color: $color-primary !default;
 
-// Button Colors
-$button-color: $base-color-bg !default;
-$button-color-bg: $base-color !default;
-$button--outlined-color: $base-color !default;
-
-// Heading Colors
-$heading-color: $base-color !default;
-
 // Common
 // --------------------------------------------------
 
+$font-family-primary: "Gill Sans", Helvetica, Arial, sans-serif;
+$font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace: "Lucida Console",Courier,monospace;
+
 $border-radius: 6px !default;
-$size-baseline: 16px !default;
 $base-line-height: 1.6 !default;
 
+// Headings
+// --------------------------------------------------
+
+$heading-color: $base-color !default;
+$heading-line-height: 1.25 !default;
+
 // Sizes
+// Used for fonts
 // --------------------------------------------------
 
-$size-tiny: 10px !default;
-$size-xt: 11px !default;
-$size-small: 12px !default;
-$size-xs: 14px !default;
-$size-medium: 16px !default;
-$size-xm: 18px !default;
-$size-large: 20px !default;
-$size-xl: 24px !default;
-$size-xxl: 32px !default;
-$size-xxxl: 48px !default;
+$size-base: 16px !default;
 
-// Grid
+$size-ty: 10px !default;
+$size-xt: 12px !default;
+$size-sm: 14px !default;
+$size-xs: 16px !default;
+$size-md: 18px !default;
+$size-xm: 20px !default;
+$size-lg: 32px !default;
+$size-xl: 40px !default;
+$size-xxl: 48px !default;
+$size-xxxl: 64px !default;
+
+// Sizes
+// Used for padding and margins.
 // --------------------------------------------------
 
-$grid-columns: 12 !default;
+$space-base: 8px;
+
+$space-ty: ($space-base) !default;
+$space-xt: ($space-base * 2) !default;
+$space-sm: ($space-base * 3) !default;
+$space-xs: ($space-base * 4) !default;
+$space-md: ($space-base * 5) !default;
+$space-xm: ($space-base * 6) !default;
+$space-lg: ($space-base * 7) !default;
+$space-xl: ($space-base * 8) !default;
+$space-xxl: ($space-base * 9) !default;
+$space-xxxl: ($space-base * 10) !default;
 
 // Scaling
 // --------------------------------------------------
@@ -60,16 +76,27 @@ $grid-columns: 12 !default;
 $scale-ratio: 1.250 !default; // Major Third Ratio
 $scale-unit: 10px !default;
 
-// Buttons
+// Grid
 // --------------------------------------------------
 
-$button-outlined-border-width: 2px !default;
+$grid-columns: 12 !default;
+
 
 // Breakpoints
 // --------------------------------------------------
 
 $breakpoints: (
-    small: rem(768px), 
-    medium: rem(981px), 
-    large: rem(1081px)
+    sm: rem(768px), 
+    md: rem(981px), 
+    lg: rem(1081px)
 );
+
+// Buttons
+// --------------------------------------------------
+
+$button-color: $base-color-bg !default;
+$button-color-bg: $color-primary !default;
+$button--outlined-color: $color-primary !default;
+
+$button-border-radius: 0 !default;
+$button-outlined-border-width: 2px !default;
