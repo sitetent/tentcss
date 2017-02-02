@@ -15,12 +15,6 @@
 	width: 100%;
 	@include rem(margin-left, -$space-xt );
 	@include rem(margin-right, -$space-xt );
-	@include rem(margin-top, -$space-xt );
-
-
-	&:last-child {
-		@include rem(margin-bottom, -$space-xt);
-	}
 
 	&:not(:last-child) {
 		@include rem(margin-bottom, $space-xt);
@@ -125,7 +119,7 @@
 	// Explicit Column Percent Sizes
 	@for $i from 1 through $grid-columns {
 		$factor: 100% * ($i / $grid-columns);
-		&-#{$i} {
+		&--#{$i} {
 			flex: 0 0 #{$factor};
 			max-width: #{$factor};
 		}
