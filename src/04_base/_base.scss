@@ -1,13 +1,6 @@
 // Base
 // --------------------------------------------------
 
-// Set global box-sizing to include padding and borders within the model.
-*,
-*:after,
-*:before {
-	box-sizing: border-box;
-}
-
 // The base font-size is set at 62.5% for having the convenience
 // of sizing rems in a way that is similar to using px. 1.6rem=16px
 html {

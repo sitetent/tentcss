@@ -4,6 +4,7 @@
 %panel--base {
 	max-width: 100%;
 	@include rem(padding, 20px);
+	background-color: $color-lighter;
 }
 
 .panel {

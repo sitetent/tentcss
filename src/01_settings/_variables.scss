@@ -76,20 +76,34 @@ $space-xxxl: ($space-base * 10) !default;
 $scale-ratio: 1.250 !default; // Major Third Ratio
 $scale-unit: 10px !default;
 
+// Container Sizes
+// --------------------------------------------------
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
 // Grid
 // --------------------------------------------------
 
 $grid-columns: 12 !default;
 
 
-// Breakpoints
+// Grid Breakpoints
 // --------------------------------------------------
 
 $breakpoints: (
-    sm: rem(768px), 
-    md: rem(981px), 
-    lg: rem(1081px)
-);
+    xs: 0, 
+    sm: rem(576px), 
+    md: rem(768px), 
+    lg: rem(992px), 
+    xl: rem(1200px),
+    xxl: rem(1400px),
+    xxxl: rem(1600px)
+) !default;
 
 // Buttons
 // --------------------------------------------------

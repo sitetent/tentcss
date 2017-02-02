@@ -11,9 +11,20 @@
 
 .grid {
 	display: flex;
-	flex-direction: column;
 	padding: 0;
 	width: 100%;
+	@include rem(margin-left, -$space-xt );
+	@include rem(margin-right, -$space-xt );
+	@include rem(margin-top, -$space-xt );
+
+
+	&:last-child {
+		@include rem(margin-bottom, -$space-xt);
+	}
+
+	&:not(:last-child) {
+		@include rem(margin-bottom, $space-xt);
+	}
 
 	&--wrap {
 		flex-wrap: wrap;
@@ -124,12 +135,10 @@
 // Larger than mobile screen
 @include breakpoint(sm) {
 	.grid {
-		flex-direction: row;
 		margin-left: -1.0rem;
 		width: calc(100% + 2.0rem);
 	}
 	.grid__column {
-		margin-bottom: inherit;
 		padding: 0 1.0rem;
 	}
 }
