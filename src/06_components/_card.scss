@@ -1,0 +1,34 @@
+// Cards
+// --------------------------------------------------
+
+$card\margin: rem($space-xt) !default;
+$card-border: 1px solid $color-light !default;
+$card-radius: 0 !default;
+$card-bg: $color-lightest !default;
+$card-color: $base-color !default;
+
+$card-content-padding: $space-xt !default; 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $card-margin;
+    border: $card-border;
+    border-radius: $card-radius;
+    background: $card-bg;
+    overflow: hidden;
+    color: $card-color;
+
+    & > :last-child {
+    margin-bottom: 0;
+    }
+}
+
+.card__content {
+    flex: 1 0 auto;
+    padding: $card-content-padding;
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}

@@ -217,23 +217,28 @@ h6 {
 }
 
 .grid--top {
-  align-items: flex-start;
+  -ms-grid-row-align: flex-start;
+      align-items: flex-start;
 }
 
 .grid--bottom {
-  align-items: flex-end;
+  -ms-grid-row-align: flex-end;
+      align-items: flex-end;
 }
 
 .grid--center {
-  align-items: center;
+  -ms-grid-row-align: center;
+      align-items: center;
 }
 
 .grid--stretch {
-  align-items: stretch;
+  -ms-grid-row-align: stretch;
+      align-items: stretch;
 }
 
 .grid--baseline {
-  align-items: baseline;
+  -ms-grid-row-align: baseline;
+      align-items: baseline;
 }
 
 .grid__column {
@@ -253,8 +258,7 @@ h6 {
 }
 
 .grid__column--center {
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .grid__column--offset-10 {
@@ -463,6 +467,25 @@ input[type='submit']:active {
   background-color: transparent;
   border-color: #F87060;
   color: #F87060;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+  border: 1px solid #bfbfbf;
+  border-radius: 0;
+  background: #FFFFFF;
+  overflow: hidden;
+  color: #404040;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.card__content {
+  padding: 32px;
 }
 
 .color--primary {
