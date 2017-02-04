@@ -1,31 +1,197 @@
 // Buttons
 // --------------------------------------------------
 
+$button-filled-color: $base-color-bg !default;
+$button-filled-bg: $color-dark !default;
+$button-outlined-color: $color-dark !default;
+$button-clear-color: $color-dark !default;
+
+$button-primary-color: $color-lightest !default;
+$button-primary-bg: $color-primary !default;
+$button-secondary-color: $color-lightest !default;
+$button-secondary-bg: $color-secondary !default;
+$button-tertiary-color: $color-dark !default;
+$button-tertiary-bg: $color-tertiary !default;
+
+$button-border-radius: 0 !default;
+$button-outlined-border-width: 2px !default;
+
+$button-padding-ty: rem($space-ty) rem($space-xt) !default;
+$button-padding-xt: rem($space-ty) rem($space-sm) !default;
+$button-padding-sm: rem($space-ty) rem($space-xs) !default;
+$button-padding-xs: rem($space-ty) rem($space-md) !default;
+$button-padding-md: rem($space-ty) rem($space-xm) !default;
+$button-padding-xm: rem($space-xt) rem($space-lg) !default;
+$button-padding-lg: rem($space-xt) rem($space-xl) !default;
+$button-padding-xl: rem($space-xt) rem($space-xxl) !default;
+$button-padding-xxl: rem($space-xt) rem($space-xxxl) !default;
+$button-padding-xxxl: rem($space-xt) rem($space-xxl) !default;
+
+$button-size-ty: rem($size-ty) !default;
+$button-size-xt: rem($size-ty) !default;
+$button-size-sm: rem($size-xt) !default;
+$button-size-xs: rem($size-xt) !default;
+$button-size-md: rem($size-sm) !default;
+$button-size-xm: rem($size-sm) !default;
+$button-size-lg: rem($size-xs) !default;
+$button-size-xl: rem($size-xs) !default;
+$button-size-xxl: rem($size-md) !default;
+$button-size-xxxl: rem($size-md) !default;
+
 .button {
     display: inline-block;
-    @include rem(padding, 6px 36px);
-    color: $button-color;
-    background-color: $button-color-bg;
-    border: $button-outlined-border-width solid $button-color-bg;
+    margin-bottom: rem($space-ty);
+    padding: $button-padding-sm;
     border-radius: $button-border-radius;
+    border: $button-outlined-border-width solid $button-filled-bg;
+    background-color: $button-filled-bg;
+    color: $button-filled-color;
     text-decoration: none;
     transition: all 1s ease;
     text-transform: uppercase;
     letter-spacing: 0.15em;
+    font-size: inherit;
+
+    &.button--primary {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $button-primary-color;
+            background-color: darken($button-primary-bg, 10%);
+            border-color: darken($button-primary-bg, 25%);
+        }
+    }
+
+    &.button--secondary {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $button-secondary-color;
+            background-color: darken($button-secondary-bg, 10%);
+            border-color: darken($button-secondary-bg, 25%);
+        }
+    }
+    
+    &.button--tertiary {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $button-tertiary-color;
+            background-color: darken($button-tertiary-bg, 10%);
+            border-color: darken($button-tertiary-bg, 25%);
+        }
+    }
+
+    // Button Sizes
+    &--ty { 
+        padding: $button-padding-ty; 
+        font-size: $button-size-ty;
+    }
+    &--xt { 
+        padding: $button-padding-xt; 
+        font-size: $button-size-xt;
+    }
+    &--sm { 
+        padding: $button-padding-sm;
+        font-size: $button-size-sm;
+    }
+    &--xs { 
+        padding: $button-padding-xs;
+        font-size: $button-size-xs;
+    }
+    &--md { 
+        padding: $button-padding-md;
+        font-size: $button-size-md;
+    }
+    &--lg { 
+        padding: $button-padding-lg;
+        font-size: $button-size-lg;
+    }
+    &--xl { 
+        padding: $button-padding-xl;
+        font-size: $button-size-xl;
+    }
+    &--xxl { 
+        padding: $button-padding-xxl;
+        font-size: $button-size-xxl;
+    }
+    &--xxxl { 
+        padding: $button-padding-xxxl;
+        font-size: $button-size-xxxl;
+    }
+}
+
+.button--filled {
 
     &:hover,
     &:focus,
     &:active {
-        color: $button-color;
-        background-color: darken($button-color-bg, 10%);
+        color: $button-filled-color;
+        background-color: darken($button-filled-bg, 10%);
+        border-color: darken($button-filled-bg, 25%);
     }
 
-    &--outlined {
-        background-color: transparent;
-        border-color: $button--outlined-color;
-        color: $button--outlined-color;
+    &.button--primary {
+        border-color: $button-primary-bg;
+        background-color: $button-primary-bg;
+        color: $button-primary-color;
+    }
+
+    // Button Colors
+    &.button--secondary {
+        background-color: $button-secondary-bg;
+        border-color: $button-secondary-bg;
+        color: $button-secondary-color;
+    }
+
+    &.button--tertiary {
+        background-color: $button-tertiary-bg;
+        border-color: $button-tertiary-bg;
+        color: $button-tertiary-color;
     }
 }
+
+.button--outlined {
+    background-color: transparent;
+    color: $button-outlined-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $button-filled-color;
+        background-color: darken($button-outlined-color, 10%);
+        border-color: darken($button-outlined-color, 25%);
+    }
+
+    &.button--primary {
+        border-color: $button-primary-bg;
+        color: $button-primary-bg;
+    }
+
+    &.button--secondary {
+        border-color: $button-secondary-bg;
+        color: $button-secondary-bg;
+    }
+
+    &.button--tertiary {
+        border-color: $button-tertiary-bg;
+        color: $button-tertiary-bg;
+    }
+}
+
+.button--clear {
+    border-color: transparent;
+    background-color: transparent;
+    color: $button-clear-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $button-clear-color;
+        border-bottom: 2px solid $button-clear-color;
+    }
+}
+
 
 button,
 input[type='button'],
