@@ -10,11 +10,13 @@ $button-primary-color: $color-lightest !default;
 $button-primary-bg: $color-primary !default;
 $button-secondary-color: $color-lightest !default;
 $button-secondary-bg: $color-secondary !default;
-$button-tertiary-color: $color-dark !default;
+$button-tertiary-color: $color-lightest !default;
 $button-tertiary-bg: $color-tertiary !default;
 
 $button-border-radius: 0 !default;
 $button-outlined-border-width: 2px !default;
+
+// Button Sizes
 
 $button-padding-ty: rem($space-ty) rem($space-xt) !default;
 $button-padding-xt: rem($space-ty) rem($space-sm) !default;
