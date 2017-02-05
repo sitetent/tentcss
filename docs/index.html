@@ -6,14 +6,22 @@
 		<link href="../dist/tent.min.css" rel="stylesheet">
 	</head>
 	<body class="demo">
-        <div class="container">
+        <header class="bg-color--primary inverse padding--y padding--lg">
+            <div class="container">
+                <div class="title-set">
+                    <h1 class="title">Tent CSS</h1>
+                    <p class="subtitle subtitle--md">A survival CSS kit. Includes only what you need to make camp.</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container padding--y padding--lg">
 
             <h3>Headings</h3>
 
             <div class="grid">
                 <div class="grid__column">
                     <h4>Default Headings</h4>
-                    <p>These headings are useful without classes within text content.</p>
 
                     <h1>Heading 1</h1>
                     <h2>Heading 2</h2>
@@ -25,22 +33,22 @@
                 <div class="grid__column">
                     <h4>Title Headings</h4>
 
-                    <h1 class="title">Title 1</h1>
-                    <h2 class="title">Title 2</h2>
-                    <h3 class="title">Title 3</h3>
-                    <h4 class="title">Title 4</h4>
-                    <h5 class="title">Title 5</h5>
-                    <h6 class="title">Title 6</h6>
+                    <h1 class="title title--xxl">Title 1</h1>
+                    <h2 class="title title--xl">Title 2</h2>
+                    <h3 class="title title--lg">Title 3</h3>
+                    <h4 class="title title--xm">Title 4</h4>
+                    <h5 class="title title--md">Title 5</h5>
+                    <h6 class="title title--xs">Title 6</h6>
                 </div>
                 <div class="grid__column">
                     <h4>Subtitle Headings</h4>
             
-                    <h1 class="subtitle">Subtitles 1</h1>
-                    <h2 class="subtitle">Subtitles 2</h2>
-                    <h3 class="subtitle">Subtitles 3</h3>
-                    <h4 class="subtitle">Subtitles 4</h4>
-                    <h5 class="subtitle">Subtitles 5</h5>
-                    <h6 class="subtitle">Subtitles 6</h6>
+                    <h1 class="subtitle subtitle--xxl">Subtitles 1</h1>
+                    <h2 class="subtitle subtitle--xl">Subtitles 2</h2>
+                    <h3 class="subtitle subtitle--lg">Subtitles 3</h3>
+                    <h4 class="subtitle subtitle--xm">Subtitles 4</h4>
+                    <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                    <h6 class="subtitle subtitle--xs">Subtitles 6</h6>
                 </div>
             </div>
 
@@ -51,44 +59,175 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in libero, perferendis illum dolore rerum minima placeat magnam voluptas porro, blanditiis inventore voluptatibus. Quo magnam nemo quam natus assumenda ipsam consequuntur laudantium, minus eius eveniet temporibus totam accusantium laboriosam quod ratione corrupti id sapiente, labore nesciunt facere placeat cupiditate cum.
             </p>
+            
+            <h3>Other Typography</h3>
+
+            <div class="grid grid--justify--center">
+                <div class="grid__column">
+                    <strong>Strong</strong> / <b>Bold</b>
+                </div>
+                <div class="grid__column">
+                    <em>Italic</em>
+                </div>
+                <div class="grid__column">
+                    <span class="type--caps">Caps</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type--small">Small</span>
+                </div>
+                <div class="grid__column">
+                    <code>Code</code>
+                </div>
+            </div>
+
+            <h3>Text Alignments</h3>
+            
+            <div class="grid grid--justify--center">
+                <div class="grid__column">
+                    <div class="bg-color--lighter padding--sm type--left">
+                        Text Left
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--justify--center">
+                <div class="grid__column">
+                    <div class="bg-color--lighter padding--sm type--center">
+                        Text Center
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--justify--center">
+                <div class="grid__column">
+                    <div class="bg-color--lighter padding--sm type--right">
+                        Text Right
+                    </div>
+                </div>
+            </div>
 
             <hr>
 
             <h3>Grid</h3>
 
-            <div class="grid">
-                <div class="grid__column"><div class="panel"><code>grid__column</code></div></div>
-                <div class="grid__column"><div class="panel"><code>grid__column</code></div></div>
+            <p>
+                <span class="color--secondary type--bold">Tent</span> uses a responsive full-width <code>.grid</code>. 
+                To give the grid a fixed-width wrap it <code>.container</code>.
+            </p>
+
+            <div class="grid bg-color--light padding--ty padding--y">
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
             </div>
-            <div class="grid">
-                <div class="grid__column"><div class="panel">1</div></div>
-                <div class="grid__column"><div class="panel">2</div></div>
-                <div class="grid__column"><div class="panel">3</div></div>
-                <div class="grid__column"><div class="panel">4</div></div>
-                <div class="grid__column"><div class="panel">5</div></div>
-                <div class="grid__column"><div class="panel">6</div></div>
+            <div class="grid bg-color--light padding--ty padding--y">
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">2</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">2</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">2</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">2</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">2</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">2</div></div>
             </div>
-            <div class="grid">
-                <div class="grid__column"><div class="panel">1</div></div>
-                <div class="grid__column"><div class="panel">2</div></div>
-                <div class="grid__column"><div class="panel">3</div></div>
-                <div class="grid__column"><div class="panel">4</div></div>
-                <div class="grid__column"><div class="panel">5</div></div>
-                <div class="grid__column"><div class="panel">6</div></div>
-                <div class="grid__column"><div class="panel">7</div></div>
-                <div class="grid__column"><div class="panel">8</div></div>
-                <div class="grid__column"><div class="panel">9</div></div>
-                <div class="grid__column"><div class="panel">10</div></div>
-                <div class="grid__column"><div class="panel">11</div></div>
-                <div class="grid__column"><div class="panel">12</div></div>
+            <div class="grid bg-color--light padding--ty padding--y">
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
             </div>
 
+            <div class="grid bg-color--light padding--ty padding--y">
+                <div class="grid__column grid__column--8">
+                    <div class="bg-color--darker inverse padding--ty">8</div>
+                </div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">1</div></div>
+            </div>
+
+            <h4>Grid Horizontal Alignments</h4>
+
+            <p>
+                <code>.grid.grid--justify--start</code>
+            </p>
+
+            <div class="grid grid--justify--start bg-color--light padding--xt padding--y">
+                <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--ty">4</div></div>
+                <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--ty">2</div></div>
+            </div>
+
+             <p>
+                <code>.grid.grid--justify--center</code>
+            </p>
+
+            <div class="grid grid--justify--center bg-color--light padding--xt padding--y">
+                <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--ty">4</div></div>
+                <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--ty">2</div></div>
+            </div>
+
+            <p>
+                <code>.grid.grid--justify--end</code>
+            </p>
+
+            <div class="grid grid--justify--end bg-color--light padding--xt padding--y">
+                <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--ty">4</div></div>
+                <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--ty">2</div></div>
+            </div>
+
+            <h4>Grid Vertical Alignments</h4>
+
+            <p>
+                <code>.grid.grid--top</code>
+            </p>
+
+            <div class="grid grid--top bg-color--light padding--xt padding--y" style="height: 200px;">
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+            </div>
+
+            <p>
+                <code>.grid.grid--center</code>
+            </p>
+
+            <div class="grid grid--center bg-color--light padding--xt padding--y" style="height: 200px;">
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+            </div>
+
+            <p>
+                <code>.grid.grid--bottom</code>
+            </p>
+
+            <div class="grid grid--bottom bg-color--light padding--xt padding--y" style="height: 200px;">
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+                <div class="grid__column"><div class="bg-color--darker inverse padding--ty">Auto</div></div>
+            </div>
+
+            <p>Individual columns within a grid can also have their own alignment:</p>
+
             <div class="grid">
-                <div class="grid__column grid__column--8"><div class="panel"><code>grid__column--8</code></div></div>
-                <div class="grid__column"><div class="panel">1</div></div>
-                <div class="grid__column"><div class="panel">1</div></div>
-                <div class="grid__column"><div class="panel">1</div></div>
-                <div class="grid__column"><div class="panel">1</div></div>
+                <div class="grid__column">
+                    <code>.grid__column.grid__column--top</code>
+                </div>
+                <div class="grid__column">
+                    <code>.grid__column.grid__column--center</code>
+                </div>
+                <div class="grid__column">
+                    <code>.grid__column.grid__column--bottom</code>
+                </div>
+            </div>
+
+            <div class="grid bg-color--light padding--xt padding--y" style="height: 200px;">
+                <div class="grid__column grid__column--top"><div class="bg-color--darker inverse padding--ty">One of Three Columns</div></div>
+                <div class="grid__column grid__column--center"><div class="bg-color--darker inverse padding--ty">One of Three Columns</div></div>
+                <div class="grid__column grid__column--bottom"><div class="bg-color--darker inverse padding--ty">One of Three Columns</div></div>
             </div>
 
             <hr>
@@ -104,7 +243,6 @@
                     <a href="#" class="button button--clear">Clear Button</a>
                 </div>
             </div>
-            
 
             <h4>Colors</h4>
 
@@ -146,6 +284,33 @@
 
             <hr>
 
+            <h3>Items</h3>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="items items--divided">
+                        <div class="item">
+                            <div class="item__feature">
+                                <img src="http://lorempixel.com/150/150/">
+                            </div>
+                            <div class="item__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__feature">
+                                <img src="http://lorempixel.com/150/150/">
+                            </div>
+                            <div class="item__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
             <h3>Cards</h3>
 
             <div class="grid">
@@ -170,5 +335,11 @@
             <hr>
             
         </div> <!-- /.container -->
+
+        <section class="bg-color--primary inverse padding--lg">
+            <div class="container">
+                Created by Aaron Mazade.
+            </div>
+        </section>
 	</body>
 </html>
