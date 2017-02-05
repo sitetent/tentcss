@@ -3,12 +3,16 @@
 
 .title,
 .subtitle {
-    &--1 { @include rem(font-size, $size-xxxl); }
-    &--2 { @include rem(font-size, $size-xxl); }
-    &--3 { @include rem(font-size, $size-xl); }
-    &--4 { @include rem(font-size, $size-lg); }
-    &--5 { @include rem(font-size, $size-xm); }
-    &--6 { @include rem(font-size, $size-md); }
+    &--ty { @include rem(font-size, $size-ty); }
+    &--xt { @include rem(font-size, $size-xt); }
+    &--sm { @include rem(font-size, $size-sm); }
+    &--xs { @include rem(font-size, $size-xs); }
+    &--md { @include rem(font-size, $size-md); }
+    &--xm { @include rem(font-size, $size-xm); }
+    &--lg { @include rem(font-size, $size-lg); }
+    &--xl { @include rem(font-size, $size-xl); }
+    &--xxl { @include rem(font-size, $size-xxl); }
+    &--xxxl { @include rem(font-size, $size-xxl); }
 }
 
 .title {
@@ -29,9 +33,19 @@
 
 .title:not(:last-child),
 .subtitle:not(:last-child) {
-  margin-bottom: rem($space-xs);
+  margin-bottom: rem($space-sm);
 }
 
-.title + .subtitle {
-  margin-top: rem($space-sm);
+// Title Set
+// --------------------------------------------------
+
+.title-set {
+    .title {
+        margin: 0;
+    }
+
+    .title + .subtitle {
+        margin-top: 0;
+    }
 }
+
