@@ -1,0 +1,15 @@
+// Inverse
+// --------------------------------------------------
+
+.inverse {
+    color: $base-color-inverse;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color:$heading-color-inverse;
+    }
+}
