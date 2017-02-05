@@ -3,8 +3,8 @@
 
 .container {
 	margin: 0 auto;
-	max-width: 112.0rem;
-	padding: 0 2.0rem;
+	max-width: rem(1200px);
+	padding: 0;
 	position: relative;
 	width: 100%;
 }
@@ -56,6 +56,21 @@
 
 	&--baseline {
 		align-items: baseline;
+	}
+
+	&--justify {
+
+		&--center {
+			justify-content: center;
+		}
+
+		&--start {
+			justify-content: flex-start;
+		}
+
+		&--end {
+			justify-content: flex-end;
+		}
 	}
 }
 
