@@ -3,6 +3,10 @@
 
 p {
 	@include rem(margin, 0 0 $space-xs);
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 h1,
@@ -16,6 +20,10 @@ h6 {
 	display: block;
 	line-height: $heading-line-height;
 	@include rem(margin, 0 0 $space-sm);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 h1 { @include rem(font-size, $size-xxl); }
