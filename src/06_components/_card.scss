@@ -1,13 +1,14 @@
 // Cards
 // --------------------------------------------------
 
-$card\margin: rem($space-xt) !default;
+$card-margin: rem($space-xt) !default;
 $card-border: 1px solid $color-light !default;
 $card-radius: 0 !default;
 $card-bg: $color-lightest !default;
 $card-color: $base-color !default;
 
 $card-content-padding: $space-xt !default; 
+
 
 .card {
     display: flex;
