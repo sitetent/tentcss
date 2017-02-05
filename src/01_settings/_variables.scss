@@ -1,20 +1,21 @@
 // Colors
 // --------------------------------------------------
 
-$color-primary:    #F87060 !default;
-$color-secondary:  #B3A394 !default;
-$color-tertiary:   #CDD7D6 !default;
+$color-primary:    #0074D9 !default;
+$color-secondary:  #3D9970 !default;
+$color-tertiary:   #FF4136 !default;
 
-$color-lightest:   	    #FFFFFF !default;
-$color-lighter:    		darken($color-lightest, 10%) !default;
-$color-light:      		darken($color-lightest, 25%) !default;
-$color-medium:     		darken($color-lightest, 35%) !default;
-$color-dark:       		darken($color-lightest, 60%) !default;
-$color-darker:     		darken($color-lightest, 75%) !default;
-$color-darkest:    		darken($color-lightest, 87%) !default;
+$color-lightest:   	  #FFFFFF !default;
+$color-lighter:    		#F0F0F0 !default;
+$color-light:      		#DDDDDD !default;
+$color-medium:     		#AAAAAA !default;
+$color-dark:       		#606060 !default;
+$color-darker:     		#444444 !default;
+$color-darkest:    		#111111 !default;
 
 // Base Colors
 $base-color: $color-darker !default;
+$base-color-inverse: $color-lighter !default;
 $base-color-bg: $color-lightest !default;
 
 // Link Colors
@@ -34,6 +35,7 @@ $base-line-height: 1.6 !default;
 // --------------------------------------------------
 
 $heading-color: $base-color !default;
+$heading-color-inverse: $color-lighter !default;
 $heading-line-height: 1.25 !default;
 
 // Sizes
@@ -69,6 +71,20 @@ $space-lg: ($space-base * 7) !default;
 $space-xl: ($space-base * 8) !default;
 $space-xxl: ($space-base * 9) !default;
 $space-xxxl: ($space-base * 10) !default;
+
+// Padding
+// --------------------------------------------------
+
+$padding-ty: $space-ty !default;
+$padding-xt: $space-xt !default;
+$padding-sm: $space-sm !default;
+$padding-xs: $space-xs !default;
+$padding-md: $space-md !default;
+$padding-xm: $space-xm !default;
+$padding-lg: $space-lg !default;
+$padding-xl: $space-xl !default;
+$padding-xxl: $space-xxl !default;
+$padding-xxxl: $space-xxxl !default;
 
 // Scaling
 // --------------------------------------------------
