@@ -1,0 +1,26 @@
+// Space
+// --------------------------------------------------
+
+.padding {
+
+    &--ty { padding: rem($padding-ty); }
+    &--xt { padding: rem($padding-xt); }
+    &--sm { padding: rem($padding-sm); }
+    &--xs { padding: rem($padding-xs); }
+    &--md { padding: rem($padding-md); }
+    &--xm { padding: rem($padding-xm); }
+    &--lg { padding: rem($padding-lg); }
+    &--xl { padding: rem($padding-xl); }
+    &--xxl { padding: rem($padding-xxl); }
+    &--xxxl { padding: rem($padding-xxxl); }
+    
+    &--y {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &--x {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
