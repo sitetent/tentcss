@@ -52,14 +52,8 @@ $item-content-padding: $space-xt !default;
         border: none;
         border-radius: 0;
     }
-}
 
-.items {
-    > .item:first-child {
-        margin-top: 0;
-    }
-
-    > .item > .item__feature + .item__content {
+    .item__feature + .item__content {
         min-width: 0;
         width: auto;
         display: block;
@@ -68,6 +62,12 @@ $item-content-padding: $space-xt !default;
         -ms-grid-row-align: top;
         align-self: top;
         padding-left: 1.5em;
+    }
+}
+
+.items {
+    > .item:first-child {
+        margin-top: 0;
     }
 
     &.items--divided > .item {
