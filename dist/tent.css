@@ -131,7 +131,7 @@ code {
   font-family: "Lucida Console", Courier, monospace;
   font-size: inherit;
   color: #0074D9;
-  background-color: #F0F0F0;
+  background-color: #F2F2F2;
   padding: 0.2rem 0.4rem;
 }
 
@@ -485,8 +485,8 @@ input[type='submit'] {
   margin-bottom: 0.8rem;
   padding: 0.8rem 3.2rem;
   border-radius: 0;
-  border: 2px solid #606060;
-  background-color: #606060;
+  border: 2px solid #6E6E6E;
+  background-color: #6E6E6E;
   color: #FFFFFF;
   text-decoration: none;
   transition: all 1s ease;
@@ -587,8 +587,8 @@ input.button--tertiary[type='submit']:active {
 
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   color: #FFFFFF;
-  background-color: #474747;
-  border-color: #202020;
+  background-color: #555555;
+  border-color: #2e2e2e;
 }
 
 .button--filled.button--primary {
@@ -611,13 +611,13 @@ input.button--tertiary[type='submit']:active {
 
 .button--outlined {
   background-color: transparent;
-  color: #606060;
+  color: #6E6E6E;
 }
 
 .button--outlined:hover, .button--outlined:focus, .button--outlined:active {
   color: #FFFFFF;
-  background-color: #474747;
-  border-color: #202020;
+  background-color: #555555;
+  border-color: #2e2e2e;
 }
 
 .button--outlined.button--primary {
@@ -638,12 +638,12 @@ input.button--tertiary[type='submit']:active {
 .button--clear {
   border-color: transparent;
   background-color: transparent;
-  color: #606060;
+  color: #6E6E6E;
 }
 
 .button--clear:hover, .button--clear:focus, .button--clear:active {
-  color: #606060;
-  border-bottom: 2px solid #606060;
+  color: #6E6E6E;
+  border-bottom: 2px solid #6E6E6E;
 }
 
 .item {
@@ -686,11 +686,10 @@ input.button--tertiary[type='submit']:active {
 .item .item__feature + .item__content {
   min-width: 0;
   width: auto;
-  display: block;
+  display: flex;
   margin-left: 0;
-  -ms-grid-row-align: top;
-  align-self: top;
-  padding-left: 1.5em;
+  align-self: center;
+  padding-left: 1.6rem;
 }
 
 .items > .item:first-child {
@@ -700,7 +699,7 @@ input.button--tertiary[type='submit']:active {
 .items.items--divided > .item {
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   margin: 0;
-  padding: 1em 0;
+  padding: 1.6rem 0;
 }
 
 .items.items--divided > .item:first-child {
@@ -713,7 +712,7 @@ input.button--tertiary[type='submit']:active {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.6rem;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #E0E0E0;
   border-radius: 0;
   background: #FFFFFF;
   overflow: hidden;
@@ -722,6 +721,38 @@ input.button--tertiary[type='submit']:active {
 
 .card > :last-child {
   margin-bottom: 0;
+}
+
+.card--filled.card--primary {
+  background-color: #0074D9;
+}
+
+.card--filled.card--secondary {
+  background-color: #3D9970;
+}
+
+.card--filled.card--tertiary {
+  background-color: #FF4136;
+}
+
+.card--outlined {
+  border: 1px solid transparent;
+}
+
+.card--outlined.card--primary {
+  border-color: #0074D9;
+}
+
+.card--outlined.card--secondary {
+  border-color: #3D9970;
+}
+
+.card--outlined.card--tertiary {
+  border-color: #FF4136;
+}
+
+.card--clear {
+  border: 0;
 }
 
 .card__content {
@@ -770,7 +801,7 @@ input.button--tertiary[type='submit']:active {
 }
 
 .inverse {
-  color: #F0F0F0;
+  color: #F2F2F2;
 }
 
 .inverse h1,
@@ -779,7 +810,7 @@ input.button--tertiary[type='submit']:active {
 .inverse h4,
 .inverse h5,
 .inverse h6 {
-  color: #F0F0F0;
+  color: #F2F2F2;
 }
 
 .color--primary {
@@ -795,11 +826,11 @@ input.button--tertiary[type='submit']:active {
 }
 
 .color--light {
-  color: #DDDDDD;
+  color: #E0E0E0;
 }
 
 .color--lighter {
-  color: #F0F0F0;
+  color: #F2F2F2;
 }
 
 .color--lightest {
@@ -807,11 +838,11 @@ input.button--tertiary[type='submit']:active {
 }
 
 .color--medium {
-  color: #AAAAAA;
+  color: #A4A4A4;
 }
 
 .color--dark {
-  color: #606060;
+  color: #6E6E6E;
 }
 
 .color--darker {
@@ -835,11 +866,11 @@ input.button--tertiary[type='submit']:active {
 }
 
 .bg-color--light {
-  background-color: #DDDDDD;
+  background-color: #E0E0E0;
 }
 
 .bg-color--lighter {
-  background-color: #F0F0F0;
+  background-color: #F2F2F2;
 }
 
 .bg-color--lightest {
@@ -847,11 +878,11 @@ input.button--tertiary[type='submit']:active {
 }
 
 .bg-color--medium {
-  background-color: #AAAAAA;
+  background-color: #A4A4A4;
 }
 
 .bg-color--dark {
-  background-color: #606060;
+  background-color: #6E6E6E;
 }
 
 .bg-color--darker {

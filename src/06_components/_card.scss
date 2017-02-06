@@ -25,6 +25,24 @@ $card-content-padding: $space-xt !default;
     }
 }
 
+.card--filled {
+    &.card--primary { background-color: $color-primary; }
+    &.card--secondary { background-color: $color-secondary; }
+    &.card--tertiary { background-color: $color-tertiary; }
+}
+
+.card--outlined {
+    border: 1px solid transparent;
+    
+    &.card--primary { border-color: $color-primary; }
+    &.card--secondary { border-color: $color-secondary; }
+    &.card--tertiary { border-color: $color-tertiary; }
+}
+
+.card--clear {
+    border: 0;
+}
+
 .card__content {
     flex: 1 0 auto;
     padding: $card-content-padding;

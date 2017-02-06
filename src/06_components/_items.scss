@@ -56,12 +56,10 @@ $item-content-padding: $space-xt !default;
     .item__feature + .item__content {
         min-width: 0;
         width: auto;
-        display: block;
+        display: flex;
         margin-left: 0;
-        -ms-flex-item-align: top;
-        -ms-grid-row-align: top;
-        align-self: top;
-        padding-left: 1.5em;
+        align-self: center;
+        padding-left: rem($space-xt);
     }
 }
 
@@ -73,7 +71,7 @@ $item-content-padding: $space-xt !default;
     &.items--divided > .item {
         border-top: 1px solid rgba(34,36,38,.15);
         margin: 0;
-        padding: 1em 0;
+        padding: rem($space-xt) 0;
     }
 
     &.items--divided > .item:first-child {
