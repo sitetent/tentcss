@@ -8,6 +8,7 @@ $card-bg: $color-lightest !default;
 $card-color: $base-color !default;
 
 $card-content-padding: $space-xt !default; 
+$card-outlined-border: 2px solid transparent !default;
 
 
 .card {
@@ -24,9 +25,18 @@ $card-content-padding: $space-xt !default;
     margin-bottom: 0;
     }
 
-    &__feature {
+    &__image {
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    &__content {
+        flex: 1 0 auto;
+        padding: $card-content-padding;
+
+        & > :last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -37,22 +47,16 @@ $card-content-padding: $space-xt !default;
 }
 
 .card--outlined {
-    border: 1px solid transparent;
+    border: $card-outlined-border;
     
     &.card--primary { border-color: $color-primary; }
     &.card--secondary { border-color: $color-secondary; }
     &.card--tertiary { border-color: $color-tertiary; }
 }
 
-.card--clear {
+.card--clear,
+.card--feature {
     border: 0;
 }
 
-.card__content {
-    flex: 1 0 auto;
-    padding: $card-content-padding;
-
-    & > :last-child {
-        margin-bottom: 0;
-    }
-}
+.card--feature {}
