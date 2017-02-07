@@ -23,6 +23,11 @@ $card-content-padding: $space-xt !default;
     & > :last-child {
     margin-bottom: 0;
     }
+
+    &__feature {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .card--filled {
