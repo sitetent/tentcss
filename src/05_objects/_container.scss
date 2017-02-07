@@ -1,0 +1,16 @@
+// Container
+// --------------------------------------------------
+
+$container-width: 1200px !default;
+
+.container {
+	margin: 0 auto;
+	max-width: rem($container-width);
+	padding: 0;
+	position: relative;
+	width: 100%;
+
+    &--fluid {
+        max-width: 100%;
+    }
+}
