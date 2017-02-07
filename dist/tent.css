@@ -903,6 +903,30 @@ input.button--tertiary[type='submit']:active {
   background-color: #111111;
 }
 
+.display--block {
+  display: block;
+}
+
+.display--flex {
+  display: flex;
+}
+
+.display--inline-block {
+  display: inline-block;
+}
+
+.display--inline {
+  display: inline;
+}
+
+.display--none {
+  display: none;
+}
+
+.display--table {
+  display: table;
+}
+
 .padding--ty {
   padding: 0.8rem;
 }
