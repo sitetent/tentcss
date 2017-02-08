@@ -485,6 +485,12 @@ h6 {
   margin-top: 0;
 }
 
+.lead {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
 .button, button,
 input[type='button'],
 input[type='reset'],

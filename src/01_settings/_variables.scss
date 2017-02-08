@@ -31,13 +31,6 @@ $font-family-monospace: "Lucida Console",Courier,monospace;
 $border-radius: 6px !default;
 $base-line-height: 1.6 !default;
 
-// Headings
-// --------------------------------------------------
-
-$heading-color: $base-color !default;
-$heading-color-inverse: $color-lighter !default;
-$heading-line-height: 1.25 !default;
-
 // Sizes
 // Used for fonts
 // --------------------------------------------------
@@ -92,6 +85,7 @@ $padding-xxxl: $space-xxxl !default;
 $scale-ratio: 1.250 !default; // Major Third Ratio
 $scale-unit: 10px !default;
 
+
 // Container Sizes
 // --------------------------------------------------
 
@@ -120,6 +114,18 @@ $breakpoints: (
     xxl: rem(1400px),
     xxxl: rem(1600px)
 ) !default;
+
+// Headings
+// --------------------------------------------------
+
+$heading-color: $base-color !default;
+$heading-color-inverse: $color-lighter !default;
+$heading-line-height: 1.25 !default;
+
+$lead-font-size: $size-xm;
+$lead-font-weight: 300;
+$lead-line-height: 1.6;
+
 
 // Buttons
 // --------------------------------------------------
