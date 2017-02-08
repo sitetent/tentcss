@@ -6,11 +6,11 @@
 	display: flex;
 	padding: 0;
 	width: 100%;
-	@include rem(margin-left, -$space-xt );
-	@include rem(margin-right, -$space-xt );
+	@include rem(margin-left, -$space-xxs );
+	@include rem(margin-right, -$space-xxs );
 
 	&:not(:last-child) {
-		@include rem(margin-bottom, $space-xt);
+		@include rem(margin-bottom, $space-xxs);
 	}
 
 	&--wrap {

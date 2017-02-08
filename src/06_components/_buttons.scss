@@ -19,31 +19,29 @@ $button-outlined-border-width: 2px !default;
 
 // Button Sizes
 
-$button-padding-ty: rem($space-ty) rem($space-xt) !default;
-$button-padding-xt: rem($space-ty) rem($space-sm) !default;
-$button-padding-sm: rem($space-ty) rem($space-xs) !default;
-$button-padding-xs: rem($space-ty) rem($space-md) !default;
-$button-padding-md: rem($space-ty) rem($space-xm) !default;
-$button-padding-xm: rem($space-xt) rem($space-lg) !default;
-$button-padding-lg: rem($space-xt) rem($space-xl) !default;
-$button-padding-xl: rem($space-xt) rem($space-xxl) !default;
-$button-padding-xxl: rem($space-xt) rem($space-xxxl) !default;
-$button-padding-xxxl: rem($space-xt) rem($space-xxl) !default;
+$button-padding-xxxs: rem($space-xxxs) rem($space-xxs) !default;
+$button-padding-xxs: rem($space-xxxs) rem($space-sm) !default;
+$button-padding-xs: rem($space-xxxs) rem($space-xs) !default;
+$button-padding-sm: rem($space-xxxs) rem($space-md) !default;
+$button-padding-md: rem($space-xxxs) rem($space-md) !default;
+$button-padding-lg: rem($space-xxs) rem($space-xl) !default;
+$button-padding-xl: rem($space-xxs) rem($space-xxl) !default;
+$button-padding-xxl: rem($space-xxs) rem($space-xxxl) !default;
+$button-padding-xxxl: rem($space-xxs) rem($space-xxl) !default;
 
-$button-size-ty: rem($size-ty) !default;
-$button-size-xt: rem($size-ty) !default;
-$button-size-sm: rem($size-xt) !default;
-$button-size-xs: rem($size-xt) !default;
-$button-size-md: rem($size-sm) !default;
-$button-size-xm: rem($size-sm) !default;
-$button-size-lg: rem($size-xs) !default;
-$button-size-xl: rem($size-xs) !default;
-$button-size-xxl: rem($size-md) !default;
-$button-size-xxxl: rem($size-md) !default;
+$button-size-xxxs: rem($size-xxxs) !default;
+$button-size-xxs: rem($size-xxs) !default;
+$button-size-xs: rem($size-xs) !default;
+$button-size-sm: rem($size-sm) !default;
+$button-size-md: rem($size-md) !default;
+$button-size-lg: rem($size-lg) !default;
+$button-size-xl: rem($size-xl) !default;
+$button-size-xxl: rem($size-xxl) !default;
+$button-size-xxxl: rem($size-xxxl) !default;
 
 .button {
     display: inline-block;
-    margin-bottom: rem($space-ty);
+    margin-bottom: rem($space-xxxs);
     padding: $button-padding-sm;
     border-radius: $button-border-radius;
     border: $button-outlined-border-width solid $button-filled-bg;
@@ -86,41 +84,41 @@ $button-size-xxxl: rem($size-md) !default;
     }
 
     // Button Sizes
-    &--ty { 
-        padding: $button-padding-ty; 
-        font-size: $button-size-ty;
+    &--xxxs { 
+        padding: $button-padding-xxxs; 
+        font-size: $button-size-xxxs;
     }
-    &--xt { 
-        padding: $button-padding-xt; 
-        font-size: $button-size-xt;
+    &--xxs { 
+        padding: $button-padding-xxs; 
+        font-size: $button-size-xxxs;
+    }
+    &--xs { 
+        padding: $button-padding-xs; 
+        font-size: $button-size-xxs;
     }
     &--sm { 
         padding: $button-padding-sm;
-        font-size: $button-size-sm;
-    }
-    &--xs { 
-        padding: $button-padding-xs;
         font-size: $button-size-xs;
     }
     &--md { 
         padding: $button-padding-md;
-        font-size: $button-size-md;
+        font-size: $button-size-xs;
     }
     &--lg { 
         padding: $button-padding-lg;
-        font-size: $button-size-lg;
+        font-size: $button-size-md;
     }
     &--xl { 
         padding: $button-padding-xl;
-        font-size: $button-size-xl;
+        font-size: $button-size-lg;
     }
     &--xxl { 
         padding: $button-padding-xxl;
-        font-size: $button-size-xxl;
+        font-size: $button-size-lg;
     }
     &--xxxl { 
         padding: $button-padding-xxxl;
-        font-size: $button-size-xxxl;
+        font-size: $button-size-lg;
     }
 }
 

@@ -35,18 +35,18 @@ $base-line-height: 1.6 !default;
 // Used for fonts
 // --------------------------------------------------
 
-$size-base: 16px !default;
-
-$size-ty: 10px !default;
-$size-xt: 12px !default;
-$size-sm: 14px !default;
-$size-xs: 16px !default;
+$size-xxxs: 10px !default;
+$size-xxs: 12px !default;
+$size-xs: 14px !default;
+$size-sm: 16px !default;
 $size-md: 18px !default;
-$size-xm: 20px !default;
-$size-lg: 32px !default;
-$size-xl: 40px !default;
-$size-xxl: 48px !default;
-$size-xxxl: 64px !default;
+$size-lg: 20px !default;
+$size-xl: 32px !default;
+$size-xxl: 40px !default;
+$size-xxxl: 48px !default;
+
+$size-base: $size-sm !default;
+
 
 // Sizes
 // Used for padding and margins.
@@ -54,26 +54,24 @@ $size-xxxl: 64px !default;
 
 $space-base: 8px;
 
-$space-ty: ($space-base) !default;
-$space-xt: ($space-base * 2) !default;
-$space-sm: ($space-base * 3) !default;
-$space-xs: ($space-base * 4) !default;
+$space-xxxs: ($space-base) !default;
+$space-xxs: ($space-base * 2) !default;
+$space-xs: ($space-base * 3) !default;
+$space-sm: ($space-base * 4) !default;
 $space-md: ($space-base * 5) !default;
-$space-xm: ($space-base * 6) !default;
-$space-lg: ($space-base * 7) !default;
-$space-xl: ($space-base * 8) !default;
-$space-xxl: ($space-base * 9) !default;
-$space-xxxl: ($space-base * 10) !default;
+$space-lg: ($space-base * 6) !default;
+$space-xl: ($space-base * 7) !default;
+$space-xxl: ($space-base * 8) !default;
+$space-xxxl: ($space-base * 9) !default;
 
 // Padding
 // --------------------------------------------------
 
-$padding-ty: $space-ty !default;
-$padding-xt: $space-xt !default;
-$padding-sm: $space-sm !default;
+$padding-xxxs: $space-xxxs !default;
+$padding-xxs: $space-xxs !default;
 $padding-xs: $space-xs !default;
+$padding-sm: $space-sm !default;
 $padding-md: $space-md !default;
-$padding-xm: $space-xm !default;
 $padding-lg: $space-lg !default;
 $padding-xl: $space-xl !default;
 $padding-xxl: $space-xxl !default;
@@ -122,7 +120,7 @@ $heading-color: $base-color !default;
 $heading-color-inverse: $color-lighter !default;
 $heading-line-height: 1.25 !default;
 
-$lead-font-size: $size-xm;
+$lead-font-size: $size-md;
 $lead-font-weight: 300;
 $lead-line-height: 1.6;
 

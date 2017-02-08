@@ -4,16 +4,15 @@
 
 .title,
 .subtitle {
-    &--ty { @include rem(font-size, $size-ty); }
-    &--xt { @include rem(font-size, $size-xt); }
-    &--sm { @include rem(font-size, $size-sm); }
+    &--xxxs { @include rem(font-size, $size-xxxs); }
+    &--xxs { @include rem(font-size, $size-xxs); }
     &--xs { @include rem(font-size, $size-xs); }
+    &--sm { @include rem(font-size, $size-sm); }
     &--md { @include rem(font-size, $size-md); }
-    &--xm { @include rem(font-size, $size-xm); }
     &--lg { @include rem(font-size, $size-lg); }
     &--xl { @include rem(font-size, $size-xl); }
     &--xxl { @include rem(font-size, $size-xxl); }
-    &--xxxl { @include rem(font-size, $size-xxl); }
+    &--xxxl { @include rem(font-size, $size-xxxl); }
 }
 
 .title {

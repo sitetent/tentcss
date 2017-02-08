@@ -27,9 +27,9 @@ h6 {
 	}
 }
 
-h1 { @include rem(font-size, $size-xxl); }
-h2 { @include rem(font-size, $size-xl); }
-h3 { @include rem(font-size, $size-lg); }
-h4 { @include rem(font-size, $size-xm); }
+h1 { @include rem(font-size, $size-xxxl); }
+h2 { @include rem(font-size, $size-xxl); }
+h3 { @include rem(font-size, $size-xl); }
+h4 { @include rem(font-size, $size-lg); }
 h5 { @include rem(font-size, $size-md); }
-h6 { @include rem(font-size, $size-xs); }
+h6 { @include rem(font-size, $size-sm); }

@@ -2,13 +2,13 @@
 // Items
 // ==========================================================================
 
-$item-margin: rem($space-xt) !default;
+$item-margin: rem($space-xxs) !default;
 $item-border: 1px solid $color-light !default;
 $item-radius: 0 !default;
 $item-bg: $color-lightest !default;
 $item-color: $base-color !default;
 
-$item-content-padding: $space-xt !default; 
+$item-content-padding: $space-xxs !default; 
 
 .item {
     display: -webkit-box;
@@ -60,7 +60,7 @@ $item-content-padding: $space-xt !default;
         display: flex;
         margin-left: 0;
         align-self: center;
-        padding-left: rem($space-xt);
+        padding-left: rem($space-xxs);
     }
 }
 
@@ -72,7 +72,7 @@ $item-content-padding: $space-xt !default;
     &.items--divided > .item {
         border-top: 1px solid rgba(34,36,38,.15);
         margin: 0;
-        padding: rem($space-xt) 0;
+        padding: rem($space-xxs) 0;
     }
 
     &.items--divided > .item:first-child {

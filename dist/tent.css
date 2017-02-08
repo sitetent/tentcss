@@ -111,7 +111,7 @@ hr {
   border: none;
   display: block;
   height: 1px;
-  margin: 3.2rem 0;
+  margin: 2.4rem 0;
 }
 
 img {
@@ -136,8 +136,8 @@ code {
 }
 
 p {
-  margin: 0 0 32px;
-  margin: 0 0 3.2rem;
+  margin: 0 0 24px;
+  margin: 0 0 2.4rem;
 }
 
 p:last-child {
@@ -154,8 +154,8 @@ h6 {
   font-weight: inherit;
   display: block;
   line-height: 1.25;
-  margin: 0 0 24px;
-  margin: 0 0 2.4rem;
+  margin: 0 0 32px;
+  margin: 0 0 3.2rem;
 }
 
 h1:last-child,
@@ -395,26 +395,26 @@ h6 {
   }
 }
 
-.title--ty,
-.subtitle--ty {
+.title--xxxs,
+.subtitle--xxxs {
   font-size: 10px;
   font-size: 1rem;
 }
 
-.title--xt,
-.subtitle--xt {
+.title--xxs,
+.subtitle--xxs {
   font-size: 12px;
   font-size: 1.2rem;
 }
 
-.title--sm,
-.subtitle--sm {
+.title--xs,
+.subtitle--xs {
   font-size: 14px;
   font-size: 1.4rem;
 }
 
-.title--xs,
-.subtitle--xs {
+.title--sm,
+.subtitle--sm {
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -425,28 +425,22 @@ h6 {
   font-size: 1.8rem;
 }
 
-.title--xm,
-.subtitle--xm {
+.title--lg,
+.subtitle--lg {
   font-size: 20px;
   font-size: 2rem;
 }
 
-.title--lg,
-.subtitle--lg {
+.title--xl,
+.subtitle--xl {
   font-size: 32px;
   font-size: 3.2rem;
 }
 
-.title--xl,
-.subtitle--xl {
-  font-size: 40px;
-  font-size: 4rem;
-}
-
 .title--xxl,
 .subtitle--xxl {
-  font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 40px;
+  font-size: 4rem;
 }
 
 .title--xxxl,
@@ -470,7 +464,7 @@ h6 {
 
 .title:not(:last-child),
 .subtitle:not(:last-child) {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .title-set .title {
@@ -482,7 +476,7 @@ h6 {
 }
 
 .lead {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -493,7 +487,7 @@ input[type='reset'],
 input[type='submit'] {
   display: inline-block;
   margin-bottom: 0.8rem;
-  padding: 0.8rem 3.2rem;
+  padding: 0.8rem 4rem;
   border-radius: 0;
   border: 2px solid #6E6E6E;
   background-color: #6E6E6E;
@@ -550,49 +544,49 @@ input.button--tertiary[type='submit']:active {
   border-color: #b60a00;
 }
 
-.button--ty {
+.button--xxxs {
   padding: 0.8rem 1.6rem;
   font-size: 1rem;
 }
 
-.button--xt {
-  padding: 0.8rem 2.4rem;
+.button--xxs {
+  padding: 0.8rem 3.2rem;
   font-size: 1rem;
 }
 
-.button--sm {
-  padding: 0.8rem 3.2rem;
+.button--xs {
+  padding: 0.8rem 2.4rem;
   font-size: 1.2rem;
 }
 
-.button--xs {
+.button--sm {
   padding: 0.8rem 4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .button--md {
-  padding: 0.8rem 4.8rem;
+  padding: 0.8rem 4rem;
   font-size: 1.4rem;
 }
 
 .button--lg {
-  padding: 1.6rem 6.4rem;
-  font-size: 1.6rem;
+  padding: 1.6rem 5.6rem;
+  font-size: 1.8rem;
 }
 
 .button--xl {
-  padding: 1.6rem 7.2rem;
-  font-size: 1.6rem;
+  padding: 1.6rem 6.4rem;
+  font-size: 2rem;
 }
 
 .button--xxl {
-  padding: 1.6rem 8rem;
-  font-size: 1.8rem;
+  padding: 1.6rem 7.2rem;
+  font-size: 2rem;
 }
 
 .button--xxxl {
-  padding: 1.6rem 7.2rem;
-  font-size: 1.8rem;
+  padding: 1.6rem 6.4rem;
+  font-size: 2rem;
 }
 
 .button--filled:hover, .button--filled:focus, .button--filled:active {
@@ -933,19 +927,19 @@ input.button--tertiary[type='submit']:active {
   display: table;
 }
 
-.padding--ty {
+.padding--xxxs {
   padding: 0.8rem;
 }
 
-.padding--xt {
+.padding--xxs {
   padding: 1.6rem;
 }
 
-.padding--sm {
+.padding--xs {
   padding: 2.4rem;
 }
 
-.padding--xs {
+.padding--sm {
   padding: 3.2rem;
 }
 
@@ -953,24 +947,20 @@ input.button--tertiary[type='submit']:active {
   padding: 4rem;
 }
 
-.padding--xm {
+.padding--lg {
   padding: 4.8rem;
 }
 
-.padding--lg {
+.padding--xl {
   padding: 5.6rem;
 }
 
-.padding--xl {
+.padding--xxl {
   padding: 6.4rem;
 }
 
-.padding--xxl {
-  padding: 7.2rem;
-}
-
 .padding--xxxl {
-  padding: 8rem;
+  padding: 7.2rem;
 }
 
 .padding--y {
