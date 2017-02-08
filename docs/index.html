@@ -47,6 +47,16 @@
         </header>
 
         <div class="container padding--y padding--lg">
+            
+            <h3>About <span class="color--secondary">Tent CSS</span></h3>
+            <p class="lead">
+                Some projects just don't require the weight of larger frameworks. Larger frameworks do their best to cover nearly all common front-end development needs. While that approach can make development super easy it can greatly affect performance for the end user if it is not optimized properly. Many times you only use a small fraction of the features within these frameworks.
+            </p>
+
+            <p>
+                Sleeping in a tent certainly is not luxurious but it provides the basic shelter needed for survival. Drawing from outdoor survival principles, Tent CSS, is unglamorously simple and robust. 
+            </p>
+
             <div class="grid">
                 <div class="grid_column grid__column--3">
                     <div class="card card--feature height--full">
@@ -91,16 +101,6 @@
             </div>
 
             <hr>
-            <h3>About <span class="color--secondary">Tent CSS</span></h3>
-            <p class="lead">
-                Some projects just don't require the weight of larger frameworks. Larger frameworks do their best to cover nearly all common front-end development needs. While that approach can make development super easy it also affects performance for the end user. Many times you only use a small fraction of the features within these frameworks.
-            </p>
-
-            <p>
-                Sleeping in a tent certainly is not luxurious but it provides the basic shelter needed for survival. Drawing from outdoor survival principles, Tent CSS, is unglamorously simple and robust.
-            </p>
-
-            <hr>
 
             <span id="get-started"></span>
 
@@ -129,6 +129,38 @@
             <h3>Install Manually</h3>
 
             <a href="#" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
+            
+            <h2>How to include Tent CSS in your project</h2>
+
+            <p>The simpliest way to getting set up with Tent CSS is to include the CSS file in your project. For this method you should copy <code>/dist/tent.min.css</code> into the CSS folder of your project.</p>
+
+            <pre><code class="language-markup"><!--
+                <link href="css/tent.min.css" rel="stylesheet">
+
+                <link href="css/Your-Project.min.css" rel="stylesheet">
+            --></code></pre>
+
+            <h3>Building from source</h3>
+
+            <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
+
+            <p>Within your project Sass file you should import tent.scss</p>
+
+            <pre><code class="language-markup"><!--
+                @import "path-to/tentcss";
+            --></code></pre>
+
+             <div class="card card--outlined card--tertiary color--tertiary">
+                <div class="card__content type--italic">
+                    <p>To use the Sass source files, it is suggested that you have an understanding of how CSS preprocessors work and how to compile them.</p>
+                </div>
+            </div>
+
+            <h4>Overriding Sass variables</h4>
+
+            <p>A lot of Tent CSS features use Sass variables. This makes it very easy to override variables and thus you won't have to write more lines of code to modify these features.</p>
+
+            <p>Copy the variables from <code>src/01_settings/_variables.scss</code> to your project that you'd like to override.</p>
 
             <hr>
 
