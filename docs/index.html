@@ -104,6 +104,38 @@
 
             <span id="get-started"></span>
 
+            <h1>Getting Started</h1>
+
+            <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
+
+            <h3>Install with NPM</h3>
+
+            <pre><code class="language-markup"><!--
+                npm install tentcss
+            --></code></pre>
+            
+            <h3>Install with Yarn</h3>
+
+            <pre><code class="language-markup"><!--
+                yarn add tentcss
+            --></code></pre>
+
+            <h3>Install with Bower</h3>
+
+            <pre><code class="language-markup"><!--
+                bower install tentcss
+            --></code></pre>
+
+            <h3>Install Manually</h3>
+
+            <a href="#" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
+
+            <hr>
+
+            <h1>Documentation</h1>
+
+            <hr>
+
             <h2>Headings</h2>
 
             <div class="grid padding--y padding--sm">
@@ -138,6 +170,22 @@
                     <h6 class="subtitle subtitle--xs">Subtitles 6</h6>
                 </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <h1 class="title title--xxl">Title 1</h1>
+                <h2 class="title title--xl">Title 2</h2>
+                <h3 class="title title--lg">Title 3</h3>
+                <h4 class="title title--xm">Title 4</h4>
+                <h5 class="title title--md">Title 5</h5>
+                <h6 class="title title--xs">Title 6</h6>
+
+                <h1 class="subtitle subtitle--xxl">Subtitles 1</h1>
+                <h2 class="subtitle subtitle--xl">Subtitles 2</h2>
+                <h3 class="subtitle subtitle--lg">Subtitles 3</h3>
+                <h4 class="subtitle subtitle--xm">Subtitles 4</h4>
+                <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                <h6 class="subtitle subtitle--xs">Subtitles 6</h6>
+            --></code></pre>
 
             <h3>Title Set</h3>
 
@@ -356,6 +404,12 @@
                 </div>
             </div>
 
+            <pre><code class="language-markup"><!--
+                <a href="#" class="button button--filled">Filled Button</a>
+                <a href="#" class="button button--outlined">Outlined Button</a>
+                <a href="#" class="button button--clear">Clear Button</a>
+            --></code></pre>
+
             <h3>Colors</h3>
 
             <div class="grid">
@@ -373,6 +427,16 @@
                     <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
                 </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <a href="#" class="button button--filled button--primary">Primary Button</a>
+                <a href="#" class="button button--filled button--secondary">Secondary Button</a>
+                <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
+
+                <a href="#" class="button button--outlined button--primary">Primary Button</a>
+                <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
+                <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+            --></code></pre>
 
             <h3>Sizes</h3>
 
@@ -394,6 +458,18 @@
                 </div>
             </div>
 
+            <pre><code class="language-markup"><!--
+                <a href="#" class="button button--filled button--ty">Tiny</a>
+                <a href="#" class="button button--filled button--xt">Extra Tiny</a>
+                <a href="#" class="button button--filled button--sm">Small</a>
+                <a href="#" class="button button--filled button--xs">Extra Small</a>
+                <a href="#" class="button button--filled button--md">Medium</a>
+                <a href="#" class="button button--filled button--lg">Large</a>
+                <a href="#" class="button button--filled button--xl">Extra Large</a>
+                <a href="#" class="button button--filled button--xxl">2X Large</a>
+                <a href="#" class="button button--filled button--xxxl">3X Large</a>
+            --></code></pre>
+
             <hr>
 
             <h2>Items</h2>
@@ -411,6 +487,22 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <pre><code class="language-markup"><!--
+                <div class="item">
+                    <div class="item__feature">
+                        <img src="">
+                    </div>
+                    <div class="item__content">
+                        ...
+                    </div>
+                </div>
+            --></code></pre>
+
+            <div class="grid">
+                <div class="grid__column">
 
                     <h3>Default Set of Items</h3>
 
@@ -495,7 +587,6 @@
 
             <div class="grid">
                 <div class="grid__column">
-                    <code>.card</code>
                     <div class="card">
                         <div class="card__content">
                             A normal card panel.
@@ -503,7 +594,6 @@
                     </div>
                 </div>
                 <div class="grid__column">
-                    <code>.card.card--clear</code>
                     <div class="card card--clear">
                         <div class="card__content">
                             A clear card panel without a border.
@@ -511,6 +601,20 @@
                     </div>
                 </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <div class="card">
+                    <div class="card__content">
+                        ...
+                    </div>
+                </div>
+
+                <div class="card card--clear">
+                    <div class="card__content">
+                        ...
+                    </div>
+                </div>
+            --></code></pre>
 
             <h3>Feature Leader Cards</h3>
 
@@ -532,6 +636,15 @@
                     </div>
                 </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <div class="card">
+                    <img src="">
+                    <div class="card__content">
+                        ...
+                    </div>
+                </div>
+            --></code></pre>
 
             <h3>Feature / Service Blocks</h3>
 
@@ -579,6 +692,17 @@
                     </div>
                 </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <div class="card card--feature">
+                    <img src="" class="card__image">
+                    <div class="card__content type--center">
+                        <h3 class="card__title">Title</h3>
+                        <p>...</p>
+                        <a href="#" class="button button--outlined button--xt card__button type--center">Learn More</a>                            
+                    </div>
+                </div>
+            --></code></pre>
 
             <h3>Card Color Variations</h3>
 
@@ -806,5 +930,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Scripts -->
+        <script src="js/prism.js"></script>
 	</body>
 </html>
