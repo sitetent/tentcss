@@ -102,6 +102,26 @@
 
             <hr>
 
+            <h4>How do we determine what should be included in Tent CSS?</h4>
+
+            <p>
+                Our number one priority is to provide athestic enhancements for default markup elements. 
+                This means we place a strong emphasis on typography enhancements first and foremost. 
+                We stylize default elements and provide other class-based additions.
+            </p>
+
+            <p>
+                Secondly, we aspire for creating tools that can help quickly scaffold responsive layouts.
+            </p>
+
+            <p>
+                Thirdly, and the most subjective of inclusion are the modular components we have created.
+                Our goal is to only provide components that can be extended to form larger structures.
+                Frivolous components have been excluded.
+            </p>
+
+            <hr>
+
             <span id="get-started"></span>
 
             <h1>Getting Started</h1>
@@ -235,12 +255,25 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in libero, perferendis illum dolore rerum minima placeat magnam voluptas porro, blanditiis inventore voluptatibus. Quo magnam nemo quam natus assumenda ipsam consequuntur laudantium, minus eius eveniet temporibus totam accusantium laboriosam quod ratione corrupti id sapiente, labore nesciunt facere placeat cupiditate cum.
             </p>
-            
+
+            <h3>Leading Paragraphs</h3>
+
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
+            </p>
+
+            <pre><code class="language-markup"><!--
+                <p class="lead">...</p>
+            --></code></pre>
+
             <h2>Other Typography</h2>
 
             <div class="grid grid--justify--center">
                 <div class="grid__column">
                     <strong>Strong</strong> / <b>Bold</b>
+                </div>
+                <div class="grid__column">
+                    <span class="type--black">Black</span>
                 </div>
                 <div class="grid__column">
                     <em>Italic</em>
@@ -251,10 +284,15 @@
                 <div class="grid__column">
                     <span class="type--small">Small</span>
                 </div>
-                <div class="grid__column">
-                    <code>Code</code>
-                </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <span class="type--bold">...</span>
+                <span class="type--black">...</span>
+                <span class="type--italic">...</span>
+                <span class="type--caps">...</span>
+                <span class="type--small">...</span>
+            --></code></pre>
 
             <h2>Text Alignments</h2>
             
@@ -281,6 +319,12 @@
                     </div>
                 </div>
             </div>
+
+            <pre><code class="language-markup"><!--
+                <div class="type--left">...</div>
+                <div class="type--center">...</div>
+                <div class="type--right">...</div>
+            --></code></pre>
 
             <hr>
 
@@ -862,6 +906,14 @@
                 <div class="padding--xxxl">...</div>
             --></code></pre>
 
+            <p>
+                <code>.padding--y</code> neutralizes the left and right padding.
+            </p>
+
+            <p>
+                <code>.padding--x</code> neutralizes the top and bottom padding.
+            </p>
+
             <h3>Display Types</h3>
 
             <pre><code class="language-markup"><!--
@@ -875,7 +927,33 @@
 
             <h3>Text Colors</h3>
 
+            <pre><code class="language-markup"><!--
+                <span class="color--primary">...</span>
+                <span class="color--secondary">...</span>
+                <span class="color--tertiary">...</span>
+                <span class="color--light">...</span>
+                <span class="color--lighter">...</span>
+                <span class="color--lightest">...</span>
+                <span class="color--medium">...</span>
+                <span class="color--dark">...</span>
+                <span class="color--darker">...</span>
+                <span class="color--darkest">...</span>
+            --></code></pre>
+
             <h3>Background Colors</h3>
+
+            <pre><code class="language-markup"><!--
+                <div class="bg-color--primary">...</div>
+                <div class="bg-color--secondary">...</div>
+                <div class="bg-color--tertiary">...</div>
+                <div class="bg-color--light">...</div>
+                <div class="bg-color--lighter">...</div>
+                <div class="bg-color--lightest">...</div>
+                <div class="bg-color--medium">...</div>
+                <div class="bg-color--dark">...</div>
+                <div class="bg-color--darker">...</div>
+                <div class="bg-color--darkest">...</div>
+            --></code></pre>
             
         </div> <!-- /.container -->
 
