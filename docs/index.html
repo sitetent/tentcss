@@ -7,7 +7,7 @@
 		<link href="css/docs.css" rel="stylesheet">
 	</head>
 	<body class="demo">
-        <header class="masthead bg-color--darker">
+        <header class="masthead">
             
             <div class="container height--full">
 
@@ -45,930 +45,931 @@
                 </div>
             </div>
         </header>
+        <div class="mastcontent bg-color--lightest">  
+            <div class="container padding--y padding--lg">
+                
+                <h3>About <span class="color--secondary">Tent CSS</span></h3>
+                <p class="lead">
+                    Some projects just don't require the weight of larger frameworks. Larger frameworks do their best to cover nearly all common front-end development needs. While that approach can make development super easy it can greatly affect performance for the end user if it is not optimized properly. Many times you only use a small fraction of the features within these frameworks.
+                </p>
 
-        <div class="container padding--y padding--lg">
-            
-            <h3>About <span class="color--secondary">Tent CSS</span></h3>
-            <p class="lead">
-                Some projects just don't require the weight of larger frameworks. Larger frameworks do their best to cover nearly all common front-end development needs. While that approach can make development super easy it can greatly affect performance for the end user if it is not optimized properly. Many times you only use a small fraction of the features within these frameworks.
-            </p>
+                <p>
+                    Sleeping in a tent certainly is not luxurious but it provides the basic shelter needed for survival. Drawing from outdoor survival principles, Tent CSS, is unglamorously simple and robust. 
+                </p>
 
-            <p>
-                Sleeping in a tent certainly is not luxurious but it provides the basic shelter needed for survival. Drawing from outdoor survival principles, Tent CSS, is unglamorously simple and robust. 
-            </p>
-
-            <div class="grid">
-                <div class="grid_column grid__column--3">
-                    <div class="card card--feature height--full">
-                        <div class="card__content">
-                            <h3 class="card__title title title--xs">Featherweight</h3>
-                            <p>
-                                Taking a queue from backpack camping ~ we've only packed in what makes sense to carry. Tent CSS weighs in at less than <strong>5kb</strong> gzipped.
-                            </p>                           
+                <div class="grid">
+                    <div class="grid_column grid__column--3">
+                        <div class="card card--feature height--full">
+                            <div class="card__content">
+                                <h3 class="card__title title title--xs">Featherweight</h3>
+                                <p>
+                                    Taking a queue from backpack camping ~ we've only packed in what makes sense to carry. Tent CSS weighs in at less than <strong>5kb</strong> gzipped.
+                                </p>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column grid__column--3">
+                        <div class="card card--feature height--full">
+                            <div class="card__content">
+                                <h3 class="card__title title title--xs">Modular</h3>
+                                <p>
+                                    Includes only the necessary building blocks to create many of the most common UX design patterns. Unique components can easily be created by extending the framework.
+                                </p>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column grid__column--3">
+                        <div class="card card--feature height--full">
+                            <div class="card__content">
+                                <h3 class="card__title title title--xs">BEM</h3>
+                                <p>
+                                    Tent CSS is developed with the <a href="http://getbem.com/introduction/">BEM methodology</a> in mind. BEM promotes component modularity, code reusability, and a rock solid code structure.
+                                </p>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column grid__column--3">
+                        <div class="card card--feature height--full">
+                            <div class="card__content">
+                                <h3 class="card__title title title--xs">Modern Grid</h3>
+                                <p>
+                                    Tent CSS is a modern-browser framework with a modern grid system (<span class="type--italic">Flexbox</span>). If you desire a fallback for older browsers you can always extend Tent CSS to do so.
+                                </p>                         
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid_column grid__column--3">
-                    <div class="card card--feature height--full">
-                        <div class="card__content">
-                            <h3 class="card__title title title--xs">Modular</h3>
-                            <p>
-                                Includes only the necessary building blocks to create many of the most common UX design patterns. Unique components can easily be created by extending the framework.
-                            </p>                           
-                        </div>
+
+                <hr>
+
+                <h4>How do we determine what should be included in Tent CSS?</h4>
+
+                <p>
+                    Our number one priority is to provide athestic enhancements for default markup elements. 
+                    This means we place a strong emphasis on typography enhancements first and foremost. 
+                    We stylize default elements and provide other class-based additions.
+                </p>
+
+                <p>
+                    Secondly, we aspire for creating tools that can help quickly scaffold responsive layouts.
+                </p>
+
+                <p>
+                    Thirdly, and the most subjective of inclusion are the modular components we have created.
+                    Our goal is to only provide components that can be extended to form larger structures.
+                    Frivolous components have been excluded.
+                </p>
+
+                <hr>
+
+                <span id="get-started"></span>
+
+                <h1>Getting Started</h1>
+
+                <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
+
+                <h3>Install with NPM</h3>
+
+                <pre><code class="language-markup"><!--
+                    npm install tentcss
+                --></code></pre>
+                
+                <h3>Install with Yarn</h3>
+
+                <pre><code class="language-markup"><!--
+                    yarn add tentcss
+                --></code></pre>
+
+                <h3>Install with Bower</h3>
+
+                <pre><code class="language-markup"><!--
+                    bower install tentcss
+                --></code></pre>
+
+                <h3>Install Manually</h3>
+
+                <a href="#" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
+                
+                <h2>How to include Tent CSS in your project</h2>
+
+                <p>The simpliest way to getting set up with Tent CSS is to include the CSS file in your project. For this method you should copy <code>/dist/tent.min.css</code> into the CSS folder of your project.</p>
+
+                <pre><code class="language-markup"><!--
+                    <link href="css/tent.min.css" rel="stylesheet">
+
+                    <link href="css/Your-Project.min.css" rel="stylesheet">
+                --></code></pre>
+
+                <h3>Building from source</h3>
+
+                <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
+
+                <p>Within your project Sass file you should import tent.scss</p>
+
+                <pre><code class="language-markup"><!--
+                    @import "path-to/tentcss";
+                --></code></pre>
+
+                <div class="card card--outlined card--tertiary color--tertiary">
+                    <div class="card__content type--italic">
+                        <p>To use the Sass source files, it is suggested that you have an understanding of how CSS preprocessors work and how to compile them.</p>
                     </div>
                 </div>
-                <div class="grid_column grid__column--3">
-                    <div class="card card--feature height--full">
-                        <div class="card__content">
-                            <h3 class="card__title title title--xs">BEM</h3>
-                            <p>
-                                Tent CSS is developed with the <a href="http://getbem.com/introduction/">BEM methodology</a> in mind. BEM promotes component modularity, code reusability, and a rock solid code structure.
-                            </p>                         
-                        </div>
+
+                <h4>Overriding Sass variables</h4>
+
+                <p>A lot of Tent CSS features use Sass variables. This makes it very easy to override variables and thus you won't have to write more lines of code to modify these features.</p>
+
+                <p>Copy the variables from <code>src/01_settings/_variables.scss</code> to your project that you'd like to override.</p>
+
+                <hr>
+
+                <h1>Documentation</h1>
+
+                <hr>
+
+                <h2>Headings</h2>
+
+                <div class="grid padding--y padding--xxs">
+                    <div class="grid__column">
+                        <h3>Default Headings</h3>
+
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+                    <div class="grid__column">
+                        <h3>Title Headings</h3>
+
+                        <h1 class="title title--xxxl">Title 1</h1>
+                        <h2 class="title title--xxl">Title 2</h2>
+                        <h3 class="title title--xl">Title 3</h3>
+                        <h4 class="title title--lg">Title 4</h4>
+                        <h5 class="title title--md">Title 5</h5>
+                        <h6 class="title title--sm">Title 6</h6>
+                    </div>
+                    <div class="grid__column">
+                        <h3>Subtitle Headings</h3>
+                
+                        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
                     </div>
                 </div>
-                <div class="grid_column grid__column--3">
-                    <div class="card card--feature height--full">
-                        <div class="card__content">
-                            <h3 class="card__title title title--xs">Modern Grid</h3>
-                            <p>
-                                Tent CSS is a modern-browser framework with a modern grid system (<span class="type--italic">Flexbox</span>). If you desire a fallback for older browsers you can always extend Tent CSS to do so.
-                            </p>                         
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <hr>
-
-            <h4>How do we determine what should be included in Tent CSS?</h4>
-
-            <p>
-                Our number one priority is to provide athestic enhancements for default markup elements. 
-                This means we place a strong emphasis on typography enhancements first and foremost. 
-                We stylize default elements and provide other class-based additions.
-            </p>
-
-            <p>
-                Secondly, we aspire for creating tools that can help quickly scaffold responsive layouts.
-            </p>
-
-            <p>
-                Thirdly, and the most subjective of inclusion are the modular components we have created.
-                Our goal is to only provide components that can be extended to form larger structures.
-                Frivolous components have been excluded.
-            </p>
-
-            <hr>
-
-            <span id="get-started"></span>
-
-            <h1>Getting Started</h1>
-
-            <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
-
-            <h3>Install with NPM</h3>
-
-            <pre><code class="language-markup"><!--
-                npm install tentcss
-            --></code></pre>
-            
-            <h3>Install with Yarn</h3>
-
-            <pre><code class="language-markup"><!--
-                yarn add tentcss
-            --></code></pre>
-
-            <h3>Install with Bower</h3>
-
-            <pre><code class="language-markup"><!--
-                bower install tentcss
-            --></code></pre>
-
-            <h3>Install Manually</h3>
-
-            <a href="#" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
-            
-            <h2>How to include Tent CSS in your project</h2>
-
-            <p>The simpliest way to getting set up with Tent CSS is to include the CSS file in your project. For this method you should copy <code>/dist/tent.min.css</code> into the CSS folder of your project.</p>
-
-            <pre><code class="language-markup"><!--
-                <link href="css/tent.min.css" rel="stylesheet">
-
-                <link href="css/Your-Project.min.css" rel="stylesheet">
-            --></code></pre>
-
-            <h3>Building from source</h3>
-
-            <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
-
-            <p>Within your project Sass file you should import tent.scss</p>
-
-            <pre><code class="language-markup"><!--
-                @import "path-to/tentcss";
-            --></code></pre>
-
-             <div class="card card--outlined card--tertiary color--tertiary">
-                <div class="card__content type--italic">
-                    <p>To use the Sass source files, it is suggested that you have an understanding of how CSS preprocessors work and how to compile them.</p>
-                </div>
-            </div>
-
-            <h4>Overriding Sass variables</h4>
-
-            <p>A lot of Tent CSS features use Sass variables. This makes it very easy to override variables and thus you won't have to write more lines of code to modify these features.</p>
-
-            <p>Copy the variables from <code>src/01_settings/_variables.scss</code> to your project that you'd like to override.</p>
-
-            <hr>
-
-            <h1>Documentation</h1>
-
-            <hr>
-
-            <h2>Headings</h2>
-
-            <div class="grid padding--y padding--xxs">
-                <div class="grid__column">
-                    <h3>Default Headings</h3>
-
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
-                </div>
-                <div class="grid__column">
-                    <h3>Title Headings</h3>
-
+                <pre><code class="language-markup"><!--
                     <h1 class="title title--xxxl">Title 1</h1>
                     <h2 class="title title--xxl">Title 2</h2>
                     <h3 class="title title--xl">Title 3</h3>
                     <h4 class="title title--lg">Title 4</h4>
                     <h5 class="title title--md">Title 5</h5>
                     <h6 class="title title--sm">Title 6</h6>
-                </div>
-                <div class="grid__column">
-                    <h3>Subtitle Headings</h3>
-            
+
                     <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
                     <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
                     <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
                     <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
                     <h5 class="subtitle subtitle--md">Subtitles 5</h5>
                     <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                --></code></pre>
+
+                <h3>Title Set</h3>
+
+                <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
+
+                <div class="title-set bg-color--primary inverse padding--xxs display--inline-block">
+                    <h1 class="title title--lg">A leading title</h1>
+                    <p class="subtitle subtitle--lg">A following subtitle.</p>
                 </div>
-            </div>
 
-            <pre><code class="language-markup"><!--
-                <h1 class="title title--xxxl">Title 1</h1>
-                <h2 class="title title--xxl">Title 2</h2>
-                <h3 class="title title--xl">Title 3</h3>
-                <h4 class="title title--lg">Title 4</h4>
-                <h5 class="title title--md">Title 5</h5>
-                <h6 class="title title--sm">Title 6</h6>
+                <hr>
 
-                <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
-                <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
-                <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
-                <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
-                <h5 class="subtitle subtitle--md">Subtitles 5</h5>
-                <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
-            --></code></pre>
+                <h2>Paragraphs</h2>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in libero, perferendis illum dolore rerum minima placeat magnam voluptas porro, blanditiis inventore voluptatibus. Quo magnam nemo quam natus assumenda ipsam consequuntur laudantium, minus eius eveniet temporibus totam accusantium laboriosam quod ratione corrupti id sapiente, labore nesciunt facere placeat cupiditate cum.
+                </p>
 
-            <h3>Title Set</h3>
+                <h3>Leading Paragraphs</h3>
 
-            <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
+                </p>
 
-            <div class="title-set bg-color--primary inverse padding--xxs display--inline-block">
-                <h1 class="title title--lg">A leading title</h1>
-                <p class="subtitle subtitle--lg">A following subtitle.</p>
-            </div>
+                <pre><code class="language-markup"><!--
+                    <p class="lead">...</p>
+                --></code></pre>
 
-            <hr>
+                <h2>Other Typography</h2>
 
-            <h2>Paragraphs</h2>
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in libero, perferendis illum dolore rerum minima placeat magnam voluptas porro, blanditiis inventore voluptatibus. Quo magnam nemo quam natus assumenda ipsam consequuntur laudantium, minus eius eveniet temporibus totam accusantium laboriosam quod ratione corrupti id sapiente, labore nesciunt facere placeat cupiditate cum.
-            </p>
-
-            <h3>Leading Paragraphs</h3>
-
-            <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
-            </p>
-
-            <pre><code class="language-markup"><!--
-                <p class="lead">...</p>
-            --></code></pre>
-
-            <h2>Other Typography</h2>
-
-            <div class="grid grid--justify--center">
-                <div class="grid__column">
-                    <strong>Strong</strong> / <b>Bold</b>
-                </div>
-                <div class="grid__column">
-                    <span class="type--black">Black</span>
-                </div>
-                <div class="grid__column">
-                    <em>Italic</em>
-                </div>
-                <div class="grid__column">
-                    <span class="type--caps">Caps</span>
-                </div>
-                <div class="grid__column">
-                    <span class="type--small">Small</span>
-                </div>
-            </div>
-
-            <pre><code class="language-markup"><!--
-                <span class="type--bold">...</span>
-                <span class="type--black">...</span>
-                <span class="type--italic">...</span>
-                <span class="type--caps">...</span>
-                <span class="type--small">...</span>
-            --></code></pre>
-
-            <h2>Text Alignments</h2>
-            
-            <div class="grid grid--justify--center">
-                <div class="grid__column">
-                    <div class="bg-color--lighter padding--xxs type--left">
-                        Text Left
+                <div class="grid grid--justify--center">
+                    <div class="grid__column">
+                        <strong>Strong</strong> / <b>Bold</b>
+                    </div>
+                    <div class="grid__column">
+                        <span class="type--black">Black</span>
+                    </div>
+                    <div class="grid__column">
+                        <em>Italic</em>
+                    </div>
+                    <div class="grid__column">
+                        <span class="type--caps">Caps</span>
+                    </div>
+                    <div class="grid__column">
+                        <span class="type--small">Small</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid grid--justify--center">
-                <div class="grid__column">
-                    <div class="bg-color--lighter padding--xxs type--center">
-                        Text Center
+                <pre><code class="language-markup"><!--
+                    <span class="type--bold">...</span>
+                    <span class="type--black">...</span>
+                    <span class="type--italic">...</span>
+                    <span class="type--caps">...</span>
+                    <span class="type--small">...</span>
+                --></code></pre>
+
+                <h2>Text Alignments</h2>
+                
+                <div class="grid grid--justify--center">
+                    <div class="grid__column">
+                        <div class="bg-color--lighter padding--xxs type--left">
+                            Text Left
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid grid--justify--center">
-                <div class="grid__column">
-                    <div class="bg-color--lighter padding--xxs type--right">
-                        Text Right
+                <div class="grid grid--justify--center">
+                    <div class="grid__column">
+                        <div class="bg-color--lighter padding--xxs type--center">
+                            Text Center
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <pre><code class="language-markup"><!--
-                <div class="type--left">...</div>
-                <div class="type--center">...</div>
-                <div class="type--right">...</div>
-            --></code></pre>
-
-            <hr>
-
-            <h2>Containers</h2>
-
-            <p>
-                These are large classed elements that can hold many other structures, and components. 
-                Consider containers the "wrappers" that make your content properly fit the window's width.
-            </p>
-
-            <p>
-                <code>.container</code>
-            </p>
-
-            <p>A full-width container:</p>
-
-            <p>
-                <code>.container.container--fluid</code>
-            </p>
-
-            <h2>Grid</h2>
-
-            <p>
-                <span class="color--secondary type--bold">Tent</span> uses a responsive full-width <code>.grid</code>. 
-            </p>
-
-            <div class="grid bg-color--light padding--xxxs padding--y">
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-            </div>
-            <div class="grid bg-color--light padding--xxxs padding--y">
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-            </div>
-            <div class="grid bg-color--light padding--xxxs padding--y">
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-            </div>
-
-            <div class="grid bg-color--light padding--xxxs padding--y">
-                <div class="grid__column grid__column--8">
-                    <div class="bg-color--darker inverse padding--xxxs">8</div>
+                <div class="grid grid--justify--center">
+                    <div class="grid__column">
+                        <div class="bg-color--lighter padding--xxs type--right">
+                            Text Right
+                        </div>
+                    </div>
                 </div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
-            </div>
 
-            <h3>Grid Horizontal Alignments</h3>
+                <pre><code class="language-markup"><!--
+                    <div class="type--left">...</div>
+                    <div class="type--center">...</div>
+                    <div class="type--right">...</div>
+                --></code></pre>
 
-            <p>
-                <code>.grid.grid--justify--start</code>
-            </p>
+                <hr>
 
-            <div class="grid grid--justify--start bg-color--light padding--xxs padding--y">
-                <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--xxxs">4</div></div>
-                <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-            </div>
+                <h2>Containers</h2>
 
-             <p>
-                <code>.grid.grid--justify--center</code>
-            </p>
+                <p>
+                    These are large classed elements that can hold many other structures, and components. 
+                    Consider containers the "wrappers" that make your content properly fit the window's width.
+                </p>
 
-            <div class="grid grid--justify--center bg-color--light padding--xxs padding--y">
-                <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--xxxs">4</div></div>
-                <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-            </div>
+                <p>
+                    <code>.container</code>
+                </p>
 
-            <p>
-                <code>.grid.grid--justify--end</code>
-            </p>
+                <p>A full-width container:</p>
 
-            <div class="grid grid--justify--end bg-color--light padding--xxs padding--y">
-                <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--xxxs">4</div></div>
-                <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
-            </div>
+                <p>
+                    <code>.container.container--fluid</code>
+                </p>
 
-            <h3>Grid Vertical Alignments</h3>
+                <h2>Grid</h2>
 
-            <p>
-                <code>.grid.grid--top</code>
-            </p>
+                <p>
+                    <span class="color--secondary type--bold">Tent</span> uses a responsive full-width <code>.grid</code>. 
+                </p>
 
-            <div class="grid grid--top bg-color--light padding--xxs padding--y" style="height: 200px;">
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-            </div>
-
-            <p>
-                <code>.grid.grid--center</code>
-            </p>
-
-            <div class="grid grid--center bg-color--light padding--xxs padding--y" style="height: 200px;">
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-            </div>
-
-            <p>
-                <code>.grid.grid--bottom</code>
-            </p>
-
-            <div class="grid grid--bottom bg-color--light padding--xxs padding--y" style="height: 200px;">
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-                <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
-            </div>
-
-            <p>Individual columns within a grid can also have their own alignment:</p>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <code>.grid__column.grid__column--top</code>
+                <div class="grid bg-color--light padding--xxxs padding--y">
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
                 </div>
-                <div class="grid__column">
-                    <code>.grid__column.grid__column--center</code>
+                <div class="grid bg-color--light padding--xxxs padding--y">
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
                 </div>
-                <div class="grid__column">
-                    <code>.grid__column.grid__column--bottom</code>
+                <div class="grid bg-color--light padding--xxxs padding--y">
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
                 </div>
-            </div>
 
-            <div class="grid bg-color--light padding--xxs padding--y" style="height: 200px;">
-                <div class="grid__column grid__column--top"><div class="bg-color--darker inverse padding--xxxs">One of Three Columns</div></div>
-                <div class="grid__column grid__column--center"><div class="bg-color--darker inverse padding--xxxs">One of Three Columns</div></div>
-                <div class="grid__column grid__column--bottom"><div class="bg-color--darker inverse padding--xxxs">One of Three Columns</div></div>
-            </div>
+                <div class="grid bg-color--light padding--xxxs padding--y">
+                    <div class="grid__column grid__column--8">
+                        <div class="bg-color--darker inverse padding--xxxs">8</div>
+                    </div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">1</div></div>
+                </div>
 
-            <hr>
+                <h3>Grid Horizontal Alignments</h3>
 
-            <h2>Buttons</h2>
+                <p>
+                    <code>.grid.grid--justify--start</code>
+                </p>
 
-            <h3>Types</h3>
-            
-            <div class="grid">
-                <div class="grid__column">
+                <div class="grid grid--justify--start bg-color--light padding--xxs padding--y">
+                    <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--xxxs">4</div></div>
+                    <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                </div>
+
+                <p>
+                    <code>.grid.grid--justify--center</code>
+                </p>
+
+                <div class="grid grid--justify--center bg-color--light padding--xxs padding--y">
+                    <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--xxxs">4</div></div>
+                    <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                </div>
+
+                <p>
+                    <code>.grid.grid--justify--end</code>
+                </p>
+
+                <div class="grid grid--justify--end bg-color--light padding--xxs padding--y">
+                    <div class="grid__column grid__column--4"><div class="bg-color--darker inverse padding--xxxs">4</div></div>
+                    <div class="grid__column grid__column--2"><div class="bg-color--darker inverse padding--xxxs">2</div></div>
+                </div>
+
+                <h3>Grid Vertical Alignments</h3>
+
+                <p>
+                    <code>.grid.grid--top</code>
+                </p>
+
+                <div class="grid grid--top bg-color--light padding--xxs padding--y" style="height: 200px;">
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                </div>
+
+                <p>
+                    <code>.grid.grid--center</code>
+                </p>
+
+                <div class="grid grid--center bg-color--light padding--xxs padding--y" style="height: 200px;">
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                </div>
+
+                <p>
+                    <code>.grid.grid--bottom</code>
+                </p>
+
+                <div class="grid grid--bottom bg-color--light padding--xxs padding--y" style="height: 200px;">
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                    <div class="grid__column"><div class="bg-color--darker inverse padding--xxxs">Auto</div></div>
+                </div>
+
+                <p>Individual columns within a grid can also have their own alignment:</p>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <code>.grid__column.grid__column--top</code>
+                    </div>
+                    <div class="grid__column">
+                        <code>.grid__column.grid__column--center</code>
+                    </div>
+                    <div class="grid__column">
+                        <code>.grid__column.grid__column--bottom</code>
+                    </div>
+                </div>
+
+                <div class="grid bg-color--light padding--xxs padding--y" style="height: 200px;">
+                    <div class="grid__column grid__column--top"><div class="bg-color--darker inverse padding--xxxs">One of Three Columns</div></div>
+                    <div class="grid__column grid__column--center"><div class="bg-color--darker inverse padding--xxxs">One of Three Columns</div></div>
+                    <div class="grid__column grid__column--bottom"><div class="bg-color--darker inverse padding--xxxs">One of Three Columns</div></div>
+                </div>
+
+                <hr>
+
+                <h2>Buttons</h2>
+
+                <h3>Types</h3>
+                
+                <div class="grid">
+                    <div class="grid__column">
+                        <a href="#" class="button button--filled">Filled Button</a>
+                        <a href="#" class="button button--outlined">Outlined Button</a>
+                        <a href="#" class="button button--clear">Clear Button</a>
+                    </div>
+                </div>
+
+                <pre><code class="language-markup"><!--
                     <a href="#" class="button button--filled">Filled Button</a>
                     <a href="#" class="button button--outlined">Outlined Button</a>
                     <a href="#" class="button button--clear">Clear Button</a>
+                --></code></pre>
+
+                <h3>Colors</h3>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <a href="#" class="button button--filled button--primary">Primary Button</a>
+                        <a href="#" class="button button--filled button--secondary">Secondary Button</a>
+                        <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
+                    </div>
                 </div>
-            </div>
 
-            <pre><code class="language-markup"><!--
-                <a href="#" class="button button--filled">Filled Button</a>
-                <a href="#" class="button button--outlined">Outlined Button</a>
-                <a href="#" class="button button--clear">Clear Button</a>
-            --></code></pre>
+                <div class="grid">
+                    <div class="grid__column">
+                        <a href="#" class="button button--outlined button--primary">Primary Button</a>
+                        <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
+                        <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+                    </div>
+                </div>
 
-            <h3>Colors</h3>
-
-            <div class="grid">
-                <div class="grid__column">
+                <pre><code class="language-markup"><!--
                     <a href="#" class="button button--filled button--primary">Primary Button</a>
                     <a href="#" class="button button--filled button--secondary">Secondary Button</a>
                     <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
-                </div>
-            </div>
 
-            <div class="grid">
-                <div class="grid__column">
                     <a href="#" class="button button--outlined button--primary">Primary Button</a>
                     <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
                     <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+                --></code></pre>
+
+                <h3>Sizes</h3>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <a href="#" class="button button--filled button--xxxs">3X Small</a>
+                        <a href="#" class="button button--filled button--xxs">2X Small</a>
+                        <a href="#" class="button button--filled button--xs">1X Small</a>
+                        <a href="#" class="button button--filled button--sm">Small</a>
+                        <a href="#" class="button button--filled button--md">Medium</a>
+                    </div>
                 </div>
-            </div>
+                <div class="grid">
+                    <div class="grid__column">
+                        <a href="#" class="button button--filled button--lg">Large</a>
+                        <a href="#" class="button button--filled button--xl">1X Large</a>
+                        <a href="#" class="button button--filled button--xxl">2X Large</a>
+                        <a href="#" class="button button--filled button--xxxl">3X Large</a>
+                    </div>
+                </div>
 
-            <pre><code class="language-markup"><!--
-                <a href="#" class="button button--filled button--primary">Primary Button</a>
-                <a href="#" class="button button--filled button--secondary">Secondary Button</a>
-                <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
-
-                <a href="#" class="button button--outlined button--primary">Primary Button</a>
-                <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
-                <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
-            --></code></pre>
-
-            <h3>Sizes</h3>
-
-            <div class="grid">
-                <div class="grid__column">
+                <pre><code class="language-markup"><!--
                     <a href="#" class="button button--filled button--xxxs">3X Small</a>
                     <a href="#" class="button button--filled button--xxs">2X Small</a>
                     <a href="#" class="button button--filled button--xs">1X Small</a>
                     <a href="#" class="button button--filled button--sm">Small</a>
                     <a href="#" class="button button--filled button--md">Medium</a>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="grid__column">
                     <a href="#" class="button button--filled button--lg">Large</a>
                     <a href="#" class="button button--filled button--xl">1X Large</a>
                     <a href="#" class="button button--filled button--xxl">2X Large</a>
                     <a href="#" class="button button--filled button--xxxl">3X Large</a>
-                </div>
-            </div>
+                --></code></pre>
 
-            <pre><code class="language-markup"><!--
-                <a href="#" class="button button--filled button--xxxs">3X Small</a>
-                <a href="#" class="button button--filled button--xxs">2X Small</a>
-                <a href="#" class="button button--filled button--xs">1X Small</a>
-                <a href="#" class="button button--filled button--sm">Small</a>
-                <a href="#" class="button button--filled button--md">Medium</a>
-                <a href="#" class="button button--filled button--lg">Large</a>
-                <a href="#" class="button button--filled button--xl">1X Large</a>
-                <a href="#" class="button button--filled button--xxl">2X Large</a>
-                <a href="#" class="button button--filled button--xxxl">3X Large</a>
-            --></code></pre>
+                <hr>
 
-            <hr>
+                <h2>Items</h2>
 
-            <h2>Items</h2>
-
-            <div class="grid">
-                <div class="grid__column">
-
-                    <h3>An Uncontained Item</h3>
-
-                    <div class="item">
-                        <div class="item__feature">
-                            <img src="http://placehold.it/150x150?text=Image">
-                        </div>
-                        <div class="item__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <pre><code class="language-markup"><!--
-                <div class="item">
-                    <div class="item__feature">
-                        <img src="">
-                    </div>
-                    <div class="item__content">
-                        ...
-                    </div>
-                </div>
-            --></code></pre>
-
-            <div class="grid">
-                <div class="grid__column">
-
-                    <h3>Default Set of Items</h3>
-
-                    <div class="items">
-                        <div class="item">
-                            <div class="item__feature">
-                                <img src="http://placehold.it/150x150?text=Image">
-                            </div>
-                            <div class="item__content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__feature">
-                                <img src="http://placehold.it/150x150?text=Image">
-                            </div>
-                            <div class="item__content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3>Divided Set of Items</h3>
-
-                    <div class="items items--divided">
-                        <div class="item">
-                            <div class="item__feature">
-                                <img src="http://placehold.it/150x150?text=Image">
-                            </div>
-                            <div class="item__content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__feature">
-                                <img src="http://placehold.it/150x150?text=Image">
-                            </div>
-                            <div class="item__content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3>Headline Items</h3>
-
-                    <div class="items items--divided">
-                        <div class="item">
-                            <div class="item__content">
-                                <p class="title title__md">A small headline</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__content">
-                                <p class="title title__md">Another small headline</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__content">
-                                <p class="title title__md">A small headline</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, laboriosam.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__content">
-                                <p class="title title__md">Another small headline</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div> <!-- /.grid__column -->
-            </div> <!-- /.grid -->
-
-
-            <hr>
-
-            <h2>Cards</h2>
-
-            <p>A card is a multi-use component that can be extended to make many other common components.</p>
-
-            <h4>Panel Cards</h4>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <div class="card">
-                        <div class="card__content">
-                            A normal card panel.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--clear">
-                        <div class="card__content">
-                            A clear card panel without a border.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <pre><code class="language-markup"><!--
-                <div class="card">
-                    <div class="card__content">
-                        ...
-                    </div>
-                </div>
-
-                <div class="card card--clear">
-                    <div class="card__content">
-                        ...
-                    </div>
-                </div>
-            --></code></pre>
-
-            <h3>Feature Leader Cards</h3>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <div class="card">
-                        <img src="http://placehold.it/600x300?text=Image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card">
-                        <img src="http://placehold.it/600x300?text=Image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <pre><code class="language-markup"><!--
-                <div class="card">
-                    <img src="">
-                    <div class="card__content">
-                        ...
-                    </div>
-                </div>
-            --></code></pre>
-
-            <h3>Feature / Service Blocks</h3>
-
-            <p>You can easily create the common UX pattern of feature / service blocks with cards.</p>
-
-            <div class="grid">
-                <div class="grid_column">
-                    <div class="card card--feature">
-                        <img src="http://placehold.it/100x100?text=Image" class="card__image">
-                        <div class="card__content type--center">
-                            <h3 class="card__title">Title 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
-                            <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_column">
-                    <div class="card card--feature">
-                        <img src="http://placehold.it/100x100?text=Image" class="card__image">
-                        <div class="card__content type--center">
-                            <h3 class="card__title">Title 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
-                            <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_column">
-                    <div class="card card--feature">
-                        <img src="http://placehold.it/100x100?text=Image" class="card__image">
-                        <div class="card__content type--center">
-                            <h3 class="card__title">Title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
-                            <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_column">
-                    <div class="card card--feature">
-                        <img src="http://placehold.it/100x100?text=Image" class="card__image">
-                        <div class="card__content type--center">
-                            <h3 class="card__title">Title 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
-                            <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <pre><code class="language-markup"><!--
-                <div class="card card--feature">
-                    <img src="" class="card__image">
-                    <div class="card__content type--center">
-                        <h3 class="card__title">Title</h3>
-                        <p>...</p>
-                        <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
-                    </div>
-                </div>
-            --></code></pre>
-
-            <h3>Card Color Variations</h3>
-
-            <p>By stringing a few classes together you can create other components like panels and alerts. Extend the cards by adjusting the padding and drop in your icons for that alert box feel. </p>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <div class="card card--filled card--primary inverse">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--filled card--secondary inverse">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--filled card--tertiary inverse">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <div class="card card--outlined card--primary color--primary">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--outlined card--secondary color--secondary">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--outlined card--tertiary color--tertiary">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <div class="card card--filled card--primary inverse">
-                        <img src="http://placehold.it/600x300?text=Image" class="card__image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--filled card--secondary inverse">
-                        <img src="http://placehold.it/600x300?text=Image" class="card__image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--filled card--tertiary inverse">
-                        <img src="http://placehold.it/600x300?text=Image" class="card__image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid">
-                <div class="grid__column">
-                    <div class="card card--outlined card--primary color--primary">
-                        <img src="http://placehold.it/600x300?text=Image" class="card__image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--outlined card--secondary color--secondary">
-                        <img src="http://placehold.it/600x300?text=Image" class="card__image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column">
-                    <div class="card card--outlined card--tertiary color--tertiary">
-                        <img src="http://placehold.it/600x300?text=Image" class="card__image">
-                        <div class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <h2>Utilities</h2>
-
-            <h3>Spacing</h3>
-
-            <h4>Padding</h4>
-
-            <pre><code class="language-markup"><!--
-                <div class="padding--xxxs">...</div>
-                <div class="padding--xxs">...</div>
-                <div class="padding--xs">...</div>
-                <div class="padding--sm">...</div>
-                <div class="padding--md">...</div>
-                <div class="padding--lg">...</div>
-                <div class="padding--xl">...</div>
-                <div class="padding--xxl">...</div>
-                <div class="padding--xxxl">...</div>
-            --></code></pre>
-
-            <p>
-                <code>.padding--y</code> neutralizes the left and right padding.
-            </p>
-
-            <p>
-                <code>.padding--x</code> neutralizes the top and bottom padding.
-            </p>
-
-            <h3>Display Types</h3>
-
-            <pre><code class="language-markup"><!--
-                <div class="display--block">...</div>
-                <div class="display--flex">...</div>
-                <div class="display--inline-block">...</div>
-                <div class="display--inline">...</div>
-                <div class="display--table">...</div>
-                <div class="display--none">...</div>
-            --></code></pre>
-
-            <h3>Text Colors</h3>
-
-            <pre><code class="language-markup"><!--
-                <span class="color--primary">...</span>
-                <span class="color--secondary">...</span>
-                <span class="color--tertiary">...</span>
-                <span class="color--light">...</span>
-                <span class="color--lighter">...</span>
-                <span class="color--lightest">...</span>
-                <span class="color--medium">...</span>
-                <span class="color--dark">...</span>
-                <span class="color--darker">...</span>
-                <span class="color--darkest">...</span>
-            --></code></pre>
-
-            <h3>Background Colors</h3>
-
-            <pre><code class="language-markup"><!--
-                <div class="bg-color--primary">...</div>
-                <div class="bg-color--secondary">...</div>
-                <div class="bg-color--tertiary">...</div>
-                <div class="bg-color--light">...</div>
-                <div class="bg-color--lighter">...</div>
-                <div class="bg-color--lightest">...</div>
-                <div class="bg-color--medium">...</div>
-                <div class="bg-color--dark">...</div>
-                <div class="bg-color--darker">...</div>
-                <div class="bg-color--darkest">...</div>
-            --></code></pre>
-            
-        </div> <!-- /.container -->
-
-        <section class="bg-color--dark inverse padding--lg">
-            <div class="container">
                 <div class="grid">
                     <div class="grid__column">
-                        <p>Created by Aaron Mazade. Built with Tent CSS.</p>
-                    </div>
-                    <div class="grid__column">
-                        
+
+                        <h3>An Uncontained Item</h3>
+
+                        <div class="item">
+                            <div class="item__feature">
+                                <img src="http://placehold.it/150x150?text=Image">
+                            </div>
+                            <div class="item__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+
+                <pre><code class="language-markup"><!--
+                    <div class="item">
+                        <div class="item__feature">
+                            <img src="">
+                        </div>
+                        <div class="item__content">
+                            ...
+                        </div>
+                    </div>
+                --></code></pre>
+
+                <div class="grid">
+                    <div class="grid__column">
+
+                        <h3>Default Set of Items</h3>
+
+                        <div class="items">
+                            <div class="item">
+                                <div class="item__feature">
+                                    <img src="http://placehold.it/150x150?text=Image">
+                                </div>
+                                <div class="item__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__feature">
+                                    <img src="http://placehold.it/150x150?text=Image">
+                                </div>
+                                <div class="item__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Divided Set of Items</h3>
+
+                        <div class="items items--divided">
+                            <div class="item">
+                                <div class="item__feature">
+                                    <img src="http://placehold.it/150x150?text=Image">
+                                </div>
+                                <div class="item__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__feature">
+                                    <img src="http://placehold.it/150x150?text=Image">
+                                </div>
+                                <div class="item__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellat doloribus quibusdam eligendi deleniti et qui error, maxime vitae recusandae!                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Headline Items</h3>
+
+                        <div class="items items--divided">
+                            <div class="item">
+                                <div class="item__content">
+                                    <p class="title title__md">A small headline</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__content">
+                                    <p class="title title__md">Another small headline</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__content">
+                                    <p class="title title__md">A small headline</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, laboriosam.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__content">
+                                    <p class="title title__md">Another small headline</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div> <!-- /.grid__column -->
+                </div> <!-- /.grid -->
+
+
+                <hr>
+
+                <h2>Cards</h2>
+
+                <p>A card is a multi-use component that can be extended to make many other common components.</p>
+
+                <h4>Panel Cards</h4>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="card">
+                            <div class="card__content">
+                                A normal card panel.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--clear">
+                            <div class="card__content">
+                                A clear card panel without a border.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre><code class="language-markup"><!--
+                    <div class="card">
+                        <div class="card__content">
+                            ...
+                        </div>
+                    </div>
+
+                    <div class="card card--clear">
+                        <div class="card__content">
+                            ...
+                        </div>
+                    </div>
+                --></code></pre>
+
+                <h3>Feature Leader Cards</h3>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="card">
+                            <img src="http://placehold.it/600x300?text=Image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card">
+                            <img src="http://placehold.it/600x300?text=Image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre><code class="language-markup"><!--
+                    <div class="card">
+                        <img src="">
+                        <div class="card__content">
+                            ...
+                        </div>
+                    </div>
+                --></code></pre>
+
+                <h3>Feature / Service Blocks</h3>
+
+                <p>You can easily create the common UX pattern of feature / service blocks with cards.</p>
+
+                <div class="grid">
+                    <div class="grid_column">
+                        <div class="card card--feature">
+                            <img src="http://placehold.it/100x100?text=Image" class="card__image">
+                            <div class="card__content type--center">
+                                <h3 class="card__title">Title 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column">
+                        <div class="card card--feature">
+                            <img src="http://placehold.it/100x100?text=Image" class="card__image">
+                            <div class="card__content type--center">
+                                <h3 class="card__title">Title 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column">
+                        <div class="card card--feature">
+                            <img src="http://placehold.it/100x100?text=Image" class="card__image">
+                            <div class="card__content type--center">
+                                <h3 class="card__title">Title 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column">
+                        <div class="card card--feature">
+                            <img src="http://placehold.it/100x100?text=Image" class="card__image">
+                            <div class="card__content type--center">
+                                <h3 class="card__title">Title 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre><code class="language-markup"><!--
+                    <div class="card card--feature">
+                        <img src="" class="card__image">
+                        <div class="card__content type--center">
+                            <h3 class="card__title">Title</h3>
+                            <p>...</p>
+                            <a href="#" class="button button--outlined button--xxs card__button type--center">Learn More</a>                            
+                        </div>
+                    </div>
+                --></code></pre>
+
+                <h3>Card Color Variations</h3>
+
+                <p>By stringing a few classes together you can create other components like panels and alerts. Extend the cards by adjusting the padding and drop in your icons for that alert box feel. </p>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="card card--filled card--primary inverse">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--filled card--secondary inverse">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--filled card--tertiary inverse">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="card card--outlined card--primary color--primary">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--outlined card--secondary color--secondary">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--outlined card--tertiary color--tertiary">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="card card--filled card--primary inverse">
+                            <img src="http://placehold.it/600x300?text=Image" class="card__image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--filled card--secondary inverse">
+                            <img src="http://placehold.it/600x300?text=Image" class="card__image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--filled card--tertiary inverse">
+                            <img src="http://placehold.it/600x300?text=Image" class="card__image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="card card--outlined card--primary color--primary">
+                            <img src="http://placehold.it/600x300?text=Image" class="card__image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--outlined card--secondary color--secondary">
+                            <img src="http://placehold.it/600x300?text=Image" class="card__image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <div class="card card--outlined card--tertiary color--tertiary">
+                            <img src="http://placehold.it/600x300?text=Image" class="card__image">
+                            <div class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>Utilities</h2>
+
+                <h3>Spacing</h3>
+
+                <h4>Padding</h4>
+
+                <pre><code class="language-markup"><!--
+                    <div class="padding--xxxs">...</div>
+                    <div class="padding--xxs">...</div>
+                    <div class="padding--xs">...</div>
+                    <div class="padding--sm">...</div>
+                    <div class="padding--md">...</div>
+                    <div class="padding--lg">...</div>
+                    <div class="padding--xl">...</div>
+                    <div class="padding--xxl">...</div>
+                    <div class="padding--xxxl">...</div>
+                --></code></pre>
+
+                <p>
+                    <code>.padding--y</code> neutralizes the left and right padding.
+                </p>
+
+                <p>
+                    <code>.padding--x</code> neutralizes the top and bottom padding.
+                </p>
+
+                <h3>Display Types</h3>
+
+                <pre><code class="language-markup"><!--
+                    <div class="display--block">...</div>
+                    <div class="display--flex">...</div>
+                    <div class="display--inline-block">...</div>
+                    <div class="display--inline">...</div>
+                    <div class="display--table">...</div>
+                    <div class="display--none">...</div>
+                --></code></pre>
+
+                <h3>Text Colors</h3>
+
+                <pre><code class="language-markup"><!--
+                    <span class="color--primary">...</span>
+                    <span class="color--secondary">...</span>
+                    <span class="color--tertiary">...</span>
+                    <span class="color--light">...</span>
+                    <span class="color--lighter">...</span>
+                    <span class="color--lightest">...</span>
+                    <span class="color--medium">...</span>
+                    <span class="color--dark">...</span>
+                    <span class="color--darker">...</span>
+                    <span class="color--darkest">...</span>
+                --></code></pre>
+
+                <h3>Background Colors</h3>
+
+                <pre><code class="language-markup"><!--
+                    <div class="bg-color--primary">...</div>
+                    <div class="bg-color--secondary">...</div>
+                    <div class="bg-color--tertiary">...</div>
+                    <div class="bg-color--light">...</div>
+                    <div class="bg-color--lighter">...</div>
+                    <div class="bg-color--lightest">...</div>
+                    <div class="bg-color--medium">...</div>
+                    <div class="bg-color--dark">...</div>
+                    <div class="bg-color--darker">...</div>
+                    <div class="bg-color--darkest">...</div>
+                --></code></pre>
+                
+            </div> <!-- /.container -->
+
+            <section class="bg-color--dark inverse padding--lg">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__column">
+                            <p>Created by Aaron Mazade. Built with Tent CSS.</p>
+                        </div>
+                        <div class="grid__column">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <!-- Scripts -->
         <script src="js/prism.js"></script>

@@ -1,10 +1,21 @@
 .masthead {
-    background-image: url('../img/wazehlrp98s-jamison-mcandie.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: fixed;
     height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.masthead::before {
+	content: ' ';
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	background: url('../img/wazehlrp98s-jamison-mcandie.jpg') no-repeat bottom center;
+	background-size: cover;
+	will-change: transform;
+	z-index: -1;
 }
 
 /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css&plugins=unescaped-markup+normalize-whitespace */
