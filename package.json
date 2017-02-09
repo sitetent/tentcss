@@ -28,6 +28,10 @@
   ],
   "author": "Aaron Mazade <ulinaaron@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ulinaaron/tentcss.git"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "browser-sync": "^2.14.0",
