@@ -11,7 +11,7 @@
     "sass:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
     "watch": "onchange src -- npm run build",
-    "serve": "browser-sync start --serveStatic 'docs' --files 'dist/*.css, docs/*.html' --server",
+    "serve": "browser-sync start --serveStatic 'docs' --files 'dist/*.css, *.html, public/**/*' --server",
     "dev": "parallelshell 'npm run serve' 'npm run watch'",
     "build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
   },
