@@ -33,7 +33,7 @@ $card-outlined-border: 2px solid transparent !default;
 
     &__content {
         flex: 1 0 auto;
-        padding: $card-content-padding;
+        padding: rem($card-content-padding);
 
         & > :last-child {
             margin-bottom: 0;
