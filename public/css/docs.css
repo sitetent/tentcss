@@ -18,6 +18,17 @@
 	z-index: -1;
 }
 
+.grid-example {
+	margin: 16px 0;
+}
+
+/* Example Grid */
+.grid-example .grid__column {
+	border: 1px solid #555;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+}
+
 /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css&plugins=unescaped-markup+normalize-whitespace */
 /**
  * Modified prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
