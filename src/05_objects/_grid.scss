@@ -2,6 +2,9 @@
 // Grid
 // ==========================================================================
 
+$grid-columns: 12 !default;
+$grid-gutter: $space-xxs !default;
+
 .grid {
 	display: flex;
 	padding: 0;
@@ -62,8 +65,8 @@
 	margin-left: 0;
 	max-width: 100%;
 	width: 100%;
-	padding-left: rem($space-xxs);
-	padding-right: rem($space-xxs);
+	padding-left: rem($grid-gutter);
+	padding-right: rem($grid-gutter);
 
 	// .column-* vertically aligns an individual .column
 	&--top {
