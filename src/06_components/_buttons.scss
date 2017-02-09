@@ -192,11 +192,3 @@ $button-size-xxxl: rem($size-xxxl) !default;
         border-bottom: 2px solid $button-clear-color;
     }
 }
-
-
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-    @extend .button;
-}
