@@ -213,23 +213,7 @@ h6 {
   display: flex;
   padding: 0;
   width: 100%;
-  margin-left: -16px;
-  margin-left: -1.6rem;
-  margin-right: -16px;
-  margin-right: -1.6rem;
-}
-
-.grid:not(:last-child) {
-  margin-bottom: 16px;
-  margin-bottom: 1.6rem;
-}
-
-.grid--wrap {
   flex-wrap: wrap;
-}
-
-.grid--no-padding {
-  padding: 0;
 }
 
 .grid--no-padding > .grid__column {
@@ -279,6 +263,8 @@ h6 {
   margin-left: 0;
   max-width: 100%;
   width: 100%;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 .grid__column--top {
@@ -390,12 +376,215 @@ h6 {
 }
 
 @media (min-width: 57.6rem) {
+  .grid__column--1--sm {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .grid__column--2--sm {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .grid__column--3--sm {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid__column--4--sm {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .grid__column--5--sm {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .grid__column--6--sm {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid__column--7--sm {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .grid__column--8--sm {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .grid__column--9--sm {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid__column--10--sm {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .grid__column--11--sm {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .grid__column--12--sm {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 76.8rem) {
+  .grid__column--1--md {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .grid__column--2--md {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .grid__column--3--md {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid__column--4--md {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .grid__column--5--md {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .grid__column--6--md {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid__column--7--md {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .grid__column--8--md {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .grid__column--9--md {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid__column--10--md {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .grid__column--11--md {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .grid__column--12--md {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 99.2rem) {
+  .grid__column--1--lg {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .grid__column--2--lg {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .grid__column--3--lg {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid__column--4--lg {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .grid__column--5--lg {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .grid__column--6--lg {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid__column--7--lg {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .grid__column--8--lg {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .grid__column--9--lg {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid__column--10--lg {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .grid__column--11--lg {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .grid__column--12--lg {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 120rem) {
+  .grid__column--1--xl {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .grid__column--2--xl {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .grid__column--3--xl {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid__column--4--xl {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .grid__column--5--xl {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .grid__column--6--xl {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid__column--7--xl {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .grid__column--8--xl {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .grid__column--9--xl {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid__column--10--xl {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .grid__column--11--xl {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .grid__column--12--xl {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 57.6rem) {
   .grid {
-    margin-left: -1.0rem;
-    width: calc(100% + 2.0rem);
+    width: 100%;
   }
   .grid__column {
-    padding: 0 1.0rem;
+    padding: 0 1.6rem;
   }
 }
 
@@ -485,10 +674,7 @@ h6 {
   line-height: 1.6;
 }
 
-.button, button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+.button {
   display: inline-block;
   margin-bottom: 0.8rem;
   padding: 0.8rem 4rem;
@@ -503,46 +689,19 @@ input[type='submit'] {
   font-size: inherit;
 }
 
-.button.button--primary:hover, button.button--primary:hover,
-input.button--primary[type='button']:hover,
-input.button--primary[type='reset']:hover,
-input.button--primary[type='submit']:hover, .button.button--primary:focus, button.button--primary:focus,
-input.button--primary[type='button']:focus,
-input.button--primary[type='reset']:focus,
-input.button--primary[type='submit']:focus, .button.button--primary:active, button.button--primary:active,
-input.button--primary[type='button']:active,
-input.button--primary[type='reset']:active,
-input.button--primary[type='submit']:active {
+.button.button--primary:hover, .button.button--primary:focus, .button.button--primary:active {
   color: #FFFFFF;
   background-color: #0059a6;
   border-color: #00305a;
 }
 
-.button.button--secondary:hover, button.button--secondary:hover,
-input.button--secondary[type='button']:hover,
-input.button--secondary[type='reset']:hover,
-input.button--secondary[type='submit']:hover, .button.button--secondary:focus, button.button--secondary:focus,
-input.button--secondary[type='button']:focus,
-input.button--secondary[type='reset']:focus,
-input.button--secondary[type='submit']:focus, .button.button--secondary:active, button.button--secondary:active,
-input.button--secondary[type='button']:active,
-input.button--secondary[type='reset']:active,
-input.button--secondary[type='submit']:active {
+.button.button--secondary:hover, .button.button--secondary:focus, .button.button--secondary:active {
   color: #FFFFFF;
   background-color: #2e7555;
   border-color: #193e2d;
 }
 
-.button.button--tertiary:hover, button.button--tertiary:hover,
-input.button--tertiary[type='button']:hover,
-input.button--tertiary[type='reset']:hover,
-input.button--tertiary[type='submit']:hover, .button.button--tertiary:focus, button.button--tertiary:focus,
-input.button--tertiary[type='button']:focus,
-input.button--tertiary[type='reset']:focus,
-input.button--tertiary[type='submit']:focus, .button.button--tertiary:active, button.button--tertiary:active,
-input.button--tertiary[type='button']:active,
-input.button--tertiary[type='reset']:active,
-input.button--tertiary[type='submit']:active {
+.button.button--tertiary:hover, .button.button--tertiary:focus, .button.button--tertiary:active {
   color: #FFFFFF;
   background-color: #ff1103;
   border-color: #b60a00;

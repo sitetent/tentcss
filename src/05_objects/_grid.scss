@@ -6,20 +6,9 @@
 	display: flex;
 	padding: 0;
 	width: 100%;
-	@include rem(margin-left, -$space-xxs );
-	@include rem(margin-right, -$space-xxs );
-
-	&:not(:last-child) {
-		@include rem(margin-bottom, $space-xxs);
-	}
-
-	&--wrap {
-		flex-wrap: wrap;
-	}
+	flex-wrap: wrap;
 
 	&--no-padding {
-		padding: 0;
-
 		& > .grid__column {
 			padding: 0;
 		}
@@ -73,6 +62,8 @@
 	margin-left: 0;
 	max-width: 100%;
 	width: 100%;
+	padding-left: rem($space-xxs);
+	padding-right: rem($space-xxs);
 
 	// .column-* vertically aligns an individual .column
 	&--top {
@@ -132,15 +123,54 @@
 			max-width: #{$factor};
 		}
 	}
+
+	@include breakpoint-min(sm) {
+		@for $i from 1 through $grid-columns {
+			$factor: 100% * ($i / $grid-columns);
+			&--#{$i}--sm {
+				flex: 0 0 #{$factor};
+				max-width: #{$factor};
+			}
+		}
+	}
+
+	@include breakpoint-min(md) {
+		@for $i from 1 through $grid-columns {
+			$factor: 100% * ($i / $grid-columns);
+			&--#{$i}--md {
+				flex: 0 0 #{$factor};
+				max-width: #{$factor};
+			}
+		}
+	}
+
+	@include breakpoint-min(lg) {
+		@for $i from 1 through $grid-columns {
+			$factor: 100% * ($i / $grid-columns);
+			&--#{$i}--lg {
+				flex: 0 0 #{$factor};
+				max-width: #{$factor};
+			}
+		}
+	}
+
+	@include breakpoint-min(xl) {
+		@for $i from 1 through $grid-columns {
+			$factor: 100% * ($i / $grid-columns);
+			&--#{$i}--xl {
+				flex: 0 0 #{$factor};
+				max-width: #{$factor};
+			}
+		}
+	}
 }
 
 // Larger than mobile screen
-@include breakpoint(sm) {
+@include breakpoint-min(sm) {
 	.grid {
-		margin-left: -1.0rem;
-		width: calc(100% + 2.0rem);
+		width: 100%;
 	}
 	.grid__column {
-		padding: 0 1.0rem;
+		padding: 0 rem($space-xxs)
 	}
 }
