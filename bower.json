@@ -1,0 +1,27 @@
+{
+  "name": "tent-css",
+  "description": "A CSS survival kit.",
+  "main": "package.json",
+  "authors": [
+    "Aaron Mazade <ulinaaron@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "flexbox",
+    "html",
+    "html5",
+    "scss",
+    "sass",
+    "responsive",
+    "framework"
+  ],
+  "homepage": "https://github.com/ulinaaron/tentcss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
