@@ -30,7 +30,7 @@
     "scss",
     "sass",
     "responsive",
-    "framework",
+    "framework"
   ],
   "devDependencies": {
     "autoprefixer": "^6.3.7",
