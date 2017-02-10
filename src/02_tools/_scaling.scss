@@ -1,7 +1,6 @@
 // Create REM values with PX fall back
 //
 // Generate a REM with PX fallback from 
-// $baseFontSize. Enter the desired size based
 // on pixels in numerical form. Supports shorthand.
 //
 // Forked from: http://codepen.io/thejameskyle/pen/JmBjc
@@ -20,7 +19,6 @@
 //    margin: 0 24px 0 12px;
 //    margin: 0 2.4rem 0 1.2rem;
 // ----------------------------------
-$baseFontSize: 10; // Based on HTML reset html { font-size: 62.5%; }
 
 @function parseInt($n) {
   @return $n / ($n * 0 + 1);
@@ -30,7 +28,7 @@ $baseFontSize: 10; // Based on HTML reset html { font-size: 62.5%; }
 	$px : (); 
 	$rem: ();
 	
-	$root: $baseFontSize;
+	$root: $scale-unit;
 	
 	@each $value in $values {
 		@if $value == 0 or $value == auto {
@@ -68,7 +66,7 @@ $baseFontSize: 10; // Based on HTML reset html { font-size: 62.5%; }
 }
 
 @function rem($value) {
-	$root: $baseFontSize;
+	$root: $scale-unit;
 	$val: parseInt($value);
 	$return: ();
 	

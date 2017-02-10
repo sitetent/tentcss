@@ -1,5 +1,12 @@
+// ==========================================================================
+// Tool Dependencies for Variables
+// ==========================================================================
+
+@import "../02_tools/scaling";
+
+// ==========================================================================
 // Colors
-// --------------------------------------------------
+// ==========================================================================
 
 $color-primary:    #0074D9 !default;
 $color-secondary:  #3D9970 !default;
@@ -21,8 +28,9 @@ $base-color-bg: $color-lightest !default;
 // Link Colors
 $link-color: $color-primary !default;
 
+// ==========================================================================
 // Common
-// --------------------------------------------------
+// ==========================================================================
 
 $font-family-primary: "Gill Sans", Helvetica, Arial, sans-serif;
 $font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,9 +39,10 @@ $font-family-monospace: "Lucida Console",Courier,monospace;
 $border-radius: 6px !default;
 $base-line-height: 1.6 !default;
 
-// Sizes
-// Used for fonts
-// --------------------------------------------------
+
+// ==========================================================================
+// Font Sizes
+// ==========================================================================
 
 $size-xxxs: 10px !default;
 $size-xxs: 12px !default;
@@ -48,9 +57,9 @@ $size-xxxl: 48px !default;
 $size-base: $size-sm !default;
 
 
-// Sizes
-// Used for padding and margins.
-// --------------------------------------------------
+// ==========================================================================
+// Space Sizes
+// ==========================================================================
 
 $space-base: 8px;
 
@@ -64,8 +73,10 @@ $space-xl: ($space-base * 7) !default;
 $space-xxl: ($space-base * 8) !default;
 $space-xxxl: ($space-base * 9) !default;
 
-// Padding
-// --------------------------------------------------
+
+// ==========================================================================
+// Padding Sizes
+// ==========================================================================
 
 $padding-xxxs: $space-xxxs !default;
 $padding-xxs: $space-xxs !default;
@@ -77,15 +88,17 @@ $padding-xl: $space-xl !default;
 $padding-xxl: $space-xxl !default;
 $padding-xxxl: $space-xxxl !default;
 
+// ==========================================================================
 // Scaling
-// --------------------------------------------------
+// ==========================================================================
 
 $scale-ratio: 1.250 !default; // Major Third Ratio
-$scale-unit: 10px !default;
+$scale-unit: 10 !default;
 
 
-// Container Sizes
-// --------------------------------------------------
+// ==========================================================================
+// Containers
+// ==========================================================================
 
 $container-max-widths: (
   sm: 540px,
@@ -94,14 +107,11 @@ $container-max-widths: (
   xl: 1140px
 ) !default;
 
-// Grid
-// --------------------------------------------------
+$container-width: 1200px !default;
 
-
-
-
-// Grid Breakpoints
-// --------------------------------------------------
+// ==========================================================================
+// Grid & Breakpoints
+// ==========================================================================
 
 $breakpoints: (
     xs: 0, 
@@ -113,8 +123,12 @@ $breakpoints: (
     xxxl: rem(1600px)
 ) !default;
 
+$grid-columns: 12 !default;
+$grid-gutter: $space-xxs !default;
+
+// ==========================================================================
 // Headings
-// --------------------------------------------------
+// ==========================================================================
 
 $heading-color: $base-color !default;
 $heading-color-inverse: $color-lighter !default;
@@ -125,6 +139,55 @@ $lead-font-weight: 300;
 $lead-line-height: 1.6;
 
 
+// ==========================================================================
 // Buttons
-// --------------------------------------------------
+// ==========================================================================
 
+$button-filled-color: $base-color-bg !default;
+$button-filled-bg: $color-dark !default;
+$button-outlined-color: $color-dark !default;
+$button-clear-color: $color-dark !default;
+
+$button-primary-color: $color-lightest !default;
+$button-primary-bg: $color-primary !default;
+$button-secondary-color: $color-lightest !default;
+$button-secondary-bg: $color-secondary !default;
+$button-tertiary-color: $color-lightest !default;
+$button-tertiary-bg: $color-tertiary !default;
+
+$button-border-radius: 0 !default;
+$button-outlined-border-width: 2px !default;
+
+$button-padding-xxxs: rem($space-xxxs) rem($space-xxs) !default;
+$button-padding-xxs: rem($space-xxxs) rem($space-sm) !default;
+$button-padding-xs: rem($space-xxxs) rem($space-xs) !default;
+$button-padding-sm: rem($space-xxxs) rem($space-md) !default;
+$button-padding-md: rem($space-xxxs) rem($space-md) !default;
+$button-padding-lg: rem($space-xxs) rem($space-xl) !default;
+$button-padding-xl: rem($space-xxs) rem($space-xxl) !default;
+$button-padding-xxl: rem($space-xxs) rem($space-xxxl) !default;
+$button-padding-xxxl: rem($space-xxs) rem($space-xxl) !default;
+
+$button-size-xxxs: rem($size-xxxs) !default;
+$button-size-xxs: rem($size-xxs) !default;
+$button-size-xs: rem($size-xs) !default;
+$button-size-sm: rem($size-sm) !default;
+$button-size-md: rem($size-md) !default;
+$button-size-lg: rem($size-lg) !default;
+$button-size-xl: rem($size-xl) !default;
+$button-size-xxl: rem($size-xxl) !default;
+$button-size-xxxl: rem($size-xxxl) !default;
+
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+$card-margin: rem($space-xxs) !default;
+$card-border: 1px solid $color-light !default;
+$card-radius: 0 !default;
+$card-bg: $color-lightest !default;
+$card-color: $base-color !default;
+
+$card-content-padding: $space-xxs !default; 
+$card-outlined-border: 2px solid transparent !default;

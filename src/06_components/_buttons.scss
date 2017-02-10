@@ -2,43 +2,6 @@
 // Buttons
 // ==========================================================================
 
-$button-filled-color: $base-color-bg !default;
-$button-filled-bg: $color-dark !default;
-$button-outlined-color: $color-dark !default;
-$button-clear-color: $color-dark !default;
-
-$button-primary-color: $color-lightest !default;
-$button-primary-bg: $color-primary !default;
-$button-secondary-color: $color-lightest !default;
-$button-secondary-bg: $color-secondary !default;
-$button-tertiary-color: $color-lightest !default;
-$button-tertiary-bg: $color-tertiary !default;
-
-$button-border-radius: 0 !default;
-$button-outlined-border-width: 2px !default;
-
-// Button Sizes
-
-$button-padding-xxxs: rem($space-xxxs) rem($space-xxs) !default;
-$button-padding-xxs: rem($space-xxxs) rem($space-sm) !default;
-$button-padding-xs: rem($space-xxxs) rem($space-xs) !default;
-$button-padding-sm: rem($space-xxxs) rem($space-md) !default;
-$button-padding-md: rem($space-xxxs) rem($space-md) !default;
-$button-padding-lg: rem($space-xxs) rem($space-xl) !default;
-$button-padding-xl: rem($space-xxs) rem($space-xxl) !default;
-$button-padding-xxl: rem($space-xxs) rem($space-xxxl) !default;
-$button-padding-xxxl: rem($space-xxs) rem($space-xxl) !default;
-
-$button-size-xxxs: rem($size-xxxs) !default;
-$button-size-xxs: rem($size-xxs) !default;
-$button-size-xs: rem($size-xs) !default;
-$button-size-sm: rem($size-sm) !default;
-$button-size-md: rem($size-md) !default;
-$button-size-lg: rem($size-lg) !default;
-$button-size-xl: rem($size-xl) !default;
-$button-size-xxl: rem($size-xxl) !default;
-$button-size-xxxl: rem($size-xxxl) !default;
-
 .button {
     display: inline-block;
     margin-bottom: rem($space-xxxs);

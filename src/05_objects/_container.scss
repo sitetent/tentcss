@@ -2,8 +2,6 @@
 // Containers
 // ==========================================================================
 
-$container-width: 1200px !default;
-
 .container {
 	margin: 0 auto;
 	max-width: rem($container-width);
