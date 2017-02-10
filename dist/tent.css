@@ -202,10 +202,27 @@ h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 120rem;
   padding: 0;
   position: relative;
   width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 .container--fluid {
@@ -374,7 +391,7 @@ h6 {
   max-width: 100%;
 }
 
-@media (min-width: 57.6rem) {
+@media (min-width: 576px) {
   .grid__column--1--sm {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -425,7 +442,7 @@ h6 {
   }
 }
 
-@media (min-width: 76.8rem) {
+@media (min-width: 768px) {
   .grid__column--1--md {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -476,7 +493,7 @@ h6 {
   }
 }
 
-@media (min-width: 99.2rem) {
+@media (min-width: 992px) {
   .grid__column--1--lg {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -527,7 +544,7 @@ h6 {
   }
 }
 
-@media (min-width: 120rem) {
+@media (min-width: 1200px) {
   .grid__column--1--xl {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -578,7 +595,7 @@ h6 {
   }
 }
 
-@media (min-width: 57.6rem) {
+@media (min-width: 576px) {
   .grid {
     width: 100%;
   }
