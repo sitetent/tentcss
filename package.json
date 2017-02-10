@@ -2,6 +2,13 @@
   "name": "tent-css",
   "version": "1.0.0",
   "description": "A small encompassing CSS framrwork.",
+  "author": "Aaron Mazade <ulinaaron@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://ulinaaron.github.io/tentcss/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ulinaaron/tentcss.git"
+  },
   "main": "package.json",
   "scripts": {
     "css:gzipped": "",
@@ -17,21 +24,14 @@
   },
   "keywords": [
     "css",
-    "css3",
     "flexbox",
     "html",
     "html5",
     "scss",
     "sass",
-    "mobile",
-    "viewports"
+    "responsive",
+    "framework",
   ],
-  "author": "Aaron Mazade <ulinaaron@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ulinaaron/tentcss.git"
-  },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "browser-sync": "^2.14.0",
@@ -41,8 +41,5 @@
     "onchange": "^2.5.0",
     "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2"
-  },
-  "dependencies": {
-    "normalize.css": "^4.2.0"
   }
 }
