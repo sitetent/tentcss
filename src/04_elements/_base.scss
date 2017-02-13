@@ -2,16 +2,6 @@
 // Base
 // ==========================================================================
 
-
-// The base font-size is set at 62.5% for having the convenience
-// of sizing rems in a way that is similar to using px. 1.6rem=16px
-html {
-	font-size: 62.5%;
-	text-rendering: optimizeLegibility;
-	-moz-osx-font-smoothing: grayscale;
-  	-webkit-font-smoothing: antialiased;
-}
-
 // Default body properties
 body {
 	background-color: $base-color-bg;
