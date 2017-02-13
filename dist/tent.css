@@ -882,68 +882,6 @@ table td {
   border-bottom: 2px solid #6E6E6E;
 }
 
-.item {
-  display: flex;
-  margin: 1.6rem 0;
-  width: 100%;
-  min-height: 0;
-  background: 0 0;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  transition: box-shadow .1s ease;
-}
-
-.item__feature {
-  position: relative;
-  flex: 0 0 auto;
-  display: block;
-  float: none;
-  margin: 0;
-  padding: 0;
-  max-height: '';
-  -ms-grid-row-align: top;
-  align-self: top;
-}
-
-.item__content {
-  display: block;
-  flex: 1 1 auto;
-  background: 0 0;
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  font-size: 1em;
-  border: none;
-  border-radius: 0;
-}
-
-.item .item__feature + .item__content {
-  min-width: 0;
-  width: auto;
-  display: flex;
-  margin-left: 0;
-  align-self: center;
-  padding-left: 1.6rem;
-}
-
-.items > .item:first-child {
-  margin-top: 0;
-}
-
-.items.items--divided > .item {
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
-  margin: 0;
-  padding: 1.6rem 0;
-}
-
-.items.items--divided > .item:first-child {
-  border-top: none;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
 .card {
   display: flex;
   flex-direction: column;
