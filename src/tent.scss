@@ -2,31 +2,48 @@
 // Import Modules
 // ==========================================================================
 
+// scss-lint:disable StringQuotes
+@charset "utf-8";
+// scss-lint:enable StringQuotes
+
+// 01 - Settings
 @import "01_settings/variables";
+
+// 02 - Tools
 @import "02_tools/scaling";
 @import "02_tools/breakpoints";
 @import "02_tools/box-sizing";
 @import "02_tools/grid-calc";
 @import "02_tools/clearfix";
+
+// 03 - Generics
 @import "03_generic/normalize";
-@import "04_base/base";
-@import "04_base/divider";
-@import "04_base/image";
-@import "04_base/link";
-@import "04_base/code";
-@import "04_base/typography";
-@import "04_base/tables";
+
+// 04 - Elements
+@import "04_elements/base";
+@import "04_elements/divider";
+@import "04_elements/image";
+@import "04_elements/link";
+@import "04_elements/code";
+@import "04_elements/typography";
+@import "04_elements/tables";
+
+// 05 - Objects
 @import "05_objects/container";
 @import "05_objects/grid";
+@import "06_objects/lists";
+@import "06_objects/tables";
+
+// 06 - Components
 @import "06_components/headings";
 @import "06_components/buttons";
 @import "06_components/items";
 @import "06_components/card";
 @import "06_components/type";
-@import "06_components/tables";
-@import "06_components/lists";
-@import "06_components/inverse";
+
+// 07 - Utilities
 @import "07_utilities/colors";
+@import "07_utilities/inverse";
 @import "07_utilities/displays";
 @import "07_utilities/space";
 @import "07_utilities/height";
