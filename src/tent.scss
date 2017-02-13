@@ -31,15 +31,14 @@
 // 05 - Objects
 @import "05_objects/container";
 @import "05_objects/grid";
-@import "06_objects/lists";
-@import "06_objects/tables";
+@import "05_objects/lists";
+@import "05_objects/tables";
 
 // 06 - Components
 @import "06_components/headings";
 @import "06_components/buttons";
 @import "06_components/items";
 @import "06_components/card";
-@import "06_components/type";
 
 // 07 - Utilities
 @import "07_utilities/colors";
@@ -47,3 +46,4 @@
 @import "07_utilities/displays";
 @import "07_utilities/space";
 @import "07_utilities/height";
+@import "07_utilities/type";

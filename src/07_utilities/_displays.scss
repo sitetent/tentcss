@@ -1,12 +1,12 @@
 // ==========================================================================
-// Displays
+// Standalone Displays
 // ==========================================================================
 
 .display {
-    &--block { display: block }
-    &--flex { display: flex; }
-    &--inline-block { display: inline-block; }
-    &--inline { display: inline; }
-    &--none { display: none; }
-    &--table { display: table; }
+    &-block { display: block }
+    &-flex { display: flex; }
+    &-inline-block { display: inline-block; }
+    &-inline { display: inline; }
+    &-none { display: none; }
+    &-table { display: table; }
 }
