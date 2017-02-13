@@ -7,7 +7,7 @@
 // scss-lint:enable StringQuotes
 
 // 01 - Settings
-@import "01_settings/variables";
+@import "01_settings/variables.defaults";
 
 // 02 - Tools
 @import "02_tools/scaling";
@@ -17,7 +17,8 @@
 @import "02_tools/clearfix";
 
 // 03 - Generics
-@import "03_generic/normalize";
+// @import "03_generic/normalize";
+@import "03_generic/global";
 
 // 04 - Elements
 @import "04_elements/base";
