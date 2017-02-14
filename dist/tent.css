@@ -316,7 +316,7 @@ table td {
   flex-wrap: wrap;
 }
 
-.grid--no-padding > .grid__column {
+.grid--gutterless > .grid__column {
   padding: 0;
 }
 

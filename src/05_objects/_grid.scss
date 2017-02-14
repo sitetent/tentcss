@@ -8,7 +8,7 @@
 	width: 100%;
 	flex-wrap: wrap;
 
-	&--no-padding {
+	&--gutterless {
 		& > .grid__column {
 			padding: 0;
 		}
