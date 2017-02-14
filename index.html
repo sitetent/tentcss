@@ -68,7 +68,7 @@
                             Sleeping in a tent certainly is not luxurious but it provides the basic shelter needed for survival. Drawing from outdoor survival principles, Tent CSS, is unglamorously simple and robust. 
                         </p>
 
-                        <div class="grid grid--no-padding">
+                        <div class="grid grid--gutterless">
                             <div class="grid__column grid__column--12 grid__column--3--sm ">
                                 <div class="card card--feature height-full">
                                     <div class="card__content">
@@ -143,14 +143,20 @@
 
                         <h1>Documentation</h1>
 
+                        <hr>
+
                         <div class="grid">
                             <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">
 
-                                <span id="get-started"></span>
+                                <span class="anchor" id="get-started"></span>
+                                <span class="anchor" id="install"></span>
 
-                                <h2>Getting Started</h2>
+                                <div class="title-set">
+                                    <h1 class="title">Getting Started</h1>
+                                    <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
+                                </div>
 
-                                <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
+                                <hr>
 
                                 <h3>Install with NPM</h3>
 
@@ -184,6 +190,8 @@
                                     <link href="css/Your-Project.min.css" rel="stylesheet">
                                 --></code></pre>
 
+                                <span class="anchor" id="customize"></span>
+
                                 <h3>Building from source</h3>
 
                                 <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
@@ -209,70 +217,65 @@
                                 <!-- END Getting Started -->
 
                                 <hr>
-
-                                <h2>Headings</h2>
-
-                                <div class="grid padding-y padding-xxs">
-                                    <div class="grid__column--12 grid__column--4--md">
-                                        <h3>Default Headings</h3>
-
-                                        <h1>Heading 1</h1>
-                                        <h2>Heading 2</h2>
-                                        <h3>Heading 3</h3>
-                                        <h4>Heading 4</h4>
-                                        <h5>Heading 5</h5>
-                                        <h6>Heading 6</h6>
-                                    </div>
-                                    <div class="grid__column--12 grid__column--4--md">
-                                        <h3>Title Headings</h3>
-
-                                        <h1 class="title title--xxxl">Title 1</h1>
-                                        <h2 class="title title--xxl">Title 2</h2>
-                                        <h3 class="title title--xl">Title 3</h3>
-                                        <h4 class="title title--lg">Title 4</h4>
-                                        <h5 class="title title--md">Title 5</h5>
-                                        <h6 class="title title--sm">Title 6</h6>
-                                    </div>
-                                    <div class="grid__column--12 grid__column--4--md">
-                                        <h3>Subtitle Headings</h3>
                                 
-                                        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
-                                        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
-                                        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
-                                        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
-                                        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
-                                        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
-                                    </div>
+                                <span class="anchor" id="Settings"></span>
+
+                                <div class="title-set">
+                                    <h1 class="title">Settings</h1>
+                                    <p class="lead">These are variables set using Sass. Using the Sass preprocessor is required to modify these. </p>
                                 </div>
 
-                                <pre><code class="language-markup"><!--
-                                    <h1 class="title title--xxxl">Title 1</h1>
-                                    <h2 class="title title--xxl">Title 2</h2>
-                                    <h3 class="title title--xl">Title 3</h3>
-                                    <h4 class="title title--lg">Title 4</h4>
-                                    <h5 class="title title--md">Title 5</h5>
-                                    <h6 class="title title--sm">Title 6</h6>
+                                <hr>
 
-                                    <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
-                                    <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
-                                    <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
-                                    <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
-                                    <h5 class="subtitle subtitle--md">Subtitles 5</h5>
-                                    <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
-                                --></code></pre>
+                                ...
 
-                                <!-- END Headings -->
+                                <hr>
+                                
+                                <span class="anchor" id="tools"></span>
 
-                                <h3>Title Set</h3>
-
-                                <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
-
-                                <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
-                                    <h1 class="title title--lg">A leading title</h1>
-                                    <p class="subtitle subtitle--lg">A following subtitle.</p>
+                                <div class="title-set">
+                                    <h1 class="title">Tools</h1>
+                                    <p class="lead">These are Sass mixins and functions used thorought the framework.</p>
                                 </div>
 
-                                <!-- END Title Set -->
+                                <hr>
+
+                                ...
+
+                                <hr>
+                                
+                                <span class="anchor" id="generics"></span>
+
+                                <div class="title-set">
+                                    <h1 class="title">Generics</h1>
+                                    <p class="lead">This level contains the global reset for HTML markup.</p>
+                                </div>
+
+                                <hr>
+
+                                ...
+
+                                <hr>
+                                
+                                <span class="anchor" id="elements"></span>
+
+                                <div class="title-set">
+                                    <h1 class="title">Elements</h1>
+                                    <p class="lead">Elements are raw HTML elements. Tent CSS normalizes these elements with basic styles.</p>
+                                </div>
+
+                                <hr>
+
+                                <span class="anchor" id="elements-typography"></span>
+                                
+                                <h2>Typography</h2>
+
+                                <h1>Heading 1</h1>
+                                <h2>Heading 2</h2>
+                                <h3>Heading 3</h3>
+                                <h4>Heading 4</h4>
+                                <h5>Heading 5</h5>
+                                <h6>Heading 6</h6>
 
                                 <hr>
 
@@ -488,6 +491,23 @@
 
                                 <hr>
 
+                                <span class="anchor" id="objects"></span>
+
+                                <div class="title-set">
+                                    <h1 class="title">Objects</h1>
+                                    <p class="lead">These are class-based selectors that define undecorated design patterns. They are vital for layout and structure.</p>
+                                </div>
+
+                                <hr>
+
+                                <span class="anchor" id="objects-flex-object"></span>
+
+                                <h2>Flex Object</h2>
+
+                                <hr>
+
+                                <span class="anchor" id="objects-containers"></span>
+
                                 <h2>Containers</h2>
 
                                 <p>
@@ -504,6 +524,10 @@
                                 <p>
                                     <code>.container.container--fluid</code>
                                 </p>
+
+                                <hr>
+
+                                <span class="anchor" id="objects-grid"></span>
 
                                 <h2>Grid</h2>
 
@@ -626,15 +650,84 @@
 
                                 <hr>
 
+                                <span class="anchor" id="components"></span>
+
+                                <div class="title-set">
+                                    <h1 class="title">Components</h1>
+                                    <p class="lead">These are specific UI patterns that are designed to be as modular and extensible as possible.</p>
+                                </div>
+
+                                <hr>
+
+                                <span class="anchor" id="components-headings"></span>
+
+                                <h2>Headings</h2>
+
+                                <div class="grid grid--gutterless padding-y padding-xxs">
+                                    <div class="grid__column grid__column--12 grid__column--6--md">
+                                        <h3>Title Headings</h3>
+
+                                        <h1 class="title title--xxxl">Title 1</h1>
+                                        <h2 class="title title--xxl">Title 2</h2>
+                                        <h3 class="title title--xl">Title 3</h3>
+                                        <h4 class="title title--lg">Title 4</h4>
+                                        <h5 class="title title--md">Title 5</h5>
+                                        <h6 class="title title--sm">Title 6</h6>
+                                    </div>
+                                    <div class="grid__column grid__column--12 grid__column--6--md">
+                                        <h3>Subtitle Headings</h3>
+                                
+                                        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                                        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                                        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                                        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                                        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                                        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                                    </div>
+                                </div>
+
+                                <pre><code class="language-markup"><!--
+                                    <h1 class="title title--xxxl">Title 1</h1>
+                                    <h2 class="title title--xxl">Title 2</h2>
+                                    <h3 class="title title--xl">Title 3</h3>
+                                    <h4 class="title title--lg">Title 4</h4>
+                                    <h5 class="title title--md">Title 5</h5>
+                                    <h6 class="title title--sm">Title 6</h6>
+
+                                    <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                                    <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                                    <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                                    <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                                    <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                                    <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                                --></code></pre>
+
+                                <!-- END Headings -->
+
+                                <h3>Title Set</h3>
+
+                                <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
+
+                                <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
+                                    <h1 class="title title--lg">A leading title</h1>
+                                    <p class="subtitle subtitle--lg">A following subtitle.</p>
+                                </div>
+
+                                <!-- END Title Set -->
+
+                                <hr>
+
+                                <span class="anchor" id="components-buttons"></span>
+
                                 <h2>Buttons</h2>
 
                                 <h3>Types</h3>
                                 
                                 <div class="grid">
                                     <div class="grid__column">
-                                        <a href="#" class="button button--filled">Filled Button</a>
-                                        <a href="#" class="button button--outlined">Outlined Button</a>
-                                        <a href="#" class="button button--clear">Clear Button</a>
+                                        <a href="#" class="button button--filled button--xs">Filled Button</a>
+                                        <a href="#" class="button button--outlined button--xs">Outlined Button</a>
+                                        <a href="#" class="button button--clear button--xs">Clear Button</a>
                                     </div>
                                 </div>
 
@@ -648,17 +741,17 @@
 
                                 <div class="grid">
                                     <div class="grid__column">
-                                        <a href="#" class="button button--filled button--primary">Primary Button</a>
-                                        <a href="#" class="button button--filled button--secondary">Secondary Button</a>
-                                        <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
+                                        <a href="#" class="button button--filled button--primary button--xs">Primary Button</a>
+                                        <a href="#" class="button button--filled button--secondary button--xs">Secondary Button</a>
+                                        <a href="#" class="button button--filled button--tertiary button--xs">Tertiary Button</a>
                                     </div>
                                 </div>
 
                                 <div class="grid">
                                     <div class="grid__column">
-                                        <a href="#" class="button button--outlined button--primary">Primary Button</a>
-                                        <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
-                                        <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+                                        <a href="#" class="button button--outlined button--primary button--xs">Primary Button</a>
+                                        <a href="#" class="button button--outlined button--secondary button--xs">Secondary Button</a>
+                                        <a href="#" class="button button--outlined button--tertiary button--xs">Tertiary Button</a>
                                     </div>
                                 </div>
 
@@ -705,6 +798,8 @@
                                 --></code></pre>
 
                                 <hr>
+
+                                <span class="anchor" id="components-cards"></span>
 
                                 <h2>Cards</h2>
 
@@ -939,11 +1034,18 @@
 
                                 <hr>
 
-                                <h2>Utilities</h2>
+                                <span class="anchor" id="utilities"></span>
 
-                                <h3>Spacing</h3>
+                                <div class="title-set">
+                                    <h1 class="title">Utilities</h1>
+                                    <p class="lead">These are helper classes that can speed up your development and reduce CSS property declarations.</p>
+                                </div>
 
-                                <h4>Padding</h4>
+                                <hr>
+
+                                <span class="anchor" id="utilities-padding"></span>
+
+                                <h3>Padding</h3>
 
                                 <pre><code class="language-markup"><!--
                                     <div class="padding-xxxs">...</div>
@@ -965,6 +1067,8 @@
                                     <code>.padding-x</code> neutralizes the top and bottom padding.
                                 </p>
 
+                                <span class="anchor" id="utilities-display-types"></span>
+
                                 <h3>Display Types</h3>
 
                                 <pre><code class="language-markup"><!--
@@ -975,6 +1079,8 @@
                                     <div class="display-table">...</div>
                                     <div class="display-none">...</div>
                                 --></code></pre>
+
+                                <span class="anchor" id="utilities-colors"></span>
 
                                 <h3>Text Colors</h3>
 
@@ -991,6 +1097,8 @@
                                     <span class="color-darkest">...</span>
                                 --></code></pre>
 
+                                <span class="anchor" id="utilities-bg"></span>
+
                                 <h3>Background Colors</h3>
 
                                 <pre><code class="language-markup"><!--
@@ -1006,6 +1114,7 @@
                                     <div class="bg-color-darkest">...</div>
                                 --></code></pre>
                             </main> <!-- /.grid__column -->
+
                             <nav class="sidebar grid__column grid__column--12 grid__column--3--md flex-last flex-first--md">
                                 <div class="title-set">
                                     <h5 class="title">Getting Started</h5>
@@ -1028,10 +1137,10 @@
                                     <h5 class="title">Tools</h5>
 
                                     <ul>
-                                        <li><a href="#">Breakpoints</a></li>
-                                        <li><a href="#">Scales</a></li>
-                                        <li><a href="#">Clearfix</a></li>
-                                        <li><a href="#">Box Sizing</a></li>
+                                        <li><a href="#tools-breakpoints">Breakpoints</a></li>
+                                        <li><a href="#tools-scales">Scales</a></li>
+                                        <li><a href="#tools-clearfix">Clearfix</a></li>
+                                        <li><a href="#tools-box-sizing">Box Sizing</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
@@ -1039,7 +1148,7 @@
                                     <h5 class="title">Generics</h5>
 
                                     <ul>
-                                        <li><a href="#">Reset / Normalizing</a></li>
+                                        <li><a href="#generics-reset">Reset / Normalizing</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
@@ -1047,7 +1156,7 @@
                                     <h5 class="title">Elements</h5>
 
                                     <ul>
-                                        <li><a href="#">Typography</a></li>
+                                        <li><a href="#elements-typography">Typography</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
@@ -1055,11 +1164,11 @@
                                     <h5 class="title">Objects</h5>
 
                                     <ul>
-                                        <li><a href="#">Containers</a></li>                                        
-                                        <li><a href="#">Flex Object</a></li>
-                                        <li><a href="#">Grid</a></li>
-                                        <li><a href="#">Lists</a></li>
-                                        <li><a href="#">Tables</a></li>
+                                        <li><a href="#objects-containers">Containers</a></li>                                        
+                                        <li><a href="#objects-flex-object">Flex Object</a></li>
+                                        <li><a href="#objects-grid">Grid</a></li>
+                                        <li><a href="#objects-lists">Lists</a></li>
+                                        <li><a href="#objects-tables">Tables</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
@@ -1067,9 +1176,9 @@
                                     <h5 class="title">Components</h5>
 
                                     <ul>
-                                        <li><a href="#">Headings</a></li>
-                                        <li><a href="#">Buttons</a></li>
-                                        <li><a href="#">Cards</a></li>
+                                        <li><a href="#components-headings">Headings</a></li>
+                                        <li><a href="#components-buttons">Buttons</a></li>
+                                        <li><a href="#components-cards">Cards</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
@@ -1077,10 +1186,10 @@
                                     <h5 class="title">Utilities</h5>
 
                                     <ul>
-                                        <li><a href="#">Spacing</a></li>
-                                        <li><a href="#">Display Types</a></li>
-                                        <li><a href="#">Text Colors</a></li>
-                                        <li><a href="#">Background Colors</a></li>
+                                        <li><a href="#utilities-padding">Padding</a></li>
+                                        <li><a href="#utilities-display-types">Display Types</a></li>
+                                        <li><a href="#utilities-colors">Text Colors</a></li>
+                                        <li><a href="#utilities-bg">Background Colors</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                             </nav>
