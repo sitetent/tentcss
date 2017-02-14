@@ -500,9 +500,25 @@
 
                                 <hr>
 
-                                <span class="anchor" id="objects-flex-object"></span>
+                                <span class="anchor" id="objects-zones"></span>
 
-                                <h2>Flex Object</h2>
+                                <h2>Zones</h2>
+
+                                <p class="lead">
+                                    These are opinionated sections that help define unique areas of your webpage such as the master header, content, and footer.
+                                </p>
+
+                                <div class="card card--outlined card--primary color-primary">
+                                    <div class="card__content">
+                                        Due to the naming of these areas being so opinionated we have built in Sass variables for these to be modified if you so choose.
+                                    </div>
+                                </div>
+                                
+                                <pre><code class="language-markup"><!--
+                                    <header class="masthead"></header>
+                                    <main class="mastcontent"></main>
+                                    <footer class="mastfoot"></footer>
+                                --></code></pre>
 
                                 <hr>
 
@@ -510,9 +526,10 @@
 
                                 <h2>Containers</h2>
 
-                                <p>
-                                    These are large classed elements that can hold many other structures, and components. 
+                                <p class="lead">
+                                    These are large class selectors that can hold many other structures, and components. 
                                     Consider containers the "wrappers" that make your content properly fit the window's width.
+                                    They will auto-set margins on all screen sizes.
                                 </p>
 
                                 <p>
@@ -524,6 +541,12 @@
                                 <p>
                                     <code>.container.container--fluid</code>
                                 </p>
+
+                                <hr>
+
+                                <span class="anchor" id="objects-flex-object"></span>
+
+                                <h2>Flex Object</h2>
 
                                 <hr>
 
@@ -1154,11 +1177,13 @@
                                     <h5 class="title">Objects</h5>
 
                                     <ul>
+                                        <li><a href="#objects-zones">Zones</a></li>                                        
                                         <li><a href="#objects-containers">Containers</a></li>                                        
                                         <li><a href="#objects-flex-object">Flex Object</a></li>
                                         <li><a href="#objects-grid">Grid</a></li>
                                         <li><a href="#objects-lists">Lists</a></li>
                                         <li><a href="#objects-tables">Tables</a></li>
+                                        <li>Media Object <span class="type-small">[Coming Soon!]</span class="type-small"></li>                                                                                
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
