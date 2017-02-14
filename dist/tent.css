@@ -265,6 +265,50 @@ table td {
   max-width: 100%;
 }
 
+.flex-first {
+  order: -1;
+}
+
+.flex-last {
+  order: 1;
+}
+
+@media (min-width: 576px) {
+  .flex-first--sm {
+    order: -1;
+  }
+  .flex-last--sm {
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-first--md {
+    order: -1;
+  }
+  .flex-last--md {
+    order: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-first--lg {
+    order: -1;
+  }
+  .flex-last--lg {
+    order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-first--xl {
+    order: -1;
+  }
+  .flex-last--xl {
+    order: 1;
+  }
+}
+
 .grid {
   display: flex;
   padding: 0;
