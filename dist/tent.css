@@ -265,6 +265,47 @@ table td {
   max-width: 100%;
 }
 
+.flex, .grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex--stack, .grid--stack {
+  flex-direction: column;
+}
+
+.flex--top {
+  align-items: flex-start;
+}
+
+.flex--bottom {
+  align-items: flex-end;
+}
+
+.flex--center {
+  align-items: center;
+}
+
+.flex--stretch {
+  align-items: stretch;
+}
+
+.flex--baseline {
+  align-items: baseline;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--justify-start {
+  justify-content: flex-start;
+}
+
+.flex--justify-end {
+  justify-content: flex-end;
+}
+
 .flex-first {
   order: -1;
 }
@@ -310,16 +351,19 @@ table td {
 }
 
 .grid {
-  display: flex;
   padding: 0;
   width: 100%;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .grid--gutterless > .grid__column {
   padding: 0;
 }
 
+/* Grid Modifiers
+   Extends .flex
+   ========================================================================== */
 .grid--top {
   align-items: flex-start;
 }
@@ -340,18 +384,20 @@ table td {
   align-items: baseline;
 }
 
-.grid--justify--center {
+.grid--justify-center {
   justify-content: center;
 }
 
-.grid--justify--start {
+.grid--justify-start {
   justify-content: flex-start;
 }
 
-.grid--justify--end {
+.grid--justify-end {
   justify-content: flex-end;
 }
 
+/* Grid Columns
+   ========================================================================== */
 .grid__column {
   display: block;
   flex: 1;
@@ -1190,5 +1236,4 @@ table td {
 .type-center {
   text-align: center;
 }
-
 /*# sourceMappingURL=tent.css.map */

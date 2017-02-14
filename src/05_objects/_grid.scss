@@ -3,58 +3,38 @@
 // ==========================================================================
 
 .grid {
-	display: flex;
+	@extend .flex;
 	padding: 0;
 	width: 100%;
 	flex-wrap: wrap;
+	flex-direction: row;
 
 	&--gutterless {
 		& > .grid__column {
 			padding: 0;
 		}
 	}
-
-	// & + .row
-	// 	margin-top: -.5rem;
-	// 	padding-top: 0;
-
-	// Vertically Align Columns
-	// .row-* vertically aligns every .col in the .row
-	&--top {
-		align-items: flex-start;
-	}
-
-	&--bottom {
-		align-items: flex-end;
-	}
-
-	&--center {
-		align-items: center;
-	}
-
-	&--stretch {
-		align-items: stretch;
-	}
-
-	&--baseline {
-		align-items: baseline;
-	}
-
-	&--justify {
-
-		&--center {
-			justify-content: center;
-		}
-
-		&--start {
-			justify-content: flex-start;
-		}
-
-		&--end {
-			justify-content: flex-end;
-		}
-	}
 }
+
+/* Grid Modifiers
+   Extends .flex
+   ========================================================================== */
+
+.grid--stack          { @extend .flex--stack;          }
+.grid--top            { @extend .flex--top;            }
+.grid--bottom         { @extend .flex--bottom;         }
+.grid--center         { @extend .flex--center;         }
+.grid--stretch        { @extend .flex--strech;         }
+.grid--baseline       { @extend .flex--baseline;       }
+
+.grid--justify-center { @extend .grid--justify-center; }
+.grid--justify-start  { @extend .grid--justify-start;  }
+.grid--justify-end    { @extend .grid--justify-end; }
+
+
+/* Grid Columns
+   ========================================================================== */
+
 
 .grid__column {
 	display: block;

@@ -2,6 +2,43 @@
 // Flex Object
 // ==========================================================================
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+// Flex Object Modifiers
+// ==========================================================================
+
+.flex--stack {
+    flex-direction: column;
+}
+
+// Vertically Align Columns
+.flex--top {
+    align-items: flex-start;
+}
+
+.flex--bottom {
+    align-items: flex-end;
+}
+
+.flex--center {
+    align-items: center;
+}
+
+.flex--stretch {
+    align-items: stretch;
+}
+
+.flex--baseline {
+    align-items: baseline;
+}
+
+.flex--justify-center { justify-content: center; }
+.flex--justify-start { justify-content: flex-start; }
+.flex--justify-end { justify-content: flex-end; }
+
 // ==========================================================================
 // Flex Object Standalone Utilities
 // ==========================================================================
