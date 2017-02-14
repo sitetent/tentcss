@@ -24,12 +24,12 @@
 .grid--top            { @extend .flex--top;            }
 .grid--bottom         { @extend .flex--bottom;         }
 .grid--center         { @extend .flex--center;         }
-.grid--stretch        { @extend .flex--strech;         }
+.grid--stretch        { @extend .flex--stretch;         }
 .grid--baseline       { @extend .flex--baseline;       }
 
-.grid--justify-center { @extend .grid--justify-center; }
-.grid--justify-start  { @extend .grid--justify-start;  }
-.grid--justify-end    { @extend .grid--justify-end; }
+.grid--justify-center { @extend .flex--justify-center; }
+.grid--justify-start  { @extend .flex--justify-start;  }
+.grid--justify-end    { @extend .flex--justify-end; }
 
 
 /* Grid Columns

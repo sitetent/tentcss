@@ -274,35 +274,35 @@ table td {
   flex-direction: column;
 }
 
-.flex--top {
+.flex--top, .grid--top {
   align-items: flex-start;
 }
 
-.flex--bottom {
+.flex--bottom, .grid--bottom {
   align-items: flex-end;
 }
 
-.flex--center {
+.flex--center, .grid--center {
   align-items: center;
 }
 
-.flex--stretch {
+.flex--stretch, .grid--stretch {
   align-items: stretch;
 }
 
-.flex--baseline {
+.flex--baseline, .grid--baseline {
   align-items: baseline;
 }
 
-.flex--justify-center {
+.flex--justify-center, .grid--justify-center {
   justify-content: center;
 }
 
-.flex--justify-start {
+.flex--justify-start, .grid--justify-start {
   justify-content: flex-start;
 }
 
-.flex--justify-end {
+.flex--justify-end, .grid--justify-end {
   justify-content: flex-end;
 }
 
@@ -364,38 +364,6 @@ table td {
 /* Grid Modifiers
    Extends .flex
    ========================================================================== */
-.grid--top {
-  align-items: flex-start;
-}
-
-.grid--bottom {
-  align-items: flex-end;
-}
-
-.grid--center {
-  align-items: center;
-}
-
-.grid--stretch {
-  align-items: stretch;
-}
-
-.grid--baseline {
-  align-items: baseline;
-}
-
-.grid--justify-center {
-  justify-content: center;
-}
-
-.grid--justify-start {
-  justify-content: flex-start;
-}
-
-.grid--justify-end {
-  justify-content: flex-end;
-}
-
 /* Grid Columns
    ========================================================================== */
 .grid__column {
@@ -1236,4 +1204,5 @@ table td {
 .type-center {
   text-align: center;
 }
+
 /*# sourceMappingURL=tent.css.map */
