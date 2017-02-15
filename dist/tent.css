@@ -274,6 +274,13 @@ table td {
           flex-direction: row;
 }
 
+.flex__item, .grid__column {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
 .flex--stack, .grid--stack {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -418,10 +425,6 @@ table td {
 /* Grid Columns
    ========================================================================== */
 .grid__column {
-  display: block;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin-left: 0;
   max-width: 100%;
   width: 100%;
@@ -1153,6 +1156,10 @@ table td {
   margin-bottom: 0;
 }
 
+.card--filled {
+  background-color: #444444;
+}
+
 .card--filled.card--primary {
   background-color: #0074D9;
 }
@@ -1179,6 +1186,10 @@ table td {
 
 .card--outlined.card--tertiary {
   border-color: #FF4136;
+}
+
+.card--raised {
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.04), 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .card--clear,
@@ -1349,6 +1360,60 @@ table td {
 .padding-x {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.padding-null {
+  padding: 0;
+}
+
+.margin-xxxs {
+  margin: 0.8rem;
+}
+
+.margin-xxs {
+  margin: 1.6rem;
+}
+
+.margin-xs {
+  margin: 2.4rem;
+}
+
+.margin-sm {
+  margin: 3.2rem;
+}
+
+.margin-md {
+  margin: 4rem;
+}
+
+.margin-lg {
+  margin: 4.8rem;
+}
+
+.margin-xl {
+  margin: 5.6rem;
+}
+
+.margin-xxl {
+  margin: 6.4rem;
+}
+
+.margin-xxxl {
+  margin: 7.2rem;
+}
+
+.margin-y {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-x {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.margin-null {
+  margin: 0;
 }
 
 .height-full {

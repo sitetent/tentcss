@@ -281,16 +281,10 @@
 
                                 <hr>
 
-                                <span class="anchor" id="elements-typography"></span>
+                                <span class="anchor" id="elements-defaults"></span>
                                 
-                                <h2>Typography</h2>
+                                <h2>Defaults</h2>
 
-                                <h1>Heading 1</h1>
-                                <h2>Heading 2</h2>
-                                <h3>Heading 3</h3>
-                                <h4>Heading 4</h4>
-                                <h5>Heading 5</h5>
-                                <h6>Heading 6</h6>
 
                                 <hr>
 
@@ -299,16 +293,6 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in libero, perferendis illum dolore rerum minima placeat magnam voluptas porro, blanditiis inventore voluptatibus. Quo magnam nemo quam natus assumenda ipsam consequuntur laudantium, minus eius eveniet temporibus totam accusantium laboriosam quod ratione corrupti id sapiente, labore nesciunt facere placeat cupiditate cum.
                                 </p>
-
-                                <h3>Leading Paragraphs</h3>
-
-                                <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
-                                </p>
-
-                                <pre><code class="language-markup"><!--
-                                    <p class="lead">...</p>
-                                --></code></pre>
 
                                 <hr>
 
@@ -409,28 +393,35 @@
                                 --></code></pre>
 
                                 <h2>Text Alignments</h2>
+
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
                                 
-                                <div class="grid grid--justify-center">
-                                    <div class="grid__column">
-                                        <div class="bg-color-lighter padding-xxs type-left">
-                                            Text Left
+                                        <div class="grid grid--justify-center">
+                                            <div class="grid__column">
+                                                <div class="bg-color-lighter padding-xxs type-left">
+                                                    Text Left
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="grid grid--justify-center">
-                                    <div class="grid__column">
-                                        <div class="bg-color-lighter padding-xxs type-center">
-                                            Text Center
+                                        <div class="grid grid--justify-center">
+                                            <div class="grid__column">
+                                                <div class="bg-color-light padding-xxs type-center">
+                                                    Text Center
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="grid grid--justify-center">
-                                    <div class="grid__column">
-                                        <div class="bg-color-lighter padding-xxs type-right">
-                                            Text Right
+                                        <div class="grid grid--justify-center">
+                                            <div class="grid__column">
+                                                <div class="bg-color-lighter padding-xxs type-right">
+                                                    Text Right
+                                                </div>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
 
@@ -439,70 +430,6 @@
                                     <div class="type-center">...</div>
                                     <div class="type-right">...</div>
                                 --></code></pre>
-
-                                <hr>
-
-                                <h2>Tables</h2>
-
-                                <h3>Generic Table</h3>
-
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Tent Name</th>
-                                            <th>Tent Type</th>
-                                            <th>Sleeps</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Camel 575S</td>
-                                            <td>Dome</td>
-                                            <td>6</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Mule 40T</td>
-                                            <td>Dome</td>
-                                            <td>6</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sequoia LT</td>
-                                            <td>Ridge</td>
-                                            <td>2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <h3>Component Tables</h3>
-
-                                <h4>Stripped Table</h4>
-
-                                <table class="table table--stripped">
-                                <thead class="table__head">
-                                    <tr class="table__row table__row--heading">
-                                        <th class="table__cell">Tent Name</th>
-                                        <th class="table__cell">Tent Type</th>
-                                        <th class="table__cell">Sleeps</th>
-                                    </tr>
-                                </thead>
-                                    <tbody class="table__body">
-                                        <tr class="table__row">
-                                            <td class="table__cell">Camel 575S</td>
-                                            <td class="table__cell">Dome</td>
-                                            <td class="table__cell">6</td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">Mule 40T</td>
-                                            <td class="table__cell">Dome</td>
-                                            <td class="table__cell">6</td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">Sequoia LT</td>
-                                            <td class="table__cell">Ridge</td>
-                                            <td class="table__cell">2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
 
                                 <hr>
 
@@ -563,19 +490,24 @@
 
                                 <h2>Flex Object</h2>
 
+                                <p class="lead">The foundation for a modern extensible framework. The Flex Object, is a flexbox based object we use to build other objects and components.
+                                     Many principles of this object will be shared and seem familar with others. 
+                                </p>
+
                                 <hr>
 
                                 <span class="anchor" id="objects-grid"></span>
 
-                                <div class="title-set">
+                                <div class="title-set flex flex--stretch">
 
-                                    <h2 class="display-inline-block">Grid</h2>
-                                    
-                                    <div class="card card--outlined card--tertiary color-tertiary display-inline-block">
-                                        <div class="card__content type-small padding-xxxs">
-                                            Extends the Flex Object
+                                    <h2 class="flex__item">Grid</h2>
+
+                                    <div class="card flex__item type-center">
+                                        <div class="card__content">
+                                            <span class="type-small">Extends the Flex Object</span>
                                         </div>
                                     </div>
+
                                 </div>
 
                                 <p class="lead">
@@ -583,39 +515,46 @@
                                     With the addition of flexbox, the grid is a super-powerful system to help lay out your content.
                                 </p>
 
-                                <div class="grid-example grid bg-color-light padding-xxxs padding-y">
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
-                                </div>
-                                <div class="grid-example grid bg-color-light padding-xxxs padding-y">
-                                    <div class="grid__column bg-color-darker inverse">2</div>
-                                    <div class="grid__column bg-color-darker inverse">2</div>
-                                    <div class="grid__column bg-color-darker inverse">2</div>
-                                    <div class="grid__column bg-color-darker inverse">2</div>
-                                    <div class="grid__column bg-color-darker inverse">2</div>
-                                    <div class="grid__column bg-color-darker inverse">2</div>
-                                </div>
-                                <div class="grid-example grid bg-color-light padding-xxxs padding-y">
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                </div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
 
-                                <div class="grid-example grid bg-color-light padding-xxxs padding-y">
-                                    <div class="grid__column grid__column--8 bg-color-darker inverse">8</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
-                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                        <div class="grid-example grid padding-xxxs padding-y">
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                        </div>
+                                        <div class="grid-example grid padding-xxxs padding-y">
+                                            <div class="grid__column bg-color-darker inverse">2</div>
+                                            <div class="grid__column bg-color-darker inverse">2</div>
+                                            <div class="grid__column bg-color-darker inverse">2</div>
+                                            <div class="grid__column bg-color-darker inverse">2</div>
+                                            <div class="grid__column bg-color-darker inverse">2</div>
+                                            <div class="grid__column bg-color-darker inverse">2</div>
+                                        </div>
+                                        <div class="grid-example grid padding-xxxs padding-y">
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                        </div>
+
+                                        <div class="grid-example grid padding-xxxs padding-y">
+                                            <div class="grid__column grid__column--8 bg-color-darker inverse">8</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                            <div class="grid__column bg-color-darker inverse">1</div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <h3>Grid Horizontal Alignments</h3>
@@ -624,27 +563,48 @@
                                     <code>.grid.grid--justify-start</code>
                                 </p>
 
-                                <div class="grid-example grid grid--justify-start bg-color-light padding-xxs padding-y">
-                                    <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
-                                    <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <div class="grid-example grid grid--justify-start padding-xxs padding-y">
+                                            <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                                            <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <p>
                                     <code>.grid.grid--justify-center</code>
                                 </p>
 
-                                <div class="grid-example grid grid--justify-center bg-color-light padding-xxs padding-y">
-                                    <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
-                                    <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <div class="grid-example grid grid--justify-center padding-xxs padding-y">
+                                            <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                                            <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <p>
                                     <code>.grid.grid--justify-end</code>
                                 </p>
 
-                                <div class="grid-example grid grid--justify-end bg-color-light padding-xxs padding-y">
-                                    <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
-                                    <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <div class="grid-example grid grid--justify-end padding-xxs padding-y">
+                                            <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                                            <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <h3>Grid Vertical Alignments</h3>
@@ -653,27 +613,46 @@
                                     <code>.grid.grid--top</code>
                                 </p>
 
-                                <div class="grid-example grid grid--top bg-color-light padding-xxs padding-y" style="height: 200px;">
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <div class="grid-example grid grid--top padding-xxs padding-y" style="height: 200px;">
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <p>
                                     <code>.grid.grid--center</code>
                                 </p>
 
-                                <div class="grid-example grid grid--center bg-color-light padding-xxs padding-y" style="height: 200px;">
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <div class="grid-example grid grid--center padding-xxs padding-y" style="height: 200px;">
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                                 <p>
                                     <code>.grid.grid--bottom</code>
                                 </p>
 
-                                <div class="grid-example grid grid--bottom bg-color-light padding-xxs padding-y" style="height: 200px;">
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
-                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+                                        <div class="grid-example grid grid--bottom padding-xxs padding-y" style="height: 200px;">
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                            <div class="grid__column bg-color-darker inverse">Auto</div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <p>Individual columns within a grid can also have their own alignment:</p>
@@ -690,10 +669,89 @@
                                     </div>
                                 </div>
 
-                                <div class="grid-example grid bg-color-light padding-xxs padding-y" style="height: 200px;">
-                                    <div class="grid__column grid__column--top bg-color-darker inverse">One of Three Columns</div>
-                                    <div class="grid__column grid__column--center bg-color-darker inverse">One of Three Columns</div>
-                                    <div class="grid__column grid__column--bottom bg-color-darker inverse">One of Three Columns</div>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+                                        <div class="grid-example grid padding-xxs padding-y" style="height: 200px;">
+                                            <div class="grid__column grid__column--top bg-color-darker inverse">One of Three Columns</div>
+                                            <div class="grid__column grid__column--center bg-color-darker inverse">One of Three Columns</div>
+                                            <div class="grid__column grid__column--bottom bg-color-darker inverse">One of Three Columns</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <h2>Tables</h2>
+
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Tent Name</th>
+                                                    <th>Tent Type</th>
+                                                    <th>Sleeps</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Camel 575S</td>
+                                                    <td>Dome</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mule 40T</td>
+                                                    <td>Dome</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sequoia LT</td>
+                                                    <td>Ridge</td>
+                                                    <td>2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <h3>Stripped Table</h3>
+
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+
+                                        <table class="table table--stripped">
+                                        <thead class="table__head">
+                                            <tr class="table__row table__row--heading">
+                                                <th class="table__cell">Tent Name</th>
+                                                <th class="table__cell">Tent Type</th>
+                                                <th class="table__cell">Sleeps</th>
+                                            </tr>
+                                        </thead>
+                                            <tbody class="table__body">
+                                                <tr class="table__row">
+                                                    <td class="table__cell">Camel 575S</td>
+                                                    <td class="table__cell">Dome</td>
+                                                    <td class="table__cell">6</td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__cell">Mule 40T</td>
+                                                    <td class="table__cell">Dome</td>
+                                                    <td class="table__cell">6</td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__cell">Sequoia LT</td>
+                                                    <td class="table__cell">Ridge</td>
+                                                    <td class="table__cell">2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
                                 </div>
 
                                 <hr>
@@ -711,26 +769,33 @@
 
                                 <h2>Headings</h2>
 
-                                <div class="grid grid--gutterless padding-y padding-xxs">
-                                    <div class="grid__column grid__column--12 grid__column--6--md">
-                                        <h3>Title Headings</h3>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+                                        
+                                        <div class="grid grid--gutterless padding-y padding-xxs">
+                                            <div class="grid__column grid__column--12 grid__column--6--md">
+                                                <h3>Title Headings</h3>
 
-                                        <h1 class="title title--xxxl">Title 1</h1>
-                                        <h2 class="title title--xxl">Title 2</h2>
-                                        <h3 class="title title--xl">Title 3</h3>
-                                        <h4 class="title title--lg">Title 4</h4>
-                                        <h5 class="title title--md">Title 5</h5>
-                                        <h6 class="title title--sm">Title 6</h6>
-                                    </div>
-                                    <div class="grid__column grid__column--12 grid__column--6--md">
-                                        <h3>Subtitle Headings</h3>
-                                
-                                        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
-                                        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
-                                        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
-                                        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
-                                        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
-                                        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                                                <h1 class="title title--xxxl">Title 1</h1>
+                                                <h2 class="title title--xxl">Title 2</h2>
+                                                <h3 class="title title--xl">Title 3</h3>
+                                                <h4 class="title title--lg">Title 4</h4>
+                                                <h5 class="title title--md">Title 5</h5>
+                                                <h6 class="title title--sm">Title 6</h6>
+                                            </div>
+                                            <div class="grid__column grid__column--12 grid__column--6--md">
+                                                <h3>Subtitle Headings</h3>
+                                        
+                                                <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                                                <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                                                <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                                                <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                                                <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                                                <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -756,12 +821,34 @@
 
                                 <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
 
-                                <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
-                                    <h1 class="title title--lg">A leading title</h1>
-                                    <p class="subtitle subtitle--lg">A following subtitle.</p>
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+                                        <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
+                                            <h1 class="title title--lg">A leading title</h1>
+                                            <p class="subtitle subtitle--lg">A following subtitle.</p>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <!-- END Title Set -->
+
+                                <hr>
+
+                                <span class="anchor" id="components-leads"></span>
+
+                                <h2>Leads</h2>
+
+                                <p>Leads are a simple component that adds emphasis to titles and paragraphs. Add the class <code>.lead</code> to use.</p>
+
+                                <span class="type-small">Example</span>
+                                <div class="card card--raised">
+                                    <div class="card__content">
+                                        <p class="lead">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
+                                        </p>
+                                    </div>
+                                </div>
 
                                 <hr>
 
@@ -1194,7 +1281,7 @@
                                     <h5 class="title">Elements</h5>
 
                                     <ul>
-                                        <li><a href="#elements-typography">Typography</a></li>
+                                        <li><a href="#elements-defaults">Defaults</a></li>
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
