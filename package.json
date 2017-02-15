@@ -16,7 +16,7 @@
     "banner:compressed": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
     "sass:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
     "sass:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
-    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 4 versions' -r dist/*.css",
     "watch": "onchange src -- npm run build",
     "serve": "browser-sync start --serveStatic 'docs' --files 'dist/*.css, *.html, public/**/*' --server",
     "dev": "parallelshell 'npm run serve' 'npm run watch'",
