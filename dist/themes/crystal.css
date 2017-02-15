@@ -135,18 +135,18 @@ img {
 }
 
 a {
-  color: #7FDBFF;
+  color: #B10DC9;
   text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
-  color: #33c5ff;
+  color: #720881;
 }
 
 code {
   font-family: "Lucida Console", Courier, monospace;
   font-size: inherit;
-  color: #7FDBFF;
+  color: #B10DC9;
   background-color: #F2F2F2;
   padding: 0.2rem 0.4rem;
 }
@@ -980,20 +980,20 @@ table td {
 
 .button.button--primary:hover, .button.button--primary:focus, .button.button--primary:active {
   color: #FFFFFF;
-  background-color: #4ccdff;
-  border-color: #00b7ff;
+  background-color: #870a99;
+  border-color: #480551;
 }
 
 .button.button--secondary:hover, .button.button--secondary:focus, .button.button--secondary:active {
   color: #FFFFFF;
-  background-color: #2e7555;
-  border-color: #193e2d;
+  background-color: #2ba7a7;
+  border-color: #1b6a6a;
 }
 
 .button.button--tertiary:hover, .button.button--tertiary:focus, .button.button--tertiary:active {
   color: #FFFFFF;
-  background-color: #ff1103;
-  border-color: #b60a00;
+  background-color: #e76b00;
+  border-color: #9b4800;
 }
 
 .button--xxxs {
@@ -1048,20 +1048,20 @@ table td {
 }
 
 .button--filled.button--primary {
-  border-color: #7FDBFF;
-  background-color: #7FDBFF;
+  border-color: #B10DC9;
+  background-color: #B10DC9;
   color: #FFFFFF;
 }
 
 .button--filled.button--secondary {
-  background-color: #3D9970;
-  border-color: #3D9970;
+  background-color: #39CCCC;
+  border-color: #39CCCC;
   color: #FFFFFF;
 }
 
 .button--filled.button--tertiary {
-  background-color: #FF4136;
-  border-color: #FF4136;
+  background-color: #FF851B;
+  border-color: #FF851B;
   color: #FFFFFF;
 }
 
@@ -1077,18 +1077,18 @@ table td {
 }
 
 .button--outlined.button--primary {
-  border-color: #7FDBFF;
-  color: #7FDBFF;
+  border-color: #B10DC9;
+  color: #B10DC9;
 }
 
 .button--outlined.button--secondary {
-  border-color: #3D9970;
-  color: #3D9970;
+  border-color: #39CCCC;
+  color: #39CCCC;
 }
 
 .button--outlined.button--tertiary {
-  border-color: #FF4136;
-  color: #FF4136;
+  border-color: #FF851B;
+  color: #FF851B;
 }
 
 .button--clear {
@@ -1142,15 +1142,15 @@ table td {
 }
 
 .card--filled.card--primary {
-  background-color: #7FDBFF;
+  background-color: #B10DC9;
 }
 
 .card--filled.card--secondary {
-  background-color: #3D9970;
+  background-color: #39CCCC;
 }
 
 .card--filled.card--tertiary {
-  background-color: #FF4136;
+  background-color: #FF851B;
 }
 
 .card--outlined {
@@ -1158,15 +1158,15 @@ table td {
 }
 
 .card--outlined.card--primary {
-  border-color: #7FDBFF;
+  border-color: #B10DC9;
 }
 
 .card--outlined.card--secondary {
-  border-color: #3D9970;
+  border-color: #39CCCC;
 }
 
 .card--outlined.card--tertiary {
-  border-color: #FF4136;
+  border-color: #FF851B;
 }
 
 .card--raised {
@@ -1179,15 +1179,15 @@ table td {
 }
 
 .color-primary {
-  color: #7FDBFF;
+  color: #B10DC9;
 }
 
 .color-secondary {
-  color: #3D9970;
+  color: #39CCCC;
 }
 
 .color-tertiary {
-  color: #FF4136;
+  color: #FF851B;
 }
 
 .color-light {
@@ -1219,15 +1219,15 @@ table td {
 }
 
 .bg-color-primary {
-  background-color: #7FDBFF;
+  background-color: #B10DC9;
 }
 
 .bg-color-secondary {
-  background-color: #3D9970;
+  background-color: #39CCCC;
 }
 
 .bg-color-tertiary {
-  background-color: #FF4136;
+  background-color: #FF851B;
 }
 
 .bg-color-light {
