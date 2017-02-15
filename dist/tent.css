@@ -42,12 +42,8 @@ main {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-li {
-  display: block;
+  margin-bottom: 2.4rem;
+  padding-left: 4rem;
 }
 
 dl {

@@ -38,11 +38,8 @@ main {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-li {
-  display: block;
+  margin-bottom: rem($space-xs);
+  padding-left: rem($space-md);
 }
 dl {
   margin-top: 0;
