@@ -1,0 +1,18 @@
+/* Lists
+   ========================================================================== */
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: rem($space-xs);
+  padding-left: rem($space-md);
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: 0;
+}

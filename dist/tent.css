@@ -36,41 +36,9 @@ main {
   display: block;
 }
 
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 2.4rem;
-  padding-left: 4rem;
-}
-
-dl {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-dd {
-  margin-left: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: inherit;
-}
-
 blockquote {
   margin: 0;
   padding: 0;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 sup {
@@ -87,18 +55,6 @@ strong {
 
 figure {
   margin: 0;
-}
-
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 button {
@@ -140,6 +96,9 @@ hr {
 
 img {
   max-width: 100%;
+  border: 0;
+  height: auto;
+  vertical-align: middle;
 }
 
 a {
@@ -175,6 +134,7 @@ h4,
 h5,
 h6 {
   color: #444444;
+  font-size: inherit;
   font-weight: inherit;
   display: block;
   line-height: 1.25;

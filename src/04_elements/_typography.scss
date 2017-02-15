@@ -17,6 +17,7 @@ h4,
 h5,
 h6 {
 	color: $heading-color;
+	font-size: inherit;
 	font-weight: inherit;
 	display: block;
 	line-height: $heading-line-height;
