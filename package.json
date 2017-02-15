@@ -14,6 +14,7 @@
     "css:gzipped": "",
     "banner:expanded": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.css > temp && mv temp dist/tent.css",
     "banner:compressed": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
+    "docs:css": "node-sass --output-style expanded public/sass/docs.scss public/css/docs.css",
     "tent:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
     "tent:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
     "crystal:expanded": "node-sass --output-style expanded src/themes/crystal/crystal.scss dist/themes/crystal.css",
