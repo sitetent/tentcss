@@ -9,6 +9,5 @@ body {
 	font-family: $font-family-primary;
 	font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
 	font-weight: 400;
-	letter-spacing: .05em;
 	line-height: $base-line-height;
 }
