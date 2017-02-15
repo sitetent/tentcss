@@ -1,0 +1,28 @@
+// ==========================================================================
+// Margin
+// ==========================================================================
+
+.margin {
+
+    &-xxxs { margin: rem($padding-xxxs); }
+    &-xxs { margin: rem($padding-xxs); }
+    &-xs { margin: rem($padding-xs); }
+    &-sm { margin: rem($padding-sm); }
+    &-md { margin: rem($padding-md); }
+    &-lg { margin: rem($padding-lg); }
+    &-xl { margin: rem($padding-xl); }
+    &-xxl { margin: rem($padding-xxl); }
+    &-xxxl { margin: rem($padding-xxxl); }
+    
+    &-y {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &-x {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &-null { margin: 0; }
+}
