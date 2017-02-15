@@ -1,0 +1,28 @@
+// ==========================================================================
+// Crystal Theme - Settings
+// A Tent CSS design theme.
+// ==========================================================================
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+$color-primary:    #7FDBFF;
+$color-secondary:  #3D9970;
+$color-tertiary:   #FF4136;
+
+$color-lightest:   	#FFFFFF;
+$color-lighter:    	#F2F2F2;
+$color-light:      	#E0E0E0;
+$color-medium:     	#A4A4A4;
+$color-dark:       	#6E6E6E;
+$color-darker:     	#444444;
+$color-darkest:    	#111111;
+
+// Base Colors
+$base-color: $color-darker;
+$base-color-inverse: $color-lighter;
+$base-color-bg: $color-lightest;
+
+// Link Colors
+$link-color: $color-primary;

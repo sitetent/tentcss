@@ -14,13 +14,15 @@
     "css:gzipped": "",
     "banner:expanded": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.css > temp && mv temp dist/tent.css",
     "banner:compressed": "echo '/*!\n * Tent CSS v1.0.0\n * http://tentcss.github.io\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
-    "sass:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
-    "sass:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
-    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 4 versions' -r dist/*.css",
+    "tent:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
+    "tent:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
+    "crystal:expanded": "node-sass --output-style expanded src/themes/crystal/crystal.scss dist/themes/crystal.css",
+    "crystal:compressed": "node-sass --output-style compressed src/themes/crystal/crystal.scss dist/themes/crystal.min.css",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 4 versions' -r dist/**/*.css",
     "watch": "onchange src -- npm run build",
     "serve": "browser-sync start --serveStatic 'docs' --files 'dist/*.css, *.html, public/**/*' --server",
     "dev": "parallelshell 'npm run serve' 'npm run watch'",
-    "build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
+    "build": "npm-run-all tent:expanded tent:compressed crystal:expanded crystal:compressed autoprefixer banner:expanded banner:compressed"
   },
   "keywords": [
     "css",
