@@ -49,20 +49,6 @@ figure {
   margin: 0;
 }
 
-button {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-  text-transform: inherit;
-  font: inherit;
-  -webkit-font-smoothing: inherit;
-  letter-spacing: inherit;
-  background: none;
-  cursor: pointer;
-  overflow: visible;
-}
-
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -100,6 +86,20 @@ a {
 
 a:hover, a:focus, a:active {
   color: #720881;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  overflow: visible;
 }
 
 code {
@@ -235,30 +235,35 @@ table td {
 .flex--top, .grid--top {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 
 .flex--bottom, .grid--bottom {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
+              -ms-grid-row-align: flex-end;
           align-items: flex-end;
 }
 
 .flex--center, .grid--center {
   -webkit-align-items: center;
       -ms-flex-align: center;
+              -ms-grid-row-align: center;
           align-items: center;
 }
 
 .flex--stretch, .grid--stretch {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
+              -ms-grid-row-align: stretch;
           align-items: stretch;
 }
 
 .flex--baseline, .grid--baseline {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
+              -ms-grid-row-align: baseline;
           align-items: baseline;
 }
 
@@ -387,7 +392,6 @@ table td {
 .grid__column--center {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
           align-self: center;
 }
 

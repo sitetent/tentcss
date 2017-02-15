@@ -165,7 +165,7 @@
                             <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">
 
                                 <span class="anchor" id="get-started"></span>
-                                <span class="anchor" id="install"></span>
+                                <span class="anchor" id="start-install"></span>
 
                                 <div class="title-set">
                                     <h1 class="title">Getting Started</h1>
@@ -195,6 +195,10 @@
                                 <h3>Install Manually</h3>
 
                                 <a href="#" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
+
+                                <hr>
+
+                                <span class="anchor" id="start-customize"></span>
                                 
                                 <h2>How to include Tent CSS in your project</h2>
 
@@ -205,8 +209,6 @@
 
                                     <link href="css/Your-Project.min.css" rel="stylesheet">
                                 --></code></pre>
-
-                                <span class="anchor" id="customize"></span>
 
                                 <h3>Building from source</h3>
 
@@ -243,7 +245,23 @@
 
                                 <hr>
 
-                                ...
+                                <p>
+                                    The default framework Sass variables can be found in <code>src/01_settings/_variables.defaults.scss</code>.
+                                    It is recommended that you do not modify this file directly. 
+                                    Instead you should either completely copy the file or just the variables you would like to modify.
+                                    In your custom settings file be sure to remove any <code>!default</code> declarations.
+                                </p>
+                                
+
+                                <pre><code class="language-markup"><!--
+
+                                    @import "path/to/your-settings"
+
+                                    @import "path/to/tent";
+
+                                    // Custom CSS
+
+                                --></code></pre>
 
                                 <hr>
                                 
@@ -256,7 +274,47 @@
 
                                 <hr>
 
-                                ...
+                                <h2>Breakpoints</h2>
+
+                                <p>The breakpoint mixins make it very easy to call upon preset media query boundaries.</p>
+
+                                <p>
+                                    The default $breakpoint sizes are <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> <code>xl</code> <code>xxl</code> <code>xxxl</code>
+                                </p>
+
+                                <pre><code class="language-markup"><!--
+                                    @include breakpoint-min($breakpoint) {
+                                        .foo {}
+                                    }
+
+                                    @include breakpoint-max($breakpoint) {
+                                        .foo {}
+                                    }
+                                --></code></pre>
+
+                                <hr>
+
+                                <h2>Scales</h2>
+
+                                <hr>
+
+                                <h2>Clearfix</h2>
+
+                                <p>
+                                    Clearfix is a rather legacy layout adjustment multi-selector. With Flexbox on the rise this tool will become outdated. 
+                                    Regardless, clearfix helps containing selectors keep their floating children within bounds. 
+                                    Without clearfix some floating selectors may escape the container.
+                                </p>
+
+                                <pre><code class="language-markup"><!--
+                                    selector {
+                                        @include clearfix();
+                                    }
+                                --></code></pre>
+
+                                <hr>
+
+                                <h2>Box Sizing</h2>
 
                                 <hr>
                                 
@@ -289,7 +347,6 @@
 
                                 <span class="anchor" id="elements-defaults"></span>
                                 
-                                <h2>Defaults</h2>
 
                                 <p>
                                     Tent CSS provides normalization for a ton of standard markup elements. 
@@ -314,6 +371,7 @@
                                 <code>b</code>
                                 <code>em</code>
                                 <code>a</code>
+                                <code>button</code>
                                 <code>img</code>
                                 <code>table</code>
                                 <code>hr</code>
@@ -1169,7 +1227,7 @@
 
                                 <span class="anchor" id="utilities-other-type"></span>
 
-                                <h3>Standalone Typography Modifiers</h3>
+                                <h2>Standalone Typography Modifiers</h2>
 
                                 <span class="type-small">Example</span>
                                 <div class="card card--raised">
@@ -1208,7 +1266,7 @@
 
                                 <span class="anchor" id="utilities-alignments"></span>
 
-                                <h3>Text Alignments</h3>
+                                <h2>Text Alignments</h2>
 
                                 <span class="type-small">Example</span>
                                 <div class="card card--raised">
@@ -1251,7 +1309,7 @@
 
                                 <span class="anchor" id="utilities-padding"></span>
 
-                                <h3>Padding</h3>
+                                <h2>Padding</h2>
 
                                 <pre><code class="language-markup"><!--
                                     <div class="padding-xxxs">...</div>
@@ -1279,7 +1337,7 @@
 
                                 <span class="anchor" id="utilities-margin"></span>
 
-                                <h3>Margin</h3>
+                                <h2>Margin</h2>
 
                                 <pre><code class="language-markup"><!--
                                     <div class="margin-xxxs">...</div>
@@ -1307,7 +1365,7 @@
 
                                 <span class="anchor" id="utilities-display-types"></span>
 
-                                <h3>Display Types</h3>
+                                <h2>Display Types</h2>
 
                                 <pre><code class="language-markup"><!--
                                     <div class="display-block">...</div>
@@ -1320,7 +1378,7 @@
 
                                 <span class="anchor" id="utilities-colors"></span>
 
-                                <h3>Text Colors</h3>
+                                <h2>Text Colors</h2>
 
                                 <pre><code class="language-markup"><!--
                                     <span class="color-primary">...</span>
@@ -1337,7 +1395,7 @@
 
                                 <span class="anchor" id="utilities-bg"></span>
 
-                                <h3>Background Colors</h3>
+                                <h2>Background Colors</h2>
 
                                 <pre><code class="language-markup"><!--
                                     <div class="bg-color-primary">...</div>
@@ -1382,7 +1440,8 @@
                                     <h5 class="title">Getting Started</h5>
 
                                     <ul class="list list--unstyled">
-                                        <li><a href="#">Install</a></li>
+                                        <li><a href="#start-install">Install</a></li>
+                                        <li><a href="#start-customize">Customize</a></li>
 
                                     </ul>
                                 </div> <!-- /.title-set -->
@@ -1391,7 +1450,7 @@
                                     <h5 class="title">Settings</h5>
 
                                     <ul class="list list--unstyled">
-                                        <li><a href="#">Customize</a></li>
+                                        
                                     </ul>
                                 </div> <!-- /.title-set -->
                                 <hr>
