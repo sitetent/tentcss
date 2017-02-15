@@ -7,9 +7,13 @@
 // scss-lint:enable StringQuotes
 
 // 01 - Settings
+// ==========================================================================
+
 @import "01_settings/variables.defaults";
 
 // 02 - Tools
+// ==========================================================================
+
 @import "02_tools/scaling";
 @import "02_tools/breakpoints";
 @import "02_tools/box-sizing";
@@ -17,9 +21,13 @@
 @import "02_tools/clearfix";
 
 // 03 - Generics
+// ==========================================================================
+
 @import "03_generic/reset";
 
 // 04 - Elements
+// ==========================================================================
+
 @import "04_elements/base";
 @import "04_elements/divider";
 @import "04_elements/image";
@@ -29,6 +37,8 @@
 @import "04_elements/tables";
 
 // 05 - Objects
+// ==========================================================================
+
 @import "05_objects/container";
 @import "05_objects/flex";
 @import "05_objects/grid";
@@ -36,12 +46,16 @@
 @import "05_objects/tables";
 
 // 06 - Components
+// ==========================================================================
+
 @import "06_components/headings";
 @import "06_components/lead";
 @import "06_components/buttons";
 @import "06_components/card";
 
 // 07 - Utilities
+// ==========================================================================
+
 @import "07_utilities/colors";
 @import "07_utilities/inverse";
 @import "07_utilities/displays";
@@ -49,3 +63,13 @@
 @import "07_utilities/margin";
 @import "07_utilities/height";
 @import "07_utilities/type";
+
+// 07 - Themes
+// Themes are quick start overrides to Tent CSS with stronger opinions on design choices.
+// You can either include the themes directly or use them as inspiration.
+//
+// Note: By default all themes are disabled by being commented out.
+// ==========================================================================
+
+// Crystal Themes
+@import "crystal/crystal";
