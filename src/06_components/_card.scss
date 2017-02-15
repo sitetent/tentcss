@@ -32,6 +32,8 @@
 }
 
 .card--filled {
+    background-color: $card-color;
+    
     &.card--primary { background-color: $color-primary; }
     &.card--secondary { background-color: $color-secondary; }
     &.card--tertiary { background-color: $color-tertiary; }
@@ -43,6 +45,10 @@
     &.card--primary { border-color: $color-primary; }
     &.card--secondary { border-color: $color-secondary; }
     &.card--tertiary { border-color: $color-tertiary; }
+}
+
+.card--raised {
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.04), 0 0.2rem 1rem 0 rgba(0,0,0,.10);
 }
 
 .card--clear,
