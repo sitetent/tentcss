@@ -4,10 +4,10 @@
   "description": "A CSS survival kit.",
   "author": "Aaron Mazade <ulinaaron@gmail.com>",
   "license": "MIT",
-  "homepage": "https://ulinaaron.github.io/tentcss/",
+  "homepage": "http://css.sitetent.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ulinaaron/tentcss.git"
+    "url": "https://github.com/sitetent/tentcss.git"
   },
   "main": "package.json",
   "scripts": {
