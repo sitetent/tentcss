@@ -18,6 +18,10 @@
 	z-index: -1;
 }
 
+.brand-set__logo {
+	margin-bottom: 2.4rem;
+}
+
 .grid-example {
 	margin: 16px 0;
 }
