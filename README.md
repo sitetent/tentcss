@@ -1,5 +1,9 @@
-# Tent CSS
+# Tent CSS 
+[![npm version](https://badge.fury.io/js/tent-css.svg)](https://badge.fury.io/js/tent-css)
+
 A CSS survival kit. Includes only the essentials to make camp.
+
+<http://css.sitetent.com/>
 
 *Actively under development. Not advised for production use just yet.*
 
