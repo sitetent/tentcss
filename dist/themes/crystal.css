@@ -172,6 +172,37 @@ h6 {
   font-size: 1.6rem;
 }
 
+/* Lists
+   ========================================================================== */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  padding-left: 0;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+li {
+  display: list-item;
+  margin-bottom: 0.8rem;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
 table {
   border-spacing: 0;
 }
@@ -655,6 +686,10 @@ table td {
 
 .list--inline .list__item:not(:last-child) {
   padding-right: 25px;
+}
+
+.list--nulled .list__item {
+  margin: 0;
 }
 
 .table--stripped .table__body .table__row:not(:nth-child(even)) .table__cell {
