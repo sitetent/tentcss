@@ -1,0 +1,37 @@
+// ==========================================================================
+// Form Object
+// ==========================================================================
+
+// Select Wrapper
+// ==========================================================================
+
+.select-control {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 0 rem($space-xs);
+    width: 100%;
+
+    &:after {
+        content: "";
+        border: 1px solid $color-primary;
+        border-right: 0;
+        border-top: 0;
+        display: block;
+        position: absolute;
+        height: rem($space-xxxs);
+        pointer-events: none;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: rem($space-xxxs);
+        margin-top: -0.375em;
+        right: 1.125em;
+        top: 50%;
+        z-index: 4;
+    }
+
+    select {
+        padding-right: rem($space-md);
+        margin: 0;
+    }
+}
