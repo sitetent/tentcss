@@ -1,6 +1,6 @@
 {
   "name": "tent-css",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A CSS survival kit.",
   "author": "Aaron Mazade <ulinaaron@gmail.com>",
   "license": "MIT",
@@ -12,7 +12,6 @@
   "main": "package.json",
   "scripts": {
     "version:patch": "npm version patch -m \"Bumped to %s\"",
-
     "banner:expanded": "echo '/*!\n * Tent CSS \n * http://css.sitetent.com\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.css > temp && mv temp dist/tent.css",
     "banner:compressed": "echo '/*!\n * Tent CSS \n * http://css.sitetent.com\n *\n * Copyright (c) 2016 Aaron Mazade\n * Licensed under the MIT license\n*/\n' | cat - dist/tent.min.css > temp && mv temp dist/tent.min.css",
     "docs:css": "node-sass --output-style expanded public/sass/docs.scss public/css/docs.css",
