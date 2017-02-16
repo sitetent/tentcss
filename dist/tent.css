@@ -273,35 +273,30 @@ table td {
 .flex--top, .grid--top {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 
 .flex--bottom, .grid--bottom {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end;
 }
 
 .flex--center, .grid--center {
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 
 .flex--stretch, .grid--stretch {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
-              -ms-grid-row-align: stretch;
           align-items: stretch;
 }
 
 .flex--baseline, .grid--baseline {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
-              -ms-grid-row-align: baseline;
           align-items: baseline;
 }
 
@@ -430,6 +425,7 @@ table td {
 .grid__column--center {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 
