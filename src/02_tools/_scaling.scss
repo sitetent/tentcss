@@ -1,68 +1,9 @@
-// Create REM values with PX fall back
-//
-// Generate a REM with PX fallback from 
-// on pixels in numerical form. Supports shorthand.
-//
-// Forked from: http://codepen.io/thejameskyle/pen/JmBjc
-//
-// @author Greg Rickaby
-// @since 1.0
-//
-// Usage: @include rem($property, $values);
-// Example Usage:
-//    @include rem(font-size, 16px);
-//    @include rem(margin, 0 24px 0 12px);
-//
-// Outputs:
-//    font-size: 16px;
-//    font-size: 1.6rem;
-//    margin: 0 24px 0 12px;
-//    margin: 0 2.4rem 0 1.2rem;
-// ----------------------------------
+// ==========================================================================
+// Scaling Fuctnions
+// ==========================================================================
 
 @function parseInt($n) {
   @return $n / ($n * 0 + 1);
-}
-
-@mixin rem($property, $values) {
-	$px : (); 
-	$rem: ();
-	
-	$root: $scale-unit;
-	
-	@each $value in $values {
-		@if $value == 0 or $value == auto {
-			$px : append($px , $value);
-			$rem: append($rem, $value);
-		}
-		
-		@else if type-of($value) == number { 
-			$unit: unit($value);
-			$val: parseInt($value);
-			
-			@if $unit == "px" {
-				$px : append($px,  $value);
-				$rem: append($rem, ($val / $root + rem));
-			}
-			
-			@if $unit == "rem" {
-				$px : append($px,  ($val * $root + px));
-				$rem: append($rem, $value);
-			}
-		}
-		
-		@else {
-			$px : append($px,  $value);
-			$rem: append($rem, $value);
-		}
-	}
-	
-	@if $px == $rem {
-		#{$property}: $px;
-	} @else {
-		#{$property}: $px;
-		#{$property}: $rem;
-	} 
 }
 
 @function rem($value) {

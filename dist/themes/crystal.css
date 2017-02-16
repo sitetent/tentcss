@@ -110,7 +110,6 @@ code {
 }
 
 p {
-  margin: 0 0 24px;
   margin: 0 0 2.4rem;
 }
 
@@ -129,7 +128,6 @@ h6 {
   font-weight: inherit;
   display: block;
   line-height: 1.25;
-  margin: 0 0 32px;
   margin: 0 0 3.2rem;
 }
 
@@ -143,32 +141,26 @@ h6:last-child {
 }
 
 h1 {
-  font-size: 48px;
   font-size: 4.8rem;
 }
 
 h2 {
-  font-size: 40px;
   font-size: 4rem;
 }
 
 h3 {
-  font-size: 32px;
   font-size: 3.2rem;
 }
 
 h4 {
-  font-size: 20px;
   font-size: 2rem;
 }
 
 h5 {
-  font-size: 18px;
   font-size: 1.8rem;
 }
 
 h6 {
-  font-size: 16px;
   font-size: 1.6rem;
 }
 
@@ -208,7 +200,7 @@ table {
 }
 
 table td {
-  padding: 8px;
+  padding: 0.8rem;
 }
 
 .container {
@@ -698,55 +690,46 @@ table td {
 
 .title--xxxs,
 .subtitle--xxxs {
-  font-size: 10px;
   font-size: 1rem;
 }
 
 .title--xxs,
 .subtitle--xxs {
-  font-size: 12px;
   font-size: 1.2rem;
 }
 
 .title--xs,
 .subtitle--xs {
-  font-size: 14px;
   font-size: 1.4rem;
 }
 
 .title--sm,
 .subtitle--sm {
-  font-size: 16px;
   font-size: 1.6rem;
 }
 
 .title--md,
 .subtitle--md {
-  font-size: 18px;
   font-size: 1.8rem;
 }
 
 .title--lg,
 .subtitle--lg {
-  font-size: 20px;
   font-size: 2rem;
 }
 
 .title--xl,
 .subtitle--xl {
-  font-size: 32px;
   font-size: 3.2rem;
 }
 
 .title--xxl,
 .subtitle--xxl {
-  font-size: 40px;
   font-size: 4rem;
 }
 
 .title--xxxl,
 .subtitle--xxxl {
-  font-size: 48px;
   font-size: 4.8rem;
 }
 

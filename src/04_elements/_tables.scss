@@ -6,6 +6,6 @@ table {
     border-spacing: 0;
 
     td {
-        padding: $space-xxxs;
+        padding: rem($space-xxxs);
     }
 }

@@ -3,7 +3,7 @@
 // ==========================================================================
 
 p {
-	@include rem(margin, 0 0 $space-xs);
+	margin: 0 0 rem($space-xs);
 	
 	&:last-child {
 		margin-bottom: 0;
@@ -21,16 +21,16 @@ h6 {
 	font-weight: inherit;
 	display: block;
 	line-height: $heading-line-height;
-	@include rem(margin, 0 0 $space-sm);
+	margin: 0 0 rem($space-sm);
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 }
 
-h1 { @include rem(font-size, $size-xxxl); }
-h2 { @include rem(font-size, $size-xxl); }
-h3 { @include rem(font-size, $size-xl); }
-h4 { @include rem(font-size, $size-lg); }
-h5 { @include rem(font-size, $size-md); }
-h6 { @include rem(font-size, $size-sm); }
+h1 { font-size: rem($size-xxxl); }
+h2 { font-size: rem($size-xxl); }
+h3 { font-size: rem($size-xl); }
+h4 { font-size: rem($size-lg); }
+h5 { font-size: rem($size-md); }
+h6 { font-size: rem($size-sm); }
