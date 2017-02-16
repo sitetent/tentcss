@@ -6,6 +6,14 @@
  * Licensed under the MIT license
 */
 
+/*!
+ * Tent CSS 
+ * http://css.sitetent.com
+ *
+ * Copyright (c) 2017, Aaron Mazade
+ * Licensed under the MIT license
+*/
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -257,13 +265,6 @@ table td {
           flex-direction: row;
 }
 
-.flex__item, .grid__column {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: block;
-}
-
 .flex--stack, .grid--stack {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -316,6 +317,32 @@ table td {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.flex__item, .grid__column {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
+.flex__item--top, .grid__column--top {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+
+.flex__item--bottom, .grid__column--bottom {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+.flex__item--center, .grid__column--center {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
 }
 
 .flex-first {
@@ -408,25 +435,6 @@ table td {
   width: 100%;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-}
-
-.grid__column--top {
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-}
-
-.grid__column--bottom {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-}
-
-.grid__column--center {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
-          align-self: center;
 }
 
 .grid__column--offset-10 {
@@ -1438,5 +1446,4 @@ table td {
 .type-center {
   text-align: center;
 }
-
 /*# sourceMappingURL=tent.css.map */

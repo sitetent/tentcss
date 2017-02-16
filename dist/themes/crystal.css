@@ -245,11 +245,6 @@ table td {
   flex-direction: row;
 }
 
-.flex__item, .grid__column {
-  flex: 1;
-  display: block;
-}
-
 .flex--stack, .grid--stack {
   flex-direction: column;
 }
@@ -284,6 +279,23 @@ table td {
 
 .flex--justify-end, .grid--justify-end {
   justify-content: flex-end;
+}
+
+.flex__item, .grid__column {
+  flex: 1;
+  display: block;
+}
+
+.flex__item--top, .grid__column--top {
+  align-self: flex-start;
+}
+
+.flex__item--bottom, .grid__column--bottom {
+  align-self: flex-end;
+}
+
+.flex__item--center, .grid__column--center {
+  align-self: center;
 }
 
 .flex-first {
@@ -352,18 +364,6 @@ table td {
   width: 100%;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-}
-
-.grid__column--top {
-  align-self: flex-start;
-}
-
-.grid__column--bottom {
-  align-self: flex-end;
-}
-
-.grid__column--center {
-  align-self: center;
 }
 
 .grid__column--offset-10 {
