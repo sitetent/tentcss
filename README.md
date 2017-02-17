@@ -5,8 +5,6 @@ A CSS survival kit. Includes only the essentials to make camp.
 
 <http://css.sitetent.com/>
 
-*Actively under development. Not advised for production use just yet.*
-
 ## Installation
 
 You can install via [bower](http://bower.io):
