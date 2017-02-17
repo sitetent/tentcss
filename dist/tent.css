@@ -1208,6 +1208,10 @@ table td {
   border: 0;
 }
 
+.control__input--block {
+  width: 100%;
+}
+
 .select-control {
   display: inline-block;
   vertical-align: top;

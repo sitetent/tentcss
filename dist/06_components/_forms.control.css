@@ -1,3 +1,7 @@
+.control--block {
+  width: 100%;
+}
+
 .control__input--block {
   width: 100%;
 }

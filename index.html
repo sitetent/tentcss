@@ -915,10 +915,22 @@
 
                                 <h3>Inputs</h3>
 
+                                <p>
+                                    Even HTML treats inputs in a modular fashion. They are a child elmenet for the <code>form</code> element. 
+                                    Tent provides basic normalization for the raw <code>input</code> including coverage for the different input types such as text, email, tel, etc. 
+                                    Further input variations and styles will be covered in the Control Set section below. This is to keep inputs modular and structured with BEM.
+                                </p>
+
+                                <h3>Control Sets</h3>
+
+                                <p>
+                                    Form control sets are small modular components that handle numerous variations responsibly.
+                                </p>
+
                                 <form>
                                     <div class="control">
                                         <label for="" class="control__label"></label>
-                                        <input class="control__input" type="text">
+                                        <input class="control__input control__input--block" type="text">
                                     </div>
                                     
                                 </form>
