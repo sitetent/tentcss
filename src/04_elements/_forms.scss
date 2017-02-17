@@ -7,6 +7,7 @@ $form-input-border: 1px solid $color-light !default;
 $form-input-size: $size-base !default;
 $form-input-color: $color-medium !default;
 $form-input-bg: $color-lightest !default;
+$form-input-focus: $color-primary !default;
 
 input[type="email"], 
 input[type="number"], 
@@ -26,7 +27,11 @@ select {
     margin: 0 0 rem($space-xs);
     color: $form-input-color;
     background-color: $form-input-bg;
-    width: 100%;
+    width: auto;
+
+    &:focus {
+        border-color: $form-input-focus;
+    }
 }
 
 label {
