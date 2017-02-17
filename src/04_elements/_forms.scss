@@ -1,0 +1,36 @@
+// ==========================================================================
+// Form Elements
+// ==========================================================================
+
+$form-label-weight: 600 !default;
+$form-input-border: 1px solid $color-light !default;
+$form-input-size: $size-base !default;
+$form-input-color: $color-medium !default;
+$form-input-bg: $color-lightest !default;
+
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="text"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="password"], 
+textarea,
+select {
+    display: block;
+    appearance: none;
+    font-size: rem($form-input-size);
+    border: $form-input-border;
+    border-radius: 0;
+    padding: rem($space-xxxs) rem($space-xxs);
+    margin: 0 0 rem($space-xs);
+    color: $form-input-color;
+    background-color: $form-input-bg;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: rem($space-xxxs);
+    font-weight: 600;
+}

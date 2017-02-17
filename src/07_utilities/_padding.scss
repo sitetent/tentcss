@@ -4,15 +4,15 @@
 
 .padding {
 
-    &-xxxs { padding: rem($padding-xxxs); }
-    &-xxs { padding: rem($padding-xxs); }
-    &-xs { padding: rem($padding-xs); }
-    &-sm { padding: rem($padding-sm); }
-    &-md { padding: rem($padding-md); }
-    &-lg { padding: rem($padding-lg); }
-    &-xl { padding: rem($padding-xl); }
-    &-xxl { padding: rem($padding-xxl); }
-    &-xxxl { padding: rem($padding-xxxl); }
+    &-xxxs { padding: rem($space-xxxs); }
+    &-xxs { padding: rem($space-xxs); }
+    &-xs { padding: rem($space-xs); }
+    &-sm { padding: rem($space-sm); }
+    &-md { padding: rem($space-md); }
+    &-lg { padding: rem($space-lg); }
+    &-xl { padding: rem($space-xl); }
+    &-xxl { padding: rem($space-xxl); }
+    &-xxxl { padding: rem($space-xxxl); }
     
     &-y {
         padding-left: 0;

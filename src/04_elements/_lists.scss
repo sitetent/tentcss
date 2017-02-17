@@ -5,7 +5,20 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: rem($space-xs);
-  padding-left: rem($space-md);
+  padding-left: 0
+}
+
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+li {
+  display: list-item;
+  margin-bottom: rem($space-xxxs);
 }
 
 dl {
