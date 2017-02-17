@@ -40,6 +40,7 @@ node_modules
 npm-debug.log*
 pids
 prepros.cfg
+prepros-6.config
 
 # Only use maps for local.
 *.css.map
