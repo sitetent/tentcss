@@ -191,7 +191,19 @@ select {
   margin: 0 0 2.4rem;
   color: #A4A4A4;
   background-color: #FFFFFF;
-  width: 100%;
+  width: auto;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #0074D9;
 }
 
 label {
@@ -895,38 +907,6 @@ table td {
   margin: 0;
 }
 
-.select-control {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  margin: 0 0 2.4rem;
-  width: 100%;
-}
-
-.select-control:after {
-  content: "";
-  border: 1px solid #0074D9;
-  border-right: 0;
-  border-top: 0;
-  display: block;
-  position: absolute;
-  height: 0.8rem;
-  pointer-events: none;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  width: 0.8rem;
-  margin-top: -0.375em;
-  right: 1.125em;
-  top: 50%;
-  z-index: 4;
-}
-
-.select-control select {
-  padding-right: 4rem;
-  margin: 0;
-}
-
 .table--stripped .table__body .table__row:not(:nth-child(even)) .table__cell {
   background-color: #F2F2F2;
 }
@@ -1086,6 +1066,11 @@ table td {
   font-size: 2rem;
 }
 
+.button--block {
+  width: 100%;
+  text-align: center;
+}
+
 .button--filled:hover, .button--filled:focus, .button--filled:active {
   color: #FFFFFF;
   background-color: #555555;
@@ -1221,6 +1206,38 @@ table td {
 .card--clear,
 .card--feature {
   border: 0;
+}
+
+.select-control {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0 0 2.4rem;
+  width: 100%;
+}
+
+.select-control:after {
+  content: "";
+  border: 1px solid #0074D9;
+  border-right: 0;
+  border-top: 0;
+  display: block;
+  position: absolute;
+  height: 0.8rem;
+  pointer-events: none;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 0.8rem;
+  margin-top: -0.375em;
+  right: 1.125em;
+  top: 50%;
+  z-index: 4;
+}
+
+.select-control select {
+  padding-right: 4rem;
+  margin: 0;
 }
 
 .color-primary {
