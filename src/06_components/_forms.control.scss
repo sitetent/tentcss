@@ -40,7 +40,6 @@
 }
 
 
-
 // Modifier - Control Block
 // Expands control for inputs and other form elements
 // ==========================================================================
@@ -86,4 +85,13 @@
 .control__select {
     padding-right: rem($space-md);
     margin: 0;
+}
+
+// Control - Textarea
+// ==========================================================================
+
+.control__textarea {
+    &--sm { min-height: rem($control-textarea-sm); }
+    &--md { min-height: rem($control-textarea-md); }
+    &--lg { min-height: rem($control-textarea-lg); }
 }

@@ -1089,6 +1089,18 @@ table td {
   margin: 0;
 }
 
+.control__textarea--sm {
+  min-height: 8rem;
+}
+
+.control__textarea--md {
+  min-height: 14rem;
+}
+
+.control__textarea--lg {
+  min-height: 20rem;
+}
+
 .color-primary {
   color: #B10DC9;
 }

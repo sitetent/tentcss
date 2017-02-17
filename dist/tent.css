@@ -1277,6 +1277,18 @@ table td {
   margin: 0;
 }
 
+.control__textarea--sm {
+  min-height: 8rem;
+}
+
+.control__textarea--md {
+  min-height: 14rem;
+}
+
+.control__textarea--lg {
+  min-height: 20rem;
+}
+
 .color-primary {
   color: #0074D9;
 }
@@ -1535,4 +1547,5 @@ table td {
 .type-center {
   text-align: center;
 }
+
 /*# sourceMappingURL=tent.css.map */
