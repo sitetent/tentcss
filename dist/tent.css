@@ -171,6 +171,10 @@ h6 {
   font-size: 1.6rem;
 }
 
+textarea {
+  overflow: auto;
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -184,6 +188,7 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  font-family: inherit;
   font-size: 1.6rem;
   border: 1px solid #E0E0E0;
   border-radius: 0;
@@ -204,12 +209,6 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border-color: #0074D9;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
 }
 
 /* Lists
@@ -280,7 +279,7 @@ table td {
   max-width: 100%;
 }
 
-.flex, .grid {
+.flex, .grid, .control--inline {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1212,19 +1211,53 @@ table td {
   border: 0;
 }
 
-.control__input--block {
+.control__label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.control--radio .control__label,
+.control--checkbox .control__label {
+  font-weight: 400;
+}
+
+.control--inline {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.control--inline .control__label:not(:first-child) {
+  margin-left: 0;
+}
+
+@media (min-width: 576px) {
+  .control--inline {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .control--inline .control__label:not(:first-child) {
+    margin-left: 0.8rem;
+  }
+}
+
+.control--block,
+.control--block .control__input,
+.control--block .control__textarea,
+.control--block .control__select {
   width: 100%;
 }
 
-.select-control {
+.control--select {
   display: inline-block;
   vertical-align: top;
   position: relative;
   margin: 0 0 2.4rem;
-  width: 100%;
 }
 
-.select-control:after {
+.control--select:after {
   content: "";
   border: 1px solid #0074D9;
   border-right: 0;
@@ -1243,7 +1276,7 @@ table td {
   z-index: 4;
 }
 
-.select-control select {
+.control__select {
   padding-right: 4rem;
   margin: 0;
 }

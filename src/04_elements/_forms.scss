@@ -9,6 +9,9 @@ $form-input-color: $color-medium !default;
 $form-input-bg: $color-lightest !default;
 $form-input-focus: $color-primary !default;
 
+// Remove the default vertical scrollbar in IE.
+textarea { overflow: auto; }
+
 input[type="email"], 
 input[type="number"], 
 input[type="search"], 
@@ -20,6 +23,7 @@ textarea,
 select {
     display: block;
     appearance: none;
+    font-family: inherit;
     font-size: rem($form-input-size);
     border: $form-input-border;
     border-radius: 0;
@@ -32,10 +36,4 @@ select {
     &:focus {
         border-color: $form-input-focus;
     }
-}
-
-label {
-    display: block;
-    margin-bottom: rem($space-xxxs);
-    font-weight: 600;
 }

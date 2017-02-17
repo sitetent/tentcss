@@ -2,16 +2,88 @@
 // Form Controls
 // ==========================================================================
 
-
-.control {
-
-}
-
 .control__label {
+    display: block;
+    margin-bottom: rem($space-xxxs);
+    font-weight: 600;
+}
+
+// Modifier - Control Radio
+// ==========================================================================
+
+.control--radio,
+.control--checkbox {
+    .control__label {
+        font-weight: 400;
+    }
+}
+
+// Modifier - Control Inline
+// ==========================================================================
+
+.control--inline {
+    @extend .flex;
+    flex-direction: column;
+
+    .control__label:not(:first-child) {
+        margin-left: 0;
+    }
+
+    @include breakpoint-min(sm) {
+        flex-direction: row;
+
+        .control__label:not(:first-child) {
+            margin-left: rem($space-xxxs);
+        }
+    }
 
 }
-.control__input {
-    &--block {
+
+
+
+// Modifier - Control Block
+// Expands control for inputs and other form elements
+// ==========================================================================
+
+.control--block {
+    &,
+    .control__input,
+    .control__textarea,
+    .control__select {
         width: 100%;
     }
+}
+
+// Control - Select Wrapper
+// Turns the control into a wrapper for a better select
+// ==========================================================================
+
+.control--select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 0 rem($space-xs);
+
+    &:after {
+        content: "";
+        border: 1px solid $color-primary;
+        border-right: 0;
+        border-top: 0;
+        display: block;
+        position: absolute;
+        height: rem($space-xxxs);
+        pointer-events: none;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: rem($space-xxxs);
+        margin-top: -0.375em;
+        right: 1.125em;
+        top: 50%;
+        z-index: 4;
+    }
+}
+
+.control__select {
+    padding-right: rem($space-md);
+    margin: 0;
 }
