@@ -83,6 +83,11 @@
         padding: $button-padding-xxxl;
         font-size: $button-size-lg;
     }
+
+    &--block {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .button--filled {
