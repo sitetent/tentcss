@@ -17,6 +17,8 @@
     "crystal:expanded": "node-sass --output-style expanded src/themes/crystal/crystal.scss dist/themes/crystal.css",
     "crystal:compressed": "node-sass --output-style compressed src/themes/crystal/crystal.scss dist/themes/crystal.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 4 versions' -r dist/*.css",
+    "serve": "browser-sync start --serveStatic 'examples' --files 'dist/*.css, *.html, public/**/*' --server",
+ -  "dev": "parallelshell 'npm run serve' 'npm run watch'",
     "watch": "onchange src -- npm run build",
     "build": "npm-run-all tent:expanded tent:compressed crystal:expanded crystal:compressed autoprefixer"
   },
@@ -37,6 +39,7 @@
     "node-sass": "^3.8.0",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
+    "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2"
   }
 }
