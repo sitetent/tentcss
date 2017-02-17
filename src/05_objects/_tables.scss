@@ -2,9 +2,6 @@
 // Tables
 // ==========================================================================
 
-$table-stripped-odd-bg: $color-lighter;
-$table-stripped-even-bg: $color-lightest;
-
 .table {
     &--stripped .table__body {
         .table__row:not(:nth-child(even)) .table__cell {
