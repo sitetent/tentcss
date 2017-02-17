@@ -63,3 +63,9 @@ MIT
 All of the authors and contributors to the great open source frameworks that have set the pace thus far and going forward.
 
 Created with caffine by [Aaron Mazade](http://aaronmazade.com) ([@ulinaaron](https://twitter.com/ulinaaron)).
+
+## Roadmap
+
+- Addons for more objects and components.
+- Better mixin support for default objects and components. Will allow those that desire to include mixins into their own classes rather than class chaining to make object and component variations.
+- Example boilerplates for common page types such as marketing and landing pages.
