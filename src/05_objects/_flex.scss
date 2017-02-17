@@ -26,8 +26,9 @@
 // ==========================================================================
 
 .flex__item {
-    flex: 1;
     display: block;
+
+    flex: 1;
 }
 
 .flex__item--top    { align-self: flex-start; }

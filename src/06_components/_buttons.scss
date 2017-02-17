@@ -6,23 +6,23 @@
     display: inline-block;
     margin-bottom: rem($space-xxxs);
     padding: $button-padding-sm;
-    border-radius: $button-border-radius;
     border: $button-outlined-border-width solid $button-filled-bg;
+    border-radius: $button-border-radius;
     background-color: $button-filled-bg;
     color: $button-filled-color;
     text-decoration: none;
-    transition: all 1s ease;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size: inherit;
+    transition: all 1s ease;
 
     &.button--primary {
         &:hover,
         &:focus,
         &:active {
-            color: $button-primary-color;
-            background-color: darken($button-primary-bg, 10%);
             border-color: darken($button-primary-bg, 25%);
+            background-color: darken($button-primary-bg, 10%);
+            color: $button-primary-color;
         }
     }
 
@@ -30,9 +30,9 @@
         &:hover,
         &:focus,
         &:active {
-            color: $button-secondary-color;
-            background-color: darken($button-secondary-bg, 10%);
             border-color: darken($button-secondary-bg, 25%);
+            background-color: darken($button-secondary-bg, 10%);
+            color: $button-secondary-color;
         }
     }
     
@@ -40,9 +40,9 @@
         &:hover,
         &:focus,
         &:active {
-            color: $button-tertiary-color;
-            background-color: darken($button-tertiary-bg, 10%);
             border-color: darken($button-tertiary-bg, 25%);
+            background-color: darken($button-tertiary-bg, 10%);
+            color: $button-tertiary-color;
         }
     }
 
@@ -95,9 +95,9 @@
     &:hover,
     &:focus,
     &:active {
-        color: $button-filled-color;
-        background-color: darken($button-filled-bg, 10%);
         border-color: darken($button-filled-bg, 25%);
+        background-color: darken($button-filled-bg, 10%);
+        color: $button-filled-color;
     }
 
     &.button--primary {
@@ -108,14 +108,14 @@
 
     // Button Colors
     &.button--secondary {
-        background-color: $button-secondary-bg;
         border-color: $button-secondary-bg;
+        background-color: $button-secondary-bg;
         color: $button-secondary-color;
     }
 
     &.button--tertiary {
-        background-color: $button-tertiary-bg;
         border-color: $button-tertiary-bg;
+        background-color: $button-tertiary-bg;
         color: $button-tertiary-color;
     }
 }
@@ -127,9 +127,9 @@
     &:hover,
     &:focus,
     &:active {
-        color: $button-filled-color;
-        background-color: darken($button-outlined-color, 10%);
         border-color: darken($button-outlined-color, 25%);
+        background-color: darken($button-outlined-color, 10%);
+        color: $button-filled-color;
     }
 
     &.button--primary {
@@ -156,7 +156,7 @@
     &:hover,
     &:focus,
     &:active {
-        color: $button-clear-color;
         border-bottom: 2px solid $button-clear-color;
+        color: $button-clear-color;
     }
 }

@@ -16,12 +16,12 @@ h3,
 h4,
 h5,
 h6 {
-	color: $heading-color;
-	font-size: inherit;
-	font-weight: inherit;
 	display: block;
-	line-height: $heading-line-height;
 	margin: 0 0 rem($space-sm);
+	color: $heading-color;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: $heading-line-height;
 
 	&:last-child {
 		margin-bottom: 0;

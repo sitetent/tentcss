@@ -6,8 +6,8 @@
 body {
 	background-color: $base-color-bg;
 	color: $base-color;
-	font-family: $font-family-primary;
-	font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
 	font-weight: 400;
+	font-size: 1.6em; // currently ems cause chrome bug misinterpreting rems on body element
+	font-family: $font-family-primary;
 	line-height: $base-line-height;
 }

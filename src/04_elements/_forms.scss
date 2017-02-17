@@ -22,16 +22,17 @@ input[type="password"],
 textarea,
 select {
     display: block;
-    appearance: none;
-    font-family: inherit;
-    font-size: rem($form-input-size);
+    margin: 0 0 rem($space-xs);
+    padding: rem($space-xxxs) rem($space-xxs);
+    width: auto;
     border: $form-input-border;
     border-radius: 0;
-    padding: rem($space-xxxs) rem($space-xxs);
-    margin: 0 0 rem($space-xs);
-    color: $form-input-color;
     background-color: $form-input-bg;
-    width: auto;
+    color: $form-input-color;
+    font-size: rem($form-input-size);
+    font-family: inherit;
+
+    appearance: none;
 
     &:focus {
         border-color: $form-input-focus;
