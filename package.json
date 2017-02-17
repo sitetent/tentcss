@@ -18,7 +18,7 @@
     "crystal:compressed": "node-sass --output-style compressed src/themes/crystal/crystal.scss dist/themes/crystal.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 4 versions' -r dist/*.css",
     "serve": "browser-sync start --serveStatic 'examples' --files 'dist/*.css, *.html, public/**/*' --server",
- -  "dev": "parallelshell 'npm run serve' 'npm run watch'",
+    "dev": "parallelshell 'npm run serve' 'npm run watch'",
     "watch": "onchange src -- npm run build",
     "build": "npm-run-all tent:expanded tent:compressed crystal:expanded crystal:compressed autoprefixer"
   },
