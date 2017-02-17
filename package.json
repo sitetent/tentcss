@@ -12,15 +12,12 @@
   "main": "package.json",
   "scripts": {
     "version:patch": "npm version patch -m \"Bumped to %s\"",
-    "docs:css": "node-sass --output-style expanded public/sass/docs.scss public/css/docs.css",
     "tent:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
     "tent:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
     "crystal:expanded": "node-sass --output-style expanded src/themes/crystal/crystal.scss dist/themes/crystal.css",
     "crystal:compressed": "node-sass --output-style compressed src/themes/crystal/crystal.scss dist/themes/crystal.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 4 versions' -r dist/*.css",
     "watch": "onchange src -- npm run build",
-    "serve": "browser-sync start --serveStatic 'docs' --files 'dist/*.css, *.html, public/**/*' --server",
-    "dev": "parallelshell 'npm run serve' 'npm run watch'",
     "build": "npm-run-all tent:expanded tent:compressed crystal:expanded crystal:compressed autoprefixer"
   },
   "keywords": [
@@ -40,7 +37,6 @@
     "node-sass": "^3.8.0",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
-    "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2"
   }
 }
