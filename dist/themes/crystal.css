@@ -1342,6 +1342,10 @@ table td {
   font-variant: small-caps;
 }
 
+.type-uppercase {
+  text-transform: uppercase;
+}
+
 .type-justify {
   text-align: justify;
 }
