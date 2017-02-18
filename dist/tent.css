@@ -970,7 +970,7 @@ table td {
 
 .title:not(:last-child),
 .subtitle:not(:last-child) {
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-set .title {
