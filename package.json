@@ -1,0 +1,36 @@
+{
+  "name": "tent-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Tent CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitetent/tentcss.git"
+  },
+  "author": "Aaron Mazade <ulinaaron@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sitetent/tentcss/issues"
+  },
+  "homepage": "https://github.com/sitetent/tentcss#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.18",
+    "browser-sync": "^2.7.1",
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-compile-handlebars": "^0.5.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-gh-pages": "^0.5.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sass-bulk-import": "^0.3.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.3.5"
+  }
+}
