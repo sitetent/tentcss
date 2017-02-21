@@ -21,16 +21,16 @@
     "browser-sync": "^2.7.1",
     "del": "^1.2.0",
     "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
-    "gulp-babel": "^6.1.0",
-    "gulp-compile-handlebars": "^0.5.0",
-    "gulp-concat": "^2.5.2",
-    "gulp-gh-pages": "^0.5.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
-    "gulp-sass-bulk-import": "^0.3.1",
-    "gulp-uglify": "^1.2.0",
-    "gulp-util": "^3.0.4",
-    "gulp-watch": "^4.3.5"
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11"
   }
 }

@@ -8,10 +8,10 @@ $RECYCLE.BIN/
 *.pid
 *.seed
 *~
+.DS_Store
 .AppleDB
 .AppleDesktop
 .AppleDouble
-.DS_Store
 .DocumentRevisions-V100
 .LSOverride
 .Spotlight-V100
