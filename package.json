@@ -31,6 +31,7 @@
     "gulp-sass-bulk-import": "^1.0.1",
     "gulp-uglify": "^2.0.1",
     "gulp-util": "^3.0.8",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "tent-css": "^1.2.1"
   }
 }
