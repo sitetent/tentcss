@@ -19,17 +19,17 @@ var paths = {
   src: { root: 'src' },
   dist: { root: 'dist' },
   init: function() {
-    this.src.sass        = this.src.root + '/public/scss/docs.scss';
+    this.src.sass        = this.src.root + '/public/sass/docs.scss';
     this.src.templates   = this.src.root + '/**/*.hbs';
     this.src.javascript  = [this.src.root + '/public/js/**/*.js', '!' + this.src.root + '/js/libs/*.js'];
     this.src.libs        = this.src.root + '/public/js/libs/*.js';
     this.src.images      = this.src.root + '/public/img/**/*.{jpg,jpeg,svg,png,gif}';
     this.src.files       = this.src.root + '/*.{html,txt}';
 
-    this.dist.css        = this.dist.root + '/css';
-    this.dist.images     = this.dist.root + '/img';
-    this.dist.javascript = this.dist.root + '/js';
-    this.dist.libs       = this.dist.root + '/js/libs';
+    this.dist.css        = this.dist.root + '/public/css';
+    this.dist.images     = this.dist.root + '/public/img';
+    this.dist.javascript = this.dist.root + '/public/js';
+    this.dist.libs       = this.dist.root + '/public/js/libs';
 
     return this;
   },
