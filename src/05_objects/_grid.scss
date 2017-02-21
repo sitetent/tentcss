@@ -49,17 +49,6 @@
 	&--bottom { @extend .flex__item--bottom;}
 	&--center { @extend .flex__item--center; }
 
-	// Column Offsets
-	&--offset-10 { margin-left: 10%; }
-	&--offset-20 { margin-left: 20%; }
-	&--offset-25 { margin-left: 25%; }
-	&--offset-33 { margin-left: 33.3333%; }
-	&--offset-50 { margin-left: 50%; }
-	&--offset-66 { margin-left: 66.6666%; }
-	&--offset-75 { margin-left: 75%; }
-	&--offset-80 { margin-left: 80%; }
-	&--offset-90 { margin-left: 90%; }
-
 	// Explicit Column Percent Sizes
 	@for $i from 1 through $grid-columns {
 		$factor: 100% * ($i / $grid-columns);
