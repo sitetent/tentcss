@@ -5,6 +5,7 @@ const del         = require('del');
 const util        = require('gulp-util');
 const sass        = require('gulp-sass');
 const prefixer    = require('gulp-autoprefixer');
+const csso        = require('gulp-csso');
 const uglify      = require('gulp-uglify');
 const concat      = require('gulp-concat');
 const rename      = require('gulp-rename');
@@ -55,6 +56,9 @@ gulp.task('styles', () => {
     }))
     .on('error', util.log)
     .pipe(prefixer('last 4 versions'))
+    .pipe(csso({
+        keepSpecialComments: 1
+    }))
     .on('error', util.log)
     .pipe(gulp.dest(paths.dist.css))
     .pipe(browserSync.reload({stream: true}));
