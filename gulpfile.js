@@ -19,7 +19,7 @@ var paths = {
   src: { root: 'src' },
   dist: { root: 'dist' },
   init: function() {
-    this.src.sass        = this.src.root + '/public/sass/docs.scss';
+    this.src.sass        = this.src.root + '/public/sass/**/*.scss';
     this.src.templates   = this.src.root + '/**/*.hbs';
     this.src.javascript  = [this.src.root + '/public/js/**/*.js', '!' + this.src.root + '/js/libs/*.js'];
     this.src.libs        = this.src.root + '/public/js/libs/*.js';
@@ -51,7 +51,7 @@ gulp.task('styles', () => {
     .pipe(sassGlob())
     .on('error', util.log)
     .pipe(sass({
-      includePaths: ['src/scss'],
+      includePaths: ['src/public/sass'],
     }))
     .on('error', util.log)
     .pipe(prefixer('last 4 versions'))
@@ -128,7 +128,7 @@ watch(paths.src.files, () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('src/scss/**/*.scss', ['styles']);
+  gulp.watch(paths.src.sass, ['styles']);
   gulp.watch(paths.src.javascript, ['scripts']);
   gulp.watch(paths.src.templates, ['templates']);
 });
