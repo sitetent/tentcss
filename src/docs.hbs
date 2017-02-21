@@ -1,0 +1,1626 @@
+{{> header title='Tent CSS'}}
+
+<div class="mastcontent bg-color-lightest" role="main">
+    <div class="grid">
+        <div class="grid__column">
+            <div class="container padding-y padding-lg">
+
+                <h1>Documentation</h1>
+
+                <hr>
+
+                <div class="grid">
+                    <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">
+
+                        <span class="anchor" id="get-started"></span>
+                        <span class="anchor" id="start-install"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Getting Started</h1>
+                            <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
+                        </div>
+
+                        <hr>
+
+                        <h3>Install with NPM</h3>
+
+                        <pre><code class="language-markup"><!--
+                            npm install --save tent-css
+                        --></code></pre>
+
+                        <h3>Install with Bower</h3>
+
+                        <pre><code class="language-markup"><!--
+                            bower install --save tent-css
+                        --></code></pre>
+
+                        <h3>Clone the repository</h3>
+
+                        <pre><code class="language-markup"><!--
+                            git clone https://github.com/sitetent/tentcss.git
+                        --></code></pre>
+
+                        <h3>Install Manually</h3>
+
+                        <a href="https://github.com/sitetent/tentcss/releases" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
+
+                        <hr>
+
+                        <span class="anchor" id="start-customize"></span>
+
+                        <h2>How to include Tent CSS in your project</h2>
+
+                        <p>The simpliest way to getting set up with Tent CSS is to include the CSS file in your project. For this method you should copy <code>/dist/tent.min.css</code> into the CSS folder of your project.</p>
+
+                        <pre><code class="language-markup"><!--
+                            <link href="css/tent.min.css" rel="stylesheet">
+
+                            <link href="css/Your-Project.min.css" rel="stylesheet">
+                        --></code></pre>
+
+                        <h3>Building from source</h3>
+
+                        <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
+
+                        <p>Within your project Sass file you should import tent.scss</p>
+
+                        <pre><code class="language-markup"><!--
+                            @import "path-to/tentcss";
+                        --></code></pre>
+
+                        <div class="card card--outlined card--tertiary color-tertiary">
+                            <div class="card__content type-italic">
+                                <p>To use the Sass source files, it is suggested that you have an understanding of how CSS preprocessors work and how to compile them.</p>
+                            </div>
+                        </div>
+
+                        <h4>Overriding Sass variables</h4>
+
+                        <p>A lot of Tent CSS features use Sass variables. This makes it very easy to override variables and thus you won't have to write more lines of code to modify these features.</p>
+
+                        <p>Copy the variables from <code>src/01_settings/_variables.scss</code> to your project that you'd like to override.</p>
+
+                        <!-- END Getting Started -->
+
+                        <hr>
+
+                        <span class="anchor" id="Settings"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Settings</h1>
+                            <p class="lead">These are variables set using Sass. Using the Sass preprocessor is required to modify these. </p>
+                        </div>
+
+                        <hr>
+
+                        <p>
+                            The default framework Sass variables can be found in <code>src/01_settings/_variables.defaults.scss</code>.
+                            It is recommended that you do not modify this file directly.
+                            Instead you should either completely copy the file or just the variables you would like to modify.
+                            In your custom settings file be sure to remove any <code>!default</code> declarations.
+                        </p>
+
+
+                        <pre><code class="language-markup"><!--
+
+                            @import "path/to/your-settings"
+
+                            @import "path/to/tent";
+
+                            // Custom CSS
+
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="tools"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Tools</h1>
+                            <p class="lead">These are Sass mixins and functions used thorought the framework.</p>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="tools-breakpoints"></span>
+
+                        <h2>Breakpoints</h2>
+
+                        <p>The breakpoint mixins make it very easy to call upon preset media query boundaries.</p>
+
+                        <p>
+                            The default $breakpoint sizes are <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> <code>xl</code> <code>xxl</code> <code>xxxl</code>
+                        </p>
+
+                        <pre><code class="language-markup"><!--
+                            @include breakpoint-min($breakpoint) {
+                                .foo {}
+                            }
+
+                            @include breakpoint-max($breakpoint) {
+                                .foo {}
+                            }
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="tools-scales"></span>
+
+                        <h2>Scales</h2>
+
+                        <hr>
+
+                        <span class="anchor" id="tools-clearfix"></span>
+
+                        <h2>Clearfix</h2>
+
+                        <p>
+                            Clearfix is a rather legacy layout adjustment multi-selector. With Flexbox on the rise this tool will become outdated.
+                            Regardless, clearfix helps containing selectors keep their floating children within bounds.
+                            Without clearfix some floating selectors may escape the container.
+                        </p>
+
+                        <pre><code class="language-markup"><!--
+                            selector {
+                                @include clearfix();
+                            }
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="tools-box-sizing"></span>
+
+                        <h2>Box Sizing</h2>
+
+                        <hr>
+
+                        <span class="anchor" id="generics"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Generics</h1>
+                            <p class="lead">This level contains the global reset for HTML markup.</p>
+                        </div>
+
+                        <hr>
+
+                        <p>
+                            We use a super small normalization and reset designed for modern web browsers.
+                            Properities for legacy browsers have been excluded.
+                        </p>
+
+                        <hr>
+
+                        <span class="anchor" id="elements"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Elements</h1>
+                            <p class="lead">Elements are raw HTML elements. Tent CSS normalizes these elements with basic styles.</p>
+                        </div>
+
+
+
+                        <hr>
+
+                        <span class="anchor" id="elements-defaults"></span>
+
+
+                        <p>
+                            Tent CSS provides normalization for a ton of standard markup elements.
+                            Because these elements are presented repeatedly throughout the documentation we will not showcase them all here.
+                        </p>
+
+                        <p>Here is a list of all the elements that we have applied styles to:</p>
+
+                        <code>body</code>
+                        <code>h1</code>
+                        <code>h2</code>
+                        <code>h3</code>
+                        <code>h4</code>
+                        <code>h5</code>
+                        <code>h6</code>
+                        <code>p</code>
+                        <code>ul</code>
+                        <code>ol</code>
+                        <code>li</code>
+                        <code>code</code>
+                        <code>strong</code>
+                        <code>b</code>
+                        <code>em</code>
+                        <code>a</code>
+                        <code>button</code>
+                        <code>img</code>
+                        <code>table</code>
+                        <code>hr</code>
+
+                        <hr>
+
+                        <span class="anchor" id="objects"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Objects</h1>
+                            <p class="lead">These are class-based selectors that define undecorated design patterns. They are vital for layout and structure.</p>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="objects-zones"></span>
+
+                        <h2>Zones</h2>
+
+                        <p class="lead">
+                            These are opinionated sections that help define unique areas of your webpage such as the master header, content, and footer.
+                        </p>
+
+                        <div class="card card--outlined card--primary color-primary">
+                            <div class="card__content">
+                                Due to the naming of these areas being so opinionated we have built in Sass variables for these to be modified if you so choose.
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <header class="masthead"></header>
+                            <main class="mastcontent"></main>
+                            <footer class="mastfoot"></footer>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="objects-containers"></span>
+
+                        <h2>Containers</h2>
+
+                        <p class="lead">
+                            These are large class selectors that can hold many other structures, and components.
+                            Consider containers the "wrappers" that make your content properly fit the window's width.
+                            They will auto-set margins on all screen sizes.
+                        </p>
+
+                        <p>
+                            <code>.container</code>
+                        </p>
+
+                        <p>A full-width container:</p>
+
+                        <p>
+                            <code>.container.container--fluid</code>
+                        </p>
+
+                        <hr>
+
+                        <span class="anchor" id="objects-flex-object"></span>
+
+                        <h2>Flex Object</h2>
+
+                        <p class="lead">The foundation for a modern extensible framework. The Flex Object, is a flexbox based object we use to build other objects and components.
+                              Many principles of this object will be shared and seem familar with others.
+                        </p>
+
+                        <hr>
+
+                        <span class="anchor" id="objects-grid"></span>
+
+                        <div class="title-set flex flex--stretch">
+
+                            <h2 class="flex__item">Grid</h2>
+
+                            <div class="card flex__item type-center">
+                                <div class="card__content">
+                                    <span class="type-small">Extends the Flex Object</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p class="lead">
+                            The grid is a flexbox-based mobile-first responsive layout object. That is a mouthful in itself!
+                            With the addition of flexbox, the grid is a super-powerful system to help lay out your content.
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid-example grid padding-xxxs padding-y">
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                </div>
+                                <div class="grid-example grid padding-xxxs padding-y">
+                                    <div class="grid__column bg-color-darker inverse">2</div>
+                                    <div class="grid__column bg-color-darker inverse">2</div>
+                                    <div class="grid__column bg-color-darker inverse">2</div>
+                                    <div class="grid__column bg-color-darker inverse">2</div>
+                                    <div class="grid__column bg-color-darker inverse">2</div>
+                                    <div class="grid__column bg-color-darker inverse">2</div>
+                                </div>
+                                <div class="grid-example grid padding-xxxs padding-y">
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                </div>
+
+                                <div class="grid-example grid padding-xxxs padding-y">
+                                    <div class="grid__column grid__column--8 bg-color-darker inverse">8</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                    <div class="grid__column bg-color-darker inverse">1</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h3>Grid Column Breakpoints</h3>
+
+                        <p>The grid column breakpoint classes are designed to be mobile-first. So <code>.grid__column--#</code> will be visible on the smallest viewports while <code>.grid__column--#--md</code> would take effect on medium viewsports. So the class <code>.grid__column--#</code> will always be visible until the next column class with a breakpoint modifier is used.</p>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="grid">
+                                <div class="grid__column grid__column--12 grid__column--#--sm ">...</div>
+                                <div class="grid__column grid__column--12 grid__column--#--md ">...</div>
+                                <div class="grid__column grid__column--12 grid__column--#--lg ">...</div>
+                                <div class="grid__column grid__column--12 grid__column--#--xl ">...</div>
+                            </div>
+                        --></code></pre>
+
+                        <h3>Grid Horizontal Alignments</h3>
+
+                        <p>
+                            <code>.grid.grid--justify-start</code>
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid-example grid grid--justify-start padding-xxs padding-y">
+                                    <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                                    <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            <code>.grid.grid--justify-center</code>
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid-example grid grid--justify-center padding-xxs padding-y">
+                                    <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                                    <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            <code>.grid.grid--justify-end</code>
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid-example grid grid--justify-end padding-xxs padding-y">
+                                    <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                                    <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h3>Grid Vertical Alignments</h3>
+
+                        <p>
+                            <code>.grid.grid--top</code>
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid-example grid grid--top padding-xxs padding-y" style="height: 200px;">
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            <code>.grid.grid--center</code>
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid-example grid grid--center padding-xxs padding-y" style="height: 200px;">
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            <code>.grid.grid--bottom</code>
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+                                <div class="grid-example grid grid--bottom padding-xxs padding-y" style="height: 200px;">
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                    <div class="grid__column bg-color-darker inverse">Auto</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Individual columns within a grid can also have their own alignment:</p>
+
+                        <div class="grid">
+                            <div class="grid__column">
+                                <code>.grid__column.grid__column--top</code>
+                            </div>
+                            <div class="grid__column">
+                                <code>.grid__column.grid__column--center</code>
+                            </div>
+                            <div class="grid__column">
+                                <code>.grid__column.grid__column--bottom</code>
+                            </div>
+                        </div>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+                                <div class="grid-example grid padding-xxs padding-y" style="height: 200px;">
+                                    <div class="grid__column grid__column--top bg-color-darker inverse">One of Three Columns</div>
+                                    <div class="grid__column grid__column--center bg-color-darker inverse">One of Three Columns</div>
+                                    <div class="grid__column grid__column--bottom bg-color-darker inverse">One of Three Columns</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="objects-lists"></span>
+
+                        <h2>Object Lists</h2>
+
+                        <p class="lead">These are plain undesigned lists that can be helpful to assemble common component types such as menus and navigation bars.</p>
+
+                        <h3>Unstyled List</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <ul class="list list--unstyled">
+                                    <li class="list__item">List Item 1</li>
+                                    <li class="list__item">List Item 2</li>
+                                    <li class="list__item">List Item 3</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <ul class="list list--unstyled">
+                                <li class="list__item">List Item 1</li>
+                                <li class="list__item">List Item 2</li>
+                                <li class="list__item">List Item 3</li>
+                            </ul>
+                        --></code></pre>
+
+                        <h3>Nulled List</h3>
+
+                        <p>
+                            This list modifier nullifies the default margins set on list items.
+                            Since content elements should be able to be classless, it makes since to require a class for objects and components instead.
+                        </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <ul class="list list--nulled">
+                                    <li class="list__item">List Item 1</li>
+                                    <li class="list__item">List Item 2</li>
+                                    <li class="list__item">List Item 3</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <ul class="list list--nulled">
+                                <li class="list__item">List Item 1</li>
+                                <li class="list__item">List Item 2</li>
+                                <li class="list__item">List Item 3</li>
+                            </ul>
+                        --></code></pre>
+
+                        <h3>Inline List</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <ul class="list list--inline list--nulled">
+                                    <li class="list__item">List Item 1</li>
+                                    <li class="list__item">List Item 2</li>
+                                    <li class="list__item">List Item 3</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <ul class="list list--inline">
+                                <li class="list__item">List Item 1</li>
+                                <li class="list__item">List Item 2</li>
+                                <li class="list__item">List Item 3</li>
+                            </ul>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="objects-tables"></span>
+
+                        <h2>Tables</h2>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tent Name</th>
+                                            <th>Tent Type</th>
+                                            <th>Sleeps</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Camel 575S</td>
+                                            <td>Dome</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mule 40T</td>
+                                            <td>Dome</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sequoia LT</td>
+                                            <td>Ridge</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <h3>Stripped Table</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <table class="table table--stripped">
+                                <thead class="table__head">
+                                    <tr class="table__row table__row--heading">
+                                        <th class="table__cell">Tent Name</th>
+                                        <th class="table__cell">Tent Type</th>
+                                        <th class="table__cell">Sleeps</th>
+                                    </tr>
+                                </thead>
+                                    <tbody class="table__body">
+                                        <tr class="table__row">
+                                            <td class="table__cell">Camel 575S</td>
+                                            <td class="table__cell">Dome</td>
+                                            <td class="table__cell">6</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">Mule 40T</td>
+                                            <td class="table__cell">Dome</td>
+                                            <td class="table__cell">6</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">Sequoia LT</td>
+                                            <td class="table__cell">Ridge</td>
+                                            <td class="table__cell">2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="components"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Components</h1>
+                            <p class="lead">These are specific UI patterns that are designed to be as modular and extensible as possible.</p>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="components-headings"></span>
+
+                        <h2>Headings</h2>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid grid--gutterless padding-y padding-xxs">
+                                    <div class="grid__column grid__column--12 grid__column--6--md">
+                                        <h3>Title Headings</h3>
+
+                                        <h1 class="title title--xxxl">Title 1</h1>
+                                        <h2 class="title title--xxl">Title 2</h2>
+                                        <h3 class="title title--xl">Title 3</h3>
+                                        <h4 class="title title--lg">Title 4</h4>
+                                        <h5 class="title title--md">Title 5</h5>
+                                        <h6 class="title title--sm">Title 6</h6>
+                                    </div>
+                                    <div class="grid__column grid__column--12 grid__column--6--md">
+                                        <h3>Subtitle Headings</h3>
+
+                                        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                                        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                                        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                                        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                                        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                                        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <h1 class="title title--xxxl">Title 1</h1>
+                            <h2 class="title title--xxl">Title 2</h2>
+                            <h3 class="title title--xl">Title 3</h3>
+                            <h4 class="title title--lg">Title 4</h4>
+                            <h5 class="title title--md">Title 5</h5>
+                            <h6 class="title title--sm">Title 6</h6>
+
+                            <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                            <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                            <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                            <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                            <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                            <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                        --></code></pre>
+
+                        <!-- END Headings -->
+
+                        <h3>Title Set</h3>
+
+                        <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+                                <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
+                                    <h1 class="title title--lg">A leading title</h1>
+                                    <p class="subtitle subtitle--lg">A following subtitle.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- END Title Set -->
+
+                        <hr>
+
+                        <span class="anchor" id="components-leads"></span>
+
+                        <h2>Leads</h2>
+
+                        <p>Leads are a simple component that adds emphasis to titles and paragraphs. Add the class <code>.lead</code> to use.</p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="components-forms"></span>
+
+                        <h2>Forms</h2>
+
+                        <h3>Inputs</h3>
+
+                        <p>
+                            Even HTML treats inputs in a modular fashion. They are a child elmenet for the <code>form</code> element.
+                            Tent provides basic normalization for the raw <code>input</code> including coverage for the different input types such as text, email, tel, etc.
+                            Further input variations and styles will be covered in the Control Set section below. This is to keep inputs modular and structured with BEM.
+                        </p>
+
+                        <h3>Control Sets</h3>
+
+                        <p>
+                            Form control sets are small modular components that handle numerous variations responsibly.
+                        </p>
+
+                        <pre><code class="language-markup"><!--
+                            <form>
+                                <div class="control">
+                                    <label for="exampleField1" class="control__label"></label>
+                                    <input class="control__input" type="text" id="exampleField1">
+                                </div>
+                            </form>
+                        --></code></pre>
+
+                        <h4>Control Block Modifier (Full-Width)</h4>
+
+                        <p>
+                            A <code>.control.control--block</code> modifier expands an inner child element to be full-width along with the control container itself.
+                            Use full-width controls in combination with the grid.
+                        </p>
+
+                        <pre><code class="language-markup"><!--
+                            <form>
+                                <div class="control control--block">
+                                    <label for="exampleField2" class="control__label"></label>
+                                    <input class="control__input" type="text" id="exampleField2">
+                                </div>
+                            </form>
+                        --></code></pre>
+
+                        <h4>Control Inline Modifier</h4>
+
+                        <p>
+                            Adding <code>.control.control--inline</code> extends the Flex object.
+                            Add <code>.control.control--radio.control--inline</code> or <code>.control.control--checkbox.control--inline</code> will set checkboxes and radios to be inline.
+                        </p>
+
+
+                        <h3>A Basic Form Example</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <form>
+                                    <div class="grid">
+                                        <div class="grid__column">
+                                            <div class="control control--block">
+                                                <label class="control__label" for="exampleEmailInput">Your email</label>
+                                                <input class="control__input" type="email" placeholder="test@domain.com" id="exampleEmailInput">
+                                            </div>
+                                        </div>
+                                        <div class="grid__column">
+                                            <label class="control__label" for="exampleSelect">What can we help you with?</label>
+                                            <div class="control control--block control--select">
+                                                <select class="control__select" id="exampleSelect">
+                                                    <option value="Option 1">Questions</option>
+                                                    <option value="Option 2">Feedback</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="grid__column">
+                                            <div class="control control--block">
+                                                <label class="control__label" for="exampleMessage">Message</label>
+                                                <textarea class="control__textarea control__textarea--md" placeholder="Type your message here..." id="exampleMessage"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="grid__column">
+
+                                            <div class="control control--checkbox">
+                                                <label class="control__label" class="checkbox">
+                                                    <input class="control__checkbox" type="checkbox">
+                                                    A checkbox
+                                                </label>
+                                                <label class="control__label" class="checkbox">
+                                                    <input class="control__checkbox" type="checkbox">
+                                                    A second checkbox
+                                                </label>
+                                            </div>
+                                            <div class="control control--radio control--inline">
+                                                <label class="control__label">
+                                                    <input class="control__radio" type="radio" name="question">
+                                                    One radio example
+                                                </label>
+                                                <label class="control__label">
+                                                    <input class="control__radio" type="radio" name="question">
+                                                    Second radio example
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="grid__column">
+                                            <div class="control control--block">
+                                                <input class="control__button button button--filled button--primary" type="submit" value="Submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <form>
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="control control--block">
+                                            <label class="control__label" for="exampleEmailInput">Your email</label>
+                                            <input class="control__input" type="email" placeholder="test@domain.com" id="exampleEmailInput">
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <label class="control__label" for="exampleSelect">What can we help you with?</label>
+                                        <div class="control control--block control--select">
+                                            <select class="control__select" id="exampleSelect">
+                                                <option value="Option 1">Questions</option>
+                                                <option value="Option 2">Feedback</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="control control--block">
+                                            <label class="control__label" for="exampleMessage">Message</label>
+                                            <textarea class="control__textarea control__textarea--md" placeholder="Type your message here..." id="exampleMessage"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="grid__column">
+
+                                        <div class="control control--checkbox">
+                                            <label class="control__label" class="checkbox">
+                                                <input class="control__checkbox" type="checkbox">
+                                                A checkbox
+                                            </label>
+                                        </div>
+                                        <div class="control control--radio">
+                                            <label class="control__label">
+                                                <input class="control__radio" type="radio" name="question">
+                                                One radio example
+                                            </label>
+                                            <label class="control__label">
+                                                <input class="control__radio" type="radio" name="question">
+                                                Second radio example
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="control control--block">
+                                            <input class="control__button button button--filled button--primary" type="submit" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="components-buttons"></span>
+
+                        <h2>Buttons</h2>
+
+                        <h3>Types</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <a href="#" class="button button--filled button--xs">Filled Button</a>
+                                        <a href="#" class="button button--outlined button--xs">Outlined Button</a>
+                                        <a href="#" class="button button--clear button--xs">Clear Button</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <a href="#" class="button button--filled">Filled Button</a>
+                            <a href="#" class="button button--outlined">Outlined Button</a>
+                            <a href="#" class="button button--clear">Clear Button</a>
+                        --></code></pre>
+
+                        <h3>Colors</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <a href="#" class="button button--filled button--primary button--xs">Primary Button</a>
+                                        <a href="#" class="button button--filled button--secondary button--xs">Secondary Button</a>
+                                        <a href="#" class="button button--filled button--tertiary button--xs">Tertiary Button</a>
+                                    </div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <a href="#" class="button button--outlined button--primary button--xs">Primary Button</a>
+                                        <a href="#" class="button button--outlined button--secondary button--xs">Secondary Button</a>
+                                        <a href="#" class="button button--outlined button--tertiary button--xs">Tertiary Button</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <a href="#" class="button button--filled button--primary">Primary Button</a>
+                            <a href="#" class="button button--filled button--secondary">Secondary Button</a>
+                            <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
+
+                            <a href="#" class="button button--outlined button--primary">Primary Button</a>
+                            <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
+                            <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+                        --></code></pre>
+
+                        <h3>Sizes</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <a href="#" class="button button--filled button--xxxs">3X Small</a>
+                                        <a href="#" class="button button--filled button--xxs">2X Small</a>
+                                        <a href="#" class="button button--filled button--xs">1X Small</a>
+                                        <a href="#" class="button button--filled button--sm">Small</a>
+                                        <a href="#" class="button button--filled button--md">Medium</a>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <a href="#" class="button button--filled button--lg">Large</a>
+                                        <a href="#" class="button button--filled button--xl">1X Large</a>
+                                        <a href="#" class="button button--filled button--xxl">2X Large</a>
+                                        <a href="#" class="button button--filled button--xxxl">3X Large</a>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid--center">
+                                    <div class="grid__column">
+                                        <a href="#" class="button button--filled button--block">Block Button</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <a href="#" class="button button--filled button--xxxs">3X Small</a>
+                            <a href="#" class="button button--filled button--xxs">2X Small</a>
+                            <a href="#" class="button button--filled button--xs">1X Small</a>
+                            <a href="#" class="button button--filled button--sm">Small</a>
+                            <a href="#" class="button button--filled button--md">Medium</a>
+                            <a href="#" class="button button--filled button--lg">Large</a>
+                            <a href="#" class="button button--filled button--xl">1X Large</a>
+                            <a href="#" class="button button--filled button--xxl">2X Large</a>
+                            <a href="#" class="button button--filled button--xxxl">3X Large</a>
+
+                            <a href="#" class="button button--filled button--block">Block Button</a>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="components-cards"></span>
+
+                        <h2>Cards</h2>
+
+                        <p>A card is a multi-use component that can be extended to make many other common components.</p>
+
+                        <h4>Panel Cards</h4>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card">
+                                            <div class="card__content">
+                                                A normal card panel.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--clear">
+                                            <div class="card__content">
+                                                A clear card panel without a border.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="card">
+                                <div class="card__content">
+                                    ...
+                                </div>
+                            </div>
+
+                            <div class="card card--clear">
+                                <div class="card__content">
+                                    ...
+                                </div>
+                            </div>
+                        --></code></pre>
+
+                        <h3>Feature Leader Cards</h3>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card">
+                                            <img src="//placehold.it/600x300?text=Image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card">
+                                            <img src="//placehold.it/600x300?text=Image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="card">
+                                <img src="">
+                                <div class="card__content">
+                                    ...
+                                </div>
+                            </div>
+                        --></code></pre>
+
+                        <h3>Feature / Service Blocks</h3>
+
+                        <p>You can easily create the common UX pattern of feature / service blocks with cards.</p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card card--feature">
+                                            <img src="//placehold.it/100x100?text=Image" class="card__image">
+                                            <div class="card__content type-center">
+                                                <h3 class="card__title">Title 1</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                                <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--feature">
+                                            <img src="//placehold.it/100x100?text=Image" class="card__image">
+                                            <div class="card__content type-center">
+                                                <h3 class="card__title">Title 2</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                                <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--feature">
+                                            <img src="//placehold.it/100x100?text=Image" class="card__image">
+                                            <div class="card__content type-center">
+                                                <h3 class="card__title">Title 3</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                                                <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="card card--feature">
+                                <img src="" class="card__image">
+                                <div class="card__content type-center">
+                                    <h3 class="card__title">Title</h3>
+                                    <p>...</p>
+                                    <a href="#" class="button button--outlined button--xxs card__button type-center">Learn More</a>
+                                </div>
+                            </div>
+                        --></code></pre>
+
+                        <h3>Card Color Variations</h3>
+
+                        <p>By stringing a few classes together you can create other components like panels and alerts. Extend the cards by adjusting the padding and drop in your icons for that alert box feel. </p>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card card--filled card--primary inverse">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--filled card--secondary inverse">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--filled card--tertiary inverse">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card card--outlined card--primary color-primary">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--outlined card--secondary color-secondary">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--outlined card--tertiary color-tertiary">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card card--filled card--primary inverse">
+                                            <img src="//placehold.it/600x300?text=Image" class="card__image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--filled card--secondary inverse">
+                                            <img src="//placehold.it/600x300?text=Image" class="card__image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--filled card--tertiary inverse">
+                                            <img src="//placehold.it/600x300?text=Image" class="card__image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid">
+                                    <div class="grid__column">
+                                        <div class="card card--outlined card--primary color-primary">
+                                            <img src="//placehold.it/600x300?text=Image" class="card__image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--outlined card--secondary color-secondary">
+                                            <img src="//placehold.it/600x300?text=Image" class="card__image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column">
+                                        <div class="card card--outlined card--tertiary color-tertiary">
+                                            <img src="//placehold.it/600x300?text=Image" class="card__image">
+                                            <div class="card__content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="utilities"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Utilities</h1>
+                            <p class="lead">These are helper classes that can speed up your development and reduce CSS property declarations.</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="card card--tertiary card--outlined color-tertiary">
+                            <div class="card__content">
+                                The utility classes do not contain any <code>!important</code> declarations.
+                                If you require such overrides you may want to take a second glance at your code to see if something can be refactored first.
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="utilities-other-type"></span>
+
+                        <h2>Standalone Typography Modifiers</h2>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid grid--justify-center">
+                                    <div class="grid__column">
+                                        <span class="type-bold">Strong</span> / <span class="type-bold">Bold</span>
+                                    </div>
+                                    <div class="grid__column">
+                                        <span class="type-black">Black</span>
+                                    </div>
+                                    <div class="grid__column">
+                                        <span class="type-italic">Italic</span>
+                                    </div>
+                                    <div class="grid__column">
+                                        <span class="type-caps">Caps</span>
+                                    </div>
+                                    <div class="grid__column">
+                                        <span class="type-small">Small</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <span class="type-bold">...</span>
+                            <span class="type-black">...</span>
+                            <span class="type-italic">...</span>
+                            <span class="type-caps">...</span>
+                            <span class="type-small">...</span>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="utilities-alignments"></span>
+
+                        <h2>Text Alignments</h2>
+
+                        <span class="type-small">Example</span>
+                        <div class="card card--raised">
+                            <div class="card__content">
+
+                                <div class="grid grid--justify-center">
+                                    <div class="grid__column">
+                                        <div class="bg-color-lighter padding-xxs type-left">
+                                            Text Left
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid--justify-center">
+                                    <div class="grid__column">
+                                        <div class="bg-color-light padding-xxs type-center">
+                                            Text Center
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid--justify-center">
+                                    <div class="grid__column">
+                                        <div class="bg-color-lighter padding-xxs type-right">
+                                            Text Right
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="type-left">...</div>
+                            <div class="type-center">...</div>
+                            <div class="type-right">...</div>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="utilities-padding"></span>
+
+                        <h2>Padding</h2>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="padding-xxxs">...</div>
+                            <div class="padding-xxs">...</div>
+                            <div class="padding-xs">...</div>
+                            <div class="padding-sm">...</div>
+                            <div class="padding-md">...</div>
+                            <div class="padding-lg">...</div>
+                            <div class="padding-xl">...</div>
+                            <div class="padding-xxl">...</div>
+                            <div class="padding-xxxl">...</div>
+                        --></code></pre>
+
+                        <p>
+                            <code>.padding-y</code> neutralizes the left and right padding.
+                        </p>
+
+                        <p>
+                            <code>.padding-x</code> neutralizes the top and bottom padding.
+                        </p>
+
+                        <p>
+                            <code>.padding-null</code> neutralizes all sides of the padding box.
+                        </p>
+
+                        <span class="anchor" id="utilities-margin"></span>
+
+                        <h2>Margin</h2>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="margin-xxxs">...</div>
+                            <div class="margin-xxs">...</div>
+                            <div class="margin-xs">...</div>
+                            <div class="margin-sm">...</div>
+                            <div class="margin-md">...</div>
+                            <div class="margin-lg">...</div>
+                            <div class="margin-xl">...</div>
+                            <div class="margin-xxl">...</div>
+                            <div class="margin-xxxl">...</div>
+                        --></code></pre>
+
+                        <p>
+                            <code>.margin-y</code> neutralizes the left and right margin.
+                        </p>
+
+                        <p>
+                            <code>.margin-x</code> neutralizes the top and bottom margin.
+                        </p>
+
+                        <p>
+                            <code>.margin-null</code> neutralizes all sides of the margin box.
+                        </p>
+
+                        <span class="anchor" id="utilities-display-types"></span>
+
+                        <h2>Display Types</h2>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="display-block">...</div>
+                            <div class="display-flex">...</div>
+                            <div class="display-inline-block">...</div>
+                            <div class="display-inline">...</div>
+                            <div class="display-table">...</div>
+                            <div class="display-none">...</div>
+                        --></code></pre>
+
+                        <span class="anchor" id="utilities-colors"></span>
+
+                        <h2>Text Colors</h2>
+
+                        <pre><code class="language-markup"><!--
+                            <span class="color-primary">...</span>
+                            <span class="color-secondary">...</span>
+                            <span class="color-tertiary">...</span>
+                            <span class="color-light">...</span>
+                            <span class="color-lighter">...</span>
+                            <span class="color-lightest">...</span>
+                            <span class="color-medium">...</span>
+                            <span class="color-dark">...</span>
+                            <span class="color-darker">...</span>
+                            <span class="color-darkest">...</span>
+                        --></code></pre>
+
+                        <span class="anchor" id="utilities-bg"></span>
+
+                        <h2>Background Colors</h2>
+
+                        <pre><code class="language-markup"><!--
+                            <div class="bg-color-primary">...</div>
+                            <div class="bg-color-secondary">...</div>
+                            <div class="bg-color-tertiary">...</div>
+                            <div class="bg-color-light">...</div>
+                            <div class="bg-color-lighter">...</div>
+                            <div class="bg-color-lightest">...</div>
+                            <div class="bg-color-medium">...</div>
+                            <div class="bg-color-dark">...</div>
+                            <div class="bg-color-darker">...</div>
+                            <div class="bg-color-darkest">...</div>
+                        --></code></pre>
+
+                        <hr>
+
+                        <span class="anchor" id="themes"></span>
+
+                        <div class="title-set">
+                            <h1 class="title">Themes</h1>
+                            <p class="lead">
+                                Themes are quick start overrides to Tent CSS with stronger opinions on design choices.
+                                You can either include the themes directly or use them as inspiration.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <span class="anchor" id="themes-crystal"></span>
+
+                        <h2>Crystal Theme</h2>
+
+                        <p>Information on Crystal will be added soon.</p>
+
+                        <hr>
+
+
+                    </main> <!-- /.grid__column -->
+
+                    <nav class="sidebar grid__column grid__column--12 grid__column--3--md flex-last flex-first--md">
+                        <div class="title-set">
+                            <h5 class="title">Getting Started</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#start-install">Install</a></li>
+                                <li class="list__item"><a href="#start-customize">Customize</a></li>
+
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Settings</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Tools</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#tools-breakpoints">Breakpoints</a></li>
+                                <li class="list__item"><a href="#tools-scales">Scales</a></li>
+                                <li class="list__item"><a href="#tools-clearfix">Clearfix</a></li>
+                                <li class="list__item"><a href="#tools-box-sizing">Box Sizing</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Generics</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#generics-reset">Reset / Normalizing</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Elements</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#elements-defaults">Defaults</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Objects</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#objects-zones">Zones</a></li>
+                                <li class="list__item"><a href="#objects-containers">Containers</a></li>
+                                <li class="list__item"><a href="#objects-flex-object">Flex Object</a></li>
+                                <li class="list__item"><a href="#objects-grid">Grid</a></li>
+                                <li class="list__item"><a href="#objects-lists">Lists</a></li>
+                                <li class="list__item"><a href="#objects-tables">Tables</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Components</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#components-headings">Headings</a></li>
+                                <li class="list__item"><a href="#components-forms">Forms</a></li>
+                                <li class="list__item"><a href="#components-buttons">Buttons</a></li>
+                                <li class="list__item"><a href="#components-cards">Cards</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Utilities</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#utilities-other-type">Typography Modifiers</a></li>
+                                <li class="list__item"><a href="#utilities-alignments">Typography Alignments</a></li>
+                                <li class="list__item"><a href="#utilities-padding">Padding</a></li>
+                                <li class="list__item"><a href="#utilities-margin">Margin</a></li>
+                                <li class="list__item"><a href="#utilities-display-types">Display Types</a></li>
+                                <li class="list__item"><a href="#utilities-colors">Text Colors</a></li>
+                                <li class="list__item"><a href="#utilities-bg">Background Colors</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                        <hr>
+                        <div class="title-set">
+                            <h5 class="title">Themes</h5>
+
+                            <ul class="list list--unstyled list--nulled">
+                                <li class="list__item"><a href="#themes">What are themes?</a></li>
+                            </ul>
+                        </div> <!-- /.title-set -->
+                    </nav>
+                </div> <!-- /.grid -->
+            </div> <!-- /.grid__column -->
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+
+</div> <!-- /.mastcontent -->
+
+{{> footer}}
