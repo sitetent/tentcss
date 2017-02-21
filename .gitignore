@@ -41,6 +41,7 @@ npm-debug.log*
 pids
 prepros.cfg
 prepros-6.config
+.publish
 
 # Only use maps for local.
 *.css.map
