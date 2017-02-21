@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Objects | Tent CSS</title>
+    <meta name="description" content="A CSS survival kit.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@ulinaaron">
+    <meta name="twitter:creator" content="@ulinaaron">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tent CSS">
+    <meta name="twitter:description" content="A CSS survival kit. Includes only the essentials to make camp.">
+    <meta name="twitter:image" content="https://css.sitetent.com/public/img/banner.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://css.sitetent.com/">
+    <meta property="og:title" content="Tent CSS">
+    <meta property="og:description" content="A CSS survival kit. Includes only the essentials to make camp.">
+
+		<link href="//unpkg.com/tent-css@1.2.1/dist/tent.min.css" rel="stylesheet">
+		<!--<link href="dist/themes/crystal.min.css" rel="stylesheet">-->
+		<link href="public/css/docs.css" rel="stylesheet">
+
+        <link rel="icon" href="public/img/favicon.png">
+	</head>
+	<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+<header class="masthead masthead--docs bg-color-darker padding-y padding-xxs" role="banner">
+    <div class="container">
+
+        <div class="grid grid--center">
+            <div class="grid__column grid__column--12 grid__column--3--md">
+
+                <div class="brand-set">
+                    <a href="index.html" class="brand-set__logo brand-set__logo--primary">
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 803 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="TentCSS-Logo"><path id="Flag" d="M195.134,19.361l-91.273,15.644l0,-31.289l91.273,15.645Z" style="fill:#0074d9;"/><g><rect id="Flag-Pole" x="102.433" y="1.83" width="5" height="56.852" style="fill:#f2f2f2;"/><g id="Text" transform="matrix(1,0,0,1,-334.836,-92.7341)"><text x="559.038px" y="277.949px" style="font-family:'GillSans-Light', 'Gill Sans', sans-serif;font-weight:300;font-size:144px;fill:none;">Tent</text><text x="824.609px" y="277.949px" style="font-family:'GillSans-Bold', 'Gill Sans', sans-serif;font-weight:700;font-size:144px;fill:none;">CSS</text><text x="559.038px" y="277.949px" style="font-family:'GillSans-Light', 'Gill Sans', sans-serif;font-weight:300;font-size:144px;fill:#f5eeeb;stroke:#f2f2f2;stroke-width:1px;">Tent</text><text x="824.609px" y="277.949px" style="font-family:'GillSans-Bold', 'Gill Sans', sans-serif;font-weight:700;font-size:144px;fill:#f5eeeb;stroke:#f2f2f2;stroke-width:1px;">CSS</text></g><path id="Tent" d="M196.206,217.473l-47.367,0l-43.906,-131.743l-43.906,131.743l-47.367,0l91.273,-171.291l91.273,171.291Z" style="fill:#f2f2f2;"/><path id="Outline" d="M799.095,227.473l-667.198,0l-23.26,-136.743l-7.451,0l-23.221,136.743l-74.305,0l0,-181.291l795.435,0l0,181.291Zm-785.435,-171.291l0,161.291l55.86,0l23.221,-136.743l24.339,0l23.26,136.743l648.755,0l0,-161.291l-775.435,0Z" style="fill:#f2f2f2;"/></g><path id="Canopy" d="M70.797,110.35l34.136,-24.62l34.136,24.62l-68.272,0Z" style="fill:#0074d9;"/><path id="Flaps" d="M148.839,217.473l-18.623,0l-25.283,-129.826l-25.282,129.826l-18.624,0l43.906,-131.743l43.906,131.743Z" style="fill:#0074d9;"/></g></svg>
+                    </a>
+                </div>
+
+
+            </div> <!-- /.grid__column -->
+            <div class="grid__column grid__column--12 grid__column--9--md type-right">
+                <a href="https://github.com/sitetent/tentcss/releases" class="masthead__button button button--secondary button--filled button--xs margin-null">
+                    Download
+                </a>
+                <a href="docs.html" class="masthead__button button button--primary button--filled button--xs margin-null">
+                    Get Started
+                </a>
+            </div>
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</header> <!-- /.masthead -->
+
+
+<div class="mastcontent bg-color-lightest" role="main">
+    <div class="container padding-y padding-lg">
+        <div class="grid">
+            <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">
+    <span class="anchor" id="objects"></span>
+
+    <div class="title-set">
+        <h1 class="title">Objects</h1>
+        <p class="lead">These are class-based selectors that define undecorated design patterns. They are vital for layout and structure.</p>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="objects-zones"></span>
+
+    <h2>Zones</h2>
+
+    <p class="lead">
+        These are opinionated sections that help define unique areas of your webpage such as the master header, content, and footer.
+    </p>
+
+    <div class="card card--outlined card--primary color-primary">
+        <div class="card__content">
+            Due to the naming of these areas being so opinionated we have built in Sass variables for these to be modified if you so choose.
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <header class="masthead"></header>
+        <main class="mastcontent"></main>
+        <footer class="mastfoot"></footer>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="objects-containers"></span>
+
+    <h2>Containers</h2>
+
+    <p class="lead">
+        These are large class selectors that can hold many other structures, and components.
+        Consider containers the "wrappers" that make your content properly fit the window's width.
+        They will auto-set margins on all screen sizes.
+    </p>
+
+    <p>
+        <code>.container</code>
+    </p>
+
+    <p>A full-width container:</p>
+
+    <p>
+        <code>.container.container--fluid</code>
+    </p>
+
+    <hr>
+
+    <span class="anchor" id="objects-flex-object"></span>
+
+    <h2>Flex Object</h2>
+
+    <p class="lead">The foundation for a modern extensible framework. The Flex Object, is a flexbox based object we use to build other objects and components.
+            Many principles of this object will be shared and seem familar with others.
+    </p>
+
+    <hr>
+
+    <span class="anchor" id="objects-grid"></span>
+
+    <div class="title-set flex flex--stretch">
+
+        <h2 class="flex__item">Grid</h2>
+
+        <div class="card flex__item type-center">
+            <div class="card__content">
+                <span class="type-small">Extends the Flex Object</span>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="lead">
+        The grid is a flexbox-based mobile-first responsive layout object. That is a mouthful in itself!
+        With the addition of flexbox, the grid is a super-powerful system to help lay out your content.
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+            </div>
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+            </div>
+
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column grid__column--8 bg-color-darker inverse">8</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+            </div>
+
+        </div>
+    </div>
+
+    <h3>Grid Column Breakpoints</h3>
+
+    <p>The grid column breakpoint classes are designed to be mobile-first. So <code>.grid__column--#</code> will be visible on the smallest viewports while <code>.grid__column--#--md</code> would take effect on medium viewsports. So the class <code>.grid__column--#</code> will always be visible until the next column class with a breakpoint modifier is used.</p>
+
+    <pre><code class="language-markup"><!--
+        <div class="grid">
+            <div class="grid__column grid__column--12 grid__column--#--sm ">...</div>
+            <div class="grid__column grid__column--12 grid__column--#--md ">...</div>
+            <div class="grid__column grid__column--12 grid__column--#--lg ">...</div>
+            <div class="grid__column grid__column--12 grid__column--#--xl ">...</div>
+        </div>
+    --></code></pre>
+
+    <h3>Grid Horizontal Alignments</h3>
+
+    <p>
+        <code>.grid.grid--justify-start</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--justify-start padding-xxs padding-y">
+                <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--justify-center</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--justify-center padding-xxs padding-y">
+                <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--justify-end</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--justify-end padding-xxs padding-y">
+                <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <h3>Grid Vertical Alignments</h3>
+
+    <p>
+        <code>.grid.grid--top</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--top padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--center</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--center padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--bottom</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <div class="grid-example grid grid--bottom padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+        </div>
+    </div>
+
+    <p>Individual columns within a grid can also have their own alignment:</p>
+
+    <div class="grid">
+        <div class="grid__column">
+            <code>.grid__column.grid__column--top</code>
+        </div>
+        <div class="grid__column">
+            <code>.grid__column.grid__column--center</code>
+        </div>
+        <div class="grid__column">
+            <code>.grid__column.grid__column--bottom</code>
+        </div>
+    </div>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <div class="grid-example grid padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column grid__column--top bg-color-darker inverse">One of Three Columns</div>
+                <div class="grid__column grid__column--center bg-color-darker inverse">One of Three Columns</div>
+                <div class="grid__column grid__column--bottom bg-color-darker inverse">One of Three Columns</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="objects-lists"></span>
+
+    <h2>Object Lists</h2>
+
+    <p class="lead">These are plain undesigned lists that can be helpful to assemble common component types such as menus and navigation bars.</p>
+
+    <h3>Unstyled List</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <ul class="list list--unstyled">
+                <li class="list__item">List Item 1</li>
+                <li class="list__item">List Item 2</li>
+                <li class="list__item">List Item 3</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <ul class="list list--unstyled">
+            <li class="list__item">List Item 1</li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+        </ul>
+    --></code></pre>
+
+    <h3>Nulled List</h3>
+
+    <p>
+        This list modifier nullifies the default margins set on list items.
+        Since content elements should be able to be classless, it makes since to require a class for objects and components instead.
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <ul class="list list--nulled">
+                <li class="list__item">List Item 1</li>
+                <li class="list__item">List Item 2</li>
+                <li class="list__item">List Item 3</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <ul class="list list--nulled">
+            <li class="list__item">List Item 1</li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+        </ul>
+    --></code></pre>
+
+    <h3>Inline List</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <ul class="list list--inline list--nulled">
+                <li class="list__item">List Item 1</li>
+                <li class="list__item">List Item 2</li>
+                <li class="list__item">List Item 3</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <ul class="list list--inline">
+            <li class="list__item">List Item 1</li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+        </ul>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="objects-tables"></span>
+
+    <h2>Tables</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tent Name</th>
+                        <th>Tent Type</th>
+                        <th>Sleeps</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camel 575S</td>
+                        <td>Dome</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Mule 40T</td>
+                        <td>Dome</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Sequoia LT</td>
+                        <td>Ridge</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <h3>Stripped Table</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <table class="table table--stripped">
+            <thead class="table__head">
+                <tr class="table__row table__row--heading">
+                    <th class="table__cell">Tent Name</th>
+                    <th class="table__cell">Tent Type</th>
+                    <th class="table__cell">Sleeps</th>
+                </tr>
+            </thead>
+                <tbody class="table__body">
+                    <tr class="table__row">
+                        <td class="table__cell">Camel 575S</td>
+                        <td class="table__cell">Dome</td>
+                        <td class="table__cell">6</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Mule 40T</td>
+                        <td class="table__cell">Dome</td>
+                        <td class="table__cell">6</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Sequoia LT</td>
+                        <td class="table__cell">Ridge</td>
+                        <td class="table__cell">2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+            </main> <!-- /.grid__column -->
+            <nav class="sidebar grid__column grid__column--12 grid__column--3--md flex-last flex-first--md">
+                <div class="title-set">
+                    <a href="docs.html"><h5 class="title">Getting Started</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="docs.html#start-install">Install</a></li>
+                        <li class="list__item"><a href="docs.html#start-customize">Customize</a></li>
+
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="settings.html"><h5 class="title">Settings</h5></a>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="tools.html"><h5 class="title">Tools</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="tools.html#breakpoints">Breakpoints</a></li>
+                        <li class="list__item"><a href="tools.html#scales">Scales</a></li>
+                        <li class="list__item"><a href="tools.html#clearfix">Clearfix</a></li>
+                        <li class="list__item"><a href="tools.html#box-sizing">Box Sizing</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="generics.html"><h5 class="title">Generics</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="generics.html#reset">Reset / Normalizing</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="elements.html"><h5 class="title">Elements</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="elements.html#defaults">Defaults</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="objects.html"><h5 class="title">Objects</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="objects.html#zones">Zones</a></li>
+                        <li class="list__item"><a href="objects.html#containers">Containers</a></li>
+                        <li class="list__item"><a href="objects.html#flex-object">Flex Object</a></li>
+                        <li class="list__item"><a href="objects.html#grid">Grid</a></li>
+                        <li class="list__item"><a href="objects.html#lists">Lists</a></li>
+                        <li class="list__item"><a href="objects.html#tables">Tables</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="components.html"><h5 class="title">Components</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="components.html#headings">Headings</a></li>
+                        <li class="list__item"><a href="components.html#forms">Forms</a></li>
+                        <li class="list__item"><a href="components.html#buttons">Buttons</a></li>
+                        <li class="list__item"><a href="components.html#cards">Cards</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="utilities.html"><h5 class="title">Utilities</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="utilities.html#other-type">Typography Modifiers</a></li>
+                        <li class="list__item"><a href="utilities.html#alignments">Typography Alignments</a></li>
+                        <li class="list__item"><a href="utilities.html#padding">Padding</a></li>
+                        <li class="list__item"><a href="utilities.html#margin">Margin</a></li>
+                        <li class="list__item"><a href="utilities.html#display-types">Display Types</a></li>
+                        <li class="list__item"><a href="utilities.html#colors">Text Colors</a></li>
+                        <li class="list__item"><a href="utilities.html#bg">Background Colors</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="themes.html"><h5 class="title">Themes</h5></a>
+                </div> <!-- /.title-set -->
+            </nav>
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</div> <!-- /.mastcontent -->        <footer id="mastfoot" class="mastfoot bg-color-darker inverse padding-lg" role="contentinfo">
+            <div class="container">
+                <div class="grid grid--center">
+                    <div class="grid__column">
+                        <p>Created by Aaron Mazade. Built with Tent CSS.</p>
+                    </div>
+                    <div class="grid__column type-right">
+                        <a href="//github.com/sitetent/tentcss" class="button button--filled button--sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+ 
+ 
+ 
+        <!-- Scripts -->
+        <script src="public/js/bundle.js"></script>
+
+        <!-- GA Tracking -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-91678026-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+	</body>
+</html>

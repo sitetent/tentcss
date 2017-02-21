@@ -1,0 +1,33 @@
+{{> masthead title='Generics | Tent CSS'}}
+{{> doc-start}}
+
+
+    <span class="anchor" id="Settings"></span>
+
+    <div class="title-set">
+        <h1 class="title">Settings</h1>
+        <p class="lead">These are variables set using Sass. Using the Sass preprocessor is required to modify these. </p>
+    </div>
+
+    <hr>
+
+    <p>
+        The default framework Sass variables can be found in <code>src/01_settings/_variables.defaults.scss</code>.
+        It is recommended that you do not modify this file directly.
+        Instead you should either completely copy the file or just the variables you would like to modify.
+        In your custom settings file be sure to remove any <code>!default</code> declarations.
+    </p>
+
+
+    <pre><code class="language-markup"><!--
+
+        @import "path/to/your-settings"
+
+        @import "path/to/tent";
+
+        // Custom CSS
+
+    --></code></pre>
+
+{{> doc-end}}
+{{> mastfoot}}

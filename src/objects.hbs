@@ -1,0 +1,424 @@
+{{> masthead title='Objects | Tent CSS'}}
+{{> doc-start}}
+
+    <span class="anchor" id="objects"></span>
+
+    <div class="title-set">
+        <h1 class="title">Objects</h1>
+        <p class="lead">These are class-based selectors that define undecorated design patterns. They are vital for layout and structure.</p>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="objects-zones"></span>
+
+    <h2>Zones</h2>
+
+    <p class="lead">
+        These are opinionated sections that help define unique areas of your webpage such as the master header, content, and footer.
+    </p>
+
+    <div class="card card--outlined card--primary color-primary">
+        <div class="card__content">
+            Due to the naming of these areas being so opinionated we have built in Sass variables for these to be modified if you so choose.
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <header class="masthead"></header>
+        <main class="mastcontent"></main>
+        <footer class="mastfoot"></footer>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="objects-containers"></span>
+
+    <h2>Containers</h2>
+
+    <p class="lead">
+        These are large class selectors that can hold many other structures, and components.
+        Consider containers the "wrappers" that make your content properly fit the window's width.
+        They will auto-set margins on all screen sizes.
+    </p>
+
+    <p>
+        <code>.container</code>
+    </p>
+
+    <p>A full-width container:</p>
+
+    <p>
+        <code>.container.container--fluid</code>
+    </p>
+
+    <hr>
+
+    <span class="anchor" id="objects-flex-object"></span>
+
+    <h2>Flex Object</h2>
+
+    <p class="lead">The foundation for a modern extensible framework. The Flex Object, is a flexbox based object we use to build other objects and components.
+            Many principles of this object will be shared and seem familar with others.
+    </p>
+
+    <hr>
+
+    <span class="anchor" id="objects-grid"></span>
+
+    <div class="title-set flex flex--stretch">
+
+        <h2 class="flex__item">Grid</h2>
+
+        <div class="card flex__item type-center">
+            <div class="card__content">
+                <span class="type-small">Extends the Flex Object</span>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="lead">
+        The grid is a flexbox-based mobile-first responsive layout object. That is a mouthful in itself!
+        With the addition of flexbox, the grid is a super-powerful system to help lay out your content.
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+                <div class="grid__column bg-color-darker inverse">2</div>
+            </div>
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+            </div>
+
+            <div class="grid-example grid padding-xxxs padding-y">
+                <div class="grid__column grid__column--8 bg-color-darker inverse">8</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+                <div class="grid__column bg-color-darker inverse">1</div>
+            </div>
+
+        </div>
+    </div>
+
+    <h3>Grid Column Breakpoints</h3>
+
+    <p>The grid column breakpoint classes are designed to be mobile-first. So <code>.grid__column--#</code> will be visible on the smallest viewports while <code>.grid__column--#--md</code> would take effect on medium viewsports. So the class <code>.grid__column--#</code> will always be visible until the next column class with a breakpoint modifier is used.</p>
+
+    <pre><code class="language-markup"><!--
+        <div class="grid">
+            <div class="grid__column grid__column--12 grid__column--#--sm ">...</div>
+            <div class="grid__column grid__column--12 grid__column--#--md ">...</div>
+            <div class="grid__column grid__column--12 grid__column--#--lg ">...</div>
+            <div class="grid__column grid__column--12 grid__column--#--xl ">...</div>
+        </div>
+    --></code></pre>
+
+    <h3>Grid Horizontal Alignments</h3>
+
+    <p>
+        <code>.grid.grid--justify-start</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--justify-start padding-xxs padding-y">
+                <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--justify-center</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--justify-center padding-xxs padding-y">
+                <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--justify-end</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--justify-end padding-xxs padding-y">
+                <div class="grid__column grid__column--4 bg-color-darker inverse">4</div>
+                <div class="grid__column grid__column--2 bg-color-darker inverse">2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <h3>Grid Vertical Alignments</h3>
+
+    <p>
+        <code>.grid.grid--top</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--top padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--center</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid-example grid grid--center padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <code>.grid.grid--bottom</code>
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <div class="grid-example grid grid--bottom padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+                <div class="grid__column bg-color-darker inverse">Auto</div>
+            </div>
+        </div>
+    </div>
+
+    <p>Individual columns within a grid can also have their own alignment:</p>
+
+    <div class="grid">
+        <div class="grid__column">
+            <code>.grid__column.grid__column--top</code>
+        </div>
+        <div class="grid__column">
+            <code>.grid__column.grid__column--center</code>
+        </div>
+        <div class="grid__column">
+            <code>.grid__column.grid__column--bottom</code>
+        </div>
+    </div>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <div class="grid-example grid padding-xxs padding-y" style="height: 200px;">
+                <div class="grid__column grid__column--top bg-color-darker inverse">One of Three Columns</div>
+                <div class="grid__column grid__column--center bg-color-darker inverse">One of Three Columns</div>
+                <div class="grid__column grid__column--bottom bg-color-darker inverse">One of Three Columns</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="objects-lists"></span>
+
+    <h2>Object Lists</h2>
+
+    <p class="lead">These are plain undesigned lists that can be helpful to assemble common component types such as menus and navigation bars.</p>
+
+    <h3>Unstyled List</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <ul class="list list--unstyled">
+                <li class="list__item">List Item 1</li>
+                <li class="list__item">List Item 2</li>
+                <li class="list__item">List Item 3</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <ul class="list list--unstyled">
+            <li class="list__item">List Item 1</li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+        </ul>
+    --></code></pre>
+
+    <h3>Nulled List</h3>
+
+    <p>
+        This list modifier nullifies the default margins set on list items.
+        Since content elements should be able to be classless, it makes since to require a class for objects and components instead.
+    </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <ul class="list list--nulled">
+                <li class="list__item">List Item 1</li>
+                <li class="list__item">List Item 2</li>
+                <li class="list__item">List Item 3</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <ul class="list list--nulled">
+            <li class="list__item">List Item 1</li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+        </ul>
+    --></code></pre>
+
+    <h3>Inline List</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <ul class="list list--inline list--nulled">
+                <li class="list__item">List Item 1</li>
+                <li class="list__item">List Item 2</li>
+                <li class="list__item">List Item 3</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <ul class="list list--inline">
+            <li class="list__item">List Item 1</li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+        </ul>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="objects-tables"></span>
+
+    <h2>Tables</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tent Name</th>
+                        <th>Tent Type</th>
+                        <th>Sleeps</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camel 575S</td>
+                        <td>Dome</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Mule 40T</td>
+                        <td>Dome</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Sequoia LT</td>
+                        <td>Ridge</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <h3>Stripped Table</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <table class="table table--stripped">
+            <thead class="table__head">
+                <tr class="table__row table__row--heading">
+                    <th class="table__cell">Tent Name</th>
+                    <th class="table__cell">Tent Type</th>
+                    <th class="table__cell">Sleeps</th>
+                </tr>
+            </thead>
+                <tbody class="table__body">
+                    <tr class="table__row">
+                        <td class="table__cell">Camel 575S</td>
+                        <td class="table__cell">Dome</td>
+                        <td class="table__cell">6</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Mule 40T</td>
+                        <td class="table__cell">Dome</td>
+                        <td class="table__cell">6</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Sequoia LT</td>
+                        <td class="table__cell">Ridge</td>
+                        <td class="table__cell">2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+{{> doc-end}}
+{{> mastfoot}}

@@ -1,0 +1,645 @@
+{{> masthead title='Components | Tent CSS'}}
+{{> doc-start}}
+
+    <span class="anchor" id="components"></span>
+
+    <div class="title-set">
+        <h1 class="title">Components</h1>
+        <p class="lead">These are specific UI patterns that are designed to be as modular and extensible as possible.</p>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="components-headings"></span>
+
+    <h2>Headings</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid grid--gutterless padding-y padding-xxs">
+                <div class="grid__column grid__column--12 grid__column--6--md">
+                    <h3>Title Headings</h3>
+
+                    <h1 class="title title--xxxl">Title 1</h1>
+                    <h2 class="title title--xxl">Title 2</h2>
+                    <h3 class="title title--xl">Title 3</h3>
+                    <h4 class="title title--lg">Title 4</h4>
+                    <h5 class="title title--md">Title 5</h5>
+                    <h6 class="title title--sm">Title 6</h6>
+                </div>
+                <div class="grid__column grid__column--12 grid__column--6--md">
+                    <h3>Subtitle Headings</h3>
+
+                    <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                    <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                    <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                    <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                    <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                    <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <h1 class="title title--xxxl">Title 1</h1>
+        <h2 class="title title--xxl">Title 2</h2>
+        <h3 class="title title--xl">Title 3</h3>
+        <h4 class="title title--lg">Title 4</h4>
+        <h5 class="title title--md">Title 5</h5>
+        <h6 class="title title--sm">Title 6</h6>
+
+        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+    --></code></pre>
+
+    <!-- END Headings -->
+
+    <h3>Title Set</h3>
+
+    <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
+                <h1 class="title title--lg">A leading title</h1>
+                <p class="subtitle subtitle--lg">A following subtitle.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- END Title Set -->
+
+    <hr>
+
+    <span class="anchor" id="components-leads"></span>
+
+    <h2>Leads</h2>
+
+    <p>Leads are a simple component that adds emphasis to titles and paragraphs. Add the class <code>.lead</code> to use.</p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="components-forms"></span>
+
+    <h2>Forms</h2>
+
+    <h3>Inputs</h3>
+
+    <p>
+        Even HTML treats inputs in a modular fashion. They are a child elmenet for the <code>form</code> element.
+        Tent provides basic normalization for the raw <code>input</code> including coverage for the different input types such as text, email, tel, etc.
+        Further input variations and styles will be covered in the Control Set section below. This is to keep inputs modular and structured with BEM.
+    </p>
+
+    <h3>Control Sets</h3>
+
+    <p>
+        Form control sets are small modular components that handle numerous variations responsibly.
+    </p>
+
+    <pre><code class="language-markup"><!--
+        <form>
+            <div class="control">
+                <label for="exampleField1" class="control__label"></label>
+                <input class="control__input" type="text" id="exampleField1">
+            </div>
+        </form>
+    --></code></pre>
+
+    <h4>Control Block Modifier (Full-Width)</h4>
+
+    <p>
+        A <code>.control.control--block</code> modifier expands an inner child element to be full-width along with the control container itself.
+        Use full-width controls in combination with the grid.
+    </p>
+
+    <pre><code class="language-markup"><!--
+        <form>
+            <div class="control control--block">
+                <label for="exampleField2" class="control__label"></label>
+                <input class="control__input" type="text" id="exampleField2">
+            </div>
+        </form>
+    --></code></pre>
+
+    <h4>Control Inline Modifier</h4>
+
+    <p>
+        Adding <code>.control.control--inline</code> extends the Flex object.
+        Add <code>.control.control--radio.control--inline</code> or <code>.control.control--checkbox.control--inline</code> will set checkboxes and radios to be inline.
+    </p>
+
+
+    <h3>A Basic Form Example</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <form>
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="control control--block">
+                            <label class="control__label" for="exampleEmailInput">Your email</label>
+                            <input class="control__input" type="email" placeholder="test@domain.com" id="exampleEmailInput">
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <label class="control__label" for="exampleSelect">What can we help you with?</label>
+                        <div class="control control--block control--select">
+                            <select class="control__select" id="exampleSelect">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Feedback</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="control control--block">
+                            <label class="control__label" for="exampleMessage">Message</label>
+                            <textarea class="control__textarea control__textarea--md" placeholder="Type your message here..." id="exampleMessage"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid__column">
+
+                        <div class="control control--checkbox">
+                            <label class="control__label" class="checkbox">
+                                <input class="control__checkbox" type="checkbox">
+                                A checkbox
+                            </label>
+                            <label class="control__label" class="checkbox">
+                                <input class="control__checkbox" type="checkbox">
+                                A second checkbox
+                            </label>
+                        </div>
+                        <div class="control control--radio control--inline">
+                            <label class="control__label">
+                                <input class="control__radio" type="radio" name="question">
+                                One radio example
+                            </label>
+                            <label class="control__label">
+                                <input class="control__radio" type="radio" name="question">
+                                Second radio example
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="control control--block">
+                            <input class="control__button button button--filled button--primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <form>
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="control control--block">
+                        <label class="control__label" for="exampleEmailInput">Your email</label>
+                        <input class="control__input" type="email" placeholder="test@domain.com" id="exampleEmailInput">
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <label class="control__label" for="exampleSelect">What can we help you with?</label>
+                    <div class="control control--block control--select">
+                        <select class="control__select" id="exampleSelect">
+                            <option value="Option 1">Questions</option>
+                            <option value="Option 2">Feedback</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="control control--block">
+                        <label class="control__label" for="exampleMessage">Message</label>
+                        <textarea class="control__textarea control__textarea--md" placeholder="Type your message here..." id="exampleMessage"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+
+                    <div class="control control--checkbox">
+                        <label class="control__label" class="checkbox">
+                            <input class="control__checkbox" type="checkbox">
+                            A checkbox
+                        </label>
+                    </div>
+                    <div class="control control--radio">
+                        <label class="control__label">
+                            <input class="control__radio" type="radio" name="question">
+                            One radio example
+                        </label>
+                        <label class="control__label">
+                            <input class="control__radio" type="radio" name="question">
+                            Second radio example
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="control control--block">
+                        <input class="control__button button button--filled button--primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="components-buttons"></span>
+
+    <h2>Buttons</h2>
+
+    <h3>Types</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--xs">Filled Button</a>
+                    <a href="#" class="button button--outlined button--xs">Outlined Button</a>
+                    <a href="#" class="button button--clear button--xs">Clear Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <a href="#" class="button button--filled">Filled Button</a>
+        <a href="#" class="button button--outlined">Outlined Button</a>
+        <a href="#" class="button button--clear">Clear Button</a>
+    --></code></pre>
+
+    <h3>Colors</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--primary button--xs">Primary Button</a>
+                    <a href="#" class="button button--filled button--secondary button--xs">Secondary Button</a>
+                    <a href="#" class="button button--filled button--tertiary button--xs">Tertiary Button</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--outlined button--primary button--xs">Primary Button</a>
+                    <a href="#" class="button button--outlined button--secondary button--xs">Secondary Button</a>
+                    <a href="#" class="button button--outlined button--tertiary button--xs">Tertiary Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <a href="#" class="button button--filled button--primary">Primary Button</a>
+        <a href="#" class="button button--filled button--secondary">Secondary Button</a>
+        <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
+
+        <a href="#" class="button button--outlined button--primary">Primary Button</a>
+        <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
+        <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+    --></code></pre>
+
+    <h3>Sizes</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--xxxs">3X Small</a>
+                    <a href="#" class="button button--filled button--xxs">2X Small</a>
+                    <a href="#" class="button button--filled button--xs">1X Small</a>
+                    <a href="#" class="button button--filled button--sm">Small</a>
+                    <a href="#" class="button button--filled button--md">Medium</a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--lg">Large</a>
+                    <a href="#" class="button button--filled button--xl">1X Large</a>
+                    <a href="#" class="button button--filled button--xxl">2X Large</a>
+                    <a href="#" class="button button--filled button--xxxl">3X Large</a>
+                </div>
+            </div>
+
+            <div class="grid grid--center">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--block">Block Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <a href="#" class="button button--filled button--xxxs">3X Small</a>
+        <a href="#" class="button button--filled button--xxs">2X Small</a>
+        <a href="#" class="button button--filled button--xs">1X Small</a>
+        <a href="#" class="button button--filled button--sm">Small</a>
+        <a href="#" class="button button--filled button--md">Medium</a>
+        <a href="#" class="button button--filled button--lg">Large</a>
+        <a href="#" class="button button--filled button--xl">1X Large</a>
+        <a href="#" class="button button--filled button--xxl">2X Large</a>
+        <a href="#" class="button button--filled button--xxxl">3X Large</a>
+
+        <a href="#" class="button button--filled button--block">Block Button</a>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="components-cards"></span>
+
+    <h2>Cards</h2>
+
+    <p>A card is a multi-use component that can be extended to make many other common components.</p>
+
+    <h4>Panel Cards</h4>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card">
+                        <div class="card__content">
+                            A normal card panel.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--clear">
+                        <div class="card__content">
+                            A clear card panel without a border.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="card">
+            <div class="card__content">
+                ...
+            </div>
+        </div>
+
+        <div class="card card--clear">
+            <div class="card__content">
+                ...
+            </div>
+        </div>
+    --></code></pre>
+
+    <h3>Feature Leader Cards</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card">
+                        <img src="//placehold.it/600x300?text=Image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card">
+                        <img src="//placehold.it/600x300?text=Image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="card">
+            <img src="">
+            <div class="card__content">
+                ...
+            </div>
+        </div>
+    --></code></pre>
+
+    <h3>Feature / Service Blocks</h3>
+
+    <p>You can easily create the common UX pattern of feature / service blocks with cards.</p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--feature">
+                        <img src="//placehold.it/100x100?text=Image" class="card__image">
+                        <div class="card__content type-center">
+                            <h3 class="card__title">Title 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                            <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--feature">
+                        <img src="//placehold.it/100x100?text=Image" class="card__image">
+                        <div class="card__content type-center">
+                            <h3 class="card__title">Title 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                            <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--feature">
+                        <img src="//placehold.it/100x100?text=Image" class="card__image">
+                        <div class="card__content type-center">
+                            <h3 class="card__title">Title 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                            <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="card card--feature">
+            <img src="" class="card__image">
+            <div class="card__content type-center">
+                <h3 class="card__title">Title</h3>
+                <p>...</p>
+                <a href="#" class="button button--outlined button--xxs card__button type-center">Learn More</a>
+            </div>
+        </div>
+    --></code></pre>
+
+    <h3>Card Color Variations</h3>
+
+    <p>By stringing a few classes together you can create other components like panels and alerts. Extend the cards by adjusting the padding and drop in your icons for that alert box feel. </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--filled card--primary inverse">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--secondary inverse">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--tertiary inverse">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--outlined card--primary color-primary">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--secondary color-secondary">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--tertiary color-tertiary">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--filled card--primary inverse">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--secondary inverse">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--tertiary inverse">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--outlined card--primary color-primary">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--secondary color-secondary">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--tertiary color-tertiary">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{{> doc-end}}
+{{> mastfoot}}

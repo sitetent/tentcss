@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Components | Tent CSS</title>
+    <meta name="description" content="A CSS survival kit.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@ulinaaron">
+    <meta name="twitter:creator" content="@ulinaaron">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tent CSS">
+    <meta name="twitter:description" content="A CSS survival kit. Includes only the essentials to make camp.">
+    <meta name="twitter:image" content="https://css.sitetent.com/public/img/banner.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://css.sitetent.com/">
+    <meta property="og:title" content="Tent CSS">
+    <meta property="og:description" content="A CSS survival kit. Includes only the essentials to make camp.">
+
+		<link href="//unpkg.com/tent-css@1.2.1/dist/tent.min.css" rel="stylesheet">
+		<!--<link href="dist/themes/crystal.min.css" rel="stylesheet">-->
+		<link href="public/css/docs.css" rel="stylesheet">
+
+        <link rel="icon" href="public/img/favicon.png">
+	</head>
+	<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+<header class="masthead masthead--docs bg-color-darker padding-y padding-xxs" role="banner">
+    <div class="container">
+
+        <div class="grid grid--center">
+            <div class="grid__column grid__column--12 grid__column--3--md">
+
+                <div class="brand-set">
+                    <a href="index.html" class="brand-set__logo brand-set__logo--primary">
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 803 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="TentCSS-Logo"><path id="Flag" d="M195.134,19.361l-91.273,15.644l0,-31.289l91.273,15.645Z" style="fill:#0074d9;"/><g><rect id="Flag-Pole" x="102.433" y="1.83" width="5" height="56.852" style="fill:#f2f2f2;"/><g id="Text" transform="matrix(1,0,0,1,-334.836,-92.7341)"><text x="559.038px" y="277.949px" style="font-family:'GillSans-Light', 'Gill Sans', sans-serif;font-weight:300;font-size:144px;fill:none;">Tent</text><text x="824.609px" y="277.949px" style="font-family:'GillSans-Bold', 'Gill Sans', sans-serif;font-weight:700;font-size:144px;fill:none;">CSS</text><text x="559.038px" y="277.949px" style="font-family:'GillSans-Light', 'Gill Sans', sans-serif;font-weight:300;font-size:144px;fill:#f5eeeb;stroke:#f2f2f2;stroke-width:1px;">Tent</text><text x="824.609px" y="277.949px" style="font-family:'GillSans-Bold', 'Gill Sans', sans-serif;font-weight:700;font-size:144px;fill:#f5eeeb;stroke:#f2f2f2;stroke-width:1px;">CSS</text></g><path id="Tent" d="M196.206,217.473l-47.367,0l-43.906,-131.743l-43.906,131.743l-47.367,0l91.273,-171.291l91.273,171.291Z" style="fill:#f2f2f2;"/><path id="Outline" d="M799.095,227.473l-667.198,0l-23.26,-136.743l-7.451,0l-23.221,136.743l-74.305,0l0,-181.291l795.435,0l0,181.291Zm-785.435,-171.291l0,161.291l55.86,0l23.221,-136.743l24.339,0l23.26,136.743l648.755,0l0,-161.291l-775.435,0Z" style="fill:#f2f2f2;"/></g><path id="Canopy" d="M70.797,110.35l34.136,-24.62l34.136,24.62l-68.272,0Z" style="fill:#0074d9;"/><path id="Flaps" d="M148.839,217.473l-18.623,0l-25.283,-129.826l-25.282,129.826l-18.624,0l43.906,-131.743l43.906,131.743Z" style="fill:#0074d9;"/></g></svg>
+                    </a>
+                </div>
+
+
+            </div> <!-- /.grid__column -->
+            <div class="grid__column grid__column--12 grid__column--9--md type-right">
+                <a href="https://github.com/sitetent/tentcss/releases" class="masthead__button button button--secondary button--filled button--xs margin-null">
+                    Download
+                </a>
+                <a href="docs.html" class="masthead__button button button--primary button--filled button--xs margin-null">
+                    Get Started
+                </a>
+            </div>
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</header> <!-- /.masthead -->
+
+
+<div class="mastcontent bg-color-lightest" role="main">
+    <div class="container padding-y padding-lg">
+        <div class="grid">
+            <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">
+    <span class="anchor" id="components"></span>
+
+    <div class="title-set">
+        <h1 class="title">Components</h1>
+        <p class="lead">These are specific UI patterns that are designed to be as modular and extensible as possible.</p>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="components-headings"></span>
+
+    <h2>Headings</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid grid--gutterless padding-y padding-xxs">
+                <div class="grid__column grid__column--12 grid__column--6--md">
+                    <h3>Title Headings</h3>
+
+                    <h1 class="title title--xxxl">Title 1</h1>
+                    <h2 class="title title--xxl">Title 2</h2>
+                    <h3 class="title title--xl">Title 3</h3>
+                    <h4 class="title title--lg">Title 4</h4>
+                    <h5 class="title title--md">Title 5</h5>
+                    <h6 class="title title--sm">Title 6</h6>
+                </div>
+                <div class="grid__column grid__column--12 grid__column--6--md">
+                    <h3>Subtitle Headings</h3>
+
+                    <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+                    <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+                    <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+                    <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+                    <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+                    <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <h1 class="title title--xxxl">Title 1</h1>
+        <h2 class="title title--xxl">Title 2</h2>
+        <h3 class="title title--xl">Title 3</h3>
+        <h4 class="title title--lg">Title 4</h4>
+        <h5 class="title title--md">Title 5</h5>
+        <h6 class="title title--sm">Title 6</h6>
+
+        <h1 class="subtitle subtitle--xxxl">Subtitles 1</h1>
+        <h2 class="subtitle subtitle--xxl">Subtitles 2</h2>
+        <h3 class="subtitle subtitle--xl">Subtitles 3</h3>
+        <h4 class="subtitle subtitle--lg">Subtitles 4</h4>
+        <h5 class="subtitle subtitle--md">Subtitles 5</h5>
+        <h6 class="subtitle subtitle--sm">Subtitles 6</h6>
+    --></code></pre>
+
+    <!-- END Headings -->
+
+    <h3>Title Set</h3>
+
+    <p>By using <code>.title-set</code> as a wrapper for your title and subtitle you can neutralize the spacing between the two. Thus creating a set with more untity between the elements.</p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <div class="title-set bg-color-primary inverse padding-xxs display-inline-block">
+                <h1 class="title title--lg">A leading title</h1>
+                <p class="subtitle subtitle--lg">A following subtitle.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- END Title Set -->
+
+    <hr>
+
+    <span class="anchor" id="components-leads"></span>
+
+    <h2>Leads</h2>
+
+    <p>Leads are a simple component that adds emphasis to titles and paragraphs. Add the class <code>.lead</code> to use.</p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laboriosam quis non sapiente quasi, iure earum consequuntur labore quia ea.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="components-forms"></span>
+
+    <h2>Forms</h2>
+
+    <h3>Inputs</h3>
+
+    <p>
+        Even HTML treats inputs in a modular fashion. They are a child elmenet for the <code>form</code> element.
+        Tent provides basic normalization for the raw <code>input</code> including coverage for the different input types such as text, email, tel, etc.
+        Further input variations and styles will be covered in the Control Set section below. This is to keep inputs modular and structured with BEM.
+    </p>
+
+    <h3>Control Sets</h3>
+
+    <p>
+        Form control sets are small modular components that handle numerous variations responsibly.
+    </p>
+
+    <pre><code class="language-markup"><!--
+        <form>
+            <div class="control">
+                <label for="exampleField1" class="control__label"></label>
+                <input class="control__input" type="text" id="exampleField1">
+            </div>
+        </form>
+    --></code></pre>
+
+    <h4>Control Block Modifier (Full-Width)</h4>
+
+    <p>
+        A <code>.control.control--block</code> modifier expands an inner child element to be full-width along with the control container itself.
+        Use full-width controls in combination with the grid.
+    </p>
+
+    <pre><code class="language-markup"><!--
+        <form>
+            <div class="control control--block">
+                <label for="exampleField2" class="control__label"></label>
+                <input class="control__input" type="text" id="exampleField2">
+            </div>
+        </form>
+    --></code></pre>
+
+    <h4>Control Inline Modifier</h4>
+
+    <p>
+        Adding <code>.control.control--inline</code> extends the Flex object.
+        Add <code>.control.control--radio.control--inline</code> or <code>.control.control--checkbox.control--inline</code> will set checkboxes and radios to be inline.
+    </p>
+
+
+    <h3>A Basic Form Example</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <form>
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="control control--block">
+                            <label class="control__label" for="exampleEmailInput">Your email</label>
+                            <input class="control__input" type="email" placeholder="test@domain.com" id="exampleEmailInput">
+                        </div>
+                    </div>
+                    <div class="grid__column">
+                        <label class="control__label" for="exampleSelect">What can we help you with?</label>
+                        <div class="control control--block control--select">
+                            <select class="control__select" id="exampleSelect">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Feedback</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="control control--block">
+                            <label class="control__label" for="exampleMessage">Message</label>
+                            <textarea class="control__textarea control__textarea--md" placeholder="Type your message here..." id="exampleMessage"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid__column">
+
+                        <div class="control control--checkbox">
+                            <label class="control__label" class="checkbox">
+                                <input class="control__checkbox" type="checkbox">
+                                A checkbox
+                            </label>
+                            <label class="control__label" class="checkbox">
+                                <input class="control__checkbox" type="checkbox">
+                                A second checkbox
+                            </label>
+                        </div>
+                        <div class="control control--radio control--inline">
+                            <label class="control__label">
+                                <input class="control__radio" type="radio" name="question">
+                                One radio example
+                            </label>
+                            <label class="control__label">
+                                <input class="control__radio" type="radio" name="question">
+                                Second radio example
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid__column">
+                        <div class="control control--block">
+                            <input class="control__button button button--filled button--primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <form>
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="control control--block">
+                        <label class="control__label" for="exampleEmailInput">Your email</label>
+                        <input class="control__input" type="email" placeholder="test@domain.com" id="exampleEmailInput">
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <label class="control__label" for="exampleSelect">What can we help you with?</label>
+                    <div class="control control--block control--select">
+                        <select class="control__select" id="exampleSelect">
+                            <option value="Option 1">Questions</option>
+                            <option value="Option 2">Feedback</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="control control--block">
+                        <label class="control__label" for="exampleMessage">Message</label>
+                        <textarea class="control__textarea control__textarea--md" placeholder="Type your message here..." id="exampleMessage"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+
+                    <div class="control control--checkbox">
+                        <label class="control__label" class="checkbox">
+                            <input class="control__checkbox" type="checkbox">
+                            A checkbox
+                        </label>
+                    </div>
+                    <div class="control control--radio">
+                        <label class="control__label">
+                            <input class="control__radio" type="radio" name="question">
+                            One radio example
+                        </label>
+                        <label class="control__label">
+                            <input class="control__radio" type="radio" name="question">
+                            Second radio example
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="control control--block">
+                        <input class="control__button button button--filled button--primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="components-buttons"></span>
+
+    <h2>Buttons</h2>
+
+    <h3>Types</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--xs">Filled Button</a>
+                    <a href="#" class="button button--outlined button--xs">Outlined Button</a>
+                    <a href="#" class="button button--clear button--xs">Clear Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <a href="#" class="button button--filled">Filled Button</a>
+        <a href="#" class="button button--outlined">Outlined Button</a>
+        <a href="#" class="button button--clear">Clear Button</a>
+    --></code></pre>
+
+    <h3>Colors</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--primary button--xs">Primary Button</a>
+                    <a href="#" class="button button--filled button--secondary button--xs">Secondary Button</a>
+                    <a href="#" class="button button--filled button--tertiary button--xs">Tertiary Button</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--outlined button--primary button--xs">Primary Button</a>
+                    <a href="#" class="button button--outlined button--secondary button--xs">Secondary Button</a>
+                    <a href="#" class="button button--outlined button--tertiary button--xs">Tertiary Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <a href="#" class="button button--filled button--primary">Primary Button</a>
+        <a href="#" class="button button--filled button--secondary">Secondary Button</a>
+        <a href="#" class="button button--filled button--tertiary">Tertiary Button</a>
+
+        <a href="#" class="button button--outlined button--primary">Primary Button</a>
+        <a href="#" class="button button--outlined button--secondary">Secondary Button</a>
+        <a href="#" class="button button--outlined button--tertiary">Tertiary Button</a>
+    --></code></pre>
+
+    <h3>Sizes</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--xxxs">3X Small</a>
+                    <a href="#" class="button button--filled button--xxs">2X Small</a>
+                    <a href="#" class="button button--filled button--xs">1X Small</a>
+                    <a href="#" class="button button--filled button--sm">Small</a>
+                    <a href="#" class="button button--filled button--md">Medium</a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--lg">Large</a>
+                    <a href="#" class="button button--filled button--xl">1X Large</a>
+                    <a href="#" class="button button--filled button--xxl">2X Large</a>
+                    <a href="#" class="button button--filled button--xxxl">3X Large</a>
+                </div>
+            </div>
+
+            <div class="grid grid--center">
+                <div class="grid__column">
+                    <a href="#" class="button button--filled button--block">Block Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <a href="#" class="button button--filled button--xxxs">3X Small</a>
+        <a href="#" class="button button--filled button--xxs">2X Small</a>
+        <a href="#" class="button button--filled button--xs">1X Small</a>
+        <a href="#" class="button button--filled button--sm">Small</a>
+        <a href="#" class="button button--filled button--md">Medium</a>
+        <a href="#" class="button button--filled button--lg">Large</a>
+        <a href="#" class="button button--filled button--xl">1X Large</a>
+        <a href="#" class="button button--filled button--xxl">2X Large</a>
+        <a href="#" class="button button--filled button--xxxl">3X Large</a>
+
+        <a href="#" class="button button--filled button--block">Block Button</a>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="components-cards"></span>
+
+    <h2>Cards</h2>
+
+    <p>A card is a multi-use component that can be extended to make many other common components.</p>
+
+    <h4>Panel Cards</h4>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card">
+                        <div class="card__content">
+                            A normal card panel.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--clear">
+                        <div class="card__content">
+                            A clear card panel without a border.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="card">
+            <div class="card__content">
+                ...
+            </div>
+        </div>
+
+        <div class="card card--clear">
+            <div class="card__content">
+                ...
+            </div>
+        </div>
+    --></code></pre>
+
+    <h3>Feature Leader Cards</h3>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card">
+                        <img src="//placehold.it/600x300?text=Image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card">
+                        <img src="//placehold.it/600x300?text=Image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="card">
+            <img src="">
+            <div class="card__content">
+                ...
+            </div>
+        </div>
+    --></code></pre>
+
+    <h3>Feature / Service Blocks</h3>
+
+    <p>You can easily create the common UX pattern of feature / service blocks with cards.</p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--feature">
+                        <img src="//placehold.it/100x100?text=Image" class="card__image">
+                        <div class="card__content type-center">
+                            <h3 class="card__title">Title 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                            <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--feature">
+                        <img src="//placehold.it/100x100?text=Image" class="card__image">
+                        <div class="card__content type-center">
+                            <h3 class="card__title">Title 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                            <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--feature">
+                        <img src="//placehold.it/100x100?text=Image" class="card__image">
+                        <div class="card__content type-center">
+                            <h3 class="card__title">Title 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium possimus voluptate doloribus esse voluptates deserunt aperiam dolorum vel vero.</p>
+                            <a href="#" class="button button--outlined button--xxxs card__button type-center">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="card card--feature">
+            <img src="" class="card__image">
+            <div class="card__content type-center">
+                <h3 class="card__title">Title</h3>
+                <p>...</p>
+                <a href="#" class="button button--outlined button--xxs card__button type-center">Learn More</a>
+            </div>
+        </div>
+    --></code></pre>
+
+    <h3>Card Color Variations</h3>
+
+    <p>By stringing a few classes together you can create other components like panels and alerts. Extend the cards by adjusting the padding and drop in your icons for that alert box feel. </p>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--filled card--primary inverse">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--secondary inverse">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--tertiary inverse">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--outlined card--primary color-primary">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--secondary color-secondary">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--tertiary color-tertiary">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--filled card--primary inverse">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--secondary inverse">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--filled card--tertiary inverse">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid__column">
+                    <div class="card card--outlined card--primary color-primary">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--secondary color-secondary">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column">
+                    <div class="card card--outlined card--tertiary color-tertiary">
+                        <img src="//placehold.it/600x300?text=Image" class="card__image">
+                        <div class="card__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+            </main> <!-- /.grid__column -->
+            <nav class="sidebar grid__column grid__column--12 grid__column--3--md flex-last flex-first--md">
+                <div class="title-set">
+                    <a href="docs.html"><h5 class="title">Getting Started</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="docs.html#start-install">Install</a></li>
+                        <li class="list__item"><a href="docs.html#start-customize">Customize</a></li>
+
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="settings.html"><h5 class="title">Settings</h5></a>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="tools.html"><h5 class="title">Tools</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="tools.html#breakpoints">Breakpoints</a></li>
+                        <li class="list__item"><a href="tools.html#scales">Scales</a></li>
+                        <li class="list__item"><a href="tools.html#clearfix">Clearfix</a></li>
+                        <li class="list__item"><a href="tools.html#box-sizing">Box Sizing</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="generics.html"><h5 class="title">Generics</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="generics.html#reset">Reset / Normalizing</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="elements.html"><h5 class="title">Elements</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="elements.html#defaults">Defaults</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="objects.html"><h5 class="title">Objects</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="objects.html#zones">Zones</a></li>
+                        <li class="list__item"><a href="objects.html#containers">Containers</a></li>
+                        <li class="list__item"><a href="objects.html#flex-object">Flex Object</a></li>
+                        <li class="list__item"><a href="objects.html#grid">Grid</a></li>
+                        <li class="list__item"><a href="objects.html#lists">Lists</a></li>
+                        <li class="list__item"><a href="objects.html#tables">Tables</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="components.html"><h5 class="title">Components</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="components.html#headings">Headings</a></li>
+                        <li class="list__item"><a href="components.html#forms">Forms</a></li>
+                        <li class="list__item"><a href="components.html#buttons">Buttons</a></li>
+                        <li class="list__item"><a href="components.html#cards">Cards</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="utilities.html"><h5 class="title">Utilities</h5></a>
+
+                    <ul class="list list--unstyled list--nulled">
+                        <li class="list__item"><a href="utilities.html#other-type">Typography Modifiers</a></li>
+                        <li class="list__item"><a href="utilities.html#alignments">Typography Alignments</a></li>
+                        <li class="list__item"><a href="utilities.html#padding">Padding</a></li>
+                        <li class="list__item"><a href="utilities.html#margin">Margin</a></li>
+                        <li class="list__item"><a href="utilities.html#display-types">Display Types</a></li>
+                        <li class="list__item"><a href="utilities.html#colors">Text Colors</a></li>
+                        <li class="list__item"><a href="utilities.html#bg">Background Colors</a></li>
+                    </ul>
+                </div> <!-- /.title-set -->
+                <hr>
+                <div class="title-set">
+                    <a href="themes.html"><h5 class="title">Themes</h5></a>
+                </div> <!-- /.title-set -->
+            </nav>
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</div> <!-- /.mastcontent -->        <footer id="mastfoot" class="mastfoot bg-color-darker inverse padding-lg" role="contentinfo">
+            <div class="container">
+                <div class="grid grid--center">
+                    <div class="grid__column">
+                        <p>Created by Aaron Mazade. Built with Tent CSS.</p>
+                    </div>
+                    <div class="grid__column type-right">
+                        <a href="//github.com/sitetent/tentcss" class="button button--filled button--sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+ 
+ 
+ 
+        <!-- Scripts -->
+        <script src="public/js/bundle.js"></script>
+
+        <!-- GA Tracking -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-91678026-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+	</body>
+</html>

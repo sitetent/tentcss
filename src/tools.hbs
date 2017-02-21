@@ -1,0 +1,65 @@
+{{> masthead title='Tools | Tent CSS'}}
+{{> doc-start}}
+
+    <span class="anchor" id="tools"></span>
+
+    <div class="title-set">
+        <h1 class="title">Tools</h1>
+        <p class="lead">These are Sass mixins and functions used thorought the framework.</p>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="tools-breakpoints"></span>
+
+    <h2>Breakpoints</h2>
+
+    <p>The breakpoint mixins make it very easy to call upon preset media query boundaries.</p>
+
+    <p>
+        The default $breakpoint sizes are <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> <code>xl</code> <code>xxl</code> <code>xxxl</code>
+    </p>
+
+    <pre><code class="language-markup"><!--
+        @include breakpoint-min($breakpoint) {
+            .foo {}
+        }
+
+        @include breakpoint-max($breakpoint) {
+            .foo {}
+        }
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="tools-scales"></span>
+
+    <h2>Scales</h2>
+
+    <hr>
+
+    <span class="anchor" id="tools-clearfix"></span>
+
+    <h2>Clearfix</h2>
+
+    <p>
+        Clearfix is a rather legacy layout adjustment multi-selector. With Flexbox on the rise this tool will become outdated.
+        Regardless, clearfix helps containing selectors keep their floating children within bounds.
+        Without clearfix some floating selectors may escape the container.
+    </p>
+
+    <pre><code class="language-markup"><!--
+        selector {
+            @include clearfix();
+        }
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="tools-box-sizing"></span>
+
+    <h2>Box Sizing</h2>
+
+
+{{> doc-end}}
+{{> mastfoot}}

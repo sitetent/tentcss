@@ -1,0 +1,208 @@
+{{> masthead title='Utilities | Tent CSS'}}
+{{> doc-start}}
+    
+    <span class="anchor" id="utilities"></span>
+
+    <div class="title-set">
+        <h1 class="title">Utilities</h1>
+        <p class="lead">These are helper classes that can speed up your development and reduce CSS property declarations.</p>
+    </div>
+
+    <hr>
+
+    <div class="card card--tertiary card--outlined color-tertiary">
+        <div class="card__content">
+            The utility classes do not contain any <code>!important</code> declarations.
+            If you require such overrides you may want to take a second glance at your code to see if something can be refactored first.
+        </div>
+    </div>
+
+    <hr>
+
+    <span class="anchor" id="other-type"></span>
+
+    <h2>Standalone Typography Modifiers</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <span class="type-bold">Strong</span> / <span class="type-bold">Bold</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-black">Black</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-italic">Italic</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-caps">Caps</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-small">Small</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <span class="type-bold">...</span>
+        <span class="type-black">...</span>
+        <span class="type-italic">...</span>
+        <span class="type-caps">...</span>
+        <span class="type-small">...</span>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="alignments"></span>
+
+    <h2>Text Alignments</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <div class="bg-color-lighter padding-xxs type-left">
+                        Text Left
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <div class="bg-color-light padding-xxs type-center">
+                        Text Center
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <div class="bg-color-lighter padding-xxs type-right">
+                        Text Right
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="type-left">...</div>
+        <div class="type-center">...</div>
+        <div class="type-right">...</div>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="padding"></span>
+
+    <h2>Padding</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="padding-xxxs">...</div>
+        <div class="padding-xxs">...</div>
+        <div class="padding-xs">...</div>
+        <div class="padding-sm">...</div>
+        <div class="padding-md">...</div>
+        <div class="padding-lg">...</div>
+        <div class="padding-xl">...</div>
+        <div class="padding-xxl">...</div>
+        <div class="padding-xxxl">...</div>
+    --></code></pre>
+
+    <p>
+        <code>.padding-y</code> neutralizes the left and right padding.
+    </p>
+
+    <p>
+        <code>.padding-x</code> neutralizes the top and bottom padding.
+    </p>
+
+    <p>
+        <code>.padding-null</code> neutralizes all sides of the padding box.
+    </p>
+
+    <span class="anchor" id="margin"></span>
+
+    <h2>Margin</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="margin-xxxs">...</div>
+        <div class="margin-xxs">...</div>
+        <div class="margin-xs">...</div>
+        <div class="margin-sm">...</div>
+        <div class="margin-md">...</div>
+        <div class="margin-lg">...</div>
+        <div class="margin-xl">...</div>
+        <div class="margin-xxl">...</div>
+        <div class="margin-xxxl">...</div>
+    --></code></pre>
+
+    <p>
+        <code>.margin-y</code> neutralizes the left and right margin.
+    </p>
+
+    <p>
+        <code>.margin-x</code> neutralizes the top and bottom margin.
+    </p>
+
+    <p>
+        <code>.margin-null</code> neutralizes all sides of the margin box.
+    </p>
+
+    <span class="anchor" id="display-types"></span>
+
+    <h2>Display Types</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="display-block">...</div>
+        <div class="display-flex">...</div>
+        <div class="display-inline-block">...</div>
+        <div class="display-inline">...</div>
+        <div class="display-table">...</div>
+        <div class="display-none">...</div>
+    --></code></pre>
+
+    <span class="anchor" id="colors"></span>
+
+    <h2>Text Colors</h2>
+
+    <pre><code class="language-markup"><!--
+        <span class="color-primary">...</span>
+        <span class="color-secondary">...</span>
+        <span class="color-tertiary">...</span>
+        <span class="color-light">...</span>
+        <span class="color-lighter">...</span>
+        <span class="color-lightest">...</span>
+        <span class="color-medium">...</span>
+        <span class="color-dark">...</span>
+        <span class="color-darker">...</span>
+        <span class="color-darkest">...</span>
+    --></code></pre>
+
+    <span class="anchor" id="bg"></span>
+
+    <h2>Background Colors</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="bg-color-primary">...</div>
+        <div class="bg-color-secondary">...</div>
+        <div class="bg-color-tertiary">...</div>
+        <div class="bg-color-light">...</div>
+        <div class="bg-color-lighter">...</div>
+        <div class="bg-color-lightest">...</div>
+        <div class="bg-color-medium">...</div>
+        <div class="bg-color-dark">...</div>
+        <div class="bg-color-darker">...</div>
+        <div class="bg-color-darkest">...</div>
+    --></code></pre>
+
+{{> doc-end}}
+{{> mastfoot}}

@@ -3,7 +3,7 @@
 	<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Tent CSS</title>
+    <title>Utilities | Tent CSS</title>
     <meta name="description" content="A CSS survival kit.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -63,77 +63,209 @@
 <div class="mastcontent bg-color-lightest" role="main">
     <div class="container padding-y padding-lg">
         <div class="grid">
-            <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">
-    <span class="anchor" id="get-started"></span>
-    <span class="anchor" id="start-install"></span>
+            <main class="main-content grid__column grid__column--12 grid__column--9--md flex-first flex-last--md">    
+    <span class="anchor" id="utilities"></span>
 
     <div class="title-set">
-        <h1 class="title">Getting Started</h1>
-        <p class="lead">There are many different methods to getting started with Tent CSS. Choose the method that is most appropriate to your project and environment.</p>
+        <h1 class="title">Utilities</h1>
+        <p class="lead">These are helper classes that can speed up your development and reduce CSS property declarations.</p>
     </div>
 
     <hr>
 
-    <h3>Install with NPM</h3>
-
-    <pre><code class="language-markup"><!--
-        npm install --save tent-css
-    --></code></pre>
-
-    <h3>Install with Bower</h3>
-
-    <pre><code class="language-markup"><!--
-        bower install --save tent-css
-    --></code></pre>
-
-    <h3>Clone the repository</h3>
-
-    <pre><code class="language-markup"><!--
-        git clone https://github.com/sitetent/tentcss.git
-    --></code></pre>
-
-    <h3>Install Manually</h3>
-
-    <a href="https://github.com/sitetent/tentcss/releases" class="button button--outlined button--secondary button--sm">Download Tent CSS</a>
-
-    <hr>
-
-    <span class="anchor" id="start-customize"></span>
-
-    <h2>How to include Tent CSS in your project</h2>
-
-    <p>The simpliest way to getting set up with Tent CSS is to include the CSS file in your project. For this method you should copy <code>/dist/tent.min.css</code> into the CSS folder of your project.</p>
-
-    <pre><code class="language-markup"><!--
-        <link href="css/tent.min.css" rel="stylesheet">
-
-        <link href="css/Your-Project.min.css" rel="stylesheet">
-    --></code></pre>
-
-    <h3>Building from source</h3>
-
-    <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
-
-    <p>Within your project Sass file you should import tent.scss</p>
-
-    <pre><code class="language-markup"><!--
-        @import "path-to/tentcss";
-    --></code></pre>
-
-    <div class="card card--outlined card--tertiary color-tertiary">
-        <div class="card__content type-italic">
-            <p>To use the Sass source files, it is suggested that you have an understanding of how CSS preprocessors work and how to compile them.</p>
+    <div class="card card--tertiary card--outlined color-tertiary">
+        <div class="card__content">
+            The utility classes do not contain any <code>!important</code> declarations.
+            If you require such overrides you may want to take a second glance at your code to see if something can be refactored first.
         </div>
     </div>
 
-    <h4>Overriding Sass variables</h4>
-
-    <p>A lot of Tent CSS features use Sass variables. This makes it very easy to override variables and thus you won't have to write more lines of code to modify these features.</p>
-
-    <p>Copy the variables from <code>src/01_settings/_variables.scss</code> to your project that you'd like to override.</p>
-
-    <!-- END Getting Started -->
     <hr>
+
+    <span class="anchor" id="other-type"></span>
+
+    <h2>Standalone Typography Modifiers</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <span class="type-bold">Strong</span> / <span class="type-bold">Bold</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-black">Black</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-italic">Italic</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-caps">Caps</span>
+                </div>
+                <div class="grid__column">
+                    <span class="type-small">Small</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <span class="type-bold">...</span>
+        <span class="type-black">...</span>
+        <span class="type-italic">...</span>
+        <span class="type-caps">...</span>
+        <span class="type-small">...</span>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="alignments"></span>
+
+    <h2>Text Alignments</h2>
+
+    <span class="type-small">Example</span>
+    <div class="card card--raised">
+        <div class="card__content">
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <div class="bg-color-lighter padding-xxs type-left">
+                        Text Left
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <div class="bg-color-light padding-xxs type-center">
+                        Text Center
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid--justify-center">
+                <div class="grid__column">
+                    <div class="bg-color-lighter padding-xxs type-right">
+                        Text Right
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <pre><code class="language-markup"><!--
+        <div class="type-left">...</div>
+        <div class="type-center">...</div>
+        <div class="type-right">...</div>
+    --></code></pre>
+
+    <hr>
+
+    <span class="anchor" id="padding"></span>
+
+    <h2>Padding</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="padding-xxxs">...</div>
+        <div class="padding-xxs">...</div>
+        <div class="padding-xs">...</div>
+        <div class="padding-sm">...</div>
+        <div class="padding-md">...</div>
+        <div class="padding-lg">...</div>
+        <div class="padding-xl">...</div>
+        <div class="padding-xxl">...</div>
+        <div class="padding-xxxl">...</div>
+    --></code></pre>
+
+    <p>
+        <code>.padding-y</code> neutralizes the left and right padding.
+    </p>
+
+    <p>
+        <code>.padding-x</code> neutralizes the top and bottom padding.
+    </p>
+
+    <p>
+        <code>.padding-null</code> neutralizes all sides of the padding box.
+    </p>
+
+    <span class="anchor" id="margin"></span>
+
+    <h2>Margin</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="margin-xxxs">...</div>
+        <div class="margin-xxs">...</div>
+        <div class="margin-xs">...</div>
+        <div class="margin-sm">...</div>
+        <div class="margin-md">...</div>
+        <div class="margin-lg">...</div>
+        <div class="margin-xl">...</div>
+        <div class="margin-xxl">...</div>
+        <div class="margin-xxxl">...</div>
+    --></code></pre>
+
+    <p>
+        <code>.margin-y</code> neutralizes the left and right margin.
+    </p>
+
+    <p>
+        <code>.margin-x</code> neutralizes the top and bottom margin.
+    </p>
+
+    <p>
+        <code>.margin-null</code> neutralizes all sides of the margin box.
+    </p>
+
+    <span class="anchor" id="display-types"></span>
+
+    <h2>Display Types</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="display-block">...</div>
+        <div class="display-flex">...</div>
+        <div class="display-inline-block">...</div>
+        <div class="display-inline">...</div>
+        <div class="display-table">...</div>
+        <div class="display-none">...</div>
+    --></code></pre>
+
+    <span class="anchor" id="colors"></span>
+
+    <h2>Text Colors</h2>
+
+    <pre><code class="language-markup"><!--
+        <span class="color-primary">...</span>
+        <span class="color-secondary">...</span>
+        <span class="color-tertiary">...</span>
+        <span class="color-light">...</span>
+        <span class="color-lighter">...</span>
+        <span class="color-lightest">...</span>
+        <span class="color-medium">...</span>
+        <span class="color-dark">...</span>
+        <span class="color-darker">...</span>
+        <span class="color-darkest">...</span>
+    --></code></pre>
+
+    <span class="anchor" id="bg"></span>
+
+    <h2>Background Colors</h2>
+
+    <pre><code class="language-markup"><!--
+        <div class="bg-color-primary">...</div>
+        <div class="bg-color-secondary">...</div>
+        <div class="bg-color-tertiary">...</div>
+        <div class="bg-color-light">...</div>
+        <div class="bg-color-lighter">...</div>
+        <div class="bg-color-lightest">...</div>
+        <div class="bg-color-medium">...</div>
+        <div class="bg-color-dark">...</div>
+        <div class="bg-color-darker">...</div>
+        <div class="bg-color-darkest">...</div>
+    --></code></pre>
 
             </main> <!-- /.grid__column -->
             <nav class="sidebar grid__column grid__column--12 grid__column--3--md flex-last flex-first--md">
