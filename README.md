@@ -28,9 +28,9 @@ Read more about installation on the [documentation](https://css.sitetent.com/#st
 
 ## How To use
 
-In order to eliminate duplicating the documentation and updating in several places please reference the Tent CSS website for more information. 
-ß
-[Tent CSS Documentation](https://css.sitetent.com/#get-started)
+Documentation for Tent CSS is updated on the offficial website. 
+
+[Tent CSS Documentation](https://css.sitetent.com/docs.html)
 
 ## Contributing
 
