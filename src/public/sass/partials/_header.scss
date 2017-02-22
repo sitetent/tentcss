@@ -25,3 +25,13 @@
 		margin-bottom: rem(24px);
 	}
 }
+
+.masthead__button {
+	width: 100%; 
+	text-align: center;
+
+	@include breakpoint-min(md) {
+		width: auto;
+		margin: 0;
+	}
+}
