@@ -1,4 +1,5 @@
-@import "../../../node_modules/tent-css/src/tent";
+// @import "../../../node_modules/tent-css/src/tent"; // Use from Node Modules
+@import "../../../../tent/src/tent"; // Use adjacent directory
 @import "partials/header";
 @import "partials/github-badge";
 @import "partials/prism";
