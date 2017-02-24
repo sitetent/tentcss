@@ -231,6 +231,7 @@ $card-border: 1px solid $color-light !default;
 $card-radius: 0 !default;
 $card-bg: $color-lightest !default;
 $card-color: $base-color !default;
+$card-raised-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.04), 0 0.2rem 1rem 0 rgba(0,0,0,.10) !default;
 
 $card-content-padding: $space-xxs !default; 
 $card-outlined-border: 2px solid transparent !default;

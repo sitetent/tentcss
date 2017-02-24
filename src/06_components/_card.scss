@@ -22,7 +22,7 @@
     }
 
     &__content {
-        padding: rem($card-content-padding);
+        padding: $card-content-padding;
 
         flex: 1 0 auto;
 
@@ -49,7 +49,7 @@
 }
 
 .card--raised {
-    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.04), 0 0.2rem 1rem 0 rgba(0,0,0,.10);
+    box-shadow: $card-raised-shadow;
 }
 
 .card--clear,
