@@ -41,8 +41,8 @@
 	margin-left: 0;
 	max-width: 100%;
 	width: 100%;
-	padding-left: rem($grid-gutter);
-	padding-right: rem($grid-gutter);
+	padding-left: $grid-gutter;
+	padding-right: $grid-gutter;
 
 	// .column-* vertically aligns an individual .column
 	&--top { @extend .flex__item--top; }
@@ -104,5 +104,5 @@
 
 @include breakpoint-min(sm) {
 	.grid { width: 100%; }
-	.grid__column { padding: 0 rem($space-xxs); }
+	.grid__column { padding: 0 $grid-gutter; }
 }

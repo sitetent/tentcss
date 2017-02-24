@@ -3,7 +3,7 @@
 // ==========================================================================
 
 p {
-	margin: 0 0 rem($space-xs);
+	margin: $pararaph-margin;
 	
 	&:last-child {
 		margin-bottom: 0;
@@ -17,7 +17,7 @@ h4,
 h5,
 h6 {
 	display: block;
-	margin: 0 0 rem($space-sm);
+	margin: $heading-margin;
 	color: $heading-color;
 	font-weight: inherit;
 	font-size: inherit;

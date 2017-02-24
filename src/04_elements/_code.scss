@@ -2,13 +2,10 @@
 // Code
 // ==========================================================================
 
-$code-color: $color-primary !default;
-$code-bg: $color-lighter !default;
-
 code {
     font-family: $font-family-monospace;
     font-size: inherit;
     color: $code-color;
     background-color: $code-bg;
-    padding: rem(2px) rem(4px);
+    padding: $code-padding;
 }

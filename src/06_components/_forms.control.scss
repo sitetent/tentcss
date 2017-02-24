@@ -4,8 +4,8 @@
 
 .control__label {
     display: block;
-    margin-bottom: rem($space-xxxs);
-    font-weight: 600;
+    margin: 0 0 $form-margin;
+    font-weight: $form-label-weight;
 }
 
 // Modifier - Control Radio

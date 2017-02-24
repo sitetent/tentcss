@@ -30,34 +30,13 @@ $link-color: $color-primary !default;
 $link-hover-color: darken($link-color, 15%) !default;
 
 // ==========================================================================
-// Common / Baseline
+// Base
 // ==========================================================================
-
-$font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,"Open Sans","Helvetica Neue",sans-serif;
-$font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-monospace: "Lucida Console",Courier,monospace;
 
 $base-font-weight: 400 !default;
 $base-line-height: 1.6 !default;
 
 $border-radius: 6px !default;
-
-// ==========================================================================
-// Font Sizes
-// ==========================================================================
-
-$size-xxxs: 10px !default;
-$size-xxs: 12px !default;
-$size-xs: 14px !default;
-$size-sm: 16px !default;
-$size-md: 18px !default;
-$size-lg: 20px !default;
-$size-xl: 32px !default;
-$size-xxl: 40px !default;
-$size-xxxl: 48px !default;
-
-$size-base: $size-sm !default;
-
 
 // ==========================================================================
 // Space Sizes
@@ -82,6 +61,40 @@ $space-xxxl: ($space-base * 9) !default;
 
 $scale-ratio: 1.250 !default; // Major Third Ratio
 $scale-unit: 10 !default;
+
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,"Open Sans","Helvetica Neue",sans-serif !default;
+$font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: "Lucida Console",Courier,monospace !default;
+
+$pararaph-margin: 0 0 rem($space-xs) !default;
+$heading-margin: 0 0 rem($space-sm) !default;
+
+// Font Sizes
+$size-xxxs: 10px !default;
+$size-xxs: 12px !default;
+$size-xs: 14px !default;
+$size-sm: 16px !default;
+$size-md: 18px !default;
+$size-lg: 20px !default;
+$size-xl: 32px !default;
+$size-xxl: 40px !default;
+$size-xxxl: 48px !default;
+
+$size-base: $size-sm !default;
+
+
+// ==========================================================================
+// Code
+// ==========================================================================
+
+$code-color: $color-primary !default;
+$code-padding: rem(2px) rem(4px) !default;
+$code-bg: $color-lighter !default;
 
 
 // ==========================================================================
@@ -119,7 +132,9 @@ $breakpoints: (
 ) !default;
 
 $grid-columns: 12 !default;
-$grid-gutter: $space-xxs !default;
+
+// Gutter is applied to padding-left and padding-right. The value is not split.
+$grid-gutter: rem($space-xxs) !default;
 
 // ==========================================================================
 // Dividers
@@ -146,8 +161,9 @@ $list-inline-space: $space-xs !default;
 // Tables
 // ==========================================================================
 
-$table-stripped-odd-bg: $color-lighter;
-$table-stripped-even-bg: $color-lightest;
+$table-cell-padding: rem($space-xxxs) !default;
+$table-stripped-odd-bg: $color-lighter !default;
+$table-stripped-even-bg: $color-lightest !default;
 
 
 // ==========================================================================
@@ -158,9 +174,9 @@ $heading-color: $base-color !default;
 $heading-color-inverse: $color-lighter !default;
 $heading-line-height: 1.25 !default;
 
-$lead-font-size: $size-md;
-$lead-font-weight: 300;
-$lead-line-height: 1.6;
+$lead-font-size: $size-md !default;
+$lead-font-weight: 300 !default;
+$lead-line-height: 1.6 !default;
 
 
 // ==========================================================================
@@ -168,6 +184,8 @@ $lead-line-height: 1.6;
 // ==========================================================================
 
 $form-label-weight: 600 !default;
+$form-margin: 0 0 rem($space-xxxs);
+
 $form-input-margin: 0 0 rem($space-xs) !default;
 $form-input-padding: rem($space-xxxs) rem($space-xxs) !default;
 $form-input-border: 1px solid $color-light !default;
