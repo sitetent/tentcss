@@ -3,17 +3,16 @@
 
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: rem($space-xs);
-  padding-left: 0
+  margin: $list-margin;
+  padding: $list-padding;
 }
 
 ul {
-  list-style: circle inside;
+  list-style: $unordered-list-style;
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: $ordered-list-style;
 }
 
 li {

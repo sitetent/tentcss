@@ -125,7 +125,13 @@ $grid-gutter: $space-xxs !default;
 // Lists
 // ==========================================================================
 
-$list-inline-space: $space-xs;
+$list-padding: 0 !default;
+$list-margin: 0 0 rem($space-xs) !default;
+
+$unordered-list-style: circle inside !default;
+$ordered-list-style: decimal inside !default;
+
+$list-inline-space: $space-xs !default;
 
 
 // ==========================================================================
