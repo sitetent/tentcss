@@ -9,6 +9,6 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: darken($link-color, 15%);
+		color: $link-hover-color;
 	}
 }

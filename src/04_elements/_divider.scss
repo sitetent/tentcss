@@ -4,8 +4,8 @@
 
 hr {
     display: block;
-    margin: rem($space-xs) 0;
-    height: 1px;
+    margin: $divider-margin;
+    height: $divider-height;
     border: none;
-    background-color: #dbdbdb;
+    background-color: $divider-color;
 }
