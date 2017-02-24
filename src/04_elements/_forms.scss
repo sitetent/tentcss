@@ -15,14 +15,14 @@ input[type="password"],
 textarea,
 select {
     display: block;
-    margin: 0 0 rem($space-xs);
-    padding: rem($space-xxxs) rem($space-xxs);
+    margin: $form-input-margin;
+    padding: $form-input-padding;
     width: auto;
     border: $form-input-border;
-    border-radius: 0;
+    border-radius: $form-input-radius;
     background-color: $form-input-bg;
     color: $form-input-color;
-    font-size: rem($form-input-size);
+    font-size: $form-input-size;
     font-family: inherit;
 
     appearance: none;

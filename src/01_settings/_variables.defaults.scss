@@ -156,11 +156,14 @@ $lead-line-height: 1.6;
 
 
 // ==========================================================================
-// Form Components
+// Forms
 // ==========================================================================
 
 $form-label-weight: 600 !default;
+$form-input-margin: 0 0 rem($space-xs) !default;
+$form-input-padding: rem($space-xxxs) rem($space-xxs) !default;
 $form-input-border: 1px solid $color-light !default;
+$form-input-radius: $form-input-radius !default;
 $form-input-size: $size-base !default;
 $form-input-color: $color-medium !default;
 $form-input-bg: $color-lightest !default;
