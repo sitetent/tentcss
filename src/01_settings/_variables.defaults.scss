@@ -27,7 +27,7 @@ $base-color-bg: $color-lightest !default;
 
 // Link Colors
 $link-color: $color-primary !default;
-
+$link-hover-color: darken($link-color, 15%) !default;
 
 // ==========================================================================
 // Common / Baseline
@@ -37,9 +37,10 @@ $font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,"Ope
 $font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-monospace: "Lucida Console",Courier,monospace;
 
-$border-radius: 6px !default;
+$base-font-weight: 400 !default;
 $base-line-height: 1.6 !default;
 
+$border-radius: 6px !default;
 
 // ==========================================================================
 // Font Sizes
@@ -170,7 +171,7 @@ $form-label-weight: 600 !default;
 $form-input-margin: 0 0 rem($space-xs) !default;
 $form-input-padding: rem($space-xxxs) rem($space-xxs) !default;
 $form-input-border: 1px solid $color-light !default;
-$form-input-radius: $form-input-radius !default;
+$form-input-radius: 0 !default;
 $form-input-size: rem($size-base) !default;
 $form-input-color: $color-medium !default;
 $form-input-bg: $color-lightest !default;
