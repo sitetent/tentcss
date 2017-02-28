@@ -87,6 +87,15 @@ $size-xxxl: 48px !default;
 
 $size-base: $size-sm !default;
 
+// ==========================================================================
+// Blockquote
+// ==========================================================================
+
+$blockquote-border: 4px solid $color-dark !default;
+$blockquote-padding: 0 0 0 rem($space-xxxs) !default;
+$blockquote-margin: 0 0 rem($space-xxs) !default;
+
+$cite-style: italic !default;
 
 // ==========================================================================
 // Code

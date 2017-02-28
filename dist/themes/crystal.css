@@ -35,11 +35,6 @@ main {
   display: block;
 }
 
-blockquote {
-  margin: 0;
-  padding: 0;
-}
-
 sup {
   position: relative;
   top: -.5em;
@@ -106,6 +101,16 @@ button {
   background: none;
   cursor: pointer;
   overflow: visible;
+}
+
+blockquote {
+  margin: 0 0 1.6rem;
+  padding: 0 0 0 0.8rem;
+  border-left: 4px solid #6E6E6E;
+}
+
+cite {
+  font-style: italic;
 }
 
 code {
