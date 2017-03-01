@@ -1,3 +1,10 @@
+<p align="center">
+    <a href="https://css.sitetent.com">
+        <img width="600" src="http://css.sitetent.com/public/img/banner.png">
+    </a>
+</p>
+
+
 # Tent CSS 
 [![npm version](https://badge.fury.io/js/tent-css.svg)](https://badge.fury.io/js/tent-css)
 
@@ -26,9 +33,9 @@ $ git clone https://github.com/sitetent/tentcss.git
 
 Read more about installation on the [documentation](https://css.sitetent.com/#start-install).
 
-## How To use
+## How to Use
 
-Documentation for Tent CSS is updated on the offficial website. 
+Documentation for Tent CSS is updated on the official website:
 
 [Tent CSS Documentation](https://css.sitetent.com/docs.html)
 
