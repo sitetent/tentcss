@@ -3,29 +3,33 @@
 // Based on https://github.com/jaydenseric/Fix
 // ==========================================================================
 
-// The base font-size is set at 62.5% for having the convenience
-// of sizing rems in a way that is similar to using px. 1.6rem=16px
+// 1. Reset line height for all browsers.
+// 2. The base font-size is set at 62.5% for having the convenience
+//    of sizing rems in a way that is similar to using px. 1.6rem=16px
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  -ms-text-size-adjust: 62.5%;
-  -webkit-text-size-adjust: 62.5%;
+  @include box-sizing(border-box);
+  line-height: 1; // * 1 *
+  font-size: 62.5%; // * 2 *
+  -ms-text-size-adjust: 62.5%; // * 2
+  -webkit-text-size-adjust: 62.5%; // * 2 *
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
 }
+
+// 1. Set global inheritance from box-sizing property set on `html` element.
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  @include box-sizing(inherit); // * 1 *
 }
+
+// 1. Incase custom font was used without a fallback
 
 body {
   margin: 0;
-  line-height: 1;
-  font-family: sans-serif;
+  font-family: sans-serif; // * 1 *
 }
 
 iframe {
