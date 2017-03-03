@@ -31,7 +31,7 @@ Or, you can clone the source:
 $ git clone https://github.com/sitetent/tentcss.git
 ```
 
-Read more about installation on the [documentation](https://css.sitetent.com/#start-install).
+Read more about installation on the [documentation](https://css.sitetent.com/docs.html).
 
 ## How to Use
 
