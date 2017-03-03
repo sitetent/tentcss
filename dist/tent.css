@@ -7,12 +7,12 @@
  */
 html {
   box-sizing: border-box;
+  line-height: 1;
   font-size: 62.5%;
   -ms-text-size-adjust: 62.5%;
   -webkit-text-size-adjust: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -23,7 +23,6 @@ html {
 
 body {
   margin: 0;
-  line-height: 1;
   font-family: sans-serif;
 }
 
@@ -96,7 +95,6 @@ button {
   text-align: inherit;
   text-transform: inherit;
   font: inherit;
-  -webkit-font-smoothing: inherit;
   letter-spacing: inherit;
   background: none;
   cursor: pointer;
@@ -870,6 +868,7 @@ table td {
   padding-right: 25px;
 }
 
+.list--nulled,
 .list--nulled .list__item {
   margin: 0;
 }
@@ -1234,8 +1233,8 @@ table td {
   height: 0.8rem;
   pointer-events: none;
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   width: 0.8rem;
   margin-top: -0.375em;
   right: 1.125em;
