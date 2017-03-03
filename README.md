@@ -39,6 +39,10 @@ Documentation for Tent CSS is updated on the official website:
 
 [Tent CSS Documentation](https://css.sitetent.com/docs.html)
 
+## Related Projects
+
+- [Tent CSS Markup Snippets Extension for Visual Studio Code](https://github.com/sitetent/tent-snippets-vsc)
+
 ## Contributing
 
 You can help make Tent CSS event better!
