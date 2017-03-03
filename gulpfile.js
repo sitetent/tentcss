@@ -41,6 +41,7 @@ gulp.task('serve', () => {
     server: paths.dist.root,
     open: false,
     notify: false,
+    port: 3010,
 
     // Whether to listen on external
     online: false,
