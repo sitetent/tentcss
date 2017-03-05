@@ -3,7 +3,9 @@
 // ==========================================================================
 
 .table {
+
     &--stripped .table__body {
+        
         .table__row:not(:nth-child(even)) .table__cell {
             background-color: $table-stripped-odd-bg;
         }
