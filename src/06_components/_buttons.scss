@@ -16,6 +16,7 @@
     transition: all 1s ease;
 
     &.button--primary {
+
         &:hover,
         &:focus,
         &:active {
@@ -26,6 +27,7 @@
     }
 
     &.button--secondary {
+
         &:hover,
         &:focus,
         &:active {
@@ -36,6 +38,7 @@
     }
     
     &.button--tertiary {
+        
         &:hover,
         &:focus,
         &:active {
