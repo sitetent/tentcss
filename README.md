@@ -6,6 +6,7 @@
 
 
 # Tent CSS 
+[![Build Status](https://travis-ci.org/sitetent/tentcss.svg?branch=master)](https://travis-ci.org/sitetent/tentcss)
 [![npm version](https://badge.fury.io/js/tent-css.svg)](https://badge.fury.io/js/tent-css)
 
 A CSS survival kit. Includes only the essentials to make camp.
