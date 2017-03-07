@@ -1,0 +1,9 @@
+.mastfoot a {
+    color: $color-light;
+    border-bottom: 1px solid $color-light;
+
+    &:hover {
+        color: $color-darkest;
+        border-color: $color-darkest;
+    }
+}
