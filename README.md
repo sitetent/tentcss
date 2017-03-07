@@ -74,6 +74,9 @@ All of the authors and contributors to the great open source frameworks that hav
 
 Created with caffine by [Aaron Mazade](http://aaronmazade.com) ([@ulinaaron](https://twitter.com/ulinaaron)).
 
+
+The Tent CSS website full-screen hero photo is by [Jamison McAndie](https://unsplash.com/@jamomca).
+
 ## Roadmap
 
 - Addons for more objects and components.
