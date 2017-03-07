@@ -9,7 +9,6 @@
     "type": "git",
     "url": "https://github.com/sitetent/tentcss.git"
   },
-  "main": "package.json",
   "scripts": {
     "version:patch": "npm version patch -m \"Bumped to %s\"",
     "tent:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
