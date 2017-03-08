@@ -71,9 +71,7 @@ MIT
 ## Credit
 
 - All of the authors and contributors to the great open source frameworks that have set the pace thus far and going forward.
-
 - The Tent CSS website full-screen hero photo is by [Jamison McAndie](https://unsplash.com/@jamomca).
-
 - Tent CSS is developed with caffine by [Aaron Mazade](http://aaronmazade.com) ([@ulinaaron](https://twitter.com/ulinaaron)).
 
 
