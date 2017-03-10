@@ -9,8 +9,8 @@ html {
   box-sizing: border-box;
   line-height: 1;
   font-size: 62.5%;
-  -ms-text-size-adjust: 62.5%;
-  -webkit-text-size-adjust: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
