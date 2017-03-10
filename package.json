@@ -1,6 +1,6 @@
 {
   "name": "tent-css",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A CSS survival kit.",
   "author": "Aaron Mazade <ulinaaron@gmail.com>",
   "style": "dist/tent.css",
