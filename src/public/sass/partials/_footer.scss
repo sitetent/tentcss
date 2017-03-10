@@ -1,0 +1,19 @@
+.mastfoot a {
+    color: $color-light;
+    font-weight: 600;
+
+    &:hover {
+        color: $color-darkest;
+    }
+}
+
+.list__item--github {
+
+    .list__item__icon {
+       
+    }
+    
+    .list__item__icon svg {
+        fill: $color-light;
+    }
+}
