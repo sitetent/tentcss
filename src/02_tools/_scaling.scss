@@ -6,8 +6,8 @@
   @return $n / ($n * 0 + 1);
 }
 
-@function rem($value) {
-	$root: $scale-unit;
+@function rem($value, $scale: $scale-unit) {
+	$root: $scale;
 	$val: parseInt($value);
 	$return: ();
 	

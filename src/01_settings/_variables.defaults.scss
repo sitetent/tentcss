@@ -120,24 +120,29 @@ $zone-footer:  "mastfoot" !default;
 // ==========================================================================
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  sm: rem(540px),
+  md: rem(720px),
+  lg: rem(960px),
+  xl: rem(1140px)
 ) !default;
 
 // ==========================================================================
 // Grid & Breakpoints
 // ==========================================================================
 
+// 1. Media queries use the initial font-size and will not respect the rescaling `font-size: 62.5%` hack.
+// So we need to adjust the scale for breakpoints accordingly.
+
+$breakpoint-scale: 16 !default; // * 1 *
+
 $breakpoints: (
-    xs: 0, 
-    sm: 576px, 
-    md: 768px, 
-    lg: 992px, 
-    xl: 1200px,
-    xxl: 1400px,
-    xxxl: 1600px
+    xs: rem(0, $breakpoint-scale), 
+    sm: rem(576px, $breakpoint-scale), 
+    md: rem(768px, $breakpoint-scale), 
+    lg: rem(992px, $breakpoint-scale), 
+    xl: rem(1200px, $breakpoint-scale),
+    xxl: rem(1400px, $breakpoint-scale),
+    xxxl: rem(1600px, $breakpoint-scale)
 ) !default;
 
 $grid-columns: 12 !default;
