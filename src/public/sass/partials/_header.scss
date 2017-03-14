@@ -30,7 +30,7 @@
 	width: 100%; 
 	text-align: center;
 
-	@include breakpoint-min(md) {
+	@include breakpoint-min(lg) {
 		width: auto;
 		margin: 0;
 	}
