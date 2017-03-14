@@ -8,7 +8,7 @@
 html {
   box-sizing: border-box;
   line-height: 1;
-  font-size: 62.5%;
+  font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -59,14 +59,14 @@ body {
   background-color: #FFFFFF;
   color: #444444;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
 }
 
 hr {
   display: block;
-  margin: 2.4rem 0;
+  margin: 1.5rem 0;
   height: 1px;
   border: none;
   background-color: #dbdbdb;
@@ -102,8 +102,8 @@ button {
 }
 
 blockquote {
-  margin: 0 0 1.6rem;
-  padding: 0 0 0 0.8rem;
+  margin: 0 0 1rem;
+  padding: 0 0 0 0.5rem;
   border-left: 4px solid #6E6E6E;
 }
 
@@ -116,11 +116,11 @@ code {
   font-size: inherit;
   color: #0074D9;
   background-color: #F2F2F2;
-  padding: 0.2rem 0.4rem;
+  padding: 0.125rem 0.25rem;
 }
 
 p {
-  margin: 0 0 2.4rem;
+  margin: 0 0 1.5rem;
 }
 
 p:last-child {
@@ -134,7 +134,7 @@ h4,
 h5,
 h6 {
   display: block;
-  margin: 0 0 3.2rem;
+  margin: 0 0 2rem;
   color: #444444;
   font-weight: inherit;
   font-size: inherit;
@@ -151,27 +151,27 @@ h6:last-child {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 3.2rem;
-}
-
-h4 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.25rem;
+}
+
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
 }
 
 h6 {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 textarea {
@@ -188,14 +188,14 @@ input[type="password"],
 textarea,
 select {
   display: block;
-  margin: 0 0 2.4rem;
-  padding: 0.8rem 1.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 1rem;
   width: auto;
   border: 1px solid #E0E0E0;
   border-radius: 0;
   background-color: #FFFFFF;
   color: #A4A4A4;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-family: inherit;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -216,7 +216,7 @@ select:focus {
 
 ul,
 ol {
-  margin: 0 0 2.4rem;
+  margin: 0 0 1.5rem;
   padding: 0;
 }
 
@@ -230,7 +230,7 @@ ol {
 
 li {
   display: list-item;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 dl {
@@ -247,7 +247,7 @@ table {
 }
 
 table td {
-  padding: 0.8rem;
+  padding: 0.5rem;
 }
 
 .container {
@@ -257,21 +257,21 @@ table td {
   width: 100%;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 36em) {
   .container {
-    max-width: 54rem;
+    max-width: 33.75rem;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .container {
-    max-width: 72rem;
+    max-width: 45rem;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 62em) {
   .container {
-    max-width: 114rem;
+    max-width: 71.25rem;
   }
 }
 
@@ -380,7 +380,7 @@ table td {
           order: 1;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 36em) {
   .flex-first--sm {
     -webkit-order: -1;
         -ms-flex-order: -1;
@@ -393,7 +393,7 @@ table td {
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .flex-first--md {
     -webkit-order: -1;
         -ms-flex-order: -1;
@@ -406,7 +406,7 @@ table td {
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 62em) {
   .flex-first--lg {
     -webkit-order: -1;
         -ms-flex-order: -1;
@@ -419,7 +419,7 @@ table td {
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 75em) {
   .flex-first--xl {
     -webkit-order: -1;
         -ms-flex-order: -1;
@@ -451,8 +451,8 @@ table td {
   margin-left: 0;
   max-width: 100%;
   width: 100%;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .grid__column--1 {
@@ -539,7 +539,7 @@ table td {
   max-width: 100%;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 36em) {
   .grid__column--1--sm {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;
@@ -614,7 +614,7 @@ table td {
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .grid__column--1--md {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;
@@ -689,7 +689,7 @@ table td {
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 62em) {
   .grid__column--1--lg {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;
@@ -764,7 +764,7 @@ table td {
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 75em) {
   .grid__column--1--xl {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;
@@ -839,12 +839,12 @@ table td {
   }
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 36em) {
   .grid {
     width: 100%;
   }
   .grid__column {
-    padding: 0 1.6rem;
+    padding: 0 1rem;
   }
 }
 
@@ -872,47 +872,47 @@ table td {
 
 .title--xxxs,
 .subtitle--xxxs {
-  font-size: 1rem;
+  font-size: 0.625rem;
 }
 
 .title--xxs,
 .subtitle--xxs {
-  font-size: 1.2rem;
+  font-size: 0.75rem;
 }
 
 .title--xs,
 .subtitle--xs {
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 
 .title--sm,
 .subtitle--sm {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .title--md,
 .subtitle--md {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
 }
 
 .title--lg,
 .subtitle--lg {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .title--xl,
 .subtitle--xl {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 .title--xxl,
 .subtitle--xxl {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .title--xxxl,
 .subtitle--xxxl {
-  font-size: 4.8rem;
+  font-size: 3rem;
 }
 
 .title {
@@ -930,7 +930,7 @@ table td {
 
 .title:not(:last-child),
 .subtitle:not(:last-child) {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .title-set .title {
@@ -949,8 +949,8 @@ table td {
 
 .button {
   display: inline-block;
-  margin-bottom: 0.8rem;
-  padding: 0.8rem 4rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 2.5rem;
   border: 2px solid #6E6E6E;
   border-radius: 0;
   background-color: #6E6E6E;
@@ -980,48 +980,48 @@ table td {
 }
 
 .button--xxxs {
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.625rem;
 }
 
 .button--xxs {
-  padding: 0.8rem 3.2rem;
-  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 0.625rem;
 }
 
 .button--xs {
-  padding: 0.8rem 2.4rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
 }
 
 .button--sm {
-  padding: 0.8rem 4rem;
-  font-size: 1.4rem;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.875rem;
 }
 
 .button--md {
-  padding: 0.8rem 4rem;
-  font-size: 1.4rem;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.875rem;
 }
 
 .button--lg {
-  padding: 1.6rem 4.8rem;
-  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
 }
 
 .button--xl {
-  padding: 1.6rem 5.6rem;
-  font-size: 2rem;
+  padding: 1rem 3.5rem;
+  font-size: 1.25rem;
 }
 
 .button--xxl {
-  padding: 1.6rem 6.4rem;
-  font-size: 2rem;
+  padding: 1rem 4rem;
+  font-size: 1.25rem;
 }
 
 .button--xxxl {
-  padding: 1.6rem 7.2rem;
-  font-size: 2rem;
+  padding: 1rem 4.5rem;
+  font-size: 1.25rem;
 }
 
 .button--block {
@@ -1098,7 +1098,7 @@ table td {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   border: 1px solid #E0E0E0;
   border-radius: 0;
   background: #FFFFFF;
@@ -1115,7 +1115,7 @@ table td {
 }
 
 .card__content {
-  padding: 1.6rem;
+  padding: 1rem;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -1172,7 +1172,7 @@ table td {
 
 .control__label {
   display: block;
-  margin: 0 0 0 0 0.8rem;
+  margin: 0 0 0 0 0.5rem;
   font-weight: 600;
 }
 
@@ -1191,14 +1191,14 @@ table td {
   margin-left: 0;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 36em) {
   .control--inline {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .control--inline .control__label:not(:first-child) {
-    margin-left: 0.8rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -1213,7 +1213,7 @@ table td {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin: 0 0 2.4rem;
+  margin: 0 0 1.5rem;
 }
 
 .control--select:after {
@@ -1223,12 +1223,12 @@ table td {
   border-top: 0;
   display: block;
   position: absolute;
-  height: 0.8rem;
+  height: 0.5rem;
   pointer-events: none;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  width: 0.8rem;
+  width: 0.5rem;
   margin-top: -0.375em;
   right: 1.125em;
   top: 50%;
@@ -1236,20 +1236,20 @@ table td {
 }
 
 .control__select {
-  padding-right: 4rem;
+  padding-right: 2.5rem;
   margin: 0;
 }
 
 .control__textarea--sm {
-  min-height: 8rem;
+  min-height: 5rem;
 }
 
 .control__textarea--md {
-  min-height: 14rem;
+  min-height: 8.75rem;
 }
 
 .control__textarea--lg {
-  min-height: 20rem;
+  min-height: 12.5rem;
 }
 
 .color-primary {
@@ -1372,39 +1372,39 @@ table td {
 }
 
 .padding-xxxs {
-  padding: 0.8rem;
+  padding: 0.5rem;
 }
 
 .padding-xxs {
-  padding: 1.6rem;
+  padding: 1rem;
 }
 
 .padding-xs {
-  padding: 2.4rem;
+  padding: 1.5rem;
 }
 
 .padding-sm {
-  padding: 3.2rem;
+  padding: 2rem;
 }
 
 .padding-md {
-  padding: 4rem;
+  padding: 2.5rem;
 }
 
 .padding-lg {
-  padding: 4.8rem;
+  padding: 3rem;
 }
 
 .padding-xl {
-  padding: 5.6rem;
+  padding: 3.5rem;
 }
 
 .padding-xxl {
-  padding: 6.4rem;
+  padding: 4rem;
 }
 
 .padding-xxxl {
-  padding: 7.2rem;
+  padding: 4.5rem;
 }
 
 .padding-y {
@@ -1417,44 +1417,44 @@ table td {
   padding-bottom: 0;
 }
 
-.padding-null {
+.padding-nulled {
   padding: 0;
 }
 
 .margin-xxxs {
-  margin: 0.8rem;
+  margin: 0.5rem;
 }
 
 .margin-xxs {
-  margin: 1.6rem;
+  margin: 1rem;
 }
 
 .margin-xs {
-  margin: 2.4rem;
+  margin: 1.5rem;
 }
 
 .margin-sm {
-  margin: 3.2rem;
+  margin: 2rem;
 }
 
 .margin-md {
-  margin: 4rem;
+  margin: 2.5rem;
 }
 
 .margin-lg {
-  margin: 4.8rem;
+  margin: 3rem;
 }
 
 .margin-xl {
-  margin: 5.6rem;
+  margin: 3.5rem;
 }
 
 .margin-xxl {
-  margin: 6.4rem;
+  margin: 4rem;
 }
 
 .margin-xxxl {
-  margin: 7.2rem;
+  margin: 4.5rem;
 }
 
 .margin-y {
@@ -1467,7 +1467,7 @@ table td {
   margin-bottom: 0;
 }
 
-.margin-null {
+.margin-nulled {
   margin: 0;
 }
 
