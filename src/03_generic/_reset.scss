@@ -3,17 +3,14 @@
 // Based on https://github.com/jaydenseric/Fix
 // ==========================================================================
 
-// 1. Reset line height for all browsers.
-// 2. The base font-size is set at 62.5% for having the convenience
-//    of sizing rems in a way that is similar to using px. 1.6rem=16px
-// 3. See https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+// 1. See https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
 
 html {
   @include box-sizing(border-box);
-  line-height: 1; // * 1 *
-  font-size: 100%; // * 2 *
-  -ms-text-size-adjust: 100%; // * 3 *
-  -webkit-text-size-adjust: 100%; // * 3 *
+  line-height: 1;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%; // * 1 *
+  -webkit-text-size-adjust: 100%; // * 1 *
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
