@@ -60,7 +60,7 @@ $space-xxxl: ($space-base * 9) !default;
 // ==========================================================================
 
 $scale-ratio: 1.250 !default; // Major Third Ratio
-$scale-unit: 10 !default;
+$scale-unit: 16 !default;
 
 
 // ==========================================================================
@@ -130,19 +130,14 @@ $container-max-widths: (
 // Grid & Breakpoints
 // ==========================================================================
 
-// 1. Media queries use the initial font-size and will not respect the rescaling `font-size: 62.5%` hack.
-// So we need to adjust the scale for breakpoints accordingly.
-
-$breakpoint-scale: 16 !default; // * 1 *
-
 $breakpoints: (
-    xs: rem(0, $breakpoint-scale), 
-    sm: rem(576px, $breakpoint-scale), 
-    md: rem(768px, $breakpoint-scale), 
-    lg: rem(992px, $breakpoint-scale), 
-    xl: rem(1200px, $breakpoint-scale),
-    xxl: rem(1400px, $breakpoint-scale),
-    xxxl: rem(1600px, $breakpoint-scale)
+    xs: 0, 
+    sm: 57.6em, 
+    md: 76.8em, 
+    lg: 99.2em, 
+    xl: 120em,
+    xxl: 140em,
+    xxxl: 160em,
 ) !default;
 
 $grid-columns: 12 !default;

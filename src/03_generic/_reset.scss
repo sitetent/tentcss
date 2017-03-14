@@ -11,7 +11,7 @@
 html {
   @include box-sizing(border-box);
   line-height: 1; // * 1 *
-  font-size: 62.5%; // * 2 *
+  font-size: 100%; // * 2 *
   -ms-text-size-adjust: 100%; // * 3 *
   -webkit-text-size-adjust: 100%; // * 3 *
   -webkit-font-smoothing: antialiased;
