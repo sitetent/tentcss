@@ -132,12 +132,12 @@ $container-max-widths: (
 
 $breakpoints: (
     xs: 0, 
-    sm: 57.6em, 
-    md: 76.8em, 
-    lg: 99.2em, 
-    xl: 120em,
-    xxl: 140em,
-    xxxl: 160em,
+    sm: em(576px), 
+    md: em(768px), 
+    lg: em(992px), 
+    xl: em(1200px),
+    xxl: em(1400px),
+    xxxl: em(1600px)
 ) !default;
 
 $grid-columns: 12 !default;
