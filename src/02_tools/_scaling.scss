@@ -6,13 +6,27 @@
   @return $n / ($n * 0 + 1);
 }
 
-@function rem($value) {
-	$root: $scale-unit;
+@function rem($value, $scale: $scale-unit) {
+	$root: $scale;
 	$val: parseInt($value);
 	$return: ();
 	
 	@if unit($value) == "px" {
 		$return: append($return, ($val / $root + rem));
+	} @else {
+		$return: append($return, ($val * $root + px));
+	}
+	
+	@return $return;
+}
+
+@function em($value, $scale: $scale-unit) {
+	$root: $scale;
+	$val: parseInt($value);
+	$return: ();
+	
+	@if unit($value) == "px" {
+		$return: append($return, ($val / $root + em));
 	} @else {
 		$return: append($return, ($val * $root + px));
 	}

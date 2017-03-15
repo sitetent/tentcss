@@ -60,7 +60,7 @@ $space-xxxl: ($space-base * 9) !default;
 // ==========================================================================
 
 $scale-ratio: 1.250 !default; // Major Third Ratio
-$scale-unit: 10 !default;
+$scale-unit: 16 !default;
 
 
 // ==========================================================================
@@ -120,10 +120,10 @@ $zone-footer:  "mastfoot" !default;
 // ==========================================================================
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  sm: rem(540px),
+  md: rem(720px),
+  lg: rem(960px),
+  xl: rem(1140px)
 ) !default;
 
 // ==========================================================================
@@ -132,12 +132,12 @@ $container-max-widths: (
 
 $breakpoints: (
     xs: 0, 
-    sm: 576px, 
-    md: 768px, 
-    lg: 992px, 
-    xl: 1200px,
-    xxl: 1400px,
-    xxxl: 1600px
+    sm: em(576px), 
+    md: em(768px), 
+    lg: em(992px), 
+    xl: em(1200px),
+    xxl: em(1400px),
+    xxxl: em(1600px)
 ) !default;
 
 $grid-columns: 12 !default;
