@@ -15,6 +15,7 @@ const ghPages     = require('gulp-gh-pages');
 const sassGlob    = require('gulp-sass-bulk-import');
 const watch       = require('gulp-watch');
 const babel       = require('gulp-babel');
+const plumber     = require('gulp-plumber');
 
 var paths = {
   src: { root: 'src' },
@@ -50,17 +51,16 @@ gulp.task('serve', () => {
 
 gulp.task('styles', () => {
   gulp.src([paths.src.sass])
+    .pipe(plumber())
     .pipe(sassGlob())
-    .on('error', util.log)
     .pipe(sass({
       includePaths: ['src/public/sass'],
     }))
-    .on('error', util.log)
     .pipe(prefixer('last 4 versions'))
     .pipe(csso({
         keepSpecialComments: 1
     }))
-    .on('error', util.log)
+    .pipe(plumber.stop())
     .pipe(gulp.dest(paths.dist.css))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -75,12 +75,12 @@ gulp.task('templates', () => {
   };
 
   gulp.src([paths.src.root + '/*.hbs'])
+    .pipe(plumber())
     .pipe(handlebars(null, opts))
-    .on('error', util.log)
     .pipe(rename({
       extname: '.html',
     }))
-    .on('error', util.log)
+    .pipe(plumber.stop())
     .pipe(gulp.dest(paths.dist.root))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -90,13 +90,13 @@ gulp.task('templates', () => {
 */
 gulp.task('scripts', () => {
   gulp.src(paths.src.javascript)
+    .pipe(plumber())
     .pipe(babel({
       presets: ['es2015'],
     }))
     .pipe(concat('bundle.js'))
-    .on('error', util.log)
     .pipe(uglify())
-    .on('error', util.log)
+    .pipe(plumber.stop())
     .pipe(gulp.dest(paths.dist.javascript))
     .pipe(browserSync.reload({stream: true}));
 
@@ -104,12 +104,12 @@ gulp.task('scripts', () => {
   * Uglify JS libs and move to dist folder
   */
   gulp.src([paths.src.libs])
+    .pipe(plumber())
     .pipe(uglify())
-    .on('error', util.log)
     .pipe(rename({
       suffix: '.min',
     }))
-    .on('error', util.log)
+    .pipe(plumber.stop())
     .pipe(gulp.dest(paths.dist.libs))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -124,13 +124,13 @@ gulp.task('files', () => {
     .pipe(gulp.dest(paths.dist.root));
 });
 
-watch(paths.src.images, () => {
-  gulp.start('images');
-});
+// watch(paths.src.images, () => {
+//   gulp.start('images');
+// });
 
-watch(paths.src.files, () => {
-  gulp.start('files');
-});
+// watch(paths.src.files, () => {
+//   gulp.start('files');
+// });
 
 gulp.task('watch', () => {
   gulp.watch(paths.src.sass, ['styles']);
