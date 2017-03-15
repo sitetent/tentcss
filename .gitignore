@@ -1,3 +1,8 @@
+# Ignore distribution folder since it gets built in Travis CI
+dist
+
+
+
 $RECYCLE.BIN/
 *.cab
 *.lnk
