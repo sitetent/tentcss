@@ -1,3 +1,6 @@
+# Ignore distribution files since they are built with continuous integration (Travis CI)
+dist
+
 $RECYCLE.BIN/
 *.cab
 *.lnk
@@ -42,6 +45,7 @@ pids
 prepros.cfg
 prepros-6.config
 .publish
+.vscode
 
 # Only use maps for local.
 *.css.map
