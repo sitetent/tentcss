@@ -143,4 +143,6 @@ gulp.task('deploy', () => {
     .pipe(ghPages());
 });
 
+gulp.task('build', ['images', 'files', 'styles', 'scripts', 'templates']);
+
 gulp.task('default', ['watch', 'serve', 'images', 'files', 'styles', 'scripts', 'templates']);
