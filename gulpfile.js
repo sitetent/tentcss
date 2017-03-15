@@ -26,7 +26,7 @@ var paths = {
     this.src.javascript  = [this.src.root + '/public/js/**/*.js', '!' + this.src.root + '/js/libs/*.js'];
     this.src.libs        = this.src.root + '/public/js/libs/*.js';
     this.src.images      = this.src.root + '/public/img/**/*.{jpg,jpeg,svg,png,gif}';
-    this.src.files       = this.src.root + '/*.{html,txt}';
+    this.src.files       = [this.src.root + '/*', '!' + this.src.root + '/*.hbs'];
 
     this.dist.css        = this.dist.root + '/public/css';
     this.dist.images     = this.dist.root + '/public/img';
@@ -120,7 +120,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('files', () => {
-  gulp.src([paths.src.files])
+  gulp.src(paths.src.files)
     .pipe(gulp.dest(paths.dist.root));
 });
 
