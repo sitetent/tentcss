@@ -4,7 +4,7 @@
 
 .button {
     display: inline-block;
-    margin-bottom: map-get($spaces, xxxs);
+    margin-bottom: map-get($spaces, xxs);
     padding: $button-padding-sm;
     border: $button-outlined-border-width solid $button-filled-bg;
     border-radius: $button-border-radius;
