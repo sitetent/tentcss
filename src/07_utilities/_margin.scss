@@ -4,15 +4,11 @@
 
 .margin {
 
-    &-xxxs { margin: rem($space-xxxs); }
-    &-xxs { margin: rem($space-xxs); }
-    &-xs { margin: rem($space-xs); }
-    &-sm { margin: rem($space-sm); }
-    &-md { margin: rem($space-md); }
-    &-lg { margin: rem($space-lg); }
-    &-xl { margin: rem($space-xl); }
-    &-xxl { margin: rem($space-xxl); }
-    &-xxxl { margin: rem($space-xxxl); }
+    @each $space, $margin in $spaces {
+        &-#{$space} {
+            margin: $margin;
+        }
+    }
     
     &-y {
         margin-left: 0;

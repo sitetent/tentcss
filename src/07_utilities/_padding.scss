@@ -4,15 +4,11 @@
 
 .padding {
 
-    &-xxxs { padding: rem($space-xxxs); }
-    &-xxs { padding: rem($space-xxs); }
-    &-xs { padding: rem($space-xs); }
-    &-sm { padding: rem($space-sm); }
-    &-md { padding: rem($space-md); }
-    &-lg { padding: rem($space-lg); }
-    &-xl { padding: rem($space-xl); }
-    &-xxl { padding: rem($space-xxl); }
-    &-xxxl { padding: rem($space-xxxl); }
+    @each $space, $padding in $spaces {
+        &-#{$space} {
+            padding: $padding;
+        }
+    }
     
     &-y {
         padding-left: 0;

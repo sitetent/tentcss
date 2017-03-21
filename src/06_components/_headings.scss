@@ -34,7 +34,7 @@
 
 .title:not(:last-child),
 .subtitle:not(:last-child) {
-  margin-bottom: rem($space-xxs);
+  margin-bottom: map-get($spaces, xxs);
 }
 
 // Title Set

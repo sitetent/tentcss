@@ -33,7 +33,7 @@
         flex-direction: row;
 
         .control__label:not(:first-child) {
-            margin-left: rem($space-xxxs);
+            margin-left: map-get($spaces, xxxs);
         }
     }
 
@@ -61,7 +61,7 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin: 0 0 rem($space-xs);
+    margin: 0 0 map-get($spaces, xs);
 
     &:after {
         content: "";
@@ -70,10 +70,10 @@
         border-top: 0;
         display: block;
         position: absolute;
-        height: rem($space-xxxs);
+        height: map-get($spaces, xxxs);
         pointer-events: none;
         transform: rotate(-45deg);
-        width: rem($space-xxxs);
+        width: map-get($spaces, xxxs);
         margin-top: -0.375em;
         right: 1.125em;
         top: 50%;
@@ -82,7 +82,7 @@
 }
 
 .control__select {
-    padding-right: rem($space-md);
+    padding-right: map-get($spaces, md);
     margin: 0;
 }
 
