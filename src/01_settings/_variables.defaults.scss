@@ -199,7 +199,7 @@ $form-input-margin: 0 0 map-get($spaces, xs) !default;
 $form-input-padding: map-get($spaces, xxxs) map-get($spaces, xxs) !default;
 $form-input-border: 1px solid $color-light !default;
 $form-input-radius: 0 !default;
-$form-input-size: map-get($spaces, xxxs) !default;
+$form-input-size: map-get($spaces, xxs) !default;
 $form-input-color: $color-medium !default;
 $form-input-bg: $color-lightest !default;
 $form-input-focus: $color-primary !default;
