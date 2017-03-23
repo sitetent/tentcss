@@ -127,7 +127,7 @@ $container-max-widths: (
 ) !default;
 
 // ==========================================================================
-// Grid & Breakpoints
+// Media Query Breakpoints
 // ==========================================================================
 
 $breakpoints: (
@@ -138,6 +138,23 @@ $breakpoints: (
     xl: em(1200px),
     xxl: em(1400px),
     xxxl: em(1600px)
+) !default;
+
+// ==========================================================================
+// Grids
+// ==========================================================================
+
+// Determines which breakpoints will have their own column classses.
+//
+// e.g. .grid__column--{GRID #}--{BREAKPOINT}
+//
+// Note: The keys set in the $grid-breakpoints variable must match those found in $breakpoints. 
+// Otherwise the source will not compile.
+$grid-breakpoints: (
+  sm,
+  md,
+  lg,
+  xl
 ) !default;
 
 $grid-columns: 12 !default;

@@ -58,42 +58,14 @@
 		}
 	}
 
-	@include breakpoint-min(sm) {
-		@for $i from 1 through $grid-columns {
-			$factor: 100% * ($i / $grid-columns);
-			&--#{$i}--sm {
-				flex: 0 0 #{$factor};
-				max-width: #{$factor};
-			}
-		}
-	}
-
-	@include breakpoint-min(md) {
-		@for $i from 1 through $grid-columns {
-			$factor: 100% * ($i / $grid-columns);
-			&--#{$i}--md {
-				flex: 0 0 #{$factor};
-				max-width: #{$factor};
-			}
-		}
-	}
-
-	@include breakpoint-min(lg) {
-		@for $i from 1 through $grid-columns {
-			$factor: 100% * ($i / $grid-columns);
-			&--#{$i}--lg {
-				flex: 0 0 #{$factor};
-				max-width: #{$factor};
-			}
-		}
-	}
-
-	@include breakpoint-min(xl) {
-		@for $i from 1 through $grid-columns {
-			$factor: 100% * ($i / $grid-columns);
-			&--#{$i}--xl {
-				flex: 0 0 #{$factor};
-				max-width: #{$factor};
+	@each $point in $grid-breakpoints {
+		@include breakpoint-min($point) {
+			@for $i from 1 through $grid-columns {
+				$factor: 100% * ($i / $grid-columns);
+				&--#{$i}--#{$point} {
+					flex: 0 0 #{$factor};
+					max-width: #{$factor};
+				}
 			}
 		}
 	}
