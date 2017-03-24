@@ -5,7 +5,7 @@
 .button {
     display: inline-block;
     margin-bottom: map-get($spaces, xxxs);
-    padding: $button-padding-sm;
+    padding: map-get($button-padding, sm);
     border: $button-outlined-border-width solid $button-filled-bg;
     border-radius: $button-border-radius;
     background-color: $button-filled-bg;
@@ -49,41 +49,11 @@
     }
 
     // Button Sizes
-    &--xxxs { 
-        padding: $button-padding-xxxs; 
-        font-size: $button-size-xxxs;
-    }
-    &--xxs { 
-        padding: $button-padding-xxs; 
-        font-size: $button-size-xxxs;
-    }
-    &--xs { 
-        padding: $button-padding-xs; 
-        font-size: $button-size-xxs;
-    }
-    &--sm { 
-        padding: $button-padding-sm;
-        font-size: $button-size-xs;
-    }
-    &--md { 
-        padding: $button-padding-md;
-        font-size: $button-size-xs;
-    }
-    &--lg { 
-        padding: $button-padding-lg;
-        font-size: $button-size-md;
-    }
-    &--xl { 
-        padding: $button-padding-xl;
-        font-size: $button-size-lg;
-    }
-    &--xxl { 
-        padding: $button-padding-xxl;
-        font-size: $button-size-lg;
-    }
-    &--xxxl { 
-        padding: $button-padding-xxxl;
-        font-size: $button-size-lg;
+    @each $size, $val in $button-sizes {
+        &--#{$size} {
+            padding: map-get($button-padding, $size);
+            font-size: $val;
+        }
     }
 
     &--block {
