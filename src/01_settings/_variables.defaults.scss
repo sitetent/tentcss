@@ -39,29 +39,36 @@ $base-line-height: 1.6 !default;
 $border-radius: 6px !default;
 
 // ==========================================================================
-// Space Sizes
-// ==========================================================================
-
-$space-base: 8px;
-
-$space-xxxs: ($space-base) !default;
-$space-xxs: ($space-base * 2) !default;
-$space-xs: ($space-base * 3) !default;
-$space-sm: ($space-base * 4) !default;
-$space-md: ($space-base * 5) !default;
-$space-lg: ($space-base * 6) !default;
-$space-xl: ($space-base * 7) !default;
-$space-xxl: ($space-base * 8) !default;
-$space-xxxl: ($space-base * 9) !default;
-
-
-// ==========================================================================
 // Scaling
 // ==========================================================================
 
 $scale-ratio: 1.250 !default; // Major Third Ratio
 $scale-unit: 16 !default;
 
+// ==========================================================================
+// Space Sizes
+// ==========================================================================
+
+// Sets a baseline to be used by all the other space variables.
+
+$space-base: 8px !default;
+
+// The Spaces map is great for maintaining consistency in your development.
+// Useful for padding and margins.
+//
+// e.g. property: map-get($spaces, sm);
+
+$spaces: (
+  xxxs: rem($space-base),
+  xxs: rem($space-base * 2),
+  xs: rem($space-base * 3),
+  sm: rem($space-base * 4), 
+  md: rem($space-base * 5),
+  lg: rem($space-base * 6),
+  xl: rem($space-base * 7),
+  xxl: rem($space-base * 8),
+  xxxl: rem($space-base * 9)
+) !default;
 
 // ==========================================================================
 // Typography
@@ -71,8 +78,8 @@ $font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,"Ope
 $font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-monospace: "Lucida Console",Courier,monospace !default;
 
-$pararaph-margin: 0 0 rem($space-xs) !default;
-$heading-margin: 0 0 rem($space-sm) !default;
+$pararaph-margin: 0 0 map-get($spaces, xs) !default;
+$heading-margin: 0 0 map-get($spaces, sm) !default;
 
 // Font Sizes
 $size-xxxs: 10px !default;
@@ -92,8 +99,8 @@ $size-base: $size-sm !default;
 // ==========================================================================
 
 $blockquote-border: 4px solid $color-dark !default;
-$blockquote-padding: 0 0 0 rem($space-xxxs) !default;
-$blockquote-margin: 0 0 rem($space-xxs) !default;
+$blockquote-padding: 0 0 0 map-get($spaces, xxxs) !default;
+$blockquote-margin: 0 0 map-get($spaces, xxs) !default;
 
 $cite-style: italic !default;
 
@@ -143,13 +150,13 @@ $breakpoints: (
 $grid-columns: 12 !default;
 
 // Gutter is applied to padding-left and padding-right. The value is not split.
-$grid-gutter: rem($space-xxs) !default;
+$grid-gutter: map-get($spaces, xxs) !default;
 
 // ==========================================================================
 // Dividers
 // ==========================================================================
 
-$divider-margin: rem($space-xs) 0 !default;
+$divider-margin: map-get($spaces, xs) 0 !default;
 $divider-height: 1px !default;
 $divider-color: #dbdbdb !default;
 
@@ -158,19 +165,19 @@ $divider-color: #dbdbdb !default;
 // ==========================================================================
 
 $list-padding: 0 !default;
-$list-margin: 0 0 rem($space-xs) !default;
+$list-margin: 0 0 map-get($spaces, xs) !default;
 
 $unordered-list-style: circle inside !default;
 $ordered-list-style: decimal inside !default;
 
-$list-inline-space: $space-xs !default;
+$list-inline-space: map-get($spaces, xs) !default;
 
 
 // ==========================================================================
 // Tables
 // ==========================================================================
 
-$table-cell-padding: rem($space-xxxs) !default;
+$table-cell-padding: map-get($spaces, xxxs) !default;
 $table-stripped-odd-bg: $color-lighter !default;
 $table-stripped-even-bg: $color-lightest !default;
 
@@ -193,13 +200,13 @@ $lead-line-height: 1.6 !default;
 // ==========================================================================
 
 $form-label-weight: 600 !default;
-$form-margin: 0 0 rem($space-xxxs);
+$form-margin: 0 0 map-get($spaces, xxxs);
 
-$form-input-margin: 0 0 rem($space-xs) !default;
-$form-input-padding: rem($space-xxxs) rem($space-xxs) !default;
+$form-input-margin: 0 0 map-get($spaces, xs) !default;
+$form-input-padding: map-get($spaces, xxxs) map-get($spaces, xxs) !default;
 $form-input-border: 1px solid $color-light !default;
 $form-input-radius: 0 !default;
-$form-input-size: rem($size-base) !default;
+$form-input-size: map-get($spaces, xxs) !default;
 $form-input-color: $color-medium !default;
 $form-input-bg: $color-lightest !default;
 $form-input-focus: $color-primary !default;
@@ -228,15 +235,15 @@ $button-tertiary-bg: $color-tertiary !default;
 $button-border-radius: 0 !default;
 $button-outlined-border-width: 2px !default;
 
-$button-padding-xxxs: rem($space-xxxs) rem($space-xxs) !default;
-$button-padding-xxs: rem($space-xxxs) rem($space-sm) !default;
-$button-padding-xs: rem($space-xxxs) rem($space-xs) !default;
-$button-padding-sm: rem($space-xxxs) rem($space-md) !default;
-$button-padding-md: rem($space-xxxs) rem($space-md) !default;
-$button-padding-lg: rem($space-xxs) rem($space-lg) !default;
-$button-padding-xl: rem($space-xxs) rem($space-xl) !default;
-$button-padding-xxl: rem($space-xxs) rem($space-xxl) !default;
-$button-padding-xxxl: rem($space-xxs) rem($space-xxxl) !default;
+$button-padding-xxxs: map-get($spaces, xxxs) map-get($spaces, xxs) !default;
+$button-padding-xxs: map-get($spaces, xxxs) map-get($spaces, sm) !default;
+$button-padding-xs: map-get($spaces, xxxs) map-get($spaces, xs) !default;
+$button-padding-sm: map-get($spaces, xxxs) map-get($spaces, md) !default;
+$button-padding-md: map-get($spaces, xxxs) map-get($spaces, md) !default;
+$button-padding-lg: map-get($spaces, xxs) map-get($spaces, lg) !default;
+$button-padding-xl: map-get($spaces, xxs) map-get($spaces, xl) !default;
+$button-padding-xxl: map-get($spaces, xxs) map-get($spaces, xxl) !default;
+$button-padding-xxxl: map-get($spaces, xxs) map-get($spaces, xxxl) !default;
 
 $button-size-xxxs: rem($size-xxxs) !default;
 $button-size-xxs: rem($size-xxs) !default;
@@ -253,14 +260,14 @@ $button-size-xxxl: rem($size-xxxl) !default;
 // Cards
 // ==========================================================================
 
-$card-margin: rem($space-xxs) !default;
+$card-margin: map-get($spaces, xxs) !default;
 $card-border: 1px solid $color-light !default;
 $card-radius: 0 !default;
 $card-bg: $color-lightest !default;
 $card-color: $base-color !default;
 $card-raised-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.04), 0 0.2rem 1rem 0 rgba(0,0,0,.10) !default;
 
-$card-content-padding: rem($space-xxs) !default; 
+$card-content-padding: map-get($spaces, xxs) !default; 
 $card-outlined-border: 2px solid transparent !default;
 
 
