@@ -949,7 +949,7 @@ table td {
 
 .button {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem 2.5rem;
   border: 2px solid #6E6E6E;
   border-radius: 0;
