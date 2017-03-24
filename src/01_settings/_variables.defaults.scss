@@ -49,7 +49,14 @@ $scale-unit: 16 !default;
 // Space Sizes
 // ==========================================================================
 
+// Sets a baseline to be used by all the other space variables.
+
 $space-base: 8px !default;
+
+// The Spaces map is great for maintaining consistency in your development.
+// Useful for padding and margins.
+//
+// e.g. property: map-get($spaces, sm);
 
 $spaces: (
   xxxs: rem($space-base),
