@@ -4,6 +4,8 @@
 
 .padding {
 
+    // Create padding classes
+    // For each space key found in the $spaces map from the settings.
     @each $space, $padding in $spaces {
         &-#{$space} {
             padding: $padding;
