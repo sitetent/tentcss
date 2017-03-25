@@ -252,25 +252,31 @@ $button-tertiary-bg: $color-tertiary !default;
 $button-border-radius: 0 !default;
 $button-outlined-border-width: 2px !default;
 
-$button-padding-xxxs: map-get($spaces, xxxs) map-get($spaces, xxs) !default;
-$button-padding-xxs: map-get($spaces, xxxs) map-get($spaces, sm) !default;
-$button-padding-xs: map-get($spaces, xxxs) map-get($spaces, xs) !default;
-$button-padding-sm: map-get($spaces, xxxs) map-get($spaces, md) !default;
-$button-padding-md: map-get($spaces, xxxs) map-get($spaces, md) !default;
-$button-padding-lg: map-get($spaces, xxs) map-get($spaces, lg) !default;
-$button-padding-xl: map-get($spaces, xxs) map-get($spaces, xl) !default;
-$button-padding-xxl: map-get($spaces, xxs) map-get($spaces, xxl) !default;
-$button-padding-xxxl: map-get($spaces, xxs) map-get($spaces, xxxl) !default;
+// Used for creating button sizes with appropriate font-sizes.
+$button-sizes: (
+  xxxs: rem($size-xxxs),
+  xxs: rem($size-xxxs),
+  xs: rem($size-xxs),
+  sm: rem($size-xs),
+  md: rem($size-xs),
+  lg: rem($size-md),
+  xl: rem($size-lg),
+  xxl: rem($size-lg),
+  xxxl: rem($size-lg)
+) !default;
 
-$button-size-xxxs: rem($size-xxxs) !default;
-$button-size-xxs: rem($size-xxs) !default;
-$button-size-xs: rem($size-xs) !default;
-$button-size-sm: rem($size-sm) !default;
-$button-size-md: rem($size-md) !default;
-$button-size-lg: rem($size-lg) !default;
-$button-size-xl: rem($size-xl) !default;
-$button-size-xxl: rem($size-xxl) !default;
-$button-size-xxxl: rem($size-xxxl) !default;
+// Sets the padding of the corresponding keys in $button-sizes.
+$button-padding: (
+  xxxs: map-get($spaces, xxxs) map-get($spaces, xxs),
+  xxs: map-get($spaces, xxxs) map-get($spaces, sm),
+  xs: map-get($spaces, xxxs) map-get($spaces, xs),
+  sm: map-get($spaces, xxxs) map-get($spaces, md),
+  md: map-get($spaces, xxxs) map-get($spaces, md),
+  lg: map-get($spaces, xxs) map-get($spaces, lg),
+  xl: map-get($spaces, xxs) map-get($spaces, xl),
+  xxl: map-get($spaces, xxs) map-get($spaces, xxl),
+  xxxl: map-get($spaces, xxs) map-get($spaces, xxxl)
+) !default;
 
 
 // ==========================================================================
