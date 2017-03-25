@@ -49,10 +49,10 @@
     }
 
     // Button Sizes
-    @each $size, $val in $button-sizes {
-        &--#{$size} {
-            padding: map-get($button-padding, $size);
-            font-size: $val;
+    @each $key-sizes, $font-size in $button-sizes {
+        &--#{$key-sizes} {
+            padding: map-get($button-padding, $key-sizes);
+            font-size: $font-size;
         }
     }
 
