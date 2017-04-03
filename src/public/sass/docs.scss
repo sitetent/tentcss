@@ -1,11 +1,11 @@
-@import "../../../node_modules/tent-css/src/tent"; // Use from Node Modules
-// @import "../../../../tent/src/tent"; // Use adjacent directory
+// @import "../../../node_modules/tent-css/src/tent"; // Use from Node Modules
+@import "../../../../tent/src/tent"; // Use adjacent directory
 @import "partials/header";
 @import "partials/footer";
 @import "partials/github-badge";
 @import "partials/prism";
 
-/* Example Grid */ 
+/* Example Grid */
 .grid-example .grid__column {
 	border: 1px solid #555;
 	padding-top: 0.8rem;
