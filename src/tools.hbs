@@ -20,7 +20,7 @@
         The default $breakpoint sizes are <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> <code>xl</code> <code>xxl</code> <code>xxxl</code>
     </p>
 
-    <pre><code class="language-markup"><!--
+    <pre><code class="language-scss"><!--
         @include breakpoint-min($breakpoint) {
             .foo {}
         }
@@ -38,7 +38,7 @@
 
     <p>It is recommended that you use <code>rem</code> units with Tent CSS. We have packaged a Sass function entitled <code>rem()</code> within the framework.</p>
 
-    <pre><code class="language-markup"><!--
+    <pre><code class="language-scss"><!--
         selector {
             font-size: rem(16px);
             padding: rem(16px) rem(32px);
@@ -53,7 +53,7 @@
 
     <p>A simple Sass mixin for setting the box-sizing.</p>
 
-    <pre><code class="language-markup"><!--
+    <pre><code class="language-scss"><!--
         selector {
             @include box-sizing(content-box | border-box);
         }
