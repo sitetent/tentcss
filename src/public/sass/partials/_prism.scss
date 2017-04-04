@@ -5,6 +5,23 @@
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
  * @author Tim  Shedor
  */
+ 
+$base00: #1B2B34;
+$base01: #343D46;
+$base02: #4F5B66;
+$base03: #65737E;
+$base04: #A7ADBA;
+$base05: #C0C5CE;
+$base06: #CDD3DE;
+$base07: #D8DEE9;
+$base08: #EC5f67;
+$base09: #F99157;
+$base0A: #FAC863;
+$base0B: #99C794;
+$base0C: #5FB3B3;
+$base0D: #6699CC;
+$base0E: $base0E;
+$base0F: #AB7967;
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -30,12 +47,10 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 	position: relative;
-	margin: .5em 0;
-	background-color: $color-darker;
-	background-size: 3em 3em;
-	background-origin: content-box;
+	margin: map-get($spaces, xxs) 0;
+	background-color: $base00;
 	overflow: visible;
-	padding: 0;
+	padding: map-get($spaces, xxxs);
 }
 
 code[class*="language"] {
@@ -60,7 +75,7 @@ pre[class*="language-"] {
 	position: relative;
 	padding: .2em;
 	border-radius: 0.3em;
-	color: $color-tertiary;
+	color: $base08;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	display: inline;
 	white-space: normal;
@@ -82,11 +97,11 @@ pre[class*="language-"]:after {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #7D8B99;
+	color: $base03;
 }
 
 .token.punctuation {
-	color: $color-medium;
+	color: $base04;
 }
 
 .token.property,
@@ -97,7 +112,7 @@ pre[class*="language-"]:after {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: $color-tertiary;
+	color: $base08;
 }
 
 .token.selector,
@@ -107,32 +122,31 @@ pre[class*="language-"]:after {
 .token.function,
 .token.builtin,
 .token.inserted {
-	color: $color-secondary;
+	color: $base0B;
 }
 
 .token.operator,
 .token.entity,
 .token.url,
 .token.variable {
-	color: #a67f59;
-	background: rgba(255, 255, 255, 0.5);
+	color: $base0E;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword,
 .token.class-name {
-	color: lighten($color-primary, 15%);
+	color: $base0D;
 }
 
 .token.regex,
 .token.important {
-	color: #e90;
+	color: $base09;
 }
 
 .language-css .token.string,
 .style .token.string {
-	color: #a67f59;
+	color: $base0E;
 	background: rgba(255, 255, 255, 0.5);
 }
 
