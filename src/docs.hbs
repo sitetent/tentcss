@@ -51,11 +51,17 @@
 
     <p>Alternatively, you can build your project using the Tent CSS source files that are written in Sass (SCSS syntax).</p>
 
-    <p>Within your project Sass file you should import tent.scss</p>
+    <p>Below is an example how to import <code>tent.scss</code> into your project: </p>
 
-    <pre><code class="language-markup"><!--
-        @import "path-to/tentcss";
-    --></code></pre>
+    <pre><code class="language-scss">
+
+        @import "path/to/your-settings"
+
+        @import "path/to/tent";
+
+        // Custom CSS
+
+    </code></pre>
 
     <div class="card card--outlined card--tertiary color-tertiary">
         <div class="card__content type-italic">
@@ -65,9 +71,7 @@
 
     <h4>Overriding Sass variables</h4>
 
-    <p>A lot of Tent CSS features use Sass variables. This makes it very easy to override variables and thus you won't have to write more lines of code to modify these features.</p>
-
-    <p>Copy the variables from <code>src/01_settings/_variables.scss</code> to your project that you'd like to override.</p>
+    Read more about using our Sass variables in your project in the <a href="settings.html">Settings</a> section.
 
     <!-- END Getting Started -->
     <hr>
