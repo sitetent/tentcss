@@ -1,0 +1,15 @@
+// Extra Button Styles
+
+.button--inverse {
+    color: $color-lightest;
+
+    &.button--outlined {
+        border-color: $color-lightest;
+
+        &:hover,
+        &:focus {
+            background-color: $color-lightest;
+            color: $color-dark;
+        }
+    }
+}

@@ -13,6 +13,7 @@ $base0F: #85144b;
 
 @import "../../../node_modules/tent-css/src/tent"; // Use from Node Modules
 // @import "../../../../tent/src/tent"; // Use adjacent directory
+@import "partials/buttons";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/github-badge";
