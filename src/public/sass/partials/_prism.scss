@@ -6,26 +6,18 @@
  * @author Tim  Shedor
  */
  
-$base00: #1B2B34;
-$base01: #343D46;
-$base02: #4F5B66;
-$base03: #65737E;
-$base04: #A7ADBA;
-$base05: #C0C5CE;
-$base06: #CDD3DE;
-$base07: #D8DEE9;
-$base08: #EC5f67;
-$base09: #F99157;
-$base0A: #FAC863;
-$base0B: #99C794;
-$base0C: #5FB3B3;
-$base0D: #6699CC;
-$base0E: #C594C5;
-$base0F: #AB7967;
+$base08: #FF4136;
+$base09: #FF851B;
+$base0A: #FFDC00;
+$base0B: #2ECC40;
+$base0C: #39CCCC;
+$base0D: #0074D9;
+$base0E: #B10DC9;
+$base0F: #85144b;
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: $color-light;
+	color: $color-dark;
 	background: none;
 	font-family: $font-family-monospace;
 	text-align: left;
@@ -48,9 +40,10 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	position: relative;
 	margin: map-get($spaces, xxs) 0;
-	background-color: $base00;
+	background-color: $color-lighter;
 	overflow: visible;
 	padding: map-get($spaces, xxxs);
+	@extend .card--raised;
 }
 
 code[class*="language"] {
@@ -97,11 +90,11 @@ pre[class*="language-"]:after {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: $base03;
+	color: $color-medium;
 }
 
 .token.punctuation {
-	color: $base04;
+	color: $color-medium;
 }
 
 .token.property,
@@ -112,7 +105,7 @@ pre[class*="language-"]:after {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: $base08;
+	color: $color-tertiary;
 }
 
 .token.selector,
@@ -122,7 +115,7 @@ pre[class*="language-"]:after {
 .token.function,
 .token.builtin,
 .token.inserted {
-	color: $base0B;
+	color: $color-secondary;
 }
 
 .token.operator,
@@ -136,7 +129,7 @@ pre[class*="language-"]:after {
 .token.attr-value,
 .token.keyword,
 .token.class-name {
-	color: $base0D;
+	color: $color-primary;
 }
 
 .token.regex,
