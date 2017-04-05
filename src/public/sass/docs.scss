@@ -1,9 +1,23 @@
+// Code Colors
+
+$base08: #FF4136;
+$base09: #FF851B;
+$base0A: #FFDC00;
+$base0B: #2ECC40;
+$base0C: #39CCCC;
+$base0D: #0074D9;
+$base0E: #B10DC9;
+$base0F: #85144b;
+
+// Import Partials
+
 @import "../../../node_modules/tent-css/src/tent"; // Use from Node Modules
 // @import "../../../../tent/src/tent"; // Use adjacent directory
 @import "partials/header";
 @import "partials/footer";
 @import "partials/github-badge";
 @import "partials/prism";
+@import "partials/gist-it";
 
 /* Example Grid */
 .grid-example .grid__column {
