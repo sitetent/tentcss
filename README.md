@@ -12,7 +12,9 @@
 
 A CSS survival kit. Includes only the essentials to make camp.
 
-<http://css.sitetent.com/>
+Website - <http://css.sitetent.com/>
+
+Follow on Twitter - [@tentcss](https://twitter.com/tentcss)
 
 ## Installation
 
