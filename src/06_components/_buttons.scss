@@ -15,6 +15,17 @@
     font-size: inherit;
     transition: all 1s ease;
 
+    &.button--inverse {
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: darken($button-inverse-bg, 25%);
+            background-color: darken($button-inverse-bg, 10%);
+            color: $button-inverse-color;
+        }
+    }
+
     &.button--primary {
 
         &:hover,
@@ -72,6 +83,12 @@
         color: $button-filled-color;
     }
 
+    &.button--inverse {
+        border-color: $button-inverse-bg;
+        background-color: $button-inverse-bg;
+        color: $button-inverse-color;
+    }
+
     &.button--primary {
         border-color: $button-primary-bg;
         background-color: $button-primary-bg;
@@ -104,6 +121,11 @@
         color: $button-filled-color;
     }
 
+    &.button--inverse {
+        border-color: $button-inverse-bg;
+        color: $button-inverse-bg;
+    }
+
     &.button--primary {
         border-color: $button-primary-bg;
         color: $button-primary-bg;
@@ -128,7 +150,13 @@
     &:hover,
     &:focus,
     &:active {
+        background-color: transparent;
         border-bottom: 2px solid $button-clear-color;
         color: $button-clear-color;
+    }
+
+    &.button--inverse {
+        border-bottom-color: $button-inverse-bg;
+        color: $button-inverse-bg;
     }
 }
