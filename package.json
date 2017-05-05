@@ -1,5 +1,6 @@
 {
   "name": "tent-css",
+  "prettyName": "Tent CSS",
   "version": "1.4.2",
   "description": "A CSS survival kit.",
   "author": "Aaron Mazade <ulinaaron@gmail.com>",
@@ -44,5 +45,10 @@
     "onchange": "^2.5.0",
     "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2"
+  },
+  "routes": {
+    "dist": "dist/",
+    "src": "src/",
+    "scss": "src/tent.scss"
   }
 }
