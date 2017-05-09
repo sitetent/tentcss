@@ -14,9 +14,7 @@ var gulp             = require('gulp'),
     sourcemaps       = require('gulp-sourcemaps'),
     cssmin           = require('gulp-cssmin'),
     rename           = require('gulp-rename'),
-    gulpif           = require('gulp-if'),
     del              = require('del'),
-    stripCssComments = require('gulp-strip-css-comments'),
     cssbeautify      = require('gulp-cssbeautify'),
     header           = require('gulp-header'),
     watch            = require('gulp-watch'),
@@ -34,12 +32,12 @@ var banner = ['/*!',
 
 
 /* 
- * Compile SCSS 
+ * Compile Framework 
  * Autoprefix, Stripcomments, Beautify, Minify. 
  */
 
-gulp.task('build:scss', function() {
-    return gulp.src( [cfg.routes.src + 'tent.scss', cfg.routes.src + 'themes/**/*.scss', '!' + cfg.routes.src + 'themes/**/_*.scss' ] )
+gulp.task('build:framework', function() {
+    return gulp.src( cfg.routes.framework )
         .pipe(sourcemaps.init())
         .pipe(sass({ 
             outputStyle: 'expanded' 
@@ -48,21 +46,45 @@ gulp.task('build:scss', function() {
             browsers: ['last 2 versions'], 
             cascade: false 
         }))
-        .pipe(stripCssComments({ 
-            preserve: false 
-        }))
         .pipe(cssbeautify())
         .pipe(header(banner, { 
             cfg: cfg 
         }))
-        .pipe(gulp.dest( cfg.routes.dist ))
+        .pipe( gulp.dest( cfg.routes.dist ) )
         .pipe(cssmin())
         .pipe(rename({ 
             suffix: '.min' 
         }))
         .pipe(sourcemaps.write('.'))
-        // .pipe( gulpif( [ 'tent.css', 'tent.min.css' ], gulp.dest( cfg.routes.dist ), gulp.dest( cfg.routes.dist + 'themes/' ) ) )
         .pipe( gulp.dest( cfg.routes.dist ) );
+});
+
+/* 
+ * Compile Framework 
+ * Autoprefix, Stripcomments, Beautify, Minify. 
+ */
+
+gulp.task('build:themes', function() {
+    return gulp.src( [cfg.routes.srcThemes + '**/*.scss', '!' + cfg.routes.srcThemes + '**/_*.scss'] )
+        .pipe(sourcemaps.init())
+        .pipe(sass({ 
+            outputStyle: 'expanded' 
+        }).on('error', sass.logError))
+        .pipe(autoprefixer({ 
+            browsers: ['last 2 versions'], 
+            cascade: false 
+        }))
+        .pipe(cssbeautify())
+        .pipe(header(banner, { 
+            cfg: cfg 
+        }))
+        .pipe( gulp.dest( cfg.routes.dist ) )
+        .pipe(cssmin())
+        .pipe(rename({ 
+            suffix: '.min' 
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe( gulp.dest( cfg.routes.distThemes ) );
 });
 
 /* 
@@ -79,7 +101,7 @@ gulp.task('util:clean', function() {
  */
 
 gulp.task('watch:scss', function() {
-    gulp.watch( cfg.routes.src + '**/*', ['util:clean', 'build:scss']);
+    gulp.watch( cfg.routes.src + '**/*', ['util:clean', 'build:framework', 'build:themes']);
 });
 
 
@@ -87,11 +109,11 @@ gulp.task('watch:scss', function() {
  * Watch task 
  */
 
-gulp.task('watch', ['util:clean', 'build:scss', 'watch:scss']);
+gulp.task('watch', ['util:clean', 'build:framework', 'build:themes', 'watch:scss']);
 
 
 /* 
  * Default task 
  */
 
-gulp.task('default', ['util:clean', 'build:scss']);
+gulp.task('default', ['util:clean', 'build:framework', 'build:themes']);
