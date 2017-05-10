@@ -44,8 +44,6 @@
   "routes": {
     "dist": "dist/",
     "src": "src/",
-    "srcThemes": "src/themes/",
-    "distThemes": "dist/themes/",
     "framework": "src/tent.scss"
   }
 }
