@@ -60,34 +60,6 @@ gulp.task('build:framework', function() {
 });
 
 /* 
- * Compile Framework 
- * Autoprefix, Stripcomments, Beautify, Minify. 
- */
-
-gulp.task('build:themes', function() {
-    return gulp.src( [cfg.routes.srcThemes + '**/*.scss', '!' + cfg.routes.srcThemes + '**/_*.scss'] )
-        .pipe(sourcemaps.init())
-        .pipe(sass({ 
-            outputStyle: 'expanded' 
-        }).on('error', sass.logError))
-        .pipe(autoprefixer({ 
-            browsers: ['last 2 versions'], 
-            cascade: false 
-        }))
-        .pipe(cssbeautify())
-        .pipe(header(banner, { 
-            cfg: cfg 
-        }))
-        .pipe( gulp.dest( cfg.routes.dist ) )
-        .pipe(cssmin())
-        .pipe(rename({ 
-            suffix: '.min' 
-        }))
-        .pipe(sourcemaps.write('.'))
-        .pipe( gulp.dest( cfg.routes.distThemes ) );
-});
-
-/* 
  * Clean task
  */
 
@@ -101,7 +73,7 @@ gulp.task('util:clean', function() {
  */
 
 gulp.task('watch:scss', function() {
-    gulp.watch( cfg.routes.src + '**/*', ['util:clean', 'build:framework', 'build:themes']);
+    gulp.watch( cfg.routes.src + '**/*', ['util:clean', 'build:framework']);
 });
 
 
@@ -109,11 +81,11 @@ gulp.task('watch:scss', function() {
  * Watch task 
  */
 
-gulp.task('watch', ['util:clean', 'build:framework', 'build:themes', 'watch:scss']);
+gulp.task('watch', ['util:clean', 'build:framework', 'watch:scss']);
 
 
 /* 
  * Default task 
  */
 
-gulp.task('default', ['util:clean', 'build:framework', 'build:themes']);
+gulp.task('default', ['util:clean', 'build:framework']);
