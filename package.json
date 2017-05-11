@@ -1,5 +1,6 @@
 {
   "name": "tent-css",
+  "fullname": "Tent CSS",
   "version": "1.4.2",
   "description": "A CSS survival kit.",
   "author": "Aaron Mazade <ulinaaron@gmail.com>",
@@ -14,16 +15,7 @@
     "url": "https://github.com/sitetent/tentcss/issues"
   },
   "scripts": {
-    "version:patch": "npm version patch -m \"Bumped to %s\"",
-    "tent:expanded": "node-sass --output-style expanded src/tent.scss dist/tent.css",
-    "tent:compressed": "node-sass --output-style compressed src/tent.scss dist/tent.min.css",
-    "crystal:expanded": "node-sass --output-style expanded src/themes/crystal/crystal.scss dist/themes/crystal.css",
-    "crystal:compressed": "node-sass --output-style compressed src/themes/crystal/crystal.scss dist/themes/crystal.min.css",
-    "autoprefixer": "postcss -u autoprefixer --no-map --autoprefixer.browsers 'last 4 versions' -r dist/*.css",
-    "serve": "browser-sync start --serveStatic 'examples' --files 'dist/*.css, examples/**/*.html,' --server",
-    "dev": "parallelshell 'npm run serve' 'npm run watch'",
-    "watch": "onchange src -- npm run build",
-    "build": "npm-run-all tent:expanded tent:compressed crystal:expanded crystal:compressed autoprefixer"
+    "version:patch": "npm version patch -m \"Bumped to %s\""
   },
   "keywords": [
     "css",
@@ -36,13 +28,27 @@
     "framework"
   ],
   "devDependencies": {
-    "autoprefixer": "^6.3.7",
-    "browser-sync": "^2.14.0",
+    "browser-sync": "^2.18.8",
     "clean-css": "^3.4.19",
-    "node-sass": "^3.8.0",
-    "npm-run-all": "^2.3.0",
-    "onchange": "^2.5.0",
-    "parallelshell": "^2.0.0",
-    "postcss-cli": "^2.5.2"
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-header": "^1.8.8",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "buildSettings": {
+    "dist": "dist/",
+    "src": "src/",
+    "framework": "src/tent.scss",
+    "sync": {
+      "dir": "examples",
+      "port": "3010"
+    }
   }
 }
