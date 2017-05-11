@@ -8,19 +8,24 @@
 
 'use strict';
 
-var gulp             = require('gulp'),
-    sass             = require('gulp-sass'),
-    autoprefixer     = require('gulp-autoprefixer'),
-    sourcemaps       = require('gulp-sourcemaps'),
-    cssmin           = require('gulp-cssmin'),
-    rename           = require('gulp-rename'),
-    del              = require('del'),
-    cssbeautify      = require('gulp-cssbeautify'),
-    header           = require('gulp-header'),
-    watch            = require('gulp-watch'),
-    cfg              = require('./package.json');
+const gulp             = require('gulp');
+const sass             = require('gulp-sass');
+const autoprefixer     = require('gulp-autoprefixer');
+const sourcemaps       = require('gulp-sourcemaps');
+const cssmin           = require('gulp-cssmin');
+const plumber          = require('gulp-plumber');
+const rename           = require('gulp-rename');
+const del              = require('del');
+const cssbeautify      = require('gulp-cssbeautify');
+const header           = require('gulp-header');
+const watch            = require('gulp-watch');
+const browserSync      = require('browser-sync');
+const cfg              = require('./package.json');
 
-/* Header banner */
+
+/**
+ * Distribution files banner 
+ */
 var banner = ['/*!',
     '  * <%= cfg.fullname %>',
     '  * Version: <%= cfg.version %>',
@@ -31,13 +36,14 @@ var banner = ['/*!',
 ].join('\n');
 
 
-/* 
- * Compile Framework 
+/** 
+ * Build CSS Distribution files 
  * Autoprefix, Stripcomments, Beautify, Minify. 
  */
 
 gulp.task('build:framework', function() {
-    return gulp.src( cfg.routes.framework )
+    return gulp.src( cfg.buildSettings.framework )
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({ 
             outputStyle: 'expanded' 
@@ -50,21 +56,39 @@ gulp.task('build:framework', function() {
         .pipe(header(banner, { 
             cfg: cfg 
         }))
-        .pipe( gulp.dest( cfg.routes.dist ) )
+        .pipe( gulp.dest( cfg.buildSettings.dist ) )
         .pipe(cssmin())
         .pipe(rename({ 
             suffix: '.min' 
         }))
         .pipe(sourcemaps.write('.'))
-        .pipe( gulp.dest( cfg.routes.dist ) );
+        .pipe(plumber.stop())
+        .pipe( gulp.dest( cfg.buildSettings.dist ) )
+        .pipe(browserSync.reload({stream: true}));
 });
 
-/* 
- * Clean task
+/** 
+ * Utility: Clean task
  */
 
 gulp.task('util:clean', function() {
-    return del( cfg.routes.dist + '*');
+    return del( cfg.buildSettings.dist + '*');
+});
+
+/**
+ * BrowserSync
+ */
+
+gulp.task('serve', function() {
+  browserSync.init({
+    server: cfg.buildSettings.sync.dir,
+    open: false,
+    notify: false,
+    port: cfg.buildSettings.sync.port,
+
+    // Whether to listen on external
+    online: false,
+  });
 });
 
 
@@ -73,19 +97,19 @@ gulp.task('util:clean', function() {
  */
 
 gulp.task('watch:scss', function() {
-    gulp.watch( cfg.routes.src + '**/*', ['util:clean', 'build:framework']);
+    gulp.watch( cfg.buildSettings.src + '**/*', ['util:clean', 'build:framework']);
 });
 
-
-/* 
+/** 
  * Watch task 
  */
 
-gulp.task('watch', ['util:clean', 'build:framework', 'watch:scss']);
+gulp.task('watch', ['util:clean', 'build:framework', 'watch:scss', 'serve']);
 
 
-/* 
+/** 
  * Default task 
+ * This will just run a build of the files. Does not watch files.
  */
 
 gulp.task('default', ['util:clean', 'build:framework']);
