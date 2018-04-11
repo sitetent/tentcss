@@ -45,25 +45,25 @@
 // Flex Ordering
 // ==========================================================================
 
-.flex-first { order: -1 }
-.flex-last { order: 1; }
+.flex--first { order: -1 }
+.flex--last { order: 1; }
 
 @include breakpoint-min(sm) {
-    .flex-first--sm { order: -1 }
-    .flex-last--sm  { order: 1; }
+    .flex--first--sm { order: -1 }
+    .flex--last--sm  { order: 1; }
 }
 
 @include breakpoint-min(md) {
-    .flex-first--md { order: -1 }
-    .flex-last--md { order: 1; }
+    .flex--first--md { order: -1 }
+    .flex--last--md { order: 1; }
 }
 
 @include breakpoint-min(lg) {
-    .flex-first--lg { order: -1 }
-    .flex-last--lg { order: 1; }
+    .flex--first--lg { order: -1 }
+    .flex--last--lg { order: 1; }
 }
 
 @include breakpoint-min(xl) {
-    .flex-first--xl { order: -1 }
-    .flex-last--xl { order: 1; }
+    .flex--first--xl { order: -1 }
+    .flex--last--xl { order: 1; }
 }
