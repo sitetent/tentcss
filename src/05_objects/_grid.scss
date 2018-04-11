@@ -44,10 +44,17 @@
 	padding-left: $grid-gutter;
 	padding-right: $grid-gutter;
 
-	// .column-* vertically aligns an individual .column
 	&--top { @extend .flex__item--top; }
 	&--bottom { @extend .flex__item--bottom;}
 	&--center { @extend .flex__item--center; }
+
+	&--top { @extend .flex__item--top; }
+	&--bottom { @extend .flex__item--bottom;}
+	&--center { @extend .flex__item--center; }
+
+	&--justify-center { @extend .flex__item--justify-center; }
+	&--justify-start  { @extend .flex__item--justify-start; }
+	&--justify-end    { @extend .flex__item--justify-end; }
 
 	// Explicit Column Percent Sizes
 	@for $i from 1 through $grid-columns {
