@@ -34,6 +34,9 @@
 .flex__item--bottom { align-self: flex-end;   }
 .flex__item--center { align-self: center;     }
 
+.flex__item--justify-center { justify-self: center;     }
+.flex__item--justify-start  { justify-self: flex-start; }
+.flex__item--justify-end    { justify-self: flex-end; }
 
 // ==========================================================================
 // Flex Object Standalone Utilities
