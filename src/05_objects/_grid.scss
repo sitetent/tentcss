@@ -85,3 +85,9 @@
 	.grid { width: 100%; }
 	.grid__column { padding: 0 $grid-gutter; }
 }
+
+
+@include breakpoint-max(sm) {
+	.grid { width: 50%; }
+}
+
