@@ -27,8 +27,7 @@
 
 .flex__item {
     display: block;
-
-    flex: 1;
+    flex: 1 1 0;
 }
 
 .flex__item--top    { align-self: flex-start; }
