@@ -137,14 +137,18 @@ $container-max-widths: (
 // Media Query Breakpoints
 // ==========================================================================
 
+// The breakpoint-min() & breakpoint-max() mixins we be rendered in EM units.
+// We'll perform the pixel to EM conversion within the mixins. 
+// Please list breakpoints in pixel values.
+
 $breakpoints: (
     xs: 0, 
-    sm: em(576px), 
-    md: em(768px), 
-    lg: em(992px), 
-    xl: em(1200px),
-    xxl: em(1400px),
-    xxxl: em(1600px)
+    sm: 576px, 
+    md: 768px, 
+    lg: 992px, 
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1600px
 ) !default;
 
 // ==========================================================================
