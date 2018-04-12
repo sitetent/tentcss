@@ -2,10 +2,6 @@
 // Breakpoints
 // ==========================================================================
 
-@import "scaling";
-
-$threshhold: em(0.2px);
-
 // Functions
 // ==========================================================================
 
@@ -21,7 +17,10 @@ $threshhold: em(0.2px);
 
 @function breakpoint-max($name, $points: $breakpoints) {
   $next: breakpoint-next($name, $points);
-  @return if($next, (breakpoint-min($next, $points) - $threshhold), null);
+  $current: breakpoint-min($next, $points);
+  $threshold: 0.2px;
+
+  @return if($next, em(($current - $threshold)), null);
 }
 
 // Mixins
