@@ -7,28 +7,26 @@
 }
 
 @function rem($value, $scale: $scale-unit) {
-	$root: $scale;
 	$val: parseInt($value);
 	$return: ();
 	
 	@if unit($value) == "px" {
-		$return: append($return, ($val / $root + rem));
+		$return: append($return, ($val / $scale + rem));
 	} @else {
-		$return: append($return, ($val * $root + px));
+		$return: append($return, ($val * $scale + px));
 	}
 	
 	@return $return;
 }
 
 @function em($value, $scale: $scale-unit) {
-	$root: $scale;
 	$val: parseInt($value);
 	$return: ();
 	
 	@if unit($value) == "px" {
-		$return: append($return, ($val / $root + em));
+		$return: append($return, ($val / $scale + em));
 	} @else {
-		$return: append($return, ($val * $root + px));
+		$return: append($return, ($val * $scale + px));
 	}
 	
 	@return $return;
