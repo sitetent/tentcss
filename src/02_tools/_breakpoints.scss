@@ -2,29 +2,62 @@
 // Breakpoints
 // ==========================================================================
 
-@mixin breakpoint-min($breakpoint) { 
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+// Functions
+// ==========================================================================
+
+@function breakpoint-next($name, $points: $breakpoints, $point-names: map-keys($points)) {
+  $index: index($point-names, $name);
+  @return if($index < length($point-names), nth($point-names, $index + 1), null);
+}
+
+@function breakpoint-min($name, $points: $breakpoints) {
+  $min: map-get($points, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $points: $breakpoints) {
+  $next: breakpoint-next($name, $points);
+  $current: breakpoint-min($next, $points);
+  $threshold: 0.2px;
+
+  @return if($next, em(($current - $threshold)), null);
+}
+
+// Mixins
+// ==========================================================================
+
+@mixin breakpoint-min($name, $points: $breakpoints) { 
+  @if map-has-key($points, $name) {
+    $min: breakpoint-min($name, $points);
+    @if $min {
+      @media (min-width: $min) {
+        @content;
+      }
+    } @else {
       @content;
     }
   }
 
   @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    @warn "Unfortunately, no value could be retrieved from `#{$name}`. "
         + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
 
-@mixin breakpoint-max($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $val: #{map-get($breakpoints, $breakpoint)} - em(1px);
-    @media (max-width: ( $val ) ) {
+@mixin breakpoint-max($name, $points: $breakpoints) {
+  @if map-has-key($points, $name) {
+    $max: breakpoint-max($name, $points);
+    @if $max {
+      @media (max-width: $max) {
+        @content;
+      } 
+    } @else {
       @content;
     }
   }
 
   @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    @warn "Unfortunately, no value could be retrieved from `#{$name}`. "
         + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
