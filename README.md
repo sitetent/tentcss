@@ -32,6 +32,13 @@ Or, you can install via [npm](http://npmjs.org):
 ```
 $ npm install --save tent-css
 ```
+
+Or, you can include it via [CDN](https://www.jsdelivr.com/package/npm/tent-css):
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tent-css/dist/tent.css">
+```
+
 Or, you can clone the source:
 
 ```
