@@ -13,6 +13,8 @@
 </a>
 [![Gitter chat](https://badges.gitter.im/tentcss/tentcss.png)](https://gitter.im/tentcss/tentcss)
 
+**TentCSS 1.x.x is not currently receiving updates.**
+
 A CSS survival kit. Includes only the essentials to make camp.
 
 Website - <http://css.sitetent.com/>
